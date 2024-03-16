@@ -1,0 +1,10 @@
+<Item>
+  <Name>MsSqlParser</Name>
+  <Caption>MsSql parser</Caption>
+  <Description>
+The demo shows how to use Ms Sql Parser to highlight SQL language code.
+  </Description>
+  <Note>
+This parser provides both lexical and syntax analysis for SQL language. It supports automatic code completion for tables and its fields, code outlining, smart formatting, and syntax error underlining.
+  </Note>
+</Item>

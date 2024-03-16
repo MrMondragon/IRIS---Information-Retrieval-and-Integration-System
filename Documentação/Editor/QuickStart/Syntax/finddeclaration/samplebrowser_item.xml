@@ -1,0 +1,10 @@
+<Item>
+  <Name>FindDeclaration</Name>
+  <Caption>Find declaration</Caption>
+  <Description>
+The demo shows how to use Find Declaration/Find References of language elements within Edit control's content.
+  </Description>
+  <Note>
+Hold Ctrl key while moving mouse and click on identifier or use popup menu to find declaration of the element.
+  </Note>
+</Item>

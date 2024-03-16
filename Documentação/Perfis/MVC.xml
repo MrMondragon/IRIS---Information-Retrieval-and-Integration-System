@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="A9037EE4-3" name="MVC" version="1.0" notes="MVC"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="View" notes="" cx="188" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAHy3hTu7JkWcxgAAAOIBAAAHABEAc3RyLmRhdFVUDQAH0uUaS9LlGkvS5RpL
+hZBNDoJADIXfFhPvQFhhwkI0royn8AT8GU2QIQ7IwnB3XwsM4kIzaafTfn3TGYsrEtQo4OPO
+6IYKL6yxgqc+x4PZjtkEDatPktb1hNjgONIJ2Zy1FumCCJDBsL+hkkHJc8S7Ymy5onGfVeZO
+/6tvqE+zCZmRLGkpvfAnWoCLZi0zgVP1qGNwVu2cUedoUW9HVriJL6hR8r21KoU6Z4QDba/R
+jvE8tce/M/o3DfeQjLCfddGqFvX/CvFPjWGiJdO7F4jv1b8BUEsBAhcLFAAAAAgAfLeFO7sm
+RZzGAAAA4gEAAAcACQAAAAAAAAAAAACAAAAAAHN0ci5kYXRVVAUAB9LlGktQSwUGAAAAAAEA
+AQA+AAAA/AAAAAAA</Image>
+				<AppliesTo>
+					<Apply type="Part">
+						<Property name="isReference" value="false"/>
+					</Apply>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+					<Apply type="Component">
+						<Property name="isIndirectlyInstantiated" value="true"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Control" notes="" cx="142" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAGK2hTtXI6UzxQAAANIBAAAHABEAc3RyLmRhdFVUDQAH9eMaS/XjGkv14xpL
+nVBLCsIwEH3bCN6hdFWhCxtwJZ7CE0RTUegP09qFeHdfpk2sLiVMMpn3yUwcrjDoUCJBzeyG
+Bk+ssYJiWNxZG1kz6Ik9yHNRkWGDvXANmZbIgNMXnuKMluqePi0q3nO+U2DLlc9n8Pjokh+V
+R0NPjphhzfClSrgHRoqLVB0r6eyn6NDiKK6W2Ri53neYmYprYpfUV5yxE5cMO3boQ8c9dDrx
+a3r6/+h5ZpylEH7gKPFqIq5lYr3A/9H7H/OMqedX7GaZvwFQSwECFwsUAAAACABitoU7VyOl
+M8UAAADSAQAABwAJAAAAAAAAAAAAAIAAAAAAc3RyLmRhdFVUBQAH9eMaS1BLBQYAAAAAAQAB
+AD4AAAD7AAAAAAA=</Image>
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+					<Apply type="Component">
+						<Property name="isIndirectlyInstantiated" value="true"/>
+					</Apply>
+					<Apply type="Part">
+						<Property name="isReference" value="false"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Model" notes="" cx="142" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIALy2hTvqCNCavAAAAJgBAAAHABEAc3RyLmRhdFVUDQAHauQaS2rkGktq5BpL
+XZBLDoIwGIRnWxLvQFhhwkJJdGM4hSfgZTSplNgiC+LdnRZoxTT/g+n3T0s17ijRo0WMJ7sH
+OkyIILBjbvCiNlIrYbj3Jqf9RIo9Lo4TVBoujQHVhkhQQ3He0ElB8jvjSUccuLKlBpcwGf/N
+zfvTUi1Zk5SMitnyBSPBzamaSuJdBX0Urs67YTd62roPC2u5lW/pIfm/vXNKceJdbeQ+hzsL
+vptyL2NYZzbHeUNYr84Tq8sv8/GnR+wjfAFQSwECFwsUAAAACAC8toU76gjQmrwAAACYAQAA
+BwAJAAAAAAAAAAAAAIAAAAAAc3RyLmRhdFVUBQAHauQaS1BLBQYAAAAAAQABAD4AAADyAAAA
+AAA=</Image>
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+					<Apply type="Component">
+						<Property name="isIndirectlyInstantiated" value="true"/>
+					</Apply>
+					<Apply type="Part">
+						<Property name="isReference" value="false"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Scheduler" notes="" cx="142" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIACi3hTsFbW6hugAAANABAAAHABEAc3RyLmRhdFVUDQAHYOUaS2DlGktg5RpL
+hZBBDoIwEEX/FhPvQLrChIWasDKewhMA1WgC1kiRheHu/mmhKImaptN2/pvfaRuckeOGI2LU
+3F1wxRNLLBC5qHFntmM2h6X6INmEmgQr7AY6J6uptSg+CIUShvWWTgYVzynv2mDNkQ7r5DJV
+xrM6r4+9CVmSrDgLRuH3nAonl22YUcE1oo/BwXlr7rpAi3s7sP7FQtdk5KWWa4KMfWZvPUb0
+l38a9e1fQnShvhPe4zczv6UPHUvsXXwBUEsBAhcLFAAAAAgAKLeFOwVtbqG6AAAA0AEAAAcA
+CQAAAAAAAAAAAACAAAAAAHN0ci5kYXRVVAUAB2DlGktQSwUGAAAAAAEAAQA+AAAA8AAAAAAA
+</Image>
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+					<Apply type="Component">
+						<Property name="isIndirectlyInstantiated" value="true"/>
+					</Apply>
+					<Apply type="Part">
+						<Property name="isReference" value="false"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="SGBD" notes="" cx="114" cy="80" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAEa7hTsfIQczVgEAAE4FAAAHABEAc3RyLmRhdFVUDQAHO+waSzvsGks77BpL
+rVJBTsMwEJyrK/GHKlyK1AMUVYAQBw7cgAsPQG3SpkhpEiWhHKr8nVk7JjYyagPIstfambVn
+1q6xwQIlVhhjy90bcuxxghFjgReNJtx9EL/jjNCgwjv5EW41T/AENXNLrva0iWYW3D8ys2Qm
+Y2aKC5xzTHHJ9ezgCRVjSk0F1bjVV061zL5q7NUItofScYNXcjIiKRHrJiY7p9IV66yj3dFM
+uStmbkEkZYWoFn0yrVYTD3tNmBGPM8y1w/lXTds5cF1+761xKqsa4FQN8Kp+4VZRY6X/VKM9
+nuIZ93jCA3eRZhlnbccOr65v6ZJBrNtaK6q4lowNuRPn/i37tGOl9MuoFYU9Ls5zD7/xcDk5
+7pDrgFPjXmr6jH+CryDM8VW4N/zEOQb375AXTYI9WrMy4whh8rfk5JJ9Dr33zLkj5He4zv/q
+119frndk/6KN9rdafKRHy/kJUEsBAhcLFAAAAAgARruFOx8hBzNWAQAATgUAAAcACQAAAAAA
+AAAAAACAAAAAAHN0ci5kYXRVVAUABzvsGktQSwUGAAAAAAEAAQA+AAAAjAEAAAAA</Image>
+				<AppliesTo>
+					<Apply type="Object"/>
+				</AppliesTo>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+	</Content>
+</UMLProfile>

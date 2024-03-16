@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Iris.Runtime.Core.ParserObjects.FromList">
+    <Position X="8" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ParserEngine\ParserObjects\FromList.cs</FileName>
+      <HashCode>AAAAAQAAAAEAAIAIAACAAAAAAAAAAAQAAAAEAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Members" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Iris.Runtime.Core.ParserObjects.SelectQuery">
+    <Position X="4.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ParserEngine\ParserObjects\SelectQuery.cs</FileName>
+      <HashCode>AIAAAACAAAAAgAAIAIQAAQGEAAEBgAAACICAAQjAgAE=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Where" />
+      <Property Name="FromClause" />
+      <Property Name="Having" />
+      <Property Name="Union" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="JoinChain" />
+    </ShowAsCollectionAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Iris.Runtime.Core.ParserObjects.SubQuery">
+    <Position X="12" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ParserEngine\ParserObjects\SubQuery.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAgAAAAIAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Core.ParserObjects.FromTable">
+    <Position X="10" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ParserEngine\ParserObjects\FromTable.cs</FileName>
+      <HashCode>AAAAAAAAAAIAAAAIAAAAAAAAAAAAAAABAAAAAQAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Core.SqlParser" Collapsed="true">
+    <Position X="16.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ParserEngine\SqlParser.cs</FileName>
+      <HashCode>AEAgAAAAAAAAAAAMAAAAAgAAAAAAQgAAAAAIAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Core.ParserObjects.FromMember" Collapsed="true">
+    <Position X="8.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ParserEngine\ParserObjects\FromMember.cs</FileName>
+      <HashCode>AAAAAiAAAAIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Core.Expressions.Expression" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Expressions\Expression.cs</FileName>
+      <HashCode>AAAAAgAAAAAAAACAiAAIAAgAAAgBAAAAAAACAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+</ClassDiagram>

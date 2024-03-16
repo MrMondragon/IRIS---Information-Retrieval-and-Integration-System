@@ -1,0 +1,10 @@
+<Item>
+  <Name>Bookmarks</Name>
+  <Caption>Bookmarks</Caption>
+  <Description>
+The demo shows how to use bookmarks simplifying navigation through the text within edit control's content. 
+  </Description>
+  <Note>
+Just as with often used reference books, the process of navigating the text can be made more comfortable and efficient with the usage of bookmarks. Two kinds of bookmarks are supported by Editor.NET: plain and numbered. The former can be toggled for the current line using the Ctrl+K Ctrl+K key combination sequence, and can be navigated in cyclical manner using the Ctrl+K Ctrl+N (next bookmark) or Ctrl+K Ctrl+P (previous bookmark). The numbered bookmarks have a different flavor: there can be up to ten bookmarks, each having a number associated with it. Toggling the numbered bookmark is performed using the Ctrl+K Ctrl+#, and navigation to the specific bookmark is performed by pressing the Ctrl+# key combination (where # is any of the digits from 0 to 9).
+  </Note>
+</Item>

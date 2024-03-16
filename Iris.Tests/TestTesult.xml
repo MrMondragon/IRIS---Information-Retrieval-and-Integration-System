@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="D:\Projetos\IRIS 2.0\Iris.Tests\Iris.Tests.nunit" total="42" failures="0" not-run="0" date="2007-04-14" time="00:05:58">
+  <environment nunit-version="2.4.0.2" clr-version="2.0.50727.42" os-version="Microsoft Windows NT 5.1.2600 Service Pack 2" platform="Win32NT" cwd="D:\Prog\VS2005\Common7\IDE" machine-name="MONSTRO" user="Marcelo" user-domain="MONSTRO" />
+  <culture-info current-culture="pt-BR" current-uiculture="pt-BR" />
+  <test-suite name="D:\Projetos\IRIS 2.0\Iris.Tests\Iris.Tests.nunit" success="True" time="17.016" asserts="0">
+    <results>
+      <test-suite name="D:\Projetos\IRIS 2.0\Iris.Tests\bin\Debug\Iris.Tests.dll" success="True" time="17.000" asserts="0">
+        <results>
+          <test-suite name="Iris" success="True" time="16.984" asserts="0">
+            <results>
+              <test-suite name="Tests" success="True" time="16.969" asserts="0">
+                <results>
+                  <test-suite name="StructureFilesTest" success="True" time="16.922" asserts="0">
+                    <results>
+                      <test-case name="Iris.Tests.StructureFilesTest.Load2XEval" executed="True" success="True" time="0.594" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.LoadCCode" executed="True" success="True" time="0.813" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.LoadCCode2" executed="True" success="True" time="0.063" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.LoadDatasetCommand" executed="True" success="True" time="0.016" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.LoadDepositoLapa" executed="True" success="True" time="0.203" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.LoadDiallogger" executed="True" success="True" time="0.000" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.LoadFullTest" executed="True" success="True" time="0.000" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.LoadFullTest1" executed="True" success="True" time="0.016" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.LoadLookup" executed="True" success="True" time="0.016" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.LoadLookup1" executed="True" success="True" time="0.000" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.LoadLookup2" executed="True" success="True" time="0.016" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.LoadSubString" executed="True" success="True" time="0.172" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.LoadT1" executed="True" success="True" time="0.000" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.LoadTecFerV2" executed="True" success="True" time="0.016" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.LoadTecFerV3" executed="True" success="True" time="0.000" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.LoadTecFerV4" executed="True" success="True" time="0.016" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.LoadTesRSr" executed="True" success="True" time="0.000" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.LoadTestCommand" executed="True" success="True" time="0.000" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.LoadTestePersistenciaTabelas" executed="True" success="True" time="0.031" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.LoadTestInMemoryRS" executed="True" success="True" time="0.000" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.LoadTestScalar" executed="True" success="True" time="0.000" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.LoadTestUpdate" executed="True" success="True" time="0.016" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.LoadXEval" executed="True" success="True" time="0.016" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.Run2XEval" executed="True" success="True" time="0.234" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.RunCCode" executed="True" success="True" time="7.172" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.RunCCode2" executed="True" success="True" time="2.906" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.RunDatasetCommand" executed="True" success="True" time="1.266" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.RunDiallogger" executed="True" success="True" time="1.594" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.RunFullTest" executed="True" success="True" time="0.234" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.RunFullTest1" executed="True" success="True" time="0.188" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.RunLookup" executed="True" success="True" time="0.000" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.RunLookup1" executed="True" success="True" time="0.172" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.RunLookup2" executed="True" success="True" time="0.094" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.RunSubString" executed="True" success="True" time="0.016" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.RunT1" executed="True" success="True" time="0.016" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.RunTesRSr" executed="True" success="True" time="0.297" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.RunTestCommand" executed="True" success="True" time="0.031" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.RunTestePersistenciaTabelas" executed="True" success="True" time="0.359" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.RunTestInMemoryRS" executed="True" success="True" time="0.031" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.RunTestScalar" executed="True" success="True" time="0.000" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.RunTestUpdate" executed="True" success="True" time="0.172" asserts="0" />
+                      <test-case name="Iris.Tests.StructureFilesTest.RunXEval" executed="True" success="True" time="0.016" asserts="0" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

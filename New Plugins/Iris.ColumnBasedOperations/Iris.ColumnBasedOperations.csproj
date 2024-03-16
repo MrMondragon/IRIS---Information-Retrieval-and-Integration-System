@@ -1,0 +1,78 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1A733F4D-EC5E-49D3-A87B-B452DE515FE7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Iris.ColumnBasedOperations</RootNamespace>
+    <AssemblyName>Iris.ColumnBasedOperations</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Iris.Designer\bin\Debug\Plugins\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ColumnBasedOperations\AutoIncColumn.cs" />
+    <Compile Include="ColumnBasedOperations\ConstantColumn.cs" />
+    <Compile Include="ColumnBasedOperations\ConvertColumn.cs" />
+    <Compile Include="ColumnBasedOperations\CopyColumn.cs" />
+    <Compile Include="ColumnBasedOperations\CreateRelation.cs" />
+    <Compile Include="ColumnBasedOperations\DerivedColumn.cs" />
+    <Compile Include="ColumnBasedOperations\IIFOper.cs" />
+    <Compile Include="ColumnBasedOperations\IsNullOper.cs" />
+    <Compile Include="ColumnBasedOperations\Lookup.cs" />
+    <Compile Include="ColumnBasedOperations\NewColumn.cs" />
+    <Compile Include="ColumnBasedOperations\SubString.cs" />
+    <Compile Include="ColumnBasedOperations\TrimOper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Iris.Interfaces\Iris.Interfaces.csproj">
+      <Project>{507C1041-2A07-4637-A644-F5AA5D258A99}</Project>
+      <Name>Iris.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Iris.PropertyEditors\Iris.PropertyEditors.csproj">
+      <Project>{567D5875-FD91-4F5E-8205-8B797C4365CF}</Project>
+      <Name>Iris.PropertyEditors</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Iris.Runtime.Core\Iris.Runtime.Core.csproj">
+      <Project>{A7EBF228-737B-42A3-B798-5F0B1FE129D7}</Project>
+      <Name>Iris.Runtime.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Iris.Runtime.Model\Iris.Runtime.Model.csproj">
+      <Project>{9CD6D183-83C6-49DA-85D3-E5187A05C5EB}</Project>
+      <Name>Iris.Runtime.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,10 @@
+<Item>
+  <Name>Localization</Name>
+  <Caption>Localization</Caption>
+  <Description>
+The demo shows how to localize built-in dialogs to foreign languages.
+  </Description>
+  <Note>
+Currently German, French, Spanish, Russian and Ukrainian languages are supported, making it possible to use these languages in predefined Editor.NET dialogs.
+  </Note>
+</Item>

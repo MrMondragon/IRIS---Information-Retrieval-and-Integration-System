@@ -1,0 +1,10 @@
+<Item>
+  <Name>LineStyles</Name>
+  <Caption>Line Styles</Caption>
+  <Description>
+The demo shows how to highlight certain lines in the editor control.
+  </Description>
+  <Note>
+Line styles can be used to quickly change the visual appearance of certain lines. This can be used to visually indicate line properties, e.g. highlight breakpoints or mark the execution point.
+  </Note>
+</Item>

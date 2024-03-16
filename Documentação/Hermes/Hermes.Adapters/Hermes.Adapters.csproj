@@ -1,0 +1,103 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CF4DDF1A-15BD-49F6-A957-77CE18C3DE07}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hermes.Adapters</RootNamespace>
+    <AssemblyName>Hermes.Adapters</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v7.1, Version=7.1.1.0, Culture=neutral, PublicKeyToken=6264c14da073eac4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Prog\DXperience\DevExpress.DLL\DevExpress.Data.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v7.1, Version=7.1.1.0, Culture=neutral, PublicKeyToken=6264c14da073eac4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Prog\DXperience\DevExpress.DLL\DevExpress.Utils.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v7.1, Version=7.1.1.0, Culture=neutral, PublicKeyToken=6264c14da073eac4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Prog\DXperience\DevExpress.DLL\DevExpress.XtraEditors.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v7.1, Version=7.1.1.0, Culture=neutral, PublicKeyToken=6264c14da073eac4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Prog\DXperience\DevExpress.DLL\DevExpress.XtraGrid.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v7.1, Version=7.1.1.0, Culture=neutral, PublicKeyToken=6264c14da073eac4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Prog\DXperience\DevExpress.DLL\DevExpress.XtraPivotGrid.v7.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v7.1.Core, Version=7.1.1.0, Culture=neutral, PublicKeyToken=6264c14da073eac4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Prog\DXperience\DevExpress.DLL\DevExpress.XtraPivotGrid.v7.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DundasWinChart, Version=5.5.0.1696, Culture=neutral, PublicKeyToken=a4c03dce5db22406, processorArchitecture=MSIL" />
+    <Reference Include="DundasWinGauge, Version=1.6.2.2, Culture=neutral, PublicKeyToken=ed845c6a255edda6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Prog\Dundas\Gauge\Winforms\bin\DundasWinGauge.dll</HintPath>
+    </Reference>
+    <Reference Include="DundasWinMap, Version=1.0.3.300, Culture=neutral, PublicKeyToken=f663320fee7b829d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Prog\Dundas\Map\WinForms\bin\DundasWinMap.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ButtonAdapter.cs" />
+    <Compile Include="ChartAdapter.cs" />
+    <Compile Include="CubeAdapter.cs" />
+    <Compile Include="DesignSupport\DashAtributes.cs" />
+    <Compile Include="GaugeAdapter.cs" />
+    <Compile Include="GenericControlAdapter.cs" />
+    <Compile Include="GridAdapter.cs" />
+    <Compile Include="MapAdapter.cs" />
+    <Compile Include="ProccessControlAdapter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecordViewAdapter.cs" />
+    <Compile Include="RSControlAdapter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Adapters.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\IRIS 2.0\Iris.Runtime.Model\Iris.Runtime.Model.csproj">
+      <Project>{9CD6D183-83C6-49DA-85D3-E5187A05C5EB}</Project>
+      <Name>Iris.Runtime.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hermes.Model\Hermes.Model.csproj">
+      <Project>{01CE9A0E-5967-4621-AA23-56906708BCA9}</Project>
+      <Name>Hermes.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

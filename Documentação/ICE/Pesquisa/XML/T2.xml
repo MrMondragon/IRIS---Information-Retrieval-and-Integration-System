@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<TICEStructure>
+	<Name>SuperStructure</Name>
+	<ObjClass>clsNone</ObjClass>
+	<ConnectionList>
+		<Count>0</Count>
+	</ConnectionList>
+	<DatasetList>
+		<Count>0</Count>
+	</DatasetList>
+	<DBConnectionList>
+		<Count>2</Count>
+		<TICEDBConnection>
+			<Name></Name>
+			<ObjClass>clsNone</ObjClass>
+			<DBConnection>
+				<Tag>0</Tag>
+				<Attributes></Attributes>
+				<CommandTimeout>30</CommandTimeout>
+				<Connected>False</Connected>
+				<ConnectionString>Provider=SQLOLEDB.1;Password=sa;Persist Security Info=True;User ID=sa;Initial Catalog=BaseINDI;Data Source=MERCURIO</ConnectionString>
+				<ConnectionTimeout>30</ConnectionTimeout>
+				<ConnectOptions>coConnectUnspecified</ConnectOptions>
+				<CursorLocation>clUseServer</CursorLocation>
+				<IsolationLevel>ilCursorStability</IsolationLevel>
+				<KeepConnection>True</KeepConnection>
+				<LoginPrompt>False</LoginPrompt>
+				<Mode>cmUnknown</Mode>
+				<Provider>SQLOLEDB.1</Provider>
+			</DBConnection>
+		</TICEDBConnection>
+		<TICEDBConnection>
+			<Name></Name>
+			<ObjClass>clsNone</ObjClass>
+			<DBConnection>
+				<Tag>0</Tag>
+				<Attributes></Attributes>
+				<CommandTimeout>30</CommandTimeout>
+				<Connected>False</Connected>
+				<ConnectionString>Provider=SQLOLEDB.1;Password=sa;Persist Security Info=True;User ID=sa;Initial Catalog=Teste;Data Source=MERCURIO</ConnectionString>
+				<ConnectionTimeout>30</ConnectionTimeout>
+				<ConnectOptions>coConnectUnspecified</ConnectOptions>
+				<CursorLocation>clUseClient</CursorLocation>
+				<IsolationLevel>ilCursorStability</IsolationLevel>
+				<KeepConnection>True</KeepConnection>
+				<LoginPrompt>False</LoginPrompt>
+				<Mode>cmUnknown</Mode>
+				<Provider>SQLOLEDB.1</Provider>
+			</DBConnection>
+		</TICEDBConnection>
+	</DBConnectionList>
+	<ShapedObjectList>
+		<Count>0</Count>
+	</ShapedObjectList>
+	<VarList>
+		<Count>0</Count>
+	</VarList>
+</TICEStructure>

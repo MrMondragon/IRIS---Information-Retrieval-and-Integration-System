@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Parser.Expressions.LogicExpression">
+    <Position X="9.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Expressions\LogicExpression.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAAAIAgAAAAIAAAAAAAAAAAAAAAAABAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="Parser.Expressions.Expression">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Expressions\Expression.cs</FileName>
+      <HashCode>AAAAAgAAAAAAAAAAiAAIAAgAAAAAAAAAAAACAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Parser.Expressions.IdValue" Collapsed="true">
+    <Position X="11.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Expressions\IdValue.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAACAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Parser.Expressions.Operation">
+    <Position X="7.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Expressions\Operation.cs</FileName>
+      <HashCode>AADAAAAAIAAAACAIggAAAIIAAAAAAGAAAAAgAAAAgAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Oper" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="Parser.Expressions.GroupExpression">
+    <Position X="9.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>GroupExpression.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAACAAAAAgAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Core.Expressions.Expression" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Expressions\Expression.cs</FileName>
+      <HashCode>AAAAAgAAAAAAAACAiAAIAAgAAAgBAAAAAAACAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Iris.Runtime.Core.Expressions.IdValue" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Expressions\IdValue.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAACAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Core.Expressions.LogicExpression" Collapsed="true">
+    <Position X="5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Expressions\LogicExpression.cs</FileName>
+      <HashCode>AAAEAAAAAAAAAAAIAgAAAAIAAAAAAATAAAAEwAAABAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Core.Expressions.Operation" Collapsed="true">
+    <Position X="2.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Expressions\Operation.cs</FileName>
+      <HashCode>AADAAAAAIAAAACAIggAAAIIAAAAAAGAAAAAgAAAAgAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Parser.Operator">
+    <Position X="4.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Iris.Runtime.Core.Operator" Collapsed="true">
+    <Position X="9.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Expressions\Operator.cs</FileName>
+      <HashCode>AAUAAAACAAgAAAACAAAAAJAWAAAAAAAAAEAAAFAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Iris.Runtime.Core.LogicOperator" Collapsed="true">
+    <Position X="7.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Expressions\Operator.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgIAAAAAAAAAAEAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>

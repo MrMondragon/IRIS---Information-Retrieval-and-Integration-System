@@ -1,0 +1,289 @@
+! ---- Not Supported -----
+! Quoted Identifiers
+!
+"Name"         = 'SQL'
+"Version"      = ''
+"About"        = ''
+
+"Case Sensitive" = False 
+"Start Symbol" = <SQL Stms>
+
+{String Ch 1}      = {Printable} - ["] + {Printable Extended}
+{String Ch 2}      = {Printable} - [''] + {Printable Extended}
+{Id Ch Standard}   = {Alphanumeric} + [_.] 
+{Id Ch Extended}   = {Printable} - ['['] - [']'] + [_.]
+{Hex Digit}     = {Digit} + [abcdef]
+{Id Tail}       = {Alphanumeric} + [_]
+{ID Name Chars} = {Printable} - ['['']']
+{Id XEval}         = {Printable} -['{'] - ['}']
+
+Comment Start = '/*'
+Comment End   = '*/'
+Comment Line  = '--'
+
+StringLiteral   = '"' ({String Ch 1} | '""')* '"' | ('N'|'n')? '' ({String Ch 2} | '''')* ''
+IntegerLiteral  = {Digit}+
+RealLiteral     = {Digit}* '.' {Digit}+ ( 'E' [+-]? {Digit}+ )? | {Digit}+ 'E' [+-]? {Digit}+
+XEvalExpresion  = '{'{Id XEval}+'}'
+
+!----- Identifiers in SQL are very complex. 
+
+Identifier    = ( ({Letter}|'#'|'@'|'_')('#')?{Id Ch Standard}*('.''*')? | '['{Id Ch Extended}*']'('.')* )+
+
+<Type> ::= Identifier
+           | Identifier '(' IntegerLiteral ')'
+           | Identifier '(' IntegerLiteral ',' IntegerLiteral ')'
+
+<SQL Stms> ::= <SQL Stm> <Go> <SQL Stms>
+             | <SQL Stm> <Go>
+ 
+<SQL Stm> ::= <Union Stm>
+        | <Insert Stm>
+        | <Update Stm>
+        | <Delete Stm>
+        | <Truncate Stm>
+        | <Set Stm>
+        | <Declare Stm>
+        | <Eval Stm>
+
+
+<Go> ::= GO | ';' |
+
+!------------------------------------------------------------ Declare
+
+<Eval Stm> ::= EVAL <base expression>
+
+!------------------------------------------------------------ Declare
+
+<Declare Stm> ::= DECLARE <Declare Variables>
+
+<Declare Variables> ::= <Declare Variables> ',' <Declare Variable> | <Declare Variable>
+
+<Declare Variable> ::= Identifier <type> <Default Value>
+
+<Default Value> ::= '=' <Expression> |
+
+!------------------------------------------------------------ SET
+
+<Set Stm> ::= SET Identifier '=' <Expression>
+
+!------------------------------------------------------------ INSERT
+
+<Insert Stm>    ::= INSERT <Into> Identifier <Insert Columns> <Union Stm>
+                  | INSERT <Into> Identifier <Insert Columns> VALUES <Insert Arrays>
+		    | INSERT <Into> Identifier DEFAULT VALUES
+                  | INSERT <Into> Identifier SET <Assign List> ! MySql
+
+<Insert Columns> ::= '(' <Id List> ')' |
+
+<Into>	::= INTO |
+
+<Insert List> ::= <Insert List> ',' <Expression>
+		| <Expression>
+
+<Insert Arrays> ::= '(' <Insert List> ')' ',' <Insert Arrays>
+              | '(' <Insert List> ')'
+
+!------------------------------------------------------------ UPDATE
+
+<Update Stm>    ::= UPDATE Identifier SET <Assign List> <From Clause> <Where Clause>
+
+<Assign List>   ::= Identifier '=' <Expression>',' <Assign List>
+                  | Identifier '=' <Expression>
+
+!------------------------------------------------------------ DELETE
+
+<Delete Stm>    ::= DELETE <From> Identifier <Where Clause>
+
+<From> ::= FROM |
+
+!------------------------------------------------------------ TRUNCATE
+
+<Truncate Stm> ::= TRUNCATE TABLE Identifier
+
+!------------------------------------------------------------ UNION
+
+<Union Stm>     ::= <Select Stm> <Union> <Union Stm>
+                  | <Select Stm>
+
+<Union>         ::= UNION ALL
+                  | UNION
+
+!------------------------------------------------------------ SELECT
+
+<Select Stm>    ::= SELECT <Columns> <Into Clause> <From Clause> <Where Clause> <Group Clause> <Having Clause> <Order Clause>
+
+<Columns>       ::= <Restriction> <top> '*'
+                  | <Restriction> <top> <Column List>
+
+<top>           ::= TOP IntegerLiteral PERCENT
+                  | TOP IntegerLiteral 
+                  |
+
+<Column List>   ::= <Column Source> ',' <Column List>
+                  | <Column Source>
+
+<Column Source> ::= Identifier '=' <expression> !alias=expression
+                  | <expression> <alias>
+                  | Idendifier                  !see above for .*
+
+<alias>         ::= AS Identifier
+                  | AS StringLiteral
+                  | Identifier
+                  |
+
+<all distinct>   ::= ALL
+                  | DISTINCT
+
+<restriction>    ::= <all distinct>
+                  |
+
+<Into Clause>   ::= INTO Identifier
+                  |
+
+<From Clause>   ::= FROM <table source list>
+                  |
+
+<table source list> ::= <table source> ',' <table source list>
+                  | <table source> CROSS JOIN <table source list>
+                  | <table source>
+
+<table source> ::= Identifier <alias>
+                  | '(' <Union Stm> ')' <alias>
+                  | '(' <table source list> ')' <alias>
+                  | <Joined Table>
+
+
+<Joined Table> ::= <table source> <join type> JOIN <table source> ON <search list>
+                  | '(' <joined table> ')'
+
+
+<join type> ::= INNER
+                | LEFT
+                | LEFT OUTER
+                | RIGHT
+                | RIGHT OUTER
+                | FULL
+                | FULL OUTER
+                |
+
+
+<Where Clause>  ::= WHERE <search list>
+                  |
+
+<Group Clause>  ::= GROUP BY <Id List>
+                  | GROUP BY ALL
+                  |
+
+<Id List>     ::= <expression> <alias> ',' <Id List> 
+                | <expression> <alias>
+
+<Order Clause>  ::= ORDER BY <Order List>
+                  |
+
+<Order List>    ::= <Order Type> <Sort Type> ',' <Order List>
+                  | <Order Type> <Sort Type>
+
+<Order Type>    ::= Identifier
+                  | IntegerLiteral
+
+<Sort Type>    ::= ASC
+                  | DESC
+                  |
+
+<Having Clause> ::= HAVING <search list>
+                  |
+ 
+!------------------------------------------------------------ Expressions
+<base expression> ::= <search list> | <predicate>
+
+<search list>  ::= <search list> AND <not> <predicate> <alias>
+                | <search list> OR <not> <predicate> <alias>
+                | <not> <predicate> <alias>
+
+<not>         ::= NOT
+                |
+
+<predicate> ::= <comparison>
+                | <Expression>
+                | <Expression> <not> LIKE <Expression>
+                | <Expression> <not> BETWEEN <Expression> AND <Expression>
+                | <Expression> IS <not> NULL          ! tuple not supported
+                | <Expression> <not> IN '(' <Union Stm> ')'
+                | <Expression> <not> IN '(' <Expression List> ')'
+                | EXISTS '(' <Union Stm> ')'
+
+<comparison> ::= <Expression> '>'  <Expression>
+                | <Expression> '<'  <Expression> 
+                | <Expression> '<=' <Expression> 
+                | <Expression> '>=' <Expression>
+                | <Expression> '='  <Expression>    !Equal
+                | <Expression> '<>' <Expression>    !Not equal
+                | <Expression> '!=' <Expression>    !Not equal
+
+
+
+<expression list> ::= <expression> ',' <expression list>
+                | <expression>
+
+<Expression>  ::= <Expression> '+' <Mult Expression>
+                | <Expression> '-' <Mult Expression>
+                | <Expression> '&' <Mult Expression>
+                | <Expression> '|' <Mult Expression>
+                | <Expression> '^' <Mult Expression>
+                | <Mult Expression>
+                
+<Mult Expression> ::= <Mult Expression> '*' <Unary Exp>
+                | <Mult Expression> '/' <Unary Exp>
+                | <Mult Expression> '%' <Unary Exp>
+                | <Unary Exp>
+
+<Unary Exp>  ::= '-' <Value>
+                | '+' <Value>
+                | '~' <Value>
+                | <Value>
+        
+<Value>       ::= '(' <search list> ')'
+                | '(' <Union Stm> ')'
+                | IntegerLiteral
+                | RealLiteral
+                | StringLiteral
+                | NULL
+                | DEFAULT
+                | <case>
+                | Identifier <Argument List Opt>  ! user-defined function
+                | <special function>
+                | <Parameter>
+                | XEvalExpresion
+
+<Parameter>  ::= ':'Identifier
+
+<case>        ::= CASE <casetype> <casewhen list> <caseelse> END
+
+<casetype>    ::= <expression>
+                |
+
+<casewhen list> ::= <casewhen> <casewhen list>
+               | <casewhen>
+
+<casewhen>    ::= WHEN <search list> THEN <expression>
+
+<caseelse>    ::= ELSE <expression>
+               |
+
+<special function> ::= CAST '(' <expression> AS <type> ')'
+	  | CONVERT '(' <type> ',' <expression> <style> ')'
+
+<style> ::= ',' IntegerLiteral | ',' StringLiteral |
+
+<Argument List Opt> ::= '(' <restriction> <Argument List> ')'
+                      |
+                       
+<Argument List>  ::= <Argument List> ',' <function args>
+		| <function args>
+
+<function args>
+        ::= '*' 
+	  | <expression> <alias>
+         |
+

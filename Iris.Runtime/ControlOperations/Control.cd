@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Iris.Runtime.Model.Operations.Control.ControlOperation" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Operations\Control\ControlOperation.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.Control.AssemblyRunner" Collapsed="true">
+    <Position X="4.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Operations\Control\AssemblyRunner.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="Iris.Runtime.Model.Operations.Control.ControlOperation" FixedToPoint="true">
+      <Path>
+        <Point X="3.25" Y="1.13" />
+        <Point X="3.25" Y="1.562" />
+        <Point X="4.25" Y="1.562" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.Control.BulkLoad" Collapsed="true">
+    <Position X="4.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Operations\Control\BulkLoad.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.Control.SubStructure" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Operations\Control\SubStructure.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.Control.ContainerOperation" Collapsed="true">
+    <Position X="4.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Operations\Control\ContainerOperation.cs</FileName>
+      <HashCode>BAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.Control.CCode" Collapsed="true">
+    <Position X="5.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Operations\Control\CCode.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="Iris.Runtime.Model.Operations.Control.ScriptedOperation" FixedToPoint="true">
+      <Path>
+        <Point X="5" Y="9.38" />
+        <Point X="5" Y="10.062" />
+        <Point X="5.75" Y="10.062" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.Control.DataFlow" Collapsed="true">
+    <Position X="5.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Operations\Control\DataFlow.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.Control.ExternalProccess" Collapsed="true">
+    <Position X="4.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Operations\Control\ExternalProccess.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="Iris.Runtime.Model.Operations.Control.ControlOperation" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.25" Y="1.13" />
+        <Point X="3.25" Y="5.312" />
+        <Point X="4.25" Y="5.312" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.Control.ForEachLoop" Collapsed="true">
+    <Position X="5.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Operations\Control\ForEachLoop.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.Control.Loop" Collapsed="true">
+    <Position X="4.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Operations\Control\Loop.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.Control.ForLoop" Collapsed="true">
+    <Position X="5.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Operations\Control\ForLoop.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.Control.WhileLoop" Collapsed="true">
+    <Position X="5.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Operations\Control\WhileLoop.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.Control.ScriptedOperation" Collapsed="true">
+    <Position X="4.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Operations\Control\ScripttedOperation.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="Iris.Runtime.Model.Operations.Control.ControlOperation" FixedToPoint="true">
+      <Path>
+        <Point X="3.25" Y="1.13" />
+        <Point X="3.25" Y="9.062" />
+        <Point X="4.25" Y="9.062" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.Control.SQLCommand" Collapsed="true">
+    <Position X="5.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Operations\Control\SQLCommand.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.Control.WebServiceTask" Collapsed="true">
+    <Position X="4.25" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Operations\Control\WebServiceTask.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="Iris.Runtime.Model.Operations.Control.ControlOperation" FixedToPoint="true">
+      <Path>
+        <Point X="3.25" Y="1.13" />
+        <Point X="3.25" Y="11.562" />
+        <Point X="4.25" Y="11.562" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+</ClassDiagram>

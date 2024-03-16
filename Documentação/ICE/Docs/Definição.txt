@@ -1,0 +1,36 @@
+Escopo geral
+
+	Sistema manipulação e transformação de dados com interface visual baseada
+        em componentes e eventos.
+
+Palavras chave
+        Interface Simbólica, Código Estruturado, Componentes, Script, Interpretação
+        Eventos, Estruturas
+
+Requisitos:
+
+        Permitir o processamento de fórmulas matemáticas dinâmicas
+        Interagir com bancos de dados através de conexões dinâmicas
+        Transportar dados de um banco a a outro
+        Processar lotes e cursores, bem como sentenças sql simples e instruções em pascal script
+        Suportar FulText search dentro de todos os componentes ou em sub-sets lógicos
+        Permitir a persistência de estruturas em arquivos
+        Permitir que estruturas manipulem sua própria persistência, chamando outras estruras em arquivos, por exemplo
+        Possuir um módulo interpretador independente do módulo de interface.
+        Gerar arquivos compactos, bem como dar suporte à persistência de estruturas em Banco de dados
+        Suportar o uso de variáveis dinâmicas persistentes
+        Suportar eventos de Falha, Sucesso e Término nos componentes
+        Suportar interação básica com o usuário através de mensagens e diálogos dinâmicos.
+        Permitir a visualização de resultsets SQL.
+        Exibir a quantidade de registros afetados por uma operação SQL antes de aplicar essa operação ao banco (substituir insert por select count, por ex)
+        Exibir feedback visual opcional para o andamento das operações
+        Suportar debug de script (BreakPoints, comments, compile, etc)
+        Suportar Breakpoints e debug de estruturas.
+        Dar acesso a classes Delphi de dentro da interface de script, com suporte a comparação de tipos, typecast, iteração de componentes child, etc.
+        Implementar classes que encapsulem completamente o acesso a bancos, tabelas e campos
+        Permitir a visualização simultânea do código e da estrutura visual
+        Permitir a navegação de estrutura para sub-estrutura e de volta
+        Permitir a importação de funções hard-coded para a linguagem de script
+
+
+

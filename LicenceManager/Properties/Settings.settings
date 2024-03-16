@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="LicenceManager.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="LicenceManager_br_com_databridge_services_DbGen" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://services.databridge.com.br/DbGen.asmx</Value>
+    </Setting>
+    <Setting Name="LicenceManager_br_com_databridge_services1_ClientServices" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://services.databridge.com.br/ClientServices.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

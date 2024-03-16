@@ -1,0 +1,511 @@
+! ---- Not Supported -----
+! Quoted Identifiers
+!
+"Name"         = 'IRISSQL'
+"Version"      = ''
+"About"        = ''
+
+"Case Sensitive" = False 
+"Start Symbol" = <SQL Stms>
+
+{String Ch 1}      = {Printable} - ["] + {Printable Extended}
+{String Ch 2}      = {Printable} - [''] + {Printable Extended}
+{Id Ch Standard}   = {Alphanumeric} + [_]
+{Id Ch Extended}   = {Printable} - ['['] - [']']
+{Id XEval}         = {Printable} -['{'] - ['}']
+{Hex Digit}     = {Digit} + [abcdef]
+{Id Tail}       = {Alphanumeric} + [_]
+{ID Name Chars} = {Printable} - ['['']']
+
+Comment Start = '/*'
+Comment End   = '*/'
+Comment Line  = '--'
+
+StringLiteral   = '"' ({String Ch 1} | '""')* '"' | ('N'|'n')? '' ({String Ch 2} | '''')* ''
+IntegerLiteral  = {Digit}+
+RealLiteral     = {Digit}* '.' {Digit}+ ( 'E' [+-]? {Digit}+ )? | {Digit}+ 'E' [+-]? {Digit}+
+HexLiteral      = '0x'{Hex Digit}+ [SIL]?
+XEvalExpresion  = '{'{Id XEval}+'}'
+
+!----- Identifiers in SQL are very complex. 
+
+Identifier    = ( ({Letter}|'#'|'@'|'_')('#')?{Id Ch Standard}*('.''*')? | '['{Id Ch Extended}*']'('.')* )+
+
+<Type> ::= Identifier
+           | Identifier '(' IntegerLiteral ')'
+           | Identifier '(' IntegerLiteral ',' IntegerLiteral ')'
+
+<SQL Stms> ::= <SQL Stms> ';' <SQL Stm>
+            | <SQL Stms> ';'
+            | <SQL Stm>
+
+<SQL Stm> ::= <Union Stm>
+		| <Insert Stm>
+		| <Update Stm>
+		| <Delete Stm>
+		| <Truncate Stm>
+		| <Create Table Stm>
+              | <Create Index Stm>
+              | <Drop Table Stm>
+              | <Drop Index Stm>
+              | <Set Stm>
+              | <Save Stm>
+              | <Create Database Stm>
+              | <Drop Database Stm>
+              | <Merge Stm>
+              | <Alter Table Stm>
+              | <Alter Database Stm>
+
+
+!------------------------------------------------------------ ALTER
+
+<Alter Database Stm> ::= ALTER DATABASE Identifier <database options>
+                       | ALTER DATABASE Identifier RENAME TO Identifier
+
+<Alter Table Stm> ::= ALTER TABLE Identifier <alter type>
+                    | ALTER TABLE Identifier RENAME TO Identifier
+                    | ALTER TABLE Identifier RENAME <column> Identifier TO Identifier
+
+<column> ::= COLUMN |
+
+<alter type> ::= ALTER COLUMN Identifier <type> <collation> <Alter Null> <alter column set> <alter column drop>
+               | <with check nocheck> ADD <Create Columns>
+               | DROP <drop list> 
+               | <check nocheck> CONSTRAINT <alter check clause>
+
+<alter column set> ::= SET <Default Constraint> | SET <Identity Constraint> | ADD ROWGUIDCOL | SET ROWGUIDCOL |
+
+<alter column drop> ::= DROP DEFAULT | DROP IDENTITY | DROP ROWGUIDCOL |
+
+<alter null> ::= <Null Not Null> |
+
+<with check nocheck> ::= WITH CHECK | WITH NOCHECK |
+
+
+<drop list> ::= <drop list> ',' <drop clause>
+              | <drop clause>
+
+
+<drop clause> ::= COLUMN Identifier
+                | CONSTRAINT Identifier
+
+<check nocheck> ::= CHECK | NOCHECK
+
+<alter check clause> ::= ALL | <Identifier List>
+
+!------------------------------------------------------------ MERGE
+
+
+<Merge Stm> ::= MERGE <top> <into> Identifier <alias> USING <table source> ON <search list> <when condition list>
+             | MERGE DATABASE Identifier USING <merge source> Identifier <merge options>
+             | MERGE TABLE Identifier USING TABLE Identifier <merge options>
+
+<merge source> ::= DATABASE | TABLE
+
+<merge options> ::= SET <merge options list> |
+
+<merge options list> ::= <merge options list> ',' <merge option>
+                  | <merge option>
+
+<merge option> ::= <preserve changes> | <missing schema action>
+
+<preserve changes> ::= PRESERVECHANGES <OnOff>
+
+<missing schema action> ::= MISSINGSCHEMAACTION <schema action>
+
+<schema action> ::= ERROR | IGNORE
+
+<when condition list> ::= <when condition list> <when condition>
+                | <when condition>
+
+<when condition> ::= <when matched> | <when target not matched> | <when source not matched>
+
+<when matched> ::= WHEN MATCHED <and search> THEN <merge_matched>
+
+<when target not matched> ::= WHEN <target> NOT MATCHED <and search> THEN <merge_not_matched>
+
+<target> ::= TARGET |
+
+<when source not matched> ::= WHEN SOURCE NOT MATCHED <and search> THEN <merge_matched>
+
+<and search> ::= AND <search list> |
+
+<merge_matched>::= UPDATE SET <Assign List> | DELETE 
+
+<merge_not_matched> ::= INSERT <Insert Columns> VALUES '(' <Insert List> ')'
+
+
+!------------------------------------------------------------ SAVE, LOAD and UNLOAD
+
+<Save Stm> ::= SAVE DATABASE Identifier <into> <file> <save format> 
+          | SAVE TABLE Identifier <into> StringLiteral <save format> <write hierarchy>
+
+<file> ::= StringLiteral |
+
+<save format> ::= Identifier <compressed> <save schema> |
+
+<save schema> ::= IGNORESCHEMA | DIFFGRAM |
+
+<compressed> ::= COMPRESSED |
+
+<write hierarchy> ::= WRITEHIERARCHY | 
+
+<Create Database Stm> ::= CREATE DATABASE <database name> <source> <database options>
+
+<database name> ::= AS Identifier | Identifier |
+
+<source> ::= EMPTY | FROM <create format> 
+
+<create format> ::= Identifier <compressed> StringLiteral <use schema>
+
+<use schema> ::= USE SCHEMA <compressed> StringLiteral <namespace> <prefix>  |
+
+<namespace> ::= NAMESPACE StringLiteral |
+
+<prefix> ::= PREFIX StringLiteral |
+
+<database options> ::= SET <db options list> |
+
+<db options list> ::= <db options list> ',' <db option>
+                  | <db option>
+
+
+<db option> ::= <casesensitive> | <enforceconstraints>
+
+<casesensitive> ::= CASESENSITIVE <OnOff>
+
+<enforceconstraints> ::= ENFORCECONSTRAINTS <OnOff>
+
+<Drop Database Stm> ::= DROP DATABASE Identifier <force>
+
+<force> ::= IGNORECHANGES |
+
+!------------------------------------------------------------ SET
+
+<Set Stm> ::= SET FMTONLY <OnOff>
+            | SET ROWCOUNT IntegerLiteral
+
+<OnOff> ::= ON | OFF |
+
+!------------------------------------------------------------ CREATE TABLE
+
+<Create Table Stm> ::= CREATE TABLE Identifier '(' <Create Columns> ')'
+
+<Create Columns> ::= <Create Columns> ',' <Create Column>
+             | <Create Column>
+
+<Create Column> ::= <Column Definition>
+             | Identifier AS <Expression> ! not implemented
+             | Identifier <Type> AS StringLiteral ! String must be a valid ADO.NET Expression
+             | <Table Constraint>
+
+<Table Constraint> ::= CONSTRAINT Identifier <Table Constraint Type> | <Table Constraint Type>
+
+<Table Constraint Type> ::= <Primary Key> | <Foreign Key> | <Check Constraint> | <Default Constraint>
+
+<Column Definition> ::= Identifier <Type> <Collation> <Constraint List>
+
+<Collation> ::= COLLATE Identifier |
+
+<Constraint List> ::= <Constraint List> <Column Constraint> 
+             | <Column Constraint> 
+             |
+
+<Column Constraint> ::= CONSTRAINT Identifier <Column Constraint Type> | <Column Constraint Type>
+
+<Column Constraint Type> ::= <Null Not Null> | <Default Constraint> | <Identity Constraint> | <RowGuidCol> | <Primary Key> | <Foreign Key> | <Check Constraint>
+
+<Null Not Null> ::=  NULL | NOT NULL
+
+<RowGuidCol> ::= ROWGUIDCOL
+
+<Default Constraint> ::= DEFAULT <Expression> <For Column> <With Values>
+
+
+<For Column> ::= FOR Identifier |
+
+<With Values> ::= WITH VALUES |
+
+<Identity Constraint> ::= IDENTITY
+	     | IDENTITY '(' <Integer Value> ',' <Integer Value> ')' ! seed, increment 
+
+<Integer Value> ::= '-' IntegerLiteral      
+		  | '+' IntegerLiteral      
+		  | IntegerLiteral      
+
+<Primary Key> ::= <Primary Unique> <Clustered UnClustered> <Constraint Columns> 
+
+<Primary Unique> ::= PRIMARY KEY | UNIQUE
+
+<Clustered Unclustered> ::= CLUSTERED | NONCLUSTERED |
+
+<Constraint Columns> ::= '(' <Constraint Column List> ')'
+		|
+
+<Foreign Key> ::= FOREIGN KEY REFERENCES Identifier <Ref Columns> <Rule> <Rule>
+		| FOREIGN KEY '(' <Constraint Column List> ')' REFERENCES Identifier <Ref Columns> <Rule> <Rule>
+              | REFERENCES Identifier <Ref Columns> <Rule> <Rule>
+
+<Rule> ::= ON DELETE <Action> | ON UPDATE <Action> |
+
+<Action> ::= CASCADE | NO ACTION | SET DEFAULT | SET NULL
+
+<Ref Columns> ::= '(' <Id List> ')' |
+
+<Check Constraint> ::= CHECK <search list> 
+
+<Constraint Column List> ::= <Constraint Column List> ',' <Constraint Column>
+		| <Constraint Column>
+
+<Constraint Column> ::= Identifier <Sort Type>
+
+!------------------------------------------------------------ CREATE INDEX
+
+<Create Index Stm> ::= CREATE <Unique> <Clustered Unclustered> INDEX Identifier ON Identifier '(' <Constraint Column List> ')'
+
+<Unique> ::= UNIQUE |
+
+!------------------------------------------------------------ DROP TABLE
+
+<Drop Table Stm> ::= DROP TABLE Identifier
+
+!------------------------------------------------------------ DROP INDEX
+
+<Drop Index Stm> ::= DROP INDEX <Identifier List>
+
+<Identifier List> ::= <Identifier List> ',' Identifier
+               | Identifier
+
+!------------------------------------------------------------ INSERT
+
+<Insert Stm>    ::= INSERT <Into> Identifier <Insert Columns> <Union Stm>
+                  | INSERT <Into> Identifier <Insert Columns> VALUES <Insert Arrays>
+		    | INSERT <Into> Identifier DEFAULT VALUES
+
+<Insert Columns> ::= '(' <Id List> ')' |
+
+<Into>	::= INTO |
+
+<Insert Update Item> ::= <Expression>
+		| DEFAULT
+!		| NULL ! comes from <value> rule
+
+<Insert List> ::= <Insert List> ',' <Insert Update Item>
+		| <Insert Update Item>
+
+<Insert Arrays> ::= '(' <Insert List> ')' ',' <Insert Arrays>
+              | '(' <Insert List> ')'
+
+!------------------------------------------------------------ UPDATE
+
+<Update Stm>    ::= UPDATE Identifier SET <Assign List> <From Clause> <Where Clause>
+
+<Assign List>   ::= Identifier '=' <Insert Update Item> ',' <Assign List>
+                  | Identifier '=' <Insert Update Item> 
+
+!------------------------------------------------------------ DELETE
+
+<Delete Stm>    ::= DELETE <From> Identifier <Where Clause>
+
+<From> ::= FROM |
+
+!------------------------------------------------------------ TRUNCATE
+
+<Truncate Stm> ::= TRUNCATE TABLE Identifier
+
+!------------------------------------------------------------ UNION
+
+<Union Stm>     ::= <Select Stm> <Union> <Union Stm>
+                  | <Select Stm>
+
+<Union>         ::= UNION ALL
+                  | UNION
+
+!------------------------------------------------------------ SELECT
+
+<Select Stm>    ::= SELECT <Columns> <Into Clause> <From Clause> <Where Clause> <Group Clause> <Having Clause> <Order Clause>
+
+<Columns>       ::= <Restriction> <top> '*'
+                  | <Restriction> <top> <Column List>
+
+<top>           ::= TOP IntegerLiteral PERCENT
+                  | TOP IntegerLiteral 
+                  |
+
+<Column List>   ::= <Column Source> ',' <Column List>
+                  | <Column Source>
+
+<Column Source> ::= Identifier '=' <expression> !alias=expression
+                  | StringLiteral '=' <expression>
+                  | <expression> <alias>
+                  | Idendifier                  !see above for .*
+
+<alias>         ::= AS Identifier
+                  | AS StringLiteral
+                  | Identifier
+                  |
+
+<all distinct>   ::= ALL
+                  | DISTINCT
+
+<restriction>    ::= <all distinct>
+                  |
+
+<Into Clause>   ::= INTO Identifier
+                  |
+
+<From Clause>   ::= FROM <table source list>
+                  |
+
+<table source list> ::= <table source> ',' <table source list>
+                  | <table source> CROSS JOIN <table source list>
+                  | <table source>
+
+<table source> ::= Identifier <alias>
+                  | '(' <Union Stm> ')' <alias> <optional identifier list>
+                  | '('<table source list>')' <alias>
+                  | <Joined Table>
+                  | <rowset function>
+
+<optional identifier list> ::= '(' <Identifier List> ')' |
+
+<Joined Table> ::= <table source> <join type> JOIN <table source> ON <search list>
+                  | '(' <joined table> ')'
+
+
+<join type> ::= INNER
+                | LEFT
+                | LEFT OUTER
+                | RIGHT
+                | RIGHT OUTER
+                | FULL
+                | FULL OUTER
+                |
+
+<rowset function> ::= OPENROWSET '(' StringLiteral ',' StringLiteral ',' <rowset source> ')' <alias>
+                | OPENROWSET '(' StringLiteral ',' <rowset source> ')' <alias>
+
+<rowset source> ::= Identifier | StringLiteral
+
+
+
+<Where Clause>  ::= WHERE <search list>
+                  |
+
+<Group Clause>  ::= GROUP BY <Id List>
+                  | GROUP BY ALL
+                  |
+
+<Id List>     ::= <expression> <alias> ',' <Id List> 
+                | <expression> <alias>
+
+<Order Clause>  ::= ORDER BY <Order List>
+                  |
+
+<Order List>    ::= <Order Type> <Sort Type> ',' <Order List>
+                  | <Order Type> <Sort Type>
+
+<Order Type>    ::= Identifier
+                  | IntegerLiteral
+
+<Sort Type>    ::= ASC
+                  | DESC
+                  |
+
+<Having Clause> ::= HAVING <search list>
+                  |
+ 
+!------------------------------------------------------------ Expressions
+
+<search list>  ::= <search list> AND <not> <predicate> <alias>
+                | <search list> OR <not> <predicate> <alias>
+                | <not> <predicate> <alias>
+
+<not>         ::= NOT
+                |
+
+<predicate> ::= <comparisons> ! { ALL | SOME | ANY} not supported
+                | <Expression> <not> LIKE <Expression> !both sides must evaluate to string literal. ADO only supports % or * at beginning or end, not middle
+                | <Expression> <not> BETWEEN <Expression> AND <Expression>
+                | <Expression> IS <not> NULL          ! tuple not supported
+                | <Expression> <not> IN '(' <Union Stm> ')'
+                | <Expression> <not> IN '(' <Expression List> ')'
+                | EXISTS '(' <Union Stm> ')'
+!               | CONTAINS ( { column | * } , '< contains_search_condition >' ) 
+!               | FREETEXT ( { column | * } , 'freetext_string' ) 
+
+<comparisons> ::= <Expression> '>'  <Expression> 
+                | <Expression> '<'  <Expression> 
+                | <Expression> '<=' <Expression> 
+                | <Expression> '>=' <Expression>
+                | <Expression> '='  <Expression>    !Equal
+                | <Expression> '<>' <Expression>    !Not equal
+                | <Expression> '!=' <Expression>    !Not equal
+                | <Expression>
+!                | <Expression> '!>' <Expression>    !not greater than
+!                | <Expression> '!<' <Expression>    !not less than
+
+<expression list> ::= <expression> ',' <expression list>
+                | <expression> 
+
+<Expression>  ::= <Expression> '+' <Mult Expression>
+                | <Expression> '-' <Mult Expression>
+                | <Expression> '&' <Mult Expression>
+                | <Expression> '|' <Mult Expression>
+                | <Expression> '^' <Mult Expression>
+                | <Mult Expression>
+                
+<Mult Expression> ::= <Mult Expression> '*' <Unary Exp>
+                | <Mult Expression> '/' <Unary Exp>
+                | <Mult Expression> '%' <Unary Exp>
+                | <Unary Exp>
+
+<Unary Exp>  ::= '-' <Value>
+                | '+' <Value>
+                | '~' <Value>
+                | <Value>
+        
+<Value>       ::= '(' <search list> ')'
+                | '(' <Select Stm> ')'
+                | IntegerLiteral
+                | HexLiteral
+                | RealLiteral
+                | StringLiteral
+                | NULL
+                | <case>
+                | Identifier <Argument List Opt>  ! user-defined function
+                | <special function>
+                | <Parameter>
+                | XEvalExpresion
+                
+ <Parameter>  ::= ':'Identifier
+
+<case>        ::= CASE <casetype> <casewhen list> <caseelse> END
+
+<casetype>    ::= <expression>
+                |
+
+<casewhen list> ::= <casewhen> <casewhen list>
+               | <casewhen>
+
+<casewhen>    ::= WHEN <search list> THEN <expression>
+
+<caseelse>    ::= ELSE <expression>
+               |
+
+<special function> ::= CAST '(' <expression> AS <type> ')'
+	  | CONVERT '(' <type> ',' <expression> <style> ')'
+
+<style> ::= ',' IntegerLiteral | ',' StringLiteral |
+
+<Argument List Opt> ::= '(' <restriction> <Argument List> ')'
+                      |
+                       
+<Argument List>  ::= <Argument List> ',' <function args>
+		| <function args>
+
+<function args>
+        ::= '*' 
+	  | <expression> <alias>
+         |
+

@@ -1,0 +1,75 @@
+Virtual Join - Componente ICE para fazer joins através de resultsets em datasets cliente,
+	realizando o merge através de relacionamentos e loop
+		- Dois datasets de entrada
+		- Um dataset de saída
+		- Dois PairLists para mapeamento
+		- Definição de relacionamento mestre/detalhe
+	(Este processo pode ser feito em cascata, com o dataset resultado alimentando
+	outro join como uma das entradas)
+
+Alterações na classe TICEDataset
+	- Uma interface de 3 estágios para montagem de consultas
+		- QueryBuilder
+		- SQL
+		- Visualização de Resultset
+	- Uma interface para manipulação dos campos persistentes 
+	 	selecionados, permitindo que sejam definidas chaves,
+		campos calculados, etc
+	- Um dataset persistente para receber o resultset
+		- Novas propriedades para os datasets:
+			- DistinctKeyList: TStringList
+				Retorna uma lista das chaves 
+				primárias do resultset em forma 
+				de stringlist
+			- Client: Boolean
+				Indica se o dataset criado é um ADODataset
+				ou um client dataset.
+			- Fields: TICEFields
+				Uma vez que os datasets serão criados sob
+				demanda, as definições dos campos persistentes 
+				passam a pertencer ao ICEDataset.
+			- Default: Boolean
+				O Acesso aos datasets em script pascal será
+				feito através das seguintes funções:
+					- DefaultDataset: TDataset
+					- DatasetByName(aName: String): TDataset
+					- DatasetByIndex(aIndex: Integer): TDataset
+				Alternativamente o método de tratamento de variáveis 
+				do parser pode retornar os datasets de acordo com o 
+				necessário
+
+ResultSet Constrainer
+	Objeto capaz de filtrar um dataset pelo outro.
+		- Recebe um dataset base e um dataset filtro
+		- Propriedade para saber se será usada a 
+		propriedade filter do dataset ou se será 
+		alterada a senteça SQL.
+		- Dataset destino - Que receberá o resultset
+		gerado na operação. Este dataset pode ser o 
+		dataset base (mas não o filtro) e o código
+		do objeto deve estar otimizado para este caso
+		
+
+Resultsets para consultas OLAP baseados no editor de ICEDatasets.
+	- Página para montagem MDD (Meta Data Driven, utilizando o modelo Meta Mapper)
+	- Página para montagem do dataset (ICEDataset)
+	- Página para montagem de fórmula (ISIS) para preenchimento do dataset
+		Utilizando DataTransport, VirtualJoin, ClientCursor, Constrainer, etc.
+
+TICEMDDDataset
+	Simplificar (BASTANTE) o modelo do Meta Mapper
+		- Tabelas 
+			- ID
+			- Label
+			- Descrição
+			- Agrupadores (1..*)
+				-estes agrupadores podem ser departamentos, assuntos, etc.
+			- Perfis de acesso (1..*)
+			- Tabelas relacionadas
+			- Campos
+				- ID
+				- Label
+				- Descrição
+				- Perfis de acesso (1..*)
+				- ID de campos equivalentes
+				- Descrição

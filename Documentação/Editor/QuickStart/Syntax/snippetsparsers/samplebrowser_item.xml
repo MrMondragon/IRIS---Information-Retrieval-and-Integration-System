@@ -1,0 +1,10 @@
+<Item>
+  <Name>SnippetsParsers</Name>
+  <Caption>Snippets parsers</Caption>
+  <Description>
+The demo project shows how to use "partial code" parsers.
+  </Description>
+  <Note>
+If you need to give user an ability to edit only part of code, for example method body and still have features like code completion or error highlighting, you can use this demo as a good starting point.
+  </Note>
+</Item>

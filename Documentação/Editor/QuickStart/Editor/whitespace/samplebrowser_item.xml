@@ -1,0 +1,10 @@
+<Item>
+  <Name>Whitespace</Name>
+  <Caption>Whitespace</Caption>
+  <Description>
+The demo shows how to visually identify whitespace character as well as end-of-line and end-of-file marks.
+  </Description>
+  <Note>
+It is sometimes desirable for the user to see the codes affecting the layout of the text that are normally not visible. These codes are space, tab, end-of-line, and the end-of-file (not really a code), and are often collectively referred to as the white-space.
+  </Note>
+</Item>

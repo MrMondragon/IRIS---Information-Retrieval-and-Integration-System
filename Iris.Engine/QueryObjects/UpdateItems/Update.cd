@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Iris.Engine.QueryObjects.Update">
+    <Position X="2.25" Y="2.25" Width="1.5" />
+    <AssociationLine Name="Where" Type="Iris.Engine.QueryObjects.SelectItems.WhereClause" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.688" Y="3.934" />
+        <Point X="2.688" Y="5.596" />
+        <Point X="5.5" Y="5.596" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAABAAIAAAAAAAAAAEAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Objects\Update.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="From" />
+      <Property Name="Where" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Set" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.UpdateItems.SetItem">
+    <Position X="5.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAA=</HashCode>
+      <FileName>Objects\UpdateItems\SetItem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Expression" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.EngineExpression" Collapsed="true">
+    <Position X="9" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Expressions\EngineExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.SelectItems.FromClause" Collapsed="true">
+    <Position X="5.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\SelectItems\FromClause.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.SelectItems.WhereClause" Collapsed="true">
+    <Position X="5.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\SelectItems\WhereClause.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

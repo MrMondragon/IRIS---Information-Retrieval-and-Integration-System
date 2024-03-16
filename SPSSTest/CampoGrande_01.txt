@@ -1,0 +1,1653 @@
+SbjNum Label: SbjNum 1
+Q_1 Label: Bom dia /Boa tarde /Boa noite. Meu nome é (NOME DO ENTREVISTADOR). Eu sou entrevistador(a) da IDEALIS PESQUISA e nós estamos realizando um estudo de opinião pública na cidade de Campo Grande/MS. O(a) Sr(a) pode
+ responder algumas perguntas?
+│1│Sim│
+│2│Não│
+
+Q_2 Label: Filtro 1. O(a) Sr(a) ou alguém de sua família trabalha em (LEIA OPÇÕES): ?
+│1│Agência de Publicidade│
+│2│Área de Marketing│
+│3│Televisão/Rádio/Jornal/Revista│
+│4│Pesquisa de Mercado e Opinião│
+│5│Trabalha em ou para algum Partido político?│
+│6│Afiliado a algum Partido político?│
+│7│Nenhum deles│
+ 
+Q_3 Label: Filtro 2. O(a) Sr(a) tem título de eleitor aqui do município de Campo Grande? Ou seja, o Sr. vota aqui na cidade?
+│1│Sim│
+│2│Não│
+ 
+Q_4 Label: Filtro 3. O(a) Sr(a) pretende votar na próxima eleição?
+│1│Sim│
+│2│Não│
+ 
+Q_5 Label: Filtro 4. O(a) Sr(a) mora aqui nesta casa, de Campo Grande?
+│1│Sim│
+│2│Não│
+ 
+Q_6 Label: Região
+│1│Centro│
+│2│Segredo│
+│3│Prosa│
+│4│Bandeira│
+│5│Anhanduzinho│
+│6│Lagoa│
+│7│Imbirissu│
+│8│Região RURAL - Rochedinho│
+ 
+Q_7 Label: Centro
+│1│Cruzeiro│
+│2│São Francisco│
+│3│Glória│
+│4│Amambaí│
+│5│Monte Líbano│
+│6│Glória│
+│7│Cabreúva│
+ 
+Q_8 Label: Segredo
+│1│Nova Lima│
+│2│Nasser│
+│3│Coronel Antonino│
+│4│José Abrão│
+ 
+Q_9 Label: Prosa
+│1│Novos Estados│
+│2│Carandá│
+│3│Veraneio│
+│4│Margarida│
+│5│Autonomista│
+│6│Estrela Dalva│
+ 
+Q_10 Bandeira
+│1│Tiradentes│
+│2│Universitário│
+│3│Maria Aparecida Pedrossian│
+│4│São Lourenço│
+│5│Jardim Paulista│
+
+Q_11 Anhanduizinho
+│1│Aero Rancho│
+│2│Centenário│
+│3│Pioneiro│
+│4│Piratininga│
+│5│Taquarussu│
+
+Q_12 Lagoa
+│1│São Conrado│
+│2│Tijuca│
+│3│Coophavilla II│
+│4│Caiçara│
+ 
+Q_13 Imbirussu
+│1│Santo Amaro│
+│2│Popular│
+│3│Panamá│
+│4│Santo Antônio│
+
+Q_14 sexo A-Sexo 15
+│1│Masculino│
+│2│Feminino│
+
+Q_15 B-Qual é a sua idade?
+│1│De 16 a 17 anos (só se for votar, possui título│
+│2│De 18 a 24 anos│
+│3│De 25 a 34 anos│
+│4│De 35 a 44 anos│
+│5│De 45 a 59 anos│
+│6│60 anos ou mais (mais de 70 anos só se for votar)│
+
+Q_16 Instr C-Qual é o seu grau de instrução/escolaridade? 17
+│1│Baixo│
+│2│Médio│
+│3│Superior│
+
+Q_17 D-Qual destas alternativas descreve melhor a sua ocupação atual?
+│1│Trabalha em casa para uma Empresa│
+│2│Trabalha fora meio período para uma Empresa│
+│3│Trabalha fora período integral para uma Empresa│
+│4│Profissional liberal/negócio próprio│
+│5│Autonômo│
+│6│Funcionário público│
+│7│Tem outras fontes: rendimentos/aplicações│
+│8│Tem outras fontes: aposentadoria│
+│9│Tem outras fontes: recebo doações│
+│10│Tem outras fontes: mesada/pensão│
+│12│Não está trabalhando, 06 meses ou mais│
+│13│Outro (especifique):│
+│99│Não está trabalhando atualmente, menos de 06 meses│
+
+Q_17_S D-Qual destas alternativas descreve melhor a sua ocupação atual? [Other (specify)]
+ 
+Q_18 Estado_civil E - Qual é o seu estado civil?
+│1│Casado / Vive junto│
+│2│Separado / Divorciado│
+│3│Viúvo│
+│4│Solteiro│
+│5│NR│
+
+Q_19 F - De uma maneira geral, o(a) Sr(a) é uma pessoa que tem...
+│1│Muito interesse por política em geral│
+│2│Algum interesse por política│
+│3│Pouco interesse por política│
+│4│Nenhum interesse por política em geral│
+
+Q_20 1.De maneira geral, como o(a) Sr(a) avalia a situação de Campo Grande? Atualmente a cidade de Campo Grande está...
+│1│Ótima│
+│2│Boa│
+│3│Regular positiva│
+│4│Regular negativa│
+│5│Ruim│
+│6│Péssima│
+│99│NS/NR│
+
+Q_21 2. Se as eleições para Prefeito de Campo Grande fossem realizadas hoje, em quem o(a) Sr(a) votaria?
+│1│Anote nome citado:│
+│2│NS/Indeciso│
+│3│NR│
+│4│Nenhum│
+ ╰─────┴──────────────────╯
+
+Q_21_S 2. Se as eleições para Prefeito de Campo Grande fossem realizadas hoje, em quem o(a) Sr(a) votaria? [Other (specify)]
+ 
+Q_22 3. 1. Se os candidatos fossem esses, em quem votaria? APRESE
+│1│Rose Modesto - PSDB│
+│2│Marquinhos Trad - PSD│
+│3│Alcides Bernal - PP│
+│4│Athayde Nery - PPS│
+│5│Coronel David - PSC│
+│6│Professor Sidney - PSOL│
+│7│Suel Ferrante - PSTU│
+│8│Marcelo Bluma - PV│
+│9│Dagoberto Nogueira - PDT│
+│10│Alex do PT - PT│
+│11│Indeciso/NS│
+│12│NR│
+│13│Nenhum│
+
+Q_23 3.1. Por que votaria no (REPETIR RESPOSTA DA PERGUNTA 3.1.) para prefeito de Campo Grande?
+
+Q_24 3.1.1. E se o ... não for candidato, em quem votaria?  (DISCO 01)
+│1│Rose Modesto - PSDB│
+│2│Marquinhos Trad - PSD│
+│3│Alcides Bernal - PP│
+│4│Athayde Nery - PPS│
+│5│Coronel David - PSC│
+│6│Professor Sidney - PSOL│
+│7│Suel Ferrante - PSTU│
+│8│Marcelo Bluma - PV│
+│9│Dagoberto Nogueira - PDT│
+│10│Alex do PT - PT│
+│11│Indeciso/NS│
+│12│NR│
+│13│Nenhum│
+
+Q_25 3.3. E se fossem estes?  (DISCO 02)
+│1│Rose Modesto - PSDB│
+│2│Marquinhos Trad - PSD│
+│3│Alcides Bernal - PP│
+│4│Athayde Nery - PPS│
+│5│Professor Sidney - PSOL│
+│6│Suel Ferrante - PSTU│
+│7│Marcelo Bluma - PV│
+│8│Alex do PT - PT│
+│9│Indeciso/NS│
+│10│NR│
+│11│Nenhum│
+
+Q_26 3.3. E se fossem estes? (DISCO 03)
+│1│Rose Modesto - PSDB│
+│2│Marquinhos Trad - PSD│
+│3│Alcides Bernal - PP│
+│4│Indeciso/NS│
+│5│NR│
+│6│Nenhum│
+ 
+Q_27 3.4. E se fossem estes? (DISCO 04)
+│1│Rose Modesto - PSDB│
+│2│Marquinhos Trad - PSD│
+│3│Indeciso/NS│
+│4│NR│
+│5│Nenhum│
+
+Q_28 3.5. E se fossem esses? (DISCO 05)
+│1│Rose Modesto - PSDB│
+│2│Alcides Bernal - PP│
+│3│Indeciso/NS│
+│4│NR│
+│5│Nenhum│
+
+Q_29 3.6. E se fossem esses? (DISCO 06)
+│1│Marquinhos Trad - PSD│
+│2│Alcides Bernal - PP│
+│3│Indeciso/NS│
+│4│NR│
+│5│Nenhum│
+
+Q_30 4. O(a) Sr(a) ainda pode mudar sua escolha?
+│1│Sim, poderia ainda mudar│
+│2│Não, já está totalmente certo de sua escolha│
+│3│NS│
+│4│NR│
+
+Q_31 5. Agora, gostaria que o(a) Sr(a) avaliasse e me dissesse em quem o(a) Sr(a) NÃO VOTARIA DE JEITO NENHUM para Prefeito de Campo Grande.
+│1│Rose Modesto - PSDB│
+│2│Marquinhos Trad - PSD│
+│3│Alcides Bernal - PP│
+│4│Athayde Nery - PPS│
+│5│Coronel David - PSC│
+│6│Professor Sidney - PSOL│
+│7│Suel Ferrante - PSTU│
+│8│Marcelo Bluma - PV│
+│9│Dagoberto Nogueira - PDT│
+│10│Alex do PT - PT│
+│11│Indeciso/NS│
+│12│NR│
+│13│Todos│
+
+Q_32 5.1. Por que o(a) Sr(a) NÃO VOTARIA no ...?
+
+T_33_1 Rose Modesto - PSDB
+│1│Conhece bem/tem muitas informações sobre ele(a)│
+│2│Conhece pouco, tem algumas informações sobre ele(a)│
+│3│Conhece só de nome/só de ouvir falar│
+│4│Não conhece/é a primeira vez que ouve falar o nome│
+│5│NS/NR│
+
+T_33_2 Marquinhos Trad - PSD
+│1│Conhece bem/tem muitas informações sobre ele(a)│
+│2│Conhece pouco, tem algumas informações sobre ele(a)│
+│3│Conhece só de nome/só de ouvir falar│
+│4│Não conhece/é a primeira vez que ouve falar o nome│
+│5│NS/NR│
+
+T_33_3 Alcides Bernal - PP
+│1│Conhece bem/tem muitas informações sobre ele(a)│
+│2│Conhece pouco, tem algumas informações sobre ele(a)│
+│3│Conhece só de nome/só de ouvir falar│
+│4│Não conhece/é a primeira vez que ouve falar o nome│
+│5│NS/NR│
+
+T_33_4 Athayde Nery - PPS
+│1│Conhece bem/tem muitas informações sobre ele(a)│
+│2│Conhece pouco, tem algumas informações sobre ele(a)│
+│3│Conhece só de nome/só de ouvir falar│
+│4│Não conhece/é a primeira vez que ouve falar o nome│
+│5│NS/NR│
+
+T_33_5 Coronel David - PSC
+│1│Conhece bem/tem muitas informações sobre ele(a)│
+│2│Conhece pouco, tem algumas informações sobre ele(a)│
+│3│Conhece só de nome/só de ouvir falar│
+│4│Não conhece/é a primeira vez que ouve falar o nome│
+│5│NS/NR│
+
+T_33_6 Professor Sidney - PSOL
+│1│Conhece bem/tem muitas informações sobre ele(a)│
+│2│Conhece pouco, tem algumas informações sobre ele(a)│
+│3│Conhece só de nome/só de ouvir falar│
+│4│Não conhece/é a primeira vez que ouve falar o nome│
+│5│NS/NR│
+
+T_33_7 Suel Ferrante - PSTU
+│1│Conhece bem/tem muitas informações sobre ele(a)│
+│2│Conhece pouco, tem algumas informações sobre ele(a)│
+│3│Conhece só de nome/só de ouvir falar│
+│4│Não conhece/é a primeira vez que ouve falar o nome│
+│5│NS/NR│
+
+T_33_8 Marcelo Bluma - PV
+│1│Conhece bem/tem muitas informações sobre ele(a)│
+│2│Conhece pouco, tem algumas informações sobre ele(a)│
+│3│Conhece só de nome/só de ouvir falar│
+│4│Não conhece/é a primeira vez que ouve falar o nome│
+│5│NS/NR│
+
+T_33_9 Dagoberto Nogueira - PDT
+│1│Conhece bem/tem muitas informações sobre ele(a)│
+│2│Conhece pouco, tem algumas informações sobre ele(a)│
+│3│Conhece só de nome/só de ouvir falar│
+│4│Não conhece/é a primeira vez que ouve falar o nome│
+│5│NS/NR│
+
+T_33_10 Alex do PT - PT
+│1│Conhece bem/tem muitas informações sobre ele(a)│
+│2│Conhece pouco, tem algumas informações sobre ele(a)│
+│3│Conhece só de nome/só de ouvir falar│
+│4│Não conhece/é a primeira vez que ouve falar o nome│
+│5│NS/NR│
+
+T_34_1 Rose Modesto - PSDB
+│1│Votaria com certeza│
+│2│Poderia votar│
+│4│Não votaria, com certeza│
+│5│NS/NR│
+│99│Possivelmente não votaria│
+
+T_34_2 Marquinhos Trad - PSD
+│1│Votaria com certeza│
+│2│Poderia votar│
+│4│Não votaria, com certeza│
+│5│NS/NR│
+│99│Possivelmente não votaria│
+
+T_34_3 Alcides Bernal - PP
+│1│Votaria com certeza│
+│2│Poderia votar│
+│4│Não votaria, com certeza│
+│5│NS/NR│
+│99│Possivelmente não votaria│
+
+T_34_4 Athayde Nery - PPS
+│1│Votaria com certeza│
+│2│Poderia votar│
+│4│Não votaria, com certeza│
+│5│NS/NR│
+│99│Possivelmente não votaria│
+
+T_34_5 Coronel David - PSC
+│1│Votaria com certeza│
+│2│Poderia votar│
+│4│Não votaria, com certeza│
+│5│NS/NR│
+│99│Possivelmente não votaria│
+
+T_34_6 Professor Sidney - PSOL
+│1│Votaria com certeza│
+│2│Poderia votar│
+│4│Não votaria, com certeza│
+│5│NS/NR│
+│99│Possivelmente não votaria│
+
+T_34_7 Suel Ferrante - PSTU
+│1│Votaria com certeza│
+│2│Poderia votar│
+│4│Não votaria, com certeza│
+│5│NS/NR│
+│99│Possivelmente não votaria│
+
+T_34_8 Marcelo Bluma - PV
+│1│Votaria com certeza│
+│2│Poderia votar│
+│4│Não votaria, com certeza│
+│5│NS/NR│
+│99│Possivelmente não votaria│
+
+T_34_9 Dagoberto Nogueira - PDT
+│1│Votaria com certeza│
+│2│Poderia votar│
+│4│Não votaria, com certeza│
+│5│NS/NR│
+│99│Possivelmente não votaria│
+
+T_34_10 Alex do PT - PT
+│1│Votaria com certeza│
+│2│Poderia votar│
+│4│Não votaria, com certeza│
+│5│NS/NR│
+│99│Possivelmente não votaria│
+
+Q_35 8. Na hora de o(a) Sr(a) escolher um candidato a PREFEITO, QUAL dessas qualidades (LER OPÇÕES) é a mais importantes, que ele deve ter para merecer seu voto em 1º
+│1│Ser honesto/não ser corrupto│
+│2│Ter capacidade administrativa, saber governar│
+│3│Ter apoios políticos│
+│4│Ter experiência administrativa│
+│5│Ser próximo do povo│
+│6│Ser trabalhador│
+│7│Cumprir o que promete│
+│8│Ser competente / competência│
+│9│Outro (especifique):│
+│10│NS/NR│
+
+Q_35_S 8. Na hora de o(a) Sr(a) escolher um candidato a PREFEITO, QUAL dessas qualidades (LER OPÇÕES) é a mais importantes, que ele deve ter para merecer seu voto em 1º
+
+T_36_1 Rose Modesto - PSDB
+│1│Possui│
+│2│Não possui│
+│3│NS/NR│
+
+T_36_2 Marquinhos Trad - PSD
+│1│Possui│
+│2│Não possui│
+│3│NS/NR│
+
+T_36_3 Alcides Bernal - PP
+│1│Possui│
+│2│Não possui│
+│3│NS/NR│
+
+T_36_4 Athayde Nery - PPS
+│1│Possui│
+│2│Não possui│
+│3│NS/NR│
+
+T_36_5 Coronel David - PSC
+│1│Possui│
+│2│Não possui│
+│3│NS/NR│
+
+T_36_6 Professor Sidney - PSOL
+│1│Possui│
+│2│Não possui│
+│3│NS/NR│
+
+T_36_7 Suel Ferrante - PSTU
+│1│Possui│
+│2│Não possui│
+│3│NS/NR│
+
+T_36_8 Marcelo Bluma - PV
+│1│Possui│
+│2│Não possui│
+│3│NS/NR│
+
+T_36_9 Dagoberto Nogueira - PDT
+│1│Possui│
+│2│Não possui│
+│3│NS/NR│
+
+T_36_10 Alex do PT - PT
+│1│Possui│
+│2│Não possui│
+│3│NS/NR│
+
+T_37_1 O mais honesto?
+│1│Rose Modesto - PSDB│
+│2│Marquinhos Trad - PSD│
+│3│Alcides Bernal - PP│
+│4│Athayde Nery - PPS│
+│5│Coronel David - PSC│
+│6│Professor Sidney - PSOL│
+│7│Suel Ferrante - PSTU│
+│8│Marcelo Bluma - PV│
+│9│Dagoberto Nogueira - PDT│
+│10│Alex do PT - PT│
+│11│Indeciso/NS│
+│12│NR│
+│13│Nenhum│
+
+T_37_2 O mais próximo do povo?
+│1│Rose Modesto - PSDB│
+│2│Marquinhos Trad - PSD│
+│3│Alcides Bernal - PP│
+│4│Athayde Nery - PPS│
+│5│Coronel David - PSC│
+│6│Professor Sidney - PSOL│
+│7│Suel Ferrante - PSTU│
+│8│Marcelo Bluma - PV│
+│9│Dagoberto Nogueira - PDT│
+│10│Alex do PT - PT│
+│11│Indeciso/NS│
+│12│NR│
+│13│Nenhum│
+
+T_37_3 O mais competente?
+│1│Rose Modesto - PSDB│
+│2│Marquinhos Trad - PSD│
+│3│Alcides Bernal - PP│
+│4│Athayde Nery - PPS│
+│5│Coronel David - PSC│
+│6│Professor Sidney - PSOL│
+│7│Suel Ferrante - PSTU│
+│8│Marcelo Bluma - PV│
+│9│Dagoberto Nogueira - PDT│
+│10│Alex do PT - PT│
+│11│Indeciso/NS│
+│12│NR│
+│13│Nenhum│
+
+T_37_4 O mais trabalhador?
+│1│Rose Modesto - PSDB│
+│2│Marquinhos Trad - PSD│
+│3│Alcides Bernal - PP│
+│4│Athayde Nery - PPS│
+│5│Coronel David - PSC│
+│6│Professor Sidney - PSOL│
+│7│Suel Ferrante - PSTU│
+│8│Marcelo Bluma - PV│
+│9│Dagoberto Nogueira - PDT│
+│10│Alex do PT - PT│
+│11│Indeciso/NS│
+│12│NR│
+│13│Nenhum│
+
+T_37_5 O que tem mais experiência/experiente?
+│1│Rose Modesto - PSDB│
+│2│Marquinhos Trad - PSD│
+│3│Alcides Bernal - PP│
+│4│Athayde Nery - PPS│
+│5│Coronel David - PSC│
+│6│Professor Sidney - PSOL│
+│7│Suel Ferrante - PSTU│
+│8│Marcelo Bluma - PV│
+│9│Dagoberto Nogueira - PDT│
+│10│Alex do PT - PT│
+│11│Indeciso/NS│
+│12│NR│
+│13│Nenhum│
+
+T_37_6 O que mais vai cumprir suas promessas?
+│1│Rose Modesto - PSDB│
+│2│Marquinhos Trad - PSD│
+│3│Alcides Bernal - PP│
+│4│Athayde Nery - PPS│
+│5│Coronel David - PSC│
+│6│Professor Sidney - PSOL│
+│7│Suel Ferrante - PSTU│
+│8│Marcelo Bluma - PV│
+│9│Dagoberto Nogueira - PDT│
+│10│Alex do PT - PT│
+│11│Indeciso/NS│
+│12│NR│
+│13│Nenhum│
+
+Q_38 11. Se pudesse escolher, o(a) Sr(a) preferiria que o próximo Prefeito de Campo Grande fosse um homem ou uma mulher?
+│1│Homem│
+│2│Mulher│
+│3│Tanto faz, não é relevante.│
+│4│NS/NR│
+
+Q_39 12. Aqui estão alguns problemas que as cidades têm enfrentado atualmente. Pensando em Campo Grande, qual é o problema mais grave, que o próximo prefeito deve cuidar em 1º lugar?
+│1│Saúde│
+│2│Segurança│
+│3│Educação│
+│4│Emprego│
+│5│Situação das ruas (buracos)│
+│6│Limpeza urbana│
+│7│Habitação│
+│8│Falta de creches│
+│9│Iluminação pública│
+│10│Transporte público│
+│11│Saneamento básico/Falta de esgoto│
+│12│Pobreza│
+│13│Gestão/Administração da Prefeitura│
+│14│Outro. Qual? (descreva):│
+│15│NS/NR│
+
+Q_39_S 12. Aqui estão alguns problemas que as cidades têm enfrentado atualmente. Pensando em Campo Grande, qual é o problema mais grave, que o próximo prefeito deve cuidar em 1º lugar? [Other (specify)]
+
+Q_40 12.1. Na sua opinião, qual desses candidatos (DISCO 01) a prefeito tem mais condições de resolver este problema (CITE RESPOSTA DA P12)?
+│1│Rose Modesto - PSDB│
+│2│Marquinhos Trad - PSD│
+│3│Alcides Bernal - PP│
+│4│Athayde Nery - PPS│
+│5│Coronel David - PSC│
+│6│Professor Sidney - PSOL│
+│7│Suel Ferrante - PSTU│
+│8│Marcelo Bluma - PV│
+│9│Dagoberto Nogueira - PDT│
+│10│Alex do PT - PT│
+│11│Indeciso/NS│
+│12│NR│
+│13│Nenhum│
+
+Q_41 13. E qual problema o próximo prefeito deveria cuidar, em 2º lugar?
+│1│Saúde│
+│2│Segurança│
+│3│Educação│
+│4│Emprego│
+│5│Situação das ruas (buracos)│
+│6│Limpeza urbana│
+│7│Habitação│
+│8│Falta de creches│
+│9│Iluminação pública│
+│10│Transporte público│
+│11│Saneamento básico/Falta de esgoto│
+│12│Pobreza│
+│13│Gestão/Administração da Prefeitura│
+│14│Outro. Qual? (descreva):│
+│15│NS/NR│
+
+Q_41_S 13. E qual problema o próximo prefeito deveria cuidar, em 2º lugar? [Other (specify)]
+
+Q_42 13.1. Na sua opinião, qual desses candidatos (DISCO 01) a prefeito tem mais condições de resolver este problema (CITE RESPOSTA DA P13)?
+│1│Rose Modesto - PSDB│
+│2│Marquinhos Trad - PSD│
+│3│Alcides Bernal - PP│
+│4│Athayde Nery - PPS│
+│5│Coronel David - PSC│
+│6│Professor Sidney - PSOL│
+│7│Suel Ferrante - PSTU│
+│8│Marcelo Bluma - PV│
+│9│Dagoberto Nogueira - PDT│
+│10│Alex do PT - PT│
+│11│Indeciso/NS│
+│12│NR│
+│13│Nenhum│
+
+Q_43 14. E qual problema o próximo prefeito deveria cuidar, em 3º lugar?
+│1│Saúde│
+│2│Segurança│
+│3│Educação│
+│4│Emprego│
+│5│Situação das ruas (buracos)│
+│6│Limpeza urbana│
+│7│Habitação│
+│8│Falta de creches│
+│9│Iluminação pública│
+│10│Transporte público│
+│11│Saneamento básico/Falta de esgoto│
+│12│Pobreza│
+│13│Gestão/Administração da Prefeitura│
+│14│Outro. Qual? (descreva):│
+│15│NS/NR│
+
+Q_43_S 14. E qual problema o próximo prefeito deveria cuidar, em 3º lugar? [Other (specify)]
+
+Q_44 14.1. Na sua opinião, qual desses candidatos (DISCO 01) a prefeito tem mais condições de resolver este problema (CITE RESPOSTA DA P14)?
+│1│Rose Modesto - PSDB│
+│2│Marquinhos Trad - PSD│
+│3│Alcides Bernal - PP│
+│4│Athayde Nery - PPS│
+│5│Coronel David - PSC│
+│6│Professor Sidney - PSOL│
+│7│Suel Ferrante - PSTU│
+│8│Marcelo Bluma - PV│
+│9│Dagoberto Nogueira - PDT│
+│10│Alex do PT - PT│
+│11│Indeciso/NS│
+│12│NR│
+│13│Nenhum│
+
+Q_45 15. Na sua opinião, o Prefeito Alcides Bernal está fazendo uma administração:
+│1│Ótimo│
+│2│Bom│
+│3│Regular positivo│
+│4│Regular negativo│
+│5│Ruim│
+│6│Péssimo│
+│99│NS/NR│
+
+Q_46 15.1. Por que avalia dessa forma, ÓTIMO? 
+
+│1│Construção, reforma de ruas e avenidas/ tapa-buracos│
+│2│Investimento na educação do município, construção de escolas│
+│3│Está trabalhando para desenvolvimento economico da cidade│
+│4│Investimento em habitação, construção de casas│
+│5│É um prefeito honesto, cumpre as promessas, trabalhador e co│
+│6│Está combatendo a miséria, fome dos moradores│
+│7│Desenvolvimento industrial│
+│8│Geração de empregos com chegada de novas empresas na cidade│
+│9│Construção e/ou reforma de postos de saúde (UPA's)│
+│10│Investimento na área da segurança/câmeras nas ruas/mais poli│
+│11│Novos programas na área da saúde/Saúde da Família PSF/Agente│
+│12│Construção de creches e mais vagas│
+│13│Melhoria no transporte urbano/público da cidade│
+│14│Outro (descreva):│
+
+Q_46_S 15.1. Por que avalia dessa forma, ÓTIMO? [Other(specify)]
+
+Q_47 15.2. Por que avalia dessa forma, BOM? 
+│1│Construção, reforma de ruas e avenidas/ tapa-buracos│
+│2│Investimento na educação do município, construção de escolas│
+│3│Está trabalhando para desenvolvimento economico da cidade│
+│4│Investimento em habitação, construção de casas│
+│5│É um prefeito honesto, cumpre as promessas, trabalhador e co│
+│6│Está combatendo a miséria, fome dos moradores│
+│7│Desenvolvimento industrial│
+│8│Geração de empregos com chegada de novas empresas na cidade│
+│9│Construção e/ou reforma de postos de saúde (UPA's)│
+│10│Investimento na área da segurança/câmeras nas ruas/mais poli│
+│11│Novos programas na área da saúde/Saúde da Família PSF/Agente│
+│12│Construção de creches e mais vagas│
+│13│Melhoria no transporte urbano/público da cidade│
+│14│Outro (descreva):│
+
+Q_47_S 15.2. Por que avalia dessa forma, BOM? [Other(specify)]
+
+Q_48 15.3. Por que avalia dessa forma, REGULAR POSITIVO?
+│1│Não investe em saúde (precária/ruim)/reforma e construção de│
+│2│Falta construir e reformar escolas / creches│
+│3│Falta asfaltar / recapeamento de ruas e avenidas│
+│4│Gerar mais empregos para os moradores da cidade│
+│5│Criar/ampliar o pólo industrial│
+│6│Faltam políticas de combate ao desemprego│
+│7│Falta investir em segurança/ diminuir a violência│
+│8│Fraco, não fez muito pela cidade│
+│9│Falta investir em educação (novas escolas, merenda, transpor│
+│10│Não tem programa para combater a fome/miséria/pobreza│
+│11│Falta construir novas casas/´programa habitacional│
+│12│Outro (descreva):│
+
+Q_48_S 15.3. Por que avalia dessa forma, REGULAR POSITIVO? [Other (specify)]
+
+Q_49 15.4. Por que avalia dessa forma, REGULAR NEGATIVO?
+│1│Não investe em saúde (precária/ruim)/reforma e construção de│
+│2│Falta construir e reformar escolas / creches│
+│3│Falta asfaltar / recapeamento de ruas e avenidas│
+│4│Gerar mais empregos para os moradores da cidade│
+│5│Criar/ampliar o pólo industrial│
+│6│Faltam políticas de combate ao desemprego│
+│7│Falta investir em segurança/ diminuir a violência│
+│8│Fraco, não fez muito pela cidade│
+│9│Falta investir em educação (novas escolas, merenda, transpor│
+│10│Não tem programa para combater a fome/miséria/pobreza│
+│11│Falta construir novas casas/´programa habitacional│
+│12│Outro (descreva):│
+
+Q_49_S 15.4. Por que avalia dessa forma, REGULAR NEGATIVO? [Other (specify)]
+
+Q_50 15.5. Por que avalia dessa forma, RUIM?
+│1│Não investe na saúde/precária/ruim/faltam hospitais e postos│
+│2│Não investe na segurança/muita violência│
+│3│Incompetente/fraco│
+│4│Não faz/cumpre as promessas de campanha│
+│5│Falta política para gerar emprego│
+│6│Não investe na educação/não constroi novas escolas e creches│
+│7│Não combate a fome/miséria/pobreza│
+│8│Não investe na infraestrutura da cidade│
+│9│Não asfalta ruas e avenidas/recapeamento│
+│10│Desonesto/corrupto│
+│11│Outro (descreva):│
+
+Q_50_S 15.5. Por que avalia dessa forma, RUIM? [Other (specify)]
+
+Q_51 15.6. Por que avalia dessa forma, PÉSSIMO? 95
+│1│Não investe na saúde/precária/ruim/faltam hospitais e postos│
+│2│Não investe na segurança/muita violência│
+│3│Incompetente/fraco│
+│4│Não faz/cumpre as promessas de campanha│
+│5│Falta política para gerar emprego│
+│6│Não investe na educação/não constroi novas escolas e creches│
+│7│Não combate a fome/miséria/pobreza│
+│8│Não investe na infraestrutura da cidade│
+│9│Não asfalta ruas e avenidas/recapeamento│
+│10│Desonesto/corrupto│
+│11│Outro (descreva):│
+
+Q_51_S 15.6. Por que avalia dessa forma, PÉSSIMO? [Other (specify)]
+
+Q_52 16. Na sua opinião, qual foi a(o) principal obra, programa ou realização da administração do Prefeito Alcides Bernal?
+│1│Obras de saneamento/esgoto│
+│2│Programas de prevenção à saúde (à criança, mulher, ao idoso│
+│3│Obras viárias(asfalto em ruas e avenidas)/operação tapa-buraco│
+│4│Investimento na educação (entrega de material escolar, table│
+│5│Programa de Agendas comunitários de Saúde (PSC's) e/ou PSF's│
+│6│Obra Orla Morena (urbanização ferrovia)│
+│7│Investimento em habitação (distribuição de casas)│
+│8│Obras de infraestrutura e drenagem│
+│9│Reforma CEINF'S│
+│10│Construção ou reforma de postos de saúde/UPA's│
+│11│OUTRO (DESCREVA):│
+│12│Não se lembra│
+│13│NS/NR│
+
+Q_52_S 16. Na sua opinião, qual foi a(o) principal obra, programa ou realização da administração do Prefeito Alcides Bernal? [Other (specify)]
+
+Q_53 17. Na sua opinião, em que área que a administração do Bernal está MAIS ACERTANDO?
+│1│Saúde│
+│2│Segurança│
+│3│Educação│
+│4│Emprego│
+│5│Situação das ruas (buracos)│
+│6│Limpeza urbana│
+│7│Habitação│
+│8│Falta de creches│
+│9│Iluminação pública│
+│10│Transporte público│
+│11│Saneamento básico/falta de esgoto│
+│12│Pobreza│
+│13│Outro (descreva)│
+│14│NS/NR│
+│15│Tudo│
+
+Q_53_S 17. Na sua opinião, em que área que a administração do Bernal está MAIS ACERTANDO? [Other(specify)]
+
+Q_54 18. Na sua opinião, em que área que a administração do Bernal está MAIS ERRANDO?
+│1│Saúde│
+│2│Segurança│
+│3│Educação│
+│4│Emprego│
+│5│Situação das ruas (buracos)│
+│6│Limpeza urbana│
+│7│Habitação│
+│8│Falta de creches│
+│9│Iluminação pública│
+│10│Transporte público│
+│11│Saneamento básico/falta de esgoto│
+│12│Pobreza│
+│13│Outro (descreva)│
+│14│NS/NR│
+│15│Tudo│
+
+Q_54_S 18. Na sua opinião, em que área que a administração do Bernal está MAIS ERRANDO? [Other(specify)]
+
+Q_55 19. Na hora de escolher um candidato a prefeito, o(a) Sr(a) prefere votar:
+│1│Na reeleição do prefeito Bernal para que continue a maioria│
+│2│Em um candidato que mude a maioria das coisas que o prefeito│
+│3│NS/NR│
+
+Q_56 20. Em relação a expectativa que o(a) Sr(a) tinha em relação à administração do Prefeito Alcides Bernal, como se sente HOJE?
+│1│Decepcionado com o desempenho do prefeito no mandato│
+│2│Indiferente│
+│3│Satisfeito com o desempenho do prefeito no mandato dele│
+│4│NS/NR│
+
+Q_57 21. A Câmara de Vereadores cassou o mandato do Prefeito Bernal, fala-se que houve um golpe. Na sua opinião:
+│1│Houve um golpe?│
+│2│Não houve golpe, ele foi cassado na verdade por corrupção?│
+│3│NS/NR│
+
+Q_58 22. Considerando que o Prefeito Bernal governa a cidade há 01 ANO E MEIO, para o(a) Sr(a):
+│1│Ele merece uma segunda chance?│
+│2│Campo Grande merece um novo prefeito?│
+│3│NS/NR│
+
+T_59_1 Governador Reinaldo Azambuja  
+│1│Votaria com certeza no candidato apoiado por ele(a)│
+│2│Poderia votar, mas dependendo do candidato│
+│3│Não votaria no candidato apoiado por ele(a)│
+│4│Não levaria isso em conta na hora de escolher o candidato│
+│5│NS/NR│
+
+T_59_2 Ex Governador André Pucinelli
+│1│Votaria com certeza no candidato apoiado por ele(a)│
+│2│Poderia votar, mas dependendo do candidato│
+│3│Não votaria no candidato apoiado por ele(a)│
+│4│Não levaria isso em conta na hora de escolher o candidato│
+│5│NS/NR│
+
+T_58_4 Nelsinho Trad
+│1│Votaria com certeza no candidato apoiado por ele(a)│
+│2│Poderia votar, mas dependendo do candidato│
+│3│Não votaria no candidato apoiado por ele(a)│
+│4│Não levaria isso em conta na hora de escolher o candidato│
+│5│NS/NR│
+
+T_58_5 Deputado Zeca do PT
+│1│Votaria com certeza no candidato apoiado por ele(a)│
+│2│Poderia votar, mas dependendo do candidato│
+│3│Não votaria no candidato apoiado por ele(a)│
+│4│Não levaria isso em conta na hora de escolher o candidato│
+│5│NS/NR│
+
+T_58_6 PT
+│1│Votaria com certeza no candidato apoiado por ele(a)│
+│2│Poderia votar, mas dependendo do candidato│
+│3│Não votaria no candidato apoiado por ele(a)│
+│4│Não levaria isso em conta na hora de escolher o candidato│
+│5│NS/NR│
+
+T_58_7 PMDB
+│1│Votaria com certeza no candidato apoiado por ele(a)│
+│2│Poderia votar, mas dependendo do candidato│
+│3│Não votaria no candidato apoiado por ele(a)│
+│4│Não levaria isso em conta na hora de escolher o candidato│
+│5│NS/NR│
+
+T_58_8 Lula
+│1│Votaria com certeza no candidato apoiado por ele(a)│
+│2│Poderia votar, mas dependendo do candidato│
+│3│Não votaria no candidato apoiado por ele(a)│
+│4│Não levaria isso em conta na hora de escolher o candidato│
+│5│NS/NR│
+
+T_58_9 Michel Temer
+│1│Votaria com certeza no candidato apoiado por ele(a)│
+│2│Poderia votar, mas dependendo do candidato│
+│3│Não votaria no candidato apoiado por ele(a)│
+│4│Não levaria isso em conta na hora de escolher o candidato│
+│5│NS/NR│
+
+T_58_10 Aécio Neves
+│1│Votaria com certeza no candidato apoiado por ele(a)│
+│2│Poderia votar, mas dependendo do candidato│
+│3│Não votaria no candidato apoiado por ele(a)│
+│4│Não levaria isso em conta na hora de escolher o candidato│
+│5│NS/NR│
+
+T_58_11 Serra
+│1│Votaria com certeza no candidato apoiado por ele(a)│
+│2│Poderia votar, mas dependendo do candidato│
+│3│Não votaria no candidato apoiado por ele(a)│
+│4│Não levaria isso em conta na hora de escolher o candidato│
+│5│NS/NR│
+
+T_58_12 Fernando Henrique Cardoso
+│1│Votaria com certeza no candidato apoiado por ele(a)│
+│2│Poderia votar, mas dependendo do candidato│
+│3│Não votaria no candidato apoiado por ele(a)│
+│4│Não levaria isso em conta na hora de escolher o candidato│
+│5│NS/NR│
+
+T_58_13 Família Trad
+│1│Votaria com certeza no candidato apoiado por ele(a)│
+│2│Poderia votar, mas dependendo do candidato│
+│3│Não votaria no candidato apoiado por ele(a)│
+│4│Não levaria isso em conta na hora de escolher o candidato│
+│5│NS/NR│
+
+Q_60 24. Na hora de escolher um candidato a prefeito, o(a) Sr(a):
+│1│Votaria em qualquer candidato apoiado pelo Governador Reinal│
+│2│Poderia votar em um candidato apoiado pelo Governador Reinal│
+│3│Não votaria em nenhum candidato apoiado pelo Governado Reina│
+│4│NS/NR│
+
+Q_61 25. Na sua opinião, o futuro Prefeito de Campo Grande ser do mesmo partido, grupo ou aliado do Governador do Estado, Reinaldo Azambuja, seria:
+│1│Ótimo│
+│2│Bom│
+│3│Regular positivo│
+│4│Regular negativo│
+│5│Ruim│
+│6│Péssimo│
+│99│NS/NR│
+
+T_62_1 Partido político que mais gosta? 
+│1│PMDB│
+│2│PTB│
+│3│PDT│
+│4│PT│
+│5│DEM│
+│6│PC DO B│
+│7│PSB│
+│8│PSDB│
+│9│PTC│
+│10│PSC│
+│11│PMN│
+│12│PRP│
+│13│PPS│
+│14│PV│
+│15│PT DO B│
+│16│PP│
+│17│PSTU│
+│18│PCB│
+│19│PRTB│
+│20│PHS│
+│21│PSDC│
+│22│PCO│
+│23│PTN│
+│24│PSL│
+│25│PRB│
+│26│PSOL│
+│27│PR│
+│28│PSD│
+│29│PPL│
+│30│PEN│
+│31│PROS│
+│32│SD - SOLIDARIEDADE│
+│33│NOVO│
+│34│REDE│
+│35│PMB│
+│36│Nenhum│
+│37│Todos│
+│38│NS/NR│
+
+T_62_2 Partido político que menos gosta
+│1│PMDB│
+│2│PTB│
+│3│PDT│
+│4│PT│
+│5│DEM│
+│6│PC DO B│
+│7│PSB│
+│8│PSDB│
+│9│PTC│
+│10│PSC│
+│11│PMN│
+│12│PRP│
+│13│PPS│
+│14│PV│
+│15│PT DO B│
+│16│PP│
+│17│PSTU│
+│18│PCB│
+│19│PRTB│
+│20│PHS│
+│21│PSDC│
+│22│PCO│
+│23│PTN│
+│24│PSL│
+│25│PRB│
+│26│PSOL│
+│27│PR│
+│28│PSD│
+│29│PPL│
+│30│PEN│
+│31│PROS│
+│32│SD - SOLIDARIEDADE│
+│33│NOVO│
+│34│REDE│
+│35│PMB│
+│36│Nenhum│
+│37│Todos│
+│38│NS/NR│
+
+Q_63 28. Até este momento, o(a) Sr(a) diria que aprova ou desaprova a maneira como o Governador Reinaldo Azambuja está governando o Estado do Mato Grosso do Sul?
+│1│Aprova│
+│2│Nem aprova e nem desaprova│
+│4│NS/NR│
+│99│Desaprova│
+
+Q_64 29. De maneira geral, como o(a) Sr(a) avalia o desempenho do Governador Reinaldo Azambuja à frente doGoverno do MS:
+│1│Ótimo│
+│2│Bom│
+│3│Regular positivo│
+│4│Regular negativo│
+│5│Ruim│
+│6│Péssimo│
+│99│NS/NR│
+
+Q_65 29.1. Por que avalia dessa forma ÓTIMO?
+│1│Está tentando melhorar a saúde (Caravana da Saúde)│
+│2│Está fazendo algumas coisas│
+│3│Boa administração│
+│4│Cumpre com as promessas│
+│5│Tem boas propostas│
+│6│Está colocando a casa em ordem│
+│7│Está dando continuidade nas obras paradas(Programa Obras Pa│
+│8│Investe na educação estadual (Kits escolares)│
+│9│Construção e/ou reforma de escolas│
+│10│Negociação da dívida do Estado│
+│11│Aumento do efeitovo policial (polícia militar e bombeiros)│
+│12│Concurso público│
+│13│Aumento de salário dos funcionários públicos│
+│14│Reduziu o salário de Governador│
+│15│Geração de empregos│
+│16│OUTROS (DESCREVA):│
+│17│NS/NR│
+
+Q_65_S 29.1. Por que avalia dessa forma ÓTIMO? [Other (specify)]
+ Format: A50
+ Display Width: 50
+
+ Q_66 29.2. Por que avalia dessa forma BOM?
+│1│Está tentando melhorar a saúde (Caravana da Saúde)│
+│2│Está fazendo algumas coisas│
+│3│Boa administração│
+│4│Cumpre com as promessas│
+│5│Tem boas propostas│
+│6│Está colocando a casa em ordem│
+│7│Está dando continuidade nas obras paradas (Programa Obras Pa│
+│8│Investe na educação estadual (Kits escolares)│
+│9│Construção e/ou reforma de escolas│
+│10│Negociação da dívida do Estado│
+│11│Aumento do efeitovo policial (polícia militar e bombeiros)│
+│12│Concurso público│
+│13│Aumento de salário dos funcionários públicos│
+│14│Reduziu o salário de Governador│
+│15│Geração de empregos│
+│16│OUTROS (DESCREVA):│
+│17│NS/NR│
+
+Q_66_S 29.2. Por que avalia dessa forma BOM? [Other (specify)]
+
+Q_67 29.3. Por que avalia dessa forma REGULAR POSITIVO?
+│1│Está comprometido com a saúde (Caravana da Saúde)│
+│2│Está tentando melhorar o Estado│
+│3│Está investindo na Educação (Kit Escolar)│
+│4│Bom administrador│
+│5│Não ouvi falar mal / sem envolvimento com corrupção│
+│6│Ainda não fez nada│
+│7│Não sei nada que ele fez até agora│
+│8│OUTROS (DESCREVA):│
+│9│NS/NR│
+
+Q_67_S 29.3. Por que avalia dessa forma REGULAR POSITIVO? [Other (specify)]
+
+Q_68 29.4. Por que avalia dessa forma REGULAR NEGATIVO?
+│1│Está comprometido com a saúde (Caravana da Saúde)│
+│2│Está tentando melhorar o Estado│
+│3│Está investindo na Educação (Kit Escolar)│
+│4│Bom administrador│
+│5│Não ouvi falar mal / sem envolvimento com corrupção│
+│6│Ainda não fez nada│
+│7│Não sei nada que ele fez até agora│
+│8│OUTROS (DESCREVA):│
+│9│NS/NR│
+
+Q_68_S 29.4. Por que avalia dessa forma REGULAR NEGATIVO? [Other (specify)]
+
+Q_69 29.5. Por que avalia dessa forma RUIM?
+│1│Não fez nada até agora│
+│2│Nâo cumpre as promessas│
+│3│Corrupto/desonesto│
+│4│Mau administrador│
+│5│Não está investindo na saúde│
+│6│Aumento do preço da energia elétrica│
+│7│Incompetente│
+│8│Não investe na educação│
+│9│Continua com a cobrança da vistoria veicular│
+│10│OUTROS (DESCREVA):│
+│11│NS/NR│
+
+Q_69_S 29.5. Por que avalia dessa forma RUIM? [Other (specify)]
+
+Q_70 29.6. Por que avalia dessa forma PÉSSIMO?
+│1│Não fez nada até agora│
+│2│Nâo cumpre as promessas│
+│3│Corrupto/desonesto│
+│4│Mau administrador│
+│5│Não está investindo na saúde│
+│6│Aumento do preço da energia elétrica│
+│7│Incompetente│
+│8│Não investe na educação│
+│9│Continua com a cobrança da vistoria veicular│
+│10│OUTROS (DESCREVA):│
+│11│NS/NR│
+
+Q_70_S 29.6. Por que avalia dessa forma PÉSSIMO? [Other (specify)]
+
+Q_71_O1 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja?
+│1│Caravana da Saúde (carretas)│
+│2│Entrega de Kits Escolares para os alunos│
+│3│Compra de mais viaturas e munições parapoliciamento│
+│4│Aumento de salário dos funcionários públicos│
+│5│Programa Vale UNI│
+│6│Entrega de casas / programa de habitação│
+│7│Reforma/privatização de estradas│
+│8│Continuidade da obra do aquário│
+│9│Programa Obras inacabadas zero│
+│10│Redução do salário do Governador│
+│11│Concursos públicos│
+│12│Renegociação da dívida do Estado│
+│13│OUTRO (DESCREVA):│
+│14│Não se lembra│
+│15│NS/NR│
+
+Q_71_O2 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja?
+│1│Caravana da Saúde (carretas)│
+│2│Entrega de Kits Escolares para os alunos│
+│3│Compra de mais viaturas e munições para policiamento│
+│4│Aumento de salário dos funcionários públicos│
+│5│Programa Vale UNI│
+│6│Entrega de casas / programa de habitação│
+│7│Reforma/privatização de estradas│
+│8│Continuidade da obra do aquário│
+│9│Programa Obras inacabadas zero│
+│10│Redução do salário do Governador│
+│11│Concursos públicos│
+│12│Renegociação da dívida do Estado│
+│13│OUTRO (DESCREVA):│
+│14│Não se lembra│
+│15│NS/NR│
+
+Q_71_O3 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja?
+│1│Caravana da Saúde (carretas)│
+│2│Entrega de Kits Escolares para os alunos│
+│3│Compra de mais viaturas e munições para policiamento│
+│4│Aumento de salário dos funcionários públicos│
+│5│Programa Vale UNI│
+│6│Entrega de casas / programa de habitação│
+│7│Reforma/privatização de estradas│
+│8│Continuidade da obra do aquário│
+│9│Programa Obras inacabadas zero│
+│10│Redução do salário do Governador│
+│11│Concursos públicos│
+│12│Renegociação da dívida do Estado│
+│13│OUTRO (DESCREVA):│
+│14│Não se lembra│
+│15│NS/NR│
+
+Q_71_O4 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja?
+│1│Caravana da Saúde (carretas)│
+│2│Entrega de Kits Escolares para os alunos│
+│3│Compra de mais viaturas e munições para policiamento│
+│4│Aumento de salário dos funcionários públicos│
+│5│Programa Vale UNI│
+│6│Entrega de casas / programa de habitação│
+│7│Reforma/privatização de estradas│
+│8│Continuidade da obra do aquário│
+│9│Programa Obras inacabadas zero│
+│10│Redução do salário do Governador│
+│11│Concursos públicos│
+│12│Renegociação da dívida do Estado│
+│13│OUTRO (DESCREVA):│
+│14│Não se lembra│
+│15│NS/NR│
+
+Q_71_O5 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja?
+│1│Caravana da Saúde (carretas)│
+│2│Entrega de Kits Escolares para os alunos│
+│3│Compra de mais viaturas e munições para policiamento│
+│4│Aumento de salário dos funcionários públicos│
+│5│Programa Vale UNI│
+│6│Entrega de casas / programa de habitação│
+│7│Reforma/privatização de estradas│
+│8│Continuidade da obra do aquário│
+│9│Programa Obras inacabadas zero│
+│10│Redução do salário do Governador│
+│11│Concursos públicos│
+│12│Renegociação da dívida do Estado│
+│13│OUTRO (DESCREVA):│
+│14│Não se lembra│
+│15│NS/NR│
+
+Q_71_O6 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja?
+│1│Caravana da Saúde (carretas)│
+│2│Entrega de Kits Escolares para os alunos│
+│3│Compra de mais viaturas e munições para policiamento│
+│4│Aumento de salário dos funcionários públicos│
+│5│Programa Vale UNI│
+│6│Entrega de casas / programa de habitação│
+│7│Reforma/privatização de estradas│
+│8│Continuidade da obra do aquário│
+│9│Programa Obras inacabadas zero│
+│10│Redução do salário do Governador│
+│11│Concursos públicos│
+│12│Renegociação da dívida do Estado│
+│13│OUTRO (DESCREVA):│
+│14│Não se lembra│
+│15│NS/NR│
+
+Q_71_O7 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja?
+│1│Caravana da Saúde (carretas)│
+│2│Entrega de Kits Escolares para os alunos│
+│3│Compra de mais viaturas e munições para policiamento│
+│4│Aumento de salário dos funcionários públicos│
+│5│Programa Vale UNI│
+│6│Entrega de casas / programa de habitação│
+│7│Reforma/privatização de estradas│
+│8│Continuidade da obra do aquário│
+│9│Programa Obras inacabadas zero│
+│10│Redução do salário do Governador│
+│11│Concursos públicos│
+│12│Renegociação da dívida do Estado│
+│13│OUTRO (DESCREVA):│
+│14│Não se lembra│
+│15│NS/NR│
+
+Q_71_O8 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja?
+│1│Caravana da Saúde (carretas)│
+│2│Entrega de Kits Escolares para os alunos│
+│3│Compra de mais viaturas e munições para policiamento│
+│4│Aumento de salário dos funcionários públicos│
+│5│Programa Vale UNI│
+│6│Entrega de casas / programa de habitação│
+│7│Reforma/privatização de estradas│
+│8│Continuidade da obra do aquário│
+│9│Programa Obras inacabadas zero│
+│10│Redução do salário do Governador│
+│11│Concursos públicos│
+│12│Renegociação da dívida do Estado│
+│13│OUTRO (DESCREVA):│
+│14│Não se lembra│
+│15│NS/NR│
+
+Q_71_O9 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja?
+│1│Caravana da Saúde (carretas)│
+│2│Entrega de Kits Escolares para os alunos│
+│3│Compra de mais viaturas e munições para policiamento│
+│4│Aumento de salário dos funcionários públicos│
+│5│Programa Vale UNI│
+│6│Entrega de casas / programa de habitação│
+│7│Reforma/privatização de estradas│
+│8│Continuidade da obra do aquário│
+│9│Programa Obras inacabadas zero│
+│10│Redução do salário do Governador│
+│11│Concursos públicos│
+│12│Renegociação da dívida do Estado│
+│13│OUTRO (DESCREVA):│
+│14│Não se lembra│
+│15│NS/NR│
+
+Q_71_O10 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja?
+│1│Caravana da Saúde (carretas)│
+│2│Entrega de Kits Escolares para os alunos│
+│3│Compra de mais viaturas e munições para policiamento│
+│4│Aumento de salário dos funcionários públicos│
+│5│Programa Vale UNI│
+│6│Entrega de casas / programa de habitação│
+│7│Reforma/privatização de estradas│
+│8│Continuidade da obra do aquário│
+│9│Programa Obras inacabadas zero│
+│10│Redução do salário do Governador│
+│11│Concursos públicos│
+│12│Renegociação da dívida do Estado│
+│13│OUTRO (DESCREVA):│
+│14│Não se lembra│
+│15│NS/NR│
+
+Q_71_O11 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja?
+│1│Caravana da Saúde (carretas)│
+│2│Entrega de Kits Escolares para os alunos│
+│3│Compra de mais viaturas e munições para policiamento│
+│4│Aumento de salário dos funcionários públicos│
+│5│Programa Vale UNI│
+│6│Entrega de casas / programa de habitação│
+│7│Reforma/privatização de estradas│
+│8│Continuidade da obra do aquário│
+│9│Programa Obras inacabadas zero│
+│10│Redução do salário do Governador│
+│11│Concursos públicos│
+│12│Renegociação da dívida do Estado│
+│13│OUTRO (DESCREVA):│
+│14│Não se lembra│
+│15│NS/NR│
+
+Q_71_O12 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja?
+│1│Caravana da Saúde (carretas)│
+│2│Entrega de Kits Escolares para os alunos│
+│3│Compra de mais viaturas e munições para policiamento│
+│4│Aumento de salário dos funcionários públicos│
+│5│Programa Vale UNI│
+│6│Entrega de casas / programa de habitação│
+│7│Reforma/privatização de estradas│
+│8│Continuidade da obra do aquário│
+│9│Programa Obras inacabadas zero│
+│10│Redução do salário do Governador│
+│11│Concursos públicos│
+│12│Renegociação da dívida do Estado│
+│13│OUTRO (DESCREVA):│
+│14│Não se lembra│
+│15│NS/NR│
+
+Q_71_O13 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja?
+│1│Caravana da Saúde (carretas)│
+│2│Entrega de Kits Escolares para os alunos│
+│3│Compra de mais viaturas e munições para policiamento│
+│4│Aumento de salário dos funcionários públicos│
+│5│Programa Vale UNI│
+│6│Entrega de casas / programa de habitação│
+│7│Reforma/privatização de estradas│
+│8│Continuidade da obra do aquário│
+│9│Programa Obras inacabadas zero│
+│10│Redução do salário do Governador│
+│11│Concursos públicos│
+│12│Renegociação da dívida do Estado│
+│13│OUTRO (DESCREVA):│
+│14│Não se lembra│
+│15│NS/NR│
+
+Q_71_O14 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja?
+│1│Caravana da Saúde (carretas)│
+│2│Entrega de Kits Escolares para os alunos│
+│3│Compra de mais viaturas e munições para policiamento│
+│4│Aumento de salário dos funcionários públicos│
+│5│Programa Vale UNI│
+│6│Entrega de casas / programa de habitação│
+│7│Reforma/privatização de estradas│
+│8│Continuidade da obra do aquário│
+│9│Programa Obras inacabadas zero│
+│10│Redução do salário do Governador│
+│11│Concursos públicos│
+│12│Renegociação da dívida do Estado│
+│13│OUTRO (DESCREVA):│
+│14│Não se lembra│
+│15│NS/NR│
+
+Q_71_O15 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja?
+│1│Caravana da Saúde (carretas)│
+│2│Entrega de Kits Escolares para os alunos│
+│3│Compra de mais viaturas e munições para policiamento│
+│4│Aumento de salário dos funcionários públicos│
+│5│Programa Vale UNI│
+│6│Entrega de casas / programa de habitação│
+│7│Reforma/privatização de estradas│
+│8│Continuidade da obra do aquário│
+│9│Programa Obras inacabadas zero│
+│10│Redução do salário do Governador│
+│11│Concursos públicos│
+│12│Renegociação da dívida do Estado│
+│13│OUTRO (DESCREVA):│
+│14│Não se lembra│
+│15│NS/NR│
+
+S_71_13 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? [Other (specify)]
+
+T_72_1 O que mais gostou? Mais algum?
+│1│Caravana da Saúde (carretas)│
+│2│Entrega de Kits Escolares para os alunos│
+│3│Compra de mais viaturas e munições para policiamento│
+│4│Aumento de salário dos funcionários públicos│
+│5│Programa Vale UNI│
+│6│Entrega de casas / programa de habitação│
+│7│Reforma/privatização de estradas│
+│8│Continuidade da obra do aquário│
+│9│Programa Obras inacabadas zero│
+│10│Redução do salário do Governador│
+│11│Concursos públicos│
+│12│Renegociação da dívida do Estado│
+│13│OUTRO (DESCREVA):│
+│14│Não se lembra│
+│15│NS/NR│
+
+T_72_2 O que não gostou? Mais algum?
+│1│Caravana da Saúde (carretas)│
+│2│Entrega de Kits Escolares para os alunos│
+│3│Compra de mais viaturas e munições para policiamento│
+│4│Aumento de salário dos funcionários públicos│
+│5│Programa Vale UNI│
+│6│Entrega de casas / programa de habitação│
+│7│Reforma/privatização de estradas│
+│8│Continuidade da obra do aquário│
+│9│Programa Obras inacabadas zero│
+│10│Redução do salário do Governador│
+│11│Concursos públicos│
+│12│Renegociação da dívida do Estado│
+│13│OUTRO (DESCREVA):│
+│14│Não se lembra│
+│15│NS/NR│
+
+Q_73 31.1.1. Qual OUTRO programa/ação que mais gostou? 
+ 
+Q_74 31.2.1. Qual OUTRO programa/ação que não gostou? 156
+
+Q_75 32. Na sua opinião, o Governo do Reinaldo Azambuja  está no rumo certo ou errado?
+│1│Totalmente certo│
+│2│Mais certo do que errado│
+│3│Mais errado do que certo│
+│4│Totalmente errado│
+│99│NS/NR│
+
+Q_76 33. O Governador Reinaldo Azambuja (PSDB) apoia a Rose Modesto (que é a vice-governadora e foi secretária de 
+│1│Rose Modesto - PSDB│
+│2│Marquinhos Trad - PSD│
+│3│Alcides Bernal - PP│
+│4│Athayde Nery - PPS│
+│5│Coronel David - PSC│
+│6│Professor Sidney - PSOL│
+│7│Suel Ferrante - PSTU│
+│8│Marcelo Bluma - PV│
+│9│Dagoberto Nogueira - PDT│
+│10│Alex do PT - PT│
+│11│Indeciso/NS│
+│12│NR│
+│13│Nenhum│
+
+Q_77 34. O ex-prefeito Nelsinho Trad deve apoiar o seu irmão Marquinhos Trad. Ou seja, o Marquinhos é o candidato do Nelsinho. Sabendo disso, e se os candidatos a Prefeito fossem esses (mostrar DISCO 01), em quem o(a) Sr(a) votaria?
+│1│Rose Modesto - PSDB│
+│2│Marquinhos Trad - PSD│
+│3│Alcides Bernal - PP│
+│4│Athayde Nery - PPS│
+│5│Coronel David - PSC│
+│6│Professor Sidney - PSOL│
+│7│Suel Ferrante - PSTU│
+│8│Marcelo Bluma - PV│
+│9│Dagoberto Nogueira - PDT│
+│10│Alex do PT - PT│
+│11│Indeciso/NS│
+│12│NR│
+│13│Nenhum│
+
+Q_78 35. O PMDB (do ex-governador André Pucinnelli) poderá vir apoiar a Rose Modesto. Sabendo disso, e se os candidatos a Prefeito fossem esses (mostrar DISCO 01), em que o(a) Sr(a) votaria?
+│1│Rose Modesto - PSDB│
+│2│Marquinhos Trad - PSD│
+│3│Alcides Bernal - PP│
+│4│Athayde Nery - PPS│
+│5│Coronel David - PSC│
+│6│Professor Sidney - PSOL│
+│7│Suel Ferrante - PSTU│
+│8│Marcelo Bluma - PV│
+│9│Dagoberto Nogueira - PDT│
+│10│Alex do PT - PT│
+│11│Indeciso/NS│
+│12│NR│
+│13│Nenhum│
+
+Q_79 36. A outra opção, é o PMDB (do ex-governador André Puccinelli) vir apoiar o Marquinhos Trad. Sabendo disso, e se os candidatos a Prefeito fossem esses (MOSTRAR DISCO 01), em quem o(a) Sr(a) votaria?
+│1│Rose Modesto - PSDB│
+│2│Marquinhos Trad - PSD│
+│3│Alcides Bernal - PP│
+│4│Athayde Nery - PPS│
+│5│Coronel David - PSC│
+│6│Professor Sidney - PSOL│
+│7│Suel Ferrante - PSTU│
+│8│Marcelo Bluma - PV│
+│9│Dagoberto Nogueira - PDT│
+│10│Alex do PT - PT│
+│11│Indeciso/NS│
+│12│NR│
+│13│Nenhum│
+
+Q_80 37. O(a) Sr(a) ouviu falar do envolvimento de algum desses candidatos (MOSTRAR DISCO 01) com corrupção?
+│1│Sim. Qual?│
+│2│Não│
+│3│NS/NR│
+
+Q_80_S 37. O(a) Sr(a) ouviu falar do envolvimento de algum desses candidatos (MOSTRAR DISCO 01) com corrupção?
+
+T_81_1 Tomou conhecimento da Operação Coffee-break? Aquela que investiga a compra de votos de vereadores para cassar o prefeito Bernal?
+│1│Sim, tomou conhecimento│
+│2│Não tomou conhecimento│
+│3│NS/NR│
+
+T_81_2 Tomou conhecimento da Operação Lama Asfáltica? Aquele que investiga a corrupção nas obras do Estado?
+│1│Sim, tomou conhecimento│
+│2│Não tomou conhecimento│
+│3│NS/NR│
+
+T_82_1 Com a operação Coffee-break?  
+│1│Rose Modesto - PSDB│
+│2│Marquinhos Trad - PSD│
+│3│Alcides Bernal - PP│
+│4│Athayde Nery - PPS│
+│5│Coronel David - PSC│
+│6│Professor Sidney - PSOL│
+│7│Suel Ferrante - PSTU│
+│8│Marcelo Bluma - PV│
+│9│Dagoberto Nogueira - PDT│
+│10│Não ouviu falar│
+│11│NS/NR│
+
+T_82_2 Com a operação Lama Asfáltica? 
+│1│Rose Modesto - PSDB│
+│2│Marquinhos Trad - PSD│
+│3│Alcides Bernal - PP│
+│4│Athayde Nery - PPS│
+│5│Coronel David - PSC│
+│6│Professor Sidney - PSOL│
+│7│Suel Ferrante - PSTU│
+│8│Marcelo Bluma - PV│
+│9│Dagoberto Nogueira - PDT│
+│10│Não ouviu falar│
+│11│NS/NR│
+
+T_83_1 Banheiros
+│1│0│
+│2│1│
+│3│2│
+│4│3│
+│5│4 ou mais│
+
+T_83_2 Empregados domésticos
+│1│0│
+│2│1│
+│3│2│
+│4│3│
+│5│4 ou mais│
+
+T_83_3 Automóveis
+│1│0│
+│2│1│
+│3│2│
+│4│3│
+│5│4 ou mais│
+
+T_83_4 Microcomputador
+│1│0│
+│2│1│
+│3│2│
+│4│3│
+│5│4 ou mais│
+
+T_83_5 Lava louça
+│1│0│
+│2│1│
+│3│2│
+│4│3│
+│5│4 ou mais│
+
+T_83_6 Geladeira
+│1│0│
+│2│1│
+│3│2│
+│4│3│
+│5│4 ou mais│
+
+T_83_7 Freezer
+│1│0│
+│2│1│
+│3│2│
+│4│3│
+│5│4 ou mais│
+
+T_83_8 Lava roupa
+│1│0│
+│2│1│
+│3│2│
+│4│3│
+│5│4 ou mais│
+
+T_83_9 DVD
+│1│0│
+│2│1│
+│3│2│
+│4│3│
+│5│4 ou mais│
+
+T_83_10 Microondas
+│1│0│
+│2│1│
+│3│2│
+│4│3│
+│5│4 ou mais│
+
+T_83_11 Motocicleta
+│1│0│
+│2│1│
+│3│2│
+│4│3│
+│5│4 ou mais│
+
+T_83_12 Secadora roupa
+│1│0│
+│2│1│
+│3│2│
+│4│3│
+│5│4 ou mais│
+
+Q_84 41.1. Grau de instrução do chefe de família
+│1│Analfabeto/Fundamental I incompleto│
+│2│Fundamento I Completo / Fundamento II Incompleto│
+│3│Fundamental II completo / Médio incompleto│
+│4│Médio completo / Superior incompleto│
+│5│Superior completo│
+
+T_85_1 Água utlizada neste domicílio é encanada?
+│1│Sim│
+│2│Não│
+
+T_85_2 Considerando o trecho da rua do seu domícilio, sua rua é pavimentada/asfaltada?
+│1│Sim│
+│2│Não│
+
+Q_86 42. Qual a sua renda familiar, somando todos os seus reindmentos e de todas as pessoas que vivem em sua residência? (APRESENTAR CARTÃO DE RENDA)
+│1│Até 01 Salário Mínimo│
+│2│Mais de 01 a 02 Salários Mínimos│
+│3│Mais de 02 a 03 Salários Mínimos│
+│4│Mais de 03 a 05 Salários Mínimos│
+│5│Mais de 05 a 10 Salários Mínimos│
+│6│Mais de 10 a 20 Salários Mínimos│
+│8│NS/NR│
+│99│Mais de 20 Salários Mínimos│
+
+Q_86_1 43. Qual é a sua religião?
+│1│Católica│
+│2│Protestante│
+│3│Evangélica│
+│4│Espírita Kardecista│
+│5│Candomblé / Afro│
+│6│Outra│
+│7│Não tem religião│
+│8│NR│
+
+Q_92 TERMINAMOS A PESQUISA, AGRADECEMOS SUA PARTICIPAÇÃO.

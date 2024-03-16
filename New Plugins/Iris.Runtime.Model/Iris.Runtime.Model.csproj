@@ -1,0 +1,181 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9CD6D183-83C6-49DA-85D3-E5187A05C5EB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Iris.Runtime.Model</RootNamespace>
+    <AssemblyName>Iris.Runtime.Model</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Demo|AnyCPU' ">
+    <OutputPath>bin\Demo\</OutputPath>
+    <DefineConstants>TRACE;LockBuild;LockRun;LockClient</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseObjects\IrisList.cs" />
+    <Compile Include="BaseObjects\ExecutionStatus.cs" />
+    <Compile Include="BaseObjects\Operation.cs" />
+    <Compile Include="DisignSuport\ExecutionException.cs" />
+    <Compile Include="DisignSuport\OperationCategory.cs" />
+    <Compile Include="DisignSuport\QueryType.cs" />
+    <Compile Include="Entities\Entity.cs" />
+    <Compile Include="Entities\ScalarVar.cs" />
+    <Compile Include="Entities\ResultSet.cs" />
+    <Compile Include="Operations\ColumnBasedOperation.cs" />
+    <Compile Include="Operations\RelationBasedOperation.cs" />
+    <Compile Include="Operations\DataSetOperation.cs" />
+    <Compile Include="Operations\BaseFilterOperation.cs" />
+    <Compile Include="Operations\ResultSetOperation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BaseObjects\Structure.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BaseObjects\ClassDiagram1.cd" />
+    <None Include="Entities\Schemas\ClassDiagram1.cd" />
+    <None Include="Entities\Schemas\Entities.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Iris.Interfaces\Iris.Interfaces.csproj">
+      <Project>{507C1041-2A07-4637-A644-F5AA5D258A99}</Project>
+      <Name>Iris.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Iris.PropertyEditors\Iris.PropertyEditors.csproj">
+      <Project>{567D5875-FD91-4F5E-8205-8B797C4365CF}</Project>
+      <Name>Iris.PropertyEditors</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Iris.Runtime.Core\Iris.Runtime.Core.csproj">
+      <Project>{A7EBF228-737B-42A3-B798-5F0B1FE129D7}</Project>
+      <Name>Iris.Runtime.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ClientObjects\WinFormsExe\BaseJobForm.resx">
+      <DependentUpon>BaseJobForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisignSuport\SelectSchemasDialog.resx">
+      <DependentUpon>SelectSchemasDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisignSuport\SortFieldsDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SortFieldsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisignSuport\TxtStructureDialog.resx">
+      <DependentUpon>TxtStructureDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RedLight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GreenLight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Resources\YellowLight.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="ClientObjects\LogItem.cs" />
+    <Compile Include="ClientObjects\ProccessLog.cs" />
+    <Compile Include="ClientObjects\TimeUnit.cs" />
+    <Compile Include="ClientObjects\ClientConfig.cs" />
+    <Compile Include="ClientObjects\WinFormsExe\BaseJobForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientObjects\WinFormsExe\BaseJobForm.Designer.cs">
+      <DependentUpon>BaseJobForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisignSuport\OperationPluginAssembly.cs" />
+    <Compile Include="DisignSuport\SelectSchemasDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisignSuport\SelectSchemasDialog.Designer.cs">
+      <DependentUpon>SelectSchemasDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisignSuport\SortFieldsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisignSuport\SortFieldsDialog.Designer.cs">
+      <DependentUpon>SortFieldsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisignSuport\TxtStructureDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisignSuport\TxtStructureDialog.designer.cs">
+      <DependentUpon>TxtStructureDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisignSuport\TxtStructureEditor.cs" />
+    <Compile Include="Entities\Schemas\AlignType.cs" />
+    <Compile Include="Entities\Schemas\LineType.cs" />
+    <Compile Include="Entities\Schemas\TextField.cs" />
+    <Compile Include="Entities\Schemas\TextSchema.cs" />
+    <Compile Include="Entities\Schemas\TextLine.cs" />
+    <Compile Include="Entities\Schemas\TextObject.cs" />
+    <Compile Include="Entities\Schemas\SchemaEntity.cs" />
+    <Compile Include="Entities\Schemas\XMLSchema.cs" />
+    <Compile Include="Operations\BaseFileSystemOperation.cs" />
+    <Compile Include="Operations\ConnectionOperation.cs" />
+    <Compile Include="Operations\ContainerOperation.cs" />
+    <Compile Include="Operations\ControlOperation.cs" />
+    <Compile Include="Operations\DynamicLinkOperation.cs" />
+    <Compile Include="Operations\Loop.cs" />
+    <Compile Include="Operations\BaseSchemaOperation.cs" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+</Project>

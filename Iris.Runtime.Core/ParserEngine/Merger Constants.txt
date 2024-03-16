@@ -1,0 +1,35 @@
+
+namespace Iris.Runtime.Core
+{
+    enum SymbolConstants : int
+    {
+        SYMBOL_EOF        =  0, // (EOF)
+        SYMBOL_ERROR      =  1, // (Error)
+        SYMBOL_WHITESPACE =  2, // (Whitespace)
+        SYMBOL_LBRACE     =  3, // {
+        SYMBOL_RBRACE     =  4, // }
+        SYMBOL_BASEWORD   =  5, // BaseWord
+        SYMBOL_NEWLINE    =  6, // NewLine
+        SYMBOL_MESSAGE    =  7, // <Message>
+        SYMBOL_WORD       =  8, // <Word>
+        SYMBOL_WORDS      =  9, // <Words>
+        SYMBOL_XEVAL      = 10, // <XEval>
+        SYMBOL_XPRESSION  = 11  // <Xpression>
+    };
+
+    enum RuleConstants : int
+    {
+        RULE_MESSAGE             =  0, // <Message> ::= <Words>
+        RULE_MESSAGE_NEWLINE     =  1, // <Message> ::= <Words> NewLine <Message>
+        RULE_MESSAGE_NEWLINE2    =  2, // <Message> ::= NewLine <Message>
+        RULE_MESSAGE2            =  3, // <Message> ::= 
+        RULE_WORDS               =  4, // <Words> ::= <Word>
+        RULE_WORDS2              =  5, // <Words> ::= <Word> <Words>
+        RULE_WORD_BASEWORD       =  6, // <Word> ::= BaseWord
+        RULE_WORD                =  7, // <Word> ::= <XEval>
+        RULE_XEVAL_LBRACE_RBRACE =  8, // <XEval> ::= { <Xpression> }
+        RULE_XPRESSION_BASEWORD  =  9, // <Xpression> ::= BaseWord
+        RULE_XPRESSION_BASEWORD2 = 10  // <Xpression> ::= BaseWord <Xpression>
+    };
+
+}

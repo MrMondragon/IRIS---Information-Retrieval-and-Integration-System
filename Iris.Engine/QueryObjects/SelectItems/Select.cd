@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Iris.Engine.QueryObjects.Select">
+    <Position X="2.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgIAAACAAAAAAAAIAAAAAAAEAAEAAAAAAAAAAEAAQAA=</HashCode>
+      <FileName>QueryObjects\Select.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="From" />
+      <Property Name="Where" />
+      <Property Name="Selection" />
+      <Property Name="GroupBy" />
+      <Property Name="Having" />
+      <Property Name="OredBy" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.SelectItems.FromClause">
+    <Position X="5.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\SelectItems\FromClause.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Items" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.SelectItems.WhereClause">
+    <Position X="5.5" Y="7" Width="1.5" />
+    <AssociationLine Name="SearchList" Type="Iris.Engine.QueryObjects.Expressions.SearchList">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.436" Y="0.081" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\SelectItems\WhereClause.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SearchList" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.SelectItems.SelectionClause">
+    <Position X="5.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEACAAIAAAAAAAAAAAIAAAAAIAAAAgAAAA=</HashCode>
+      <FileName>QueryObjects\SelectItems\SelectionClause.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Columns" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.SelectItems.GroupClause">
+    <Position X="5.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAIAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\SelectItems\GroupClause.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.SelectItems.HavingClause">
+    <Position X="5.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\SelectItems\HavingClause.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SearchList" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.SelectItems.OrderClause">
+    <Position X="5.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAIAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>QueryObjects\SelectItems\OrderClause.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.SelectItems.FromItem">
+    <Position X="10.5" Y="4.25" Width="1.5" />
+    <AssociationLine Name="JoinType" Type="Iris.Engine.QueryObjects.SelectItems.JoinType">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.226" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="OnClause" Type="Iris.Engine.QueryObjects.Expressions.SearchList" FixedToPoint="true">
+      <Path>
+        <Point X="10.5" Y="4.652" />
+        <Point X="10.25" Y="4.652" />
+        <Point X="10.25" Y="7.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAMAAAAIAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\SelectItems\FromItem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="JoinType" />
+      <Property Name="OnClause" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.SearchList" Collapsed="true">
+    <Position X="9.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEIAAAAIAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\SearchList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.SelectItems.SimpleTableSource" Collapsed="true">
+    <Position X="13.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>QueryObjects\SelectItems\SimpleTableSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.SelectItems.SubQueryTableSource" Collapsed="true">
+    <Position X="13.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\SelectItems\SubQueryTableSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.SelectItems.FromTableSource" Collapsed="true">
+    <Position X="13.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\SelectItems\FromTableSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.CompositeIdentifier">
+    <Position X="9" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAIAAAAAAAAAAAAAAAQAAAAQAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\CompositeIdentifier.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Expression" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.EngineExpression" Collapsed="true">
+    <Position X="12.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\EngineExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Union">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <AssociationLine Name="UnionStatement" Type="Iris.Engine.QueryObjects.Union" ManuallyRouted="true">
+      <Path>
+        <Point X="1.032" Y="2.434" />
+        <Point X="1.032" Y="3.344" />
+        <Point X="1.478" Y="3.344" />
+        <Point X="1.478" Y="2.434" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.162" Y="1.128" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAACAAAAAAAAAAAAAIAAAAAAACA=</HashCode>
+      <FileName>QueryObjects\Union.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SelectStatement" />
+      <Property Name="UnionStatement" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="Iris.Engine.QueryObjects.SelectItems.JoinType" Collapsed="true">
+    <Position X="13.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAIAAAIAAAAAAAAAAAAEAAACgCAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\SelectItems\JoinType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

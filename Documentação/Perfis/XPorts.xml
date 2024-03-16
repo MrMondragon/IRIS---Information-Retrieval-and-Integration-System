@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="4DA9C319-C" name="Iris XPorts" version="1.0" notes="Estereótipos de extensão para o elemento Port, identificando Métodos, Eventos e Propriedades"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="Event" notes="" cx="188" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAD6ceTfuliXa1QAAAF4CAAAHABEAc3RyLmRhdFVUDQAHC85JRwvOSUcLzklH
+hZDZDsFQEIb/W55CXJG4IJZExMOUVogWOS0i4t19c47WTiYzZ5lv1lxLRdopUUMZt5U2OquO
+xHK8j7wjFfwfYPKKbqmtieciyBjPXrMnf5Pfk4/OiJ7z7lCjpy7SuZ0hR+0hrvESZV7rp4Zs
+tL2RMbcj7BRt0p2jesItZLN8Cb8LMqTIHDpFHV1Z7aBlbaMLcjrszs+6rKYzb0akzV5wtjSs
+ur8Tqd9aSQw8YfYbMfpLhBzjH0Tow+w3ov+X+DRLgj/+uIdym5EnbGeOLGsi3ukL1vQKUEsB
+AhcLFAAAAAgAPpx5N+6WJdrVAAAAXgIAAAcACQAAAAAAAAAAAACAAAAAAHN0ci5kYXRVVAUA
+BwvOSUdQSwUGAAAAAAEAAQA+AAAACwEAAAAA</Image>
+				<AppliesTo>
+					<Apply type="Port">
+						<Property name="isBehavior" value="false"/>
+						<Property name="isService" value="true"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Property" notes="" cx="188" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIABJndDcgqam6QwAAAFoAAAAHABEAc3RyLmRhdFVUDQAHmdlCR5nZQkeZ2UJH
+K2bIYEhkKGBIZVBgyAWyMhnyGKoZuBhSGIqAvHIgL5GhBChaBlRRDFerwaDJYA1UVQBUBdJR
+AhRRYggAYoh4LRADAFBLAQIXCxQAAAAIABJndDcgqam6QwAAAFoAAAAHAAkAAAAAAAAAAAAA
+gAAAAABzdHIuZGF0VVQFAAeZ2UJHUEsFBgAAAAABAAEAPgAAAHkAAAAAAA==</Image>
+				<AppliesTo>
+					<Apply type="Port">
+						<Property name="isBehavior" value="false"/>
+						<Property name="isService" value="true"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Method" notes="" cx="188" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAOxmdDcX5eFrQwAAAFoAAAAHABEAc3RyLmRhdFVUDQAHOtlCRzrZQkc62UJH
+K2bIYEhkKGBIZVBgyAWyMhnyGKoZuBhSGIqAvHIgL5GhBChaBlRRDFerwaDJYA1UVQBUBdJR
+AhRRYvAFYoh4LRADAFBLAQIXCxQAAAAIAOxmdDcX5eFrQwAAAFoAAAAHAAkAAAAAAAAAAAAA
+gAAAAABzdHIuZGF0VVQFAAc62UJHUEsFBgAAAAABAAEAPgAAAHkAAAAAAA==</Image>
+				<AppliesTo>
+					<Apply type="Port">
+						<Property name="isBehavior" value="false"/>
+						<Property name="isService" value="true"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Dynamic" notes="" cx="188" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAOKbeTeQAoM38gAAAKoCAAAHABEAc3RyLmRhdFVUDQAHlc1JR5XNSUeVzUlH
+hZLLbsIwEEXvln4FyiqVWBAQFVLVjwnEQEVIkQmwQPw7Z2wMVLxk+ZG5jxmPs9FCpdZy6mrF
+6VeNDvpQJc/Xnq9SLdEdjM2Fm+tT37BKeBXxrSb/0Iyo01R/uGTqqVCfkfao7dwoujd8Q6yC
+DqMhElkVpz28H2ZGRZ6cjlN0Mi9HdEalNcOc6uCWa3DOHWfKbYoWX8+6DndcXG5l6Aq13bll
+z0PdPZyueB06lfAx6PgpWqB8hZu6eIHH7LY+Y3y9we/rd6DVw5unHpaBYV3yeCxRPGL78G7W
+yUZzVPb6hUbnfqd3H75RRK6phnd/yZHV5glQSwECFwsUAAAACADim3k3kAKDN/IAAACqAgAA
+BwAJAAAAAAAAAAAAAIAAAAAAc3RyLmRhdFVUBQAHlc1JR1BLBQYAAAAAAQABAD4AAAAoAQAA
+AAA=</Image>
+				<AppliesTo>
+					<Apply type="Part">
+						<Property name="isReference" value="false"/>
+					</Apply>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+					<Apply type="Component">
+						<Property name="isIndirectlyInstantiated" value="true"/>
+					</Apply>
+					<Apply type="Port">
+						<Property name="isBehavior" value="false"/>
+						<Property name="isService" value="true"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="DynamicControl" notes="" cx="40" cy="40" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIADKdeTeYlfB5JwEAAKwDAAAHABEAc3RyLmRhdFVUDQAHBdBJRwXQSUcF0ElH
+nZHNSsNAFIXPtn2KEDcRFCy2iogLFy71FSRtow02MSRjQaTv7jczjRnb2IAM85M53705c2+j
+lVJVyhSp4JSr1JfGjExrRo7WcE50oTM3J6zdfqpb2ELv2kAZ9kSzHes1m6P80a6ddu6i/xc7
+gfHqGL9LRqMPzVnblySKuf0kMiV7rgXf/b5HQVS0F2NVW4mRo6yHF+5tTRa4WTNr/tRmDV37
+CEOmmrViN/wlCdT9N892vjri98unjpgeIa4GCZ/j5gjhfdgO/EVcDhJ9b8nQl711aCuaOsLW
+rCbLGxGH9Hag475z2UGv+zrdsmGPV3rm1r7mFT3SHTOm19a9Ya35an1vetk53o2rQxGwFZG2
+Qga+dE7joAKdapUTPelej3rg1FH+5Vt9A1BLAQIXCxQAAAAIADKdeTeYlfB5JwEAAKwDAAAH
+AAkAAAAAAAAAAAAAgAAAAABzdHIuZGF0VVQFAAcF0ElHUEsFBgAAAAABAAEAPgAAAF0BAAAA
+AA==</Image>
+				<AppliesTo>
+					<Apply type="Object"/>
+					<Apply type="Component">
+						<Property name="isIndirectlyInstantiated" value="true"/>
+					</Apply>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+	</Content>
+</UMLProfile>

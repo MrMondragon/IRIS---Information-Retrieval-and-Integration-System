@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Iris.Runtime.Model.Entities.Entity">
+    <Position X="8.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entities\Entity.cs</FileName>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DynConnection.Conexao" Collapsed="true">
+    <Position X="11.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Entities.GlobalVar">
+    <Position X="7.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entities\GlobalVar.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Entities.ResultSet">
+    <Position X="9.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entities\ResultSet.cs</FileName>
+      <HashCode>AAAAEIAAAAACAUVAIAFDQQAEABAADAgEQAAIBABAIAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.BaseObjects.Operation">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BaseObjects\Operation.cs</FileName>
+      <HashCode>AACAAAAEAAAAAAAAAAAAAAQAAAAEAAAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.BaseObjects.Operation">
+    <Position X="5.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BaseObjects\Operation.cs</FileName>
+      <HashCode>AAQAAAEEAAAAAASIBEgAiAVEEAAABBAAAAAgAEAgAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Status" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Status" Type="Iris.Runtime.Model.BaseObjects.ExecutionStatus" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.5" Y="8.835" />
+        <Point X="3.969" Y="8.835" />
+        <Point X="3.969" Y="6.844" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Class Name="Iris.Runtime.Model.BaseObjects.Link">
+    <Position X="2" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BaseObjects\Link.cs</FileName>
+      <HashCode>AAgAAAAAAgAAQAYAAAAAAAAAAAAAAAAEAAAgBAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Source" />
+      <Property Name="Destination" />
+      <Property Name="SourceStatus" />
+    </ShowAsAssociation>
+    <AssociationLine Name="Source" Type="Iris.Runtime.Model.BaseObjects.Operation" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="10.669" />
+        <Point X="1.282" Y="10.669" />
+        <Point X="1.282" Y="2.126" />
+        <Point X="6.75" Y="2.126" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Destination" Type="Iris.Runtime.Model.BaseObjects.Operation" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="10.21" />
+        <Point X="1.67" Y="10.21" />
+        <Point X="1.67" Y="2.927" />
+        <Point X="6.75" Y="2.927" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="SourceStatus" Type="Iris.Runtime.Model.BaseObjects.ExecutionStatus" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.312" Y="9.75" />
+        <Point X="2.312" Y="6.048" />
+        <Point X="3.25" Y="6.048" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Class Name="Iris.Runtime.Model.BaseObjects.Structure">
+    <Position X="11.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BaseObjects\Structure.cs</FileName>
+      <HashCode>AAAACAASAAAAEhYABIAUCAQABAgAAAIAYIAAACAAAAg=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="StartPoint" />
+      <Property Name="Result" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Operations" />
+      <Property Name="GlobalVars" />
+      <Property Name="ResultSets" />
+    </ShowAsCollectionAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Result" Type="Iris.Runtime.Model.Entities.Entity" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.125" Y="8" />
+        <Point X="13.125" Y="4.883" />
+        <Point X="9.75" Y="4.883" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="GlobalVars" Type="Iris.Runtime.Model.Entities.GlobalVar" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.75" Y="8.844" />
+        <Point X="11" Y="8.844" />
+        <Point X="11" Y="6" />
+        <Point X="10" Y="6" />
+        <Point X="10" Y="6.148" />
+        <Point X="9.062" Y="6.148" />
+        <Point X="9.062" Y="8.036" />
+        <Point X="8" Y="8.036" />
+        <Point X="8" Y="7.786" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.926" Y="0.316" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="ResultSets" Type="Iris.Runtime.Model.Entities.ResultSet" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.195" Y="8" />
+        <Point X="12.195" Y="7.625" />
+        <Point X="11.083" Y="7.625" Type="JumpStart" />
+        <Point X="10.917" Y="7.625" Type="JumpEnd" />
+        <Point X="10.75" Y="7.625" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Enum Name="Iris.Runtime.Model.BaseObjects.ExecutionStatus">
+    <Position X="3.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BaseObjects\ExecutionStatus.cs</FileName>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAgAAAACIAAAAAEABAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>

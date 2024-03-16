@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LexScheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="scheme.xsd">
+  <Author>Quantum Whale</Author>
+  <Name>Ini files</Name>
+  <Desc>Syntax Scheme for Ini files</Desc>
+  <Copyright>Copyright Quantum Whale, 2003</Copyright>
+  <FileExtension>.ini</FileExtension>
+  <FileType>ini</FileType>
+  <Version>1.1</Version>
+  <Styles>
+    <Style>
+      <Name>idents</Name>
+      <ForeColor>ControlText</ForeColor>
+      <Index>0</Index>
+    </Style>
+    <Style>
+      <Name>comments</Name>
+      <ForeColor>Gray</ForeColor>
+      <FontStyle>Bold</FontStyle>
+      <Index>1</Index>
+      <PlainText>true</PlainText>
+    </Style>
+    <Style>
+      <Name>whitespace</Name>
+      <Index>2</Index>
+    </Style>
+    <Style>
+      <Name>strings</Name>
+      <ForeColor>Maroon</ForeColor>
+      <Index>3</Index>
+    </Style>
+  </Styles>
+  <States>
+    <State>
+      <Name>normal</Name>
+      <CaseSensitive>false</CaseSensitive>
+      <SyntaxBlocks>
+        <SyntaxBlock>
+          <Name>comments</Name>
+          <LexStyle>1</LexStyle>
+          <LeaveState>0</LeaveState>
+          <Expressions>
+            <string>\;.*</string>
+          </Expressions>
+          <Index>0</Index>
+        </SyntaxBlock>
+        <SyntaxBlock>
+          <Name>idents</Name>
+          <LexStyle>0</LexStyle>
+          <LeaveState>0</LeaveState>
+          <Expressions>
+            <string>[a-zA-Z_][a-zA-Z0-9_]*</string>
+          </Expressions>
+          <Index>1</Index>
+        </SyntaxBlock>
+        <SyntaxBlock>
+          <Name>strings</Name>
+          <LexStyle>3</LexStyle>
+          <LeaveState>0</LeaveState>
+          <Expressions>
+            <string>(\[\])|\[(([^\]]*\])|([^\]]*))</string>
+            <string>("")|"(([^"]*")|([^"]*))</string>
+          </Expressions>
+          <Index>2</Index>
+        </SyntaxBlock>
+        <SyntaxBlock>
+          <Name>whitespace</Name>
+          <LexStyle>2</LexStyle>
+          <LeaveState>0</LeaveState>
+          <Expressions>
+            <string>(\s)+</string>
+          </Expressions>
+          <Index>3</Index>
+        </SyntaxBlock>
+      </SyntaxBlocks>
+      <Index>0</Index>
+    </State>
+  </States>
+</LexScheme>

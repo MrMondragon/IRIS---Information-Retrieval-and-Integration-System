@@ -1,0 +1,10 @@
+<Item>
+  <Name>NETParser</Name>
+  <Caption>NET parser</Caption>
+  <Description>
+This demo shows how to use dedicated parsers for .NET family languages.
+  </Description>
+  <Note>
+These parsers support automatic code completion, code outlining, smart formatting, and syntax error underlying.
+  </Note>
+</Item>

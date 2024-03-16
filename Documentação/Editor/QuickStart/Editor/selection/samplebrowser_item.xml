@@ -1,0 +1,10 @@
+<Item>
+  <Name>Selection</Name>
+  <Caption>Selection</Caption>
+  <Description>
+The demo shows how to customize appearance and behavior of selected text within edit control's content.
+  </Description>
+  <Note>
+Editor.NET supports a concept of text selection and a wide range of operations on it, including copy/pasting operations, drag-n-drop, indenting/unindenting, lowercasing/uppercasing, etc. All the selection related aspects are controlled via the Selection property.
+  </Note>
+</Item>

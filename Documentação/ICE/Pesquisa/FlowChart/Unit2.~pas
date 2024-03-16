@@ -1,0 +1,459 @@
+unit Unit2;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, fcButton, fcImgBtn, fcShapeBtn, ExtCtrls, ImgList, ActnList,
+  fcClearPanel, fcButtonGroup, fcOutlookBar, ComCtrls, SynEdit, dxflchrt,
+  SynHighlighterSQL, SynEditHighlighter, SynHighlighterPas, StdCtrls,
+  ToolWin, ICEObjects;
+
+type
+
+  TForm2 = class(TForm)
+    SynPasSyn1: TSynPasSyn;
+    SynSQLSyn1: TSynSQLSyn;
+    pagTools: TPageControl;
+    StatusBar1: TStatusBar;
+    Splitter1: TSplitter;
+    pnlMain: TPanel;
+    MainDrawArea: TdxFlowChart;
+    SynEdit1: TSynEdit;
+    Splitter2: TSplitter;
+    tabTools: TTabSheet;
+    olbToolBar: TfcOutlookBar;
+    olbToolBarfcShapeBtn1: TfcShapeBtn;
+    ActionList1: TActionList;
+    actPasObject: TAction;
+    actSQLObject: TAction;
+    actTransObject: TAction;
+    actClientCursor: TAction;
+    ImageList2: TImageList;
+    actSubStructure: TAction;
+    actCompletionConnection: TAction;
+    actSuccessConnection: TAction;
+    actFailureConnection: TAction;
+    actStartPoint: TAction;
+    actEndPoint: TAction;
+    actBooleanChoice: TAction;
+    actSwitch: TAction;
+    actFor: TAction;
+    actWhile: TAction;
+    actRepeat: TAction;
+    pnlObjs: TPanel;
+    btnSubStruct: TfcShapeBtn;
+    btnCursor: TfcShapeBtn;
+    btnTransport: TfcShapeBtn;
+    btnSQL: TfcShapeBtn;
+    btnPas: TfcShapeBtn;
+    olbToolBarfcShapeBtn2: TfcShapeBtn;
+    pnlConnections: TPanel;
+    btnCompletion: TfcShapeBtn;
+    btnSuccess: TfcShapeBtn;
+    btnFailure: TfcShapeBtn;
+    olbToolBarfcShapeBtn3: TfcShapeBtn;
+    pnlStructs: TPanel;
+    btnStartPoint: TfcShapeBtn;
+    btnEndPoint: TfcShapeBtn;
+    btnBoolChoice: TfcShapeBtn;
+    btnDynChoice: TfcShapeBtn;
+    btnFor: TfcShapeBtn;
+    btnWhile: TfcShapeBtn;
+    btnRepeat: TfcShapeBtn;
+    actStructureConnection: TAction;
+    btnStructureConnection: TfcShapeBtn;
+    actAlignV: TAction;
+    actAlignH: TAction;
+    actDelete: TAction;
+    actNudgeUp: TAction;
+    actNudgeDown: TAction;
+    actNudgeLeft: TAction;
+    actNudgeRight: TAction;
+    ToolBar1: TToolBar;
+    btnAlignV: TToolButton;
+    btnAlignH: TToolButton;
+    btnNudgeUp: TToolButton;
+    btnNudgeDown: TToolButton;
+    btnNudgeLeft: TToolButton;
+    btnNudgeRight: TToolButton;
+    btnDelete: TToolButton;
+    procedure actPasObjectExecute(Sender: TObject);
+    procedure actSQLObjectExecute(Sender: TObject);
+    procedure actTransObjectExecute(Sender: TObject);
+    procedure actClientCursorExecute(Sender: TObject);
+    procedure MainDrawAreaMouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Integer);
+    procedure MainDrawAreaCreateItem(Sender: TdxCustomFlowChart;
+      Item: TdxFcItem);
+    procedure actSubStructureExecute(Sender: TObject);
+    procedure actCompletionConnectionExecute(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure actSuccessConnectionExecute(Sender: TObject);
+    procedure actFailureConnectionExecute(Sender: TObject);
+    procedure MainDrawAreaDeletion(Sender: TdxCustomFlowChart;
+      Item: TdxFcItem);
+    procedure actStartPointExecute(Sender: TObject);
+    procedure actEndPointExecute(Sender: TObject);
+    procedure actBooleanChoiceExecute(Sender: TObject);
+    procedure actSwitchExecute(Sender: TObject);
+    procedure actForExecute(Sender: TObject);
+    procedure actWhileExecute(Sender: TObject);
+    procedure actRepeatExecute(Sender: TObject);
+    procedure actStructureConnectionExecute(Sender: TObject);
+    procedure actNudgeUpExecute(Sender: TObject);
+    procedure actNudgeDownExecute(Sender: TObject);
+    procedure actNudgeLeftExecute(Sender: TObject);
+    procedure actNudgeRightExecute(Sender: TObject);
+    procedure actDeleteExecute(Sender: TObject);
+    procedure actAlignVExecute(Sender: TObject);
+    procedure actAlignHExecute(Sender: TObject);
+  private
+    FObjClass: TObjClass;
+    FConType: TConType;
+    FStructType: TStructType;
+    FShapeW, FShapeH: Integer;
+    procedure ResetButtonsState(aPnl: TPanel);
+    { Private declarations }
+  public
+    procedure doDrawConnection;
+    property ObjClass: TObjClass read FObjClass write FObjClass;
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+uses Math;
+
+{$R *.dfm}
+
+/////////////////////////////////////////////////////////////////////////////////
+//Inicialização do form
+procedure TForm2.FormCreate(Sender: TObject);
+begin
+  FObjClass:= clsNone;
+  FConType:= ctNone;
+  FShapeW:= 43;
+  FShapeH:= 43;
+  olbToolBar.ActivePage:= olbToolBarfcShapeBtn1;
+end;
+
+/////////////////////////////////////////////////////////////////////////////////
+//Seleciona o otPascal como tipo de objeto a ser criado
+procedure TForm2.actPasObjectExecute(Sender: TObject);
+begin
+//  ObjClass:= otPascal;
+end;
+
+/////////////////////////////////////////////////////////////////////////////////
+//Seleciona o otSQL como tipo de objeto a ser criado
+procedure TForm2.actSQLObjectExecute(Sender: TObject);
+begin
+//  ObjClass:= otSQL;
+end;
+
+/////////////////////////////////////////////////////////////////////////////////
+//Seleciona o otTrans como tipo de objeto a ser criado
+procedure TForm2.actTransObjectExecute(Sender: TObject);
+begin
+//  ObjClass:= otDataTransport;
+end;
+
+/////////////////////////////////////////////////////////////////////////////////
+//Seleciona o otClientCursor como tipo de objeto a ser criado
+procedure TForm2.actClientCursorExecute(Sender: TObject);
+begin
+//  ObjClass:= otClientCursor;
+end;
+
+/////////////////////////////////////////////////////////////////////////////////
+//Seleciona o otSubStructure como tipo de objeto a ser criado
+procedure TForm2.actSubStructureExecute(Sender: TObject);
+begin
+//  ObjClass:= otSubStructure;
+end;
+
+/////////////////////////////////////////////////////////////////////////////////
+//MouseDown
+procedure TForm2.MainDrawAreaMouseDown(Sender: TObject;
+  Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
+begin
+
+  //Limpa a seleção se o hittest for nulo
+  if MainDrawArea.GetHitTestAt(X,Y) = [htNowhere] then
+    MainDrawArea.ClearSelection;
+
+  //desenha o objeto
+//  if ObjClass in [otPascal, otSQL, otClientCursor, otDataTransport, otSubStructure] then begin
+//    DrawObject(X,Y, ObjClass, MainDrawArea, FShapeH, FShapeW,'x');
+//    ObjClass:= otNone;
+//  end else if ObjClass = otControlStructure then begin
+//    DrawControlStructure(X,Y,FStructType, MainDrawArea, FShapeH, FShapeW,'x');
+//    FStructType:= stNone;
+//    ObjClass:= otNone;
+//  end;
+
+  //Retorna todos os botões de dois estados ao estado normal
+  ResetButtonsState(pnlObjs);
+  ResetButtonsState(pnlStructs);
+
+end;
+
+/////////////////////////////////////////////////////////////////////////////////
+//Desenha os objetos
+/////////////////////////////////////////////////////////////////////////////////
+//OnCreateItem de MainDrawArea
+procedure TForm2.MainDrawAreaCreateItem(Sender: TdxCustomFlowChart;
+  Item: TdxFcItem);
+begin
+  //impede a criação acidental de conexões automáticas
+//  if item is TdxFcConnection then
+//      if ObjClass <> otConnection then abort;
+end;
+
+/////////////////////////////////////////////////////////////////////////////////
+//Retorna todos os botões de dois estados para o estado normal
+procedure TForm2.ResetButtonsState(aPnl: TPanel);
+var
+  i: Integer;
+begin
+  for i:= 0 to aPnl.ControlCount -1 do
+    if aPnl.Controls[i] is TfcShapeBtn then
+      TfcShapeBtn(aPnl.Controls[i]).Down:= False;
+end;
+
+/////////////////////////////////////////////////////////////////////////////////
+//Desenha as conexões
+/////////////////////////////////////////////////////////////////////////////////
+//Determina os pontos iniciais de conexão
+
+/////////////////////////////////////////////////////////////////////////////////
+//Seleciona o tipo de conexão ctCompletion
+procedure TForm2.actCompletionConnectionExecute(Sender: TObject);
+begin
+  FConType:= ctCompletion;
+  doDrawConnection;
+end;
+
+/////////////////////////////////////////////////////////////////////////////////
+//Seleciona o tipo de conexão ctSuccess
+procedure TForm2.actSuccessConnectionExecute(Sender: TObject);
+begin
+  FConType:= ctSuccess;
+  doDrawConnection;
+end;
+
+/////////////////////////////////////////////////////////////////////////////////
+//Seleciona o tipo de conexão ctFailure
+procedure TForm2.actFailureConnectionExecute(Sender: TObject);
+begin
+  FConType:= ctFailure;
+  doDrawConnection;
+end;
+
+/////////////////////////////////////////////////////////////////////////////////
+//Seleciona o tipo de conexão ctStructure
+procedure TForm2.actStructureConnectionExecute(Sender: TObject);
+begin
+  FConType:= ctStructure;
+  doDrawConnection;
+end;
+
+/////////////////////////////////////////////////////////////////////////////////
+//Remove objetos do modelo
+procedure TForm2.MainDrawAreaDeletion(Sender: TdxCustomFlowChart;
+  Item: TdxFcItem);
+var
+  ObjAux, Obj: TIceObject;
+begin
+//  if Item is TIceObject then begin
+//    Obj:= TIceObject(Item);
+//
+//    if Obj.Parent <> nil then begin
+//      Obj.Parent.ClearUnion;
+//      Obj.Parent.Free;
+//    end else if Obj.IsUnion then  begin
+//      while Obj.ObjectCount > 0 do begin
+//        ObjAux:= TIceObject(Obj.Objects[0]);
+//        Obj.RemoveFromUnion(ObjAux);
+//        ObjAux.Parent:= Nil;
+//        ObjAux.Free;
+//      end;
+//    end;
+//  end;
+end;
+
+/////////////////////////////////////////////////////////////////////////////////
+//Seleciona o stStartPoint como tipo de objeto a ser criado
+procedure TForm2.actStartPointExecute(Sender: TObject);
+begin
+  FStructType:= stStartPoint;
+//  FObjClass:= otControlStructure;
+end;
+
+/////////////////////////////////////////////////////////////////////////////////
+//Seleciona o stEndPoint como tipo de objeto a ser criado
+procedure TForm2.actEndPointExecute(Sender: TObject);
+begin
+  FStructType:= stEndPoint;
+//  FObjClass:= otControlStructure;
+end;
+
+/////////////////////////////////////////////////////////////////////////////////
+//Seleciona o stBoolChoice como tipo de objeto a ser criado
+procedure TForm2.actBooleanChoiceExecute(Sender: TObject);
+begin
+  FStructType:= stBoolChoice;
+//  FObjClass:= otControlStructure;
+end;
+
+/////////////////////////////////////////////////////////////////////////////////
+//Seleciona o stDynChoice como tipo de objeto a ser criado
+procedure TForm2.actSwitchExecute(Sender: TObject);
+begin
+  FStructType:= stDynChoice;
+//  FObjClass:= otControlStructure;
+end;
+
+/////////////////////////////////////////////////////////////////////////////////
+//Seleciona o stFor como tipo de objeto a ser criado
+procedure TForm2.actForExecute(Sender: TObject);
+begin
+  FStructType:= stFor;
+//  FObjClass:= otControlStructure;
+end;
+
+/////////////////////////////////////////////////////////////////////////////////
+//Seleciona o stFor como tipo de objeto a ser criado
+procedure TForm2.actWhileExecute(Sender: TObject);
+begin
+  FStructType:= stWhile;
+//  FObjClass:= otControlStructure;
+end;
+
+/////////////////////////////////////////////////////////////////////////////////
+//Seleciona o stRepeat como tipo de objeto a ser criado
+procedure TForm2.actRepeatExecute(Sender: TObject);
+begin
+  FStructType:= stRepeat;
+//  FObjClass:= otControlStructure;
+end;
+
+/////////////////////////////////////////////////////////////////////////////////
+//Desenha as estruturas de controle
+/////////////////////////////////////////////////////////////////////////////////
+//Retorna o tipo de objeto
+/////////////////////////////////////////////////////////////////////////////////
+//Move o objeto um ponto para cima
+procedure TForm2.actNudgeUpExecute(Sender: TObject);
+var
+  j,i: Integer;
+begin
+  For i:= 0 to MainDrawArea.SelCount -1 do begin
+    MainDrawArea.SelectedObjects[i].Top:= MainDrawArea.SelectedObjects[i].Top -1;
+    if MainDrawArea.SelectedObjects[i].ObjectCount > 0 then
+      for j:= 0 to MainDrawArea.SelectedObjects[i].ObjectCount -1 do
+        MainDrawArea.SelectedObjects[i].Objects[j].Top:= MainDrawArea.SelectedObjects[i].Objects[j].Top -1;
+  end;
+end;
+
+/////////////////////////////////////////////////////////////////////////////////
+//Move o objeto um ponto para baixo
+procedure TForm2.actNudgeDownExecute(Sender: TObject);
+var
+  j,i: Integer;
+begin
+  For i:= 0 to MainDrawArea.SelCount -1 do begin
+    MainDrawArea.SelectedObjects[i].Top:= MainDrawArea.SelectedObjects[i].Top +1;
+    if MainDrawArea.SelectedObjects[i].ObjectCount > 0 then
+      for j:= 0 to MainDrawArea.SelectedObjects[i].ObjectCount -1 do
+        MainDrawArea.SelectedObjects[i].Objects[j].Top:= MainDrawArea.SelectedObjects[i].Objects[j].Top +1;
+  end;
+
+end;
+
+/////////////////////////////////////////////////////////////////////////////////
+//Move o objeto um ponto para a esquerda
+procedure TForm2.actNudgeLeftExecute(Sender: TObject);
+var
+  i,j: Integer;
+begin
+  For i:= 0 to MainDrawArea.SelCount -1 do begin
+    MainDrawArea.SelectedObjects[i].Left:= MainDrawArea.SelectedObjects[i].Left -1;
+    if MainDrawArea.SelectedObjects[i].ObjectCount > 0 then
+      for j:= 0 to MainDrawArea.SelectedObjects[i].ObjectCount -1 do
+        MainDrawArea.SelectedObjects[i].Objects[j].Left:= MainDrawArea.SelectedObjects[i].Objects[j].Left -1;
+  end;
+
+end;
+
+/////////////////////////////////////////////////////////////////////////////////
+//Move o objeto um ponto para a direita
+procedure TForm2.actNudgeRightExecute(Sender: TObject);
+var
+  i, j: Integer;
+begin
+  For i:= 0 to MainDrawArea.SelCount -1 do begin
+    MainDrawArea.SelectedObjects[i].Left:= MainDrawArea.SelectedObjects[i].Left +1;
+    if MainDrawArea.SelectedObjects[i].ObjectCount > 0 then
+      for j:= 0 to MainDrawArea.SelectedObjects[i].ObjectCount -1 do
+        MainDrawArea.SelectedObjects[i].Objects[j].Left:= MainDrawArea.SelectedObjects[i].Objects[j].Left +1;
+  end;
+end;
+
+/////////////////////////////////////////////////////////////////////////////////
+//Deleta os objetos selecionados
+procedure TForm2.actDeleteExecute(Sender: TObject);
+begin
+  MainDrawArea.DeleteSelection;
+end;
+
+procedure TForm2.actAlignVExecute(Sender: TObject);
+var
+  RefX, X: integer;
+  i,j: Integer;
+begin
+  if MainDrawArea.SelCount < 2 then exit;
+
+  RefX:= MainDrawArea.SelectedObjects[0].Left + Trunc(MainDrawArea.SelectedObjects[0].Width /2);
+
+  for i:= 1 to MainDrawArea.SelCount -1 do begin
+    X:= MainDrawArea.SelectedObjects[i].Left + Trunc(MainDrawArea.SelectedObjects[i].Width /2);
+    MainDrawArea.SelectedObjects[i].Left:= MainDrawArea.SelectedObjects[i].Left + (RefX - X);
+    if MainDrawArea.SelectedObjects[i].ObjectCount > 0 then
+      for j:= 0 to MainDrawArea.SelectedObjects[i].ObjectCount -1 do
+        MainDrawArea.SelectedObjects[i].Objects[j].Left:= MainDrawArea.SelectedObjects[i].Objects[j].Left +(RefX - X);
+  end;
+
+end;
+
+procedure TForm2.actAlignHExecute(Sender: TObject);
+var
+  RefY, Y: integer;
+  i,j: Integer;
+begin
+  if MainDrawArea.SelCount < 2 then exit;
+
+  RefY:= MainDrawArea.SelectedObjects[0].Top + Trunc(MainDrawArea.SelectedObjects[0].Height /2);
+
+  for i:= 1 to MainDrawArea.SelCount -1 do begin
+    Y:= MainDrawArea.SelectedObjects[i].Top + Trunc(MainDrawArea.SelectedObjects[i].Height /2);
+    MainDrawArea.SelectedObjects[i].Top:= MainDrawArea.SelectedObjects[i].Top + (RefY - Y);
+    if MainDrawArea.SelectedObjects[i].ObjectCount > 0 then
+      for j:= 0 to MainDrawArea.SelectedObjects[i].ObjectCount -1 do
+        MainDrawArea.SelectedObjects[i].Objects[j].Top:= MainDrawArea.SelectedObjects[i].Objects[j].Top +(RefY - Y);
+  end;
+
+end;
+
+procedure TForm2.doDrawConnection;
+begin
+//  DrawConnection(FConType,MainDrawArea);
+//  FConType:= ctNone;
+//  FObjClass:= otNone;
+end;
+
+end.

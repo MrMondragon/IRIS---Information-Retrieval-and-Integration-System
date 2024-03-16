@@ -1,0 +1,31 @@
+unit GlobalParser;
+
+interface
+
+uses
+  SysUtils, Classes, SyntaxEd, SynParse, Vars, ExFuncs, ExClass, ExPars,
+  parstype;
+
+type
+  TGlobalParserDtm = class(TDataModule)
+    EPUserLib1: TEPUserLib;
+    ExParser1: TExParser;
+    EPVCLClasses1: TEPVCLClasses;
+    EPRegFuncs1: TEPRegFuncs;
+    EPVars1: TEPVars;
+    SQLScript: TSyntaxMemoParser;
+    PascalScript: TSyntaxMemoParser;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  GlobalParserDtm: TGlobalParserDtm;
+
+implementation
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,24 @@
+Notas:
+
+1- Ponteiros em delphi podem ser tratados como objetos diretos.
+        - A propriedade Data de um objeto no flowchart pode ser apontada para o
+        shapedObject correspondente
+2- Utilizando unions, a criação de cada objeto pode adicionar a ele um objeto
+com título
+
+3- Falta estudar o modo de determiar a posição relativa de dois objetos
+e o modo de determinar o ponto de origem e destino de conexões
+
+4- Por mais que seja possível, é provável que não seja criadas classes extra para
+objetos do flowchart. Talvez as propriedades CustomData (recebendo um identificador par o objeto real)
+e Data, com um ponteiro re-estabelecido dinamicamente sejam suficientes.
+        - Por outro lado, uma vez que o gráfico não vai ser salvo por si só,
+        talvez seja interessante ter objetos capazes de se criarem sozinhos e de
+        armazenar tantos dados quantos sejam necessários.
+
+5- A possibilidade de criar textos independentes para o título (à la model maker) é
+muitíssimo interessante
+
+6- Pesquisar a propriedade ShapeType = fcsUser User-defined shape (for descendant
+classes only). Verificar como e onde são definidos os tipos de forma e como criar novos!
+

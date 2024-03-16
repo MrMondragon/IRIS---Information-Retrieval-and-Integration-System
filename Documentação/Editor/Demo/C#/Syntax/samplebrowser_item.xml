@@ -1,0 +1,13 @@
+<Item>
+  <Name>SyntaxEditor</Name>
+  <Executable>..\..\..\bin\</Executable>
+  <CSharp>..\..\C#\syntax\</CSharp>
+  <VB.NET>..\..\VB\syntax\</VB.NET>
+  <Caption>Syntax Demo</Caption>
+  <Description>
+Syntax Demo shows ability of Editor.NET to highlight syntax of various programming languages.
+  </Description>
+  <Note>
+We developed a set of parsers for most commonly used modern programming languages, including C, C#, Delphi, Xml, Html, Perl, etc. Some of these parsers are extended to support automatic code completion, code outlining, smart formatting, and syntax error underlining. 
+  </Note>
+</Item>

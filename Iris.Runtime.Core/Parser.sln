@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parser", "Parser.csproj", "{A7EBF228-737B-42A3-B798-5F0B1FE129D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Performance", "..\..\Pesquisa C#\Performance.csproj", "{54D1C8CF-F9C3-4004-B81E-D73273F6A68C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBDesign", "..\..\..\..\Prog\FlowChart.NET Pro\Build for .NET framework 1.1\DBDesign\DBDesign.csproj", "{BB507B22-1255-4005-A1C6-007B99C67E78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLDesigner", "..\SQLDesigner\SQLDesigner.csproj", "{93D287EB-B497-4C38-8F82-1A5B5C6D7D9A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Documentation|Any CPU = Documentation|Any CPU
+		Release|Any CPU = Release|Any CPU
+		StronglyNamedAssembly|Any CPU = StronglyNamedAssembly|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7EBF228-737B-42A3-B798-5F0B1FE129D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7EBF228-737B-42A3-B798-5F0B1FE129D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7EBF228-737B-42A3-B798-5F0B1FE129D7}.Documentation|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7EBF228-737B-42A3-B798-5F0B1FE129D7}.Documentation|Any CPU.Build.0 = Debug|Any CPU
+		{A7EBF228-737B-42A3-B798-5F0B1FE129D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7EBF228-737B-42A3-B798-5F0B1FE129D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7EBF228-737B-42A3-B798-5F0B1FE129D7}.StronglyNamedAssembly|Any CPU.ActiveCfg = Release|Any CPU
+		{A7EBF228-737B-42A3-B798-5F0B1FE129D7}.StronglyNamedAssembly|Any CPU.Build.0 = Release|Any CPU
+		{54D1C8CF-F9C3-4004-B81E-D73273F6A68C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54D1C8CF-F9C3-4004-B81E-D73273F6A68C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54D1C8CF-F9C3-4004-B81E-D73273F6A68C}.Documentation|Any CPU.ActiveCfg = Debug|Any CPU
+		{54D1C8CF-F9C3-4004-B81E-D73273F6A68C}.Documentation|Any CPU.Build.0 = Debug|Any CPU
+		{54D1C8CF-F9C3-4004-B81E-D73273F6A68C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54D1C8CF-F9C3-4004-B81E-D73273F6A68C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54D1C8CF-F9C3-4004-B81E-D73273F6A68C}.StronglyNamedAssembly|Any CPU.ActiveCfg = Release|Any CPU
+		{54D1C8CF-F9C3-4004-B81E-D73273F6A68C}.StronglyNamedAssembly|Any CPU.Build.0 = Release|Any CPU
+		{BB507B22-1255-4005-A1C6-007B99C67E78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB507B22-1255-4005-A1C6-007B99C67E78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB507B22-1255-4005-A1C6-007B99C67E78}.Documentation|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB507B22-1255-4005-A1C6-007B99C67E78}.Documentation|Any CPU.Build.0 = Debug|Any CPU
+		{BB507B22-1255-4005-A1C6-007B99C67E78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB507B22-1255-4005-A1C6-007B99C67E78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB507B22-1255-4005-A1C6-007B99C67E78}.StronglyNamedAssembly|Any CPU.ActiveCfg = Release|Any CPU
+		{BB507B22-1255-4005-A1C6-007B99C67E78}.StronglyNamedAssembly|Any CPU.Build.0 = Release|Any CPU
+		{93D287EB-B497-4C38-8F82-1A5B5C6D7D9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93D287EB-B497-4C38-8F82-1A5B5C6D7D9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93D287EB-B497-4C38-8F82-1A5B5C6D7D9A}.Documentation|Any CPU.ActiveCfg = Debug|Any CPU
+		{93D287EB-B497-4C38-8F82-1A5B5C6D7D9A}.Documentation|Any CPU.Build.0 = Debug|Any CPU
+		{93D287EB-B497-4C38-8F82-1A5B5C6D7D9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93D287EB-B497-4C38-8F82-1A5B5C6D7D9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93D287EB-B497-4C38-8F82-1A5B5C6D7D9A}.StronglyNamedAssembly|Any CPU.ActiveCfg = Release|Any CPU
+		{93D287EB-B497-4C38-8F82-1A5B5C6D7D9A}.StronglyNamedAssembly|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

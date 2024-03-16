@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<TICESqlDataCursor>
+	<Name>asd</Name>
+	<ObjClass>clsOperation</ObjClass>
+	<Caption></Caption>
+	<Color>8454143</Color>
+	<ImageIndex>2</ImageIndex>
+	<ISISObject>
+		<Height>43</Height>
+		<Left>0</Left>
+		<ShapeStyle>psSolid</ShapeStyle>
+		<ShapeType>fcsRoundRect</ShapeType>
+		<ShapeWidth>1</ShapeWidth>
+		<Text></Text>
+		<Top>0</Top>
+		<Width>43</Width>
+		<ZOrder>2</ZOrder>
+	</ISISObject>
+	<ShapeHeigth>43</ShapeHeigth>
+	<ShapeLeft>0</ShapeLeft>
+	<ShapeStyle>psSolid</ShapeStyle>
+	<ShapeTop>0</ShapeTop>
+	<ShapeType>fcsRoundRect</ShapeType>
+	<ShapeWidth>43</ShapeWidth>
+	<TxtHeigth>15</TxtHeigth>
+	<TxtLeft>6</TxtLeft>
+	<TxtObject>
+		<Height>15</Height>
+		<Left>6</Left>
+		<ShapeStyle>psSolid</ShapeStyle>
+		<ShapeType>fcsNone</ShapeType>
+		<ShapeWidth>1</ShapeWidth>
+		<Text>asd</Text>
+		<Top>43</Top>
+		<Width>30</Width>
+		<ZOrder>3</ZOrder>
+	</TxtObject>
+	<TxtTop>43</TxtTop>
+	<TxtWidth>30</TxtWidth>
+	<DependencyList>
+		<Count>0</Count>
+	</DependencyList>
+	<Status>sttReady</Status>
+	<ICEDatasetName></ICEDatasetName>
+	<OperationName></OperationName>
+</TICESqlDataCursor>

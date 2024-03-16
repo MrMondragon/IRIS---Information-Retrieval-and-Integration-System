@@ -1,0 +1,10 @@
+<Item>
+  <Name>OwnerDraw</Name>
+  <Caption>Owner Draw</Caption>
+  <Description>
+The demo shows ability to use owner drawing for edit control's text.
+  </Description>
+  <Note>
+Editor.NET provides a way to draw extra graphic primitives on the drawing surface within the text during painting process.
+  </Note>
+</Item>

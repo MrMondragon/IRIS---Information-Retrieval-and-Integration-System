@@ -1,0 +1,11 @@
+If you find any problems during installation write us to:
+  support@qwhale.net
+
+The latest version of our products can be downloaded from our web site:
+  http://www.qwhale.net
+
+Registration process is described in order.txt
+
+If you have any previous version of Editor.NET product, 
+you should uninstall it (use Control Panel | Add or Remove Programs dialog to do that).
+

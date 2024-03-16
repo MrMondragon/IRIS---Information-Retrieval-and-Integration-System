@@ -1,0 +1,10 @@
+<Item>
+  <Name>Hypertext</Name>
+  <Caption>Hypertext</Caption>
+  <Description>
+The demo shows how to handle hypertext sections inside the Editor.NET control's content.
+  </Description>
+  <Note>
+Editor.NET can be setup to handle pieces of text that look like some kind of an URL. By default, clicking the URL causes the operating system default action to be performed (e.g. launching a browser or an email client), however, you can override this behavior by handling the JumpToUrl event.
+  </Note>
+</Item>

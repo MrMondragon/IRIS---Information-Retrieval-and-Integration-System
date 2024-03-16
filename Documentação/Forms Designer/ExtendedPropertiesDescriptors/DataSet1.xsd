@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SZJInternacao" msprop:Generator_UserTableName="SZJInternacao" msprop:Generator_RowDeletedName="SZJInternacaoRowDeleted" msprop:Generator_TableClassName="SZJInternacaoDataTable" msprop:Generator_RowChangedName="SZJInternacaoRowChanged" msprop:Generator_RowClassName="SZJInternacaoRow" msprop:Generator_RowChangingName="SZJInternacaoRowChanging" msprop:Generator_RowEvArgName="SZJInternacaoRowChangeEvent" msprop:Generator_RowEvHandlerName="SZJInternacaoRowChangeEventHandler" msprop:Generator_TablePropName="SZJInternacao" msprop:Generator_TableVarName="tableSZJInternacao" msprop:Generator_RowDeletingName="SZJInternacaoRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CODCOLIGADA" msprop:Generator_UserColumnName="CODCOLIGADA" msprop:Generator_ColumnPropNameInRow="CODCOLIGADA" msprop:Generator_ColumnVarNameInTable="columnCODCOLIGADA" msprop:Generator_ColumnPropNameInTable="CODCOLIGADAColumn" type="xs:short" />
+              <xs:element name="NUMERO" msprop:Generator_UserColumnName="NUMERO" msprop:Generator_ColumnPropNameInRow="NUMERO" msprop:Generator_ColumnVarNameInTable="columnNUMERO" msprop:Generator_ColumnPropNameInTable="NUMEROColumn" type="xs:int" default="0" />
+              <xs:element name="NUMPACIENTE" msprop:Generator_UserColumnName="NUMPACIENTE" msprop:Generator_ColumnPropNameInRow="NUMPACIENTE" msprop:Generator_ColumnVarNameInTable="columnNUMPACIENTE" msprop:Generator_ColumnPropNameInTable="NUMPACIENTEColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CODCLINICA" msprop:Generator_UserColumnName="CODCLINICA" msprop:Generator_ColumnPropNameInRow="CODCLINICA" msprop:Generator_ColumnVarNameInTable="columnCODCLINICA" msprop:Generator_ColumnPropNameInTable="CODCLINICAColumn" type="xs:string" />
+              <xs:element name="DATAINTERNACAO" msprop:Generator_UserColumnName="DATAINTERNACAO" msprop:Generator_ColumnPropNameInRow="DATAINTERNACAO" msprop:Generator_ColumnVarNameInTable="columnDATAINTERNACAO" msprop:Generator_ColumnPropNameInTable="DATAINTERNACAOColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DATAALTA" msprop:Generator_UserColumnName="DATAALTA" msprop:Generator_ColumnPropNameInRow="DATAALTA" msprop:Generator_ColumnVarNameInTable="columnDATAALTA" msprop:Generator_ColumnPropNameInTable="DATAALTAColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TIPOSAIDA" msprop:Generator_UserColumnName="TIPOSAIDA" msprop:Generator_ColumnPropNameInRow="TIPOSAIDA" msprop:Generator_ColumnVarNameInTable="columnTIPOSAIDA" msprop:Generator_ColumnPropNameInTable="TIPOSAIDAColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CODESPECIALIDADE" msprop:Generator_UserColumnName="CODESPECIALIDADE" msprop:Generator_ColumnPropNameInRow="CODESPECIALIDADE" msprop:Generator_ColumnVarNameInTable="columnCODESPECIALIDADE" msprop:Generator_ColumnPropNameInTable="CODESPECIALIDADEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NOME" msdata:Caption="Nome do Paciente" msprop:Generator_UserColumnName="NOME" msprop:Generator_ColumnPropNameInRow="NOME" msprop:Generator_ColumnVarNameInTable="columnNOME" msprop:Generator_ColumnPropNameInTable="NOMEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ESPECIALIDADE" msprop:Generator_UserColumnName="ESPECIALIDADE" msprop:Generator_ColumnPropNameInRow="ESPECIALIDADE" msprop:Generator_ColumnVarNameInTable="columnESPECIALIDADE" msprop:Generator_ColumnPropNameInTable="ESPECIALIDADEColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UNIDADECLINICA" msprop:Generator_UserColumnName="UNIDADECLINICA" msprop:Generator_ColumnPropNameInRow="UNIDADECLINICA" msprop:Generator_ColumnVarNameInTable="columnUNIDADECLINICA" msprop:Generator_ColumnPropNameInTable="UNIDADECLINICAColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SZJInternacao" />
+      <xs:field xpath="mstns:CODCOLIGADA" />
+      <xs:field xpath="mstns:NUMERO" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

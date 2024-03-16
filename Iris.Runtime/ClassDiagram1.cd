@@ -1,0 +1,1152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Iris.DataOperations.ColumnBasedOperations.Aggregate" Collapsed="true">
+    <Position X="171.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAEAAAABAAAAgBAAAIEAAEAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ColumnBasedOperations\Aggregate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.DataOperations.ColumnBasedOperations.ConditionalMaskColumn" Collapsed="true">
+    <Position X="153.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAEAAAAAAAgAAAAIAABAAAAAQAAAAgAAA=</HashCode>
+      <FileName>ColumnBasedOperations\ConditionalMaskColumn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.DataOperations.ColumnBasedOperations.TrimEnd" Collapsed="true">
+    <Position X="155.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAEIAAAACAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ColumnBasedOperations\TrimEnd.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ColumnBasedOperations.AutoIncColumn" Collapsed="true">
+    <Position X="149" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAIEAAACABAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ColumnBasedOperations\AutoIncColumn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ColumnBasedOperations.ConstantColumn" Collapsed="true">
+    <Position X="158" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEABAAAAEAAAABAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ColumnBasedOperations\ConstantColumn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ColumnBasedOperations.ConvertColumn" Collapsed="true">
+    <Position X="162.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ColumnBasedOperations\ConvertColumn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ColumnBasedOperations.CopyColumn" Collapsed="true">
+    <Position X="137.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAQAgAgEAAAAABAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ColumnBasedOperations\CopyColumn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ColumnBasedOperations.CreateRelation" Collapsed="true">
+    <Position X="169.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAoAAA=</HashCode>
+      <FileName>ColumnBasedOperations\CreateRelation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ColumnBasedOperations.Decode" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="144.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAgAAAAAAABAAAAAQAAAAAAgAAA=</HashCode>
+      <FileName>ColumnBasedOperations\Decode.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ColumnBasedOperations.DerivedColumn" Collapsed="true">
+    <Position X="151.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAFAAAAAABAAAAAQAAAAAAAgAAA=</HashCode>
+      <FileName>ColumnBasedOperations\DerivedColumn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ColumnBasedOperations.GUIDColumn" Collapsed="true">
+    <Position X="164.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAEAAAAABAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ColumnBasedOperations\GUIDColumn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ColumnBasedOperations.IIFOper" Collapsed="true">
+    <Position X="140" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAgAAAAIAABBBAAAAAAAAAAAAAABAAAgAAA=</HashCode>
+      <FileName>ColumnBasedOperations\IIFOper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ColumnBasedOperations.IsNullOper" Collapsed="true">
+    <Position X="142.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAgAAE=</HashCode>
+      <FileName>ColumnBasedOperations\IsNullOper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ColumnBasedOperations.NewColumn" Collapsed="true">
+    <Position X="167" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAEAAAAAAAAAAACAAAAAggAAA=</HashCode>
+      <FileName>ColumnBasedOperations\NewColumn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ColumnBasedOperations.SubString" Collapsed="true">
+    <Position X="146.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAIAgAACAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ColumnBasedOperations\SubString.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ColumnBasedOperations.TrimOper" Collapsed="true">
+    <Position X="160.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ColumnBasedOperations\TrimOper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ResultSetOperations.Lookup" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="173.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ColumnBasedOperations\Lookup.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ResultSetOperations.AcceptTable" Collapsed="true">
+    <Position X="45.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BIAAAAAIACAAAAAABIAAAAIAACAAAAAAAAAAAAIgAAA=</HashCode>
+      <FileName>ResultSetOperations\AcceptTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ResultSetOperations.Apply" Collapsed="true">
+    <Position X="52.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAIAIAACAAAAAgAAAAAAAACAAAAggAA=</HashCode>
+      <FileName>ResultSetOperations\Apply.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ResultSetOperations.ClearTable" Collapsed="true">
+    <Position X="47.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ResultSetOperations\ClearTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ResultSetOperations.ColumnAlias" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="54.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACCAAAAAgAAAAAAAAAAAAAAAAAAAAwAAA=</HashCode>
+      <FileName>ResultSetOperations\ColumnAlias.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ResultSetOperations.Fill" Collapsed="true">
+    <Position X="41" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ResultSetOperations\Fill.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ResultSetOperations.RejectTable" Collapsed="true">
+    <Position X="56.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAQAACCAAAAAAAgAAAQAAACAAAAAAAAAIAAAAgAAA=</HashCode>
+      <FileName>ResultSetOperations\RejectTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ResultSetOperations.Transport" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="59" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UEAAAEAAAgAhAAIQIAgCEAAAAgEAAAABAICACBDggAA=</HashCode>
+      <FileName>ResultSetOperations\Transport.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.VarOperations.BaseCompressionOperation" Collapsed="true">
+    <Position X="87" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAIAAAAAAACAAAAAgAgAAA=</HashCode>
+      <FileName>VarOperations\BaseCompressionOperation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.VarOperations.BaseIOVarOperation" Collapsed="true">
+    <Position X="65.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEQAAAAAAAA=</HashCode>
+      <FileName>VarOperations\BaseIOVarOperation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.VarOperations.BaseVarOperation" Collapsed="true">
+    <Position X="78" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\BaseVarOperation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.VarOperations.CompressVar" Collapsed="true">
+    <Position X="86" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>VarOperations\CompressVar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.VarOperations.DatasetToVar" Collapsed="true">
+    <Position X="68" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>VarOperations\DatasetToVar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.VarOperations.RowToRow" Collapsed="true">
+    <Position X="70.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAACAAAAAgAAAAAAABAAAAAAAAACIAAAAyAAgAEA=</HashCode>
+      <FileName>VarOperations\RowToRow.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.VarOperations.RowToVar" Collapsed="true">
+    <Position X="72.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAIAAAAAAAAAIAAAACIAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>VarOperations\RowToVar.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.VarOperations.TableToVar" Collapsed="true">
+    <Position X="74.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>VarOperations\TableToVar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.VarOperations.UncompressVar" Collapsed="true">
+    <Position X="88.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>VarOperations\UncompressVar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.VarOperations.VarToDataset" Collapsed="true">
+    <Position X="77" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>VarOperations\VarToDataset.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.VarOperations.VarToRow" Collapsed="true">
+    <Position X="79.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAABIAAAACIAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>VarOperations\VarToRow.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.VarOperations.VarToTable" Collapsed="true">
+    <Position X="81.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>VarOperations\VarToTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.VarOperations.VarToVar" Collapsed="true">
+    <Position X="83.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>VarOperations\VarToVar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.VarOperations.ObjListToTable" Collapsed="true">
+    <Position X="90.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAIAAAAAAgAAAABAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>VarOperations\ObjListToTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.BaseFunctionRuleOperation" Collapsed="true">
+    <Position X="236.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAIAAAACAAAACAAEIAAABCAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\BaseFunctionRuleOperation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.BasePredicateRuleOperation" Collapsed="true">
+    <Position X="214.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\BasePredicateRuleOperation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.BaseRuleOperation" Collapsed="true">
+    <Position X="225.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\BaseRuleOperation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.BaseUnaryPredicate" Collapsed="true">
+    <Position X="210.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\BaseUnaryPredicate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.BaseValueRuleOpearation" Collapsed="true">
+    <Position X="242.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\BaseValueRuleOpearation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.OperAdd" Collapsed="true">
+    <Position X="248" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\OperAdd.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.OperAnd" Collapsed="true">
+    <Position X="218.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\OperAnd.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.OperAvg" Collapsed="true">
+    <Position X="234.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\OperAvg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.OperBetween" Collapsed="true">
+    <Position X="223.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\OperBetween.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.OperCase" Collapsed="true">
+    <Position X="196.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAwAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\OperCase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.OperCount" Collapsed="true">
+    <Position X="236.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\OperCount.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.OperDiff" Collapsed="true">
+    <Position X="230" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\OperDiff.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.OperDiv" Collapsed="true">
+    <Position X="250.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\OperDiv.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.OperEq" Collapsed="true">
+    <Position X="198.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\OperEq.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.OperGt" Collapsed="true">
+    <Position X="200.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\OperGt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.OperGtEq" Collapsed="true">
+    <Position X="205.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\OperGtEq.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.OperIn" Collapsed="true">
+    <Position X="216.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\OperIn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.OperIsNotNull" Collapsed="true">
+    <Position X="209.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\OperIsNotNull.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.OperIsNull" Collapsed="true">
+    <Position X="212" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\OperIsNull.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.OperIsTrue" Collapsed="true">
+    <Position X="214.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\OperIsTrue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.OperLgt" Collapsed="true">
+    <Position X="221" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\OperLgt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.OperLgtEq" Collapsed="true">
+    <Position X="225.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\OperLgtEq.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.OperLike" Collapsed="true">
+    <Position X="227.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\OperLike.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.OperMax" Collapsed="true">
+    <Position X="239" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\OperMax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.OperMin" Collapsed="true">
+    <Position X="241.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\OperMin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.OperMod" Collapsed="true">
+    <Position X="252.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\OperMod.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.OperNot" Collapsed="true">
+    <Position X="207.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\OperNot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.OperOr" Collapsed="true">
+    <Position X="203" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\OperOr.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.OperSub" Collapsed="true">
+    <Position X="243.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\OperSub.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.OperSum" Collapsed="true">
+    <Position X="232.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\OperSum.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.RuleOperations.OperTimes" Collapsed="true">
+    <Position X="245.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VarOperations\RuleOperations\OperTimes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ConnectionOperations.BeginTrans" Collapsed="true">
+    <Position X="182.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ConnectionOperations\BeginTrans.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ConnectionOperations.CloseConnection" Collapsed="true">
+    <Position X="178.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ConnectionOperations\CloseConnection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ConnectionOperations.CommitTrans" Collapsed="true">
+    <Position X="180.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ConnectionOperations\CommitTrans.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ConnectionOperations.OpenConnection" Collapsed="true">
+    <Position X="176" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ConnectionOperations\OpenConnection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ConnectionOperations.RollbackTrans" Collapsed="true">
+    <Position X="185" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ConnectionOperations\RollbackTrans.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.Control.CCode" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="101.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIACgCAhAABAIAgAQQAIQAAAgAAAAAAAAAgAAA=</HashCode>
+      <FileName>ControlOperations\CCode.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.Control.ForEachLoop" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="113" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAgAAAAAIAAQAAAAAAQAAAAAAAAAAAAAAAAAAygAA=</HashCode>
+      <FileName>ControlOperations\ForEachLoop.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.Control.ForLoop" Collapsed="true">
+    <Position X="115.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAIGAAACAgAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ControlOperations\ForLoop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.Control.SQLCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="92.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAQAAEAUAABAAAAAQAAAAAAAKAAAEAgAAA=</HashCode>
+      <FileName>ControlOperations\SQLCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.Control.WhileLoop" Collapsed="true">
+    <Position X="117.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ControlOperations\WhileLoop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.Control.XEval" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="95" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIACAACAAAAAAAAAAAAAQAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ControlOperations\XEval.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.Control.DatasetSQL" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="275" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAQAAAAUAAAAAAAAQAAAAAAAIAAAAAgAAA=</HashCode>
+      <FileName>ResultSetOperations\DatasetSQL.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ControlOperations.Choice" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="108.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAABAAIAAQCAAAAAAAAAAAAAAAAAAAAAQAAiAAA=</HashCode>
+      <FileName>ControlOperations\Choice.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ControlOperations.GarbageCollection" Collapsed="true">
+    <Position X="99.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ControlOperations\GarbageCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ControlOperations.RunProcess" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="104" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAIAIAACAAAAAAAAAAAoAAAIKAAACAAgAAA=</HashCode>
+      <FileName>ProcessOperations\RunProcess.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ControlOperations.StopProcess" Collapsed="true">
+    <Position X="97.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAABAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ProcessOperations\StopProcess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.DataGenerator.AbsoluteAmmountGenerator" Collapsed="true">
+    <Position X="189.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAYAAAAEAACAAAAAAAAA=</HashCode>
+      <FileName>DataGenerators\AbsoluteAmmountGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.DataGenerator.BaseRowGenerator" Collapsed="true">
+    <Position X="188.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAIAAAAAAAAAAQAABAgAAAAAAIAEAgAACCAAAAAgAAA=</HashCode>
+      <FileName>DataGenerators\BaseRowGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.DataGenerator.BaseValueRule" Collapsed="true">
+    <Position X="29.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAgAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataGenerators\BaseValueRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.DataGenerator.ConstantRule" Collapsed="true">
+    <Position X="36.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAAgAAA=</HashCode>
+      <FileName>DataGenerators\ConstantRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.DataGenerator.DateRule" Collapsed="true">
+    <Position X="38.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABgEAAAIAAAAAAAAAAACAAAAAgAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>DataGenerators\DateRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.DataGenerator.ListLookup" Collapsed="true">
+    <Position X="20.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAEAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAgAAA=</HashCode>
+      <FileName>DataGenerators\ListLookup.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Iris.DataGenerator.LookupRule" Collapsed="true">
+    <Position X="23" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAECAAAAAAABAAAAABAIACAAAAAAAAAAABAAAAgAAA=</HashCode>
+      <FileName>DataGenerators\LookupRule.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Iris.DataGenerator.NameParts" Collapsed="true">
+    <Position X="283.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAQAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>DataGenerators\NameParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.DataGenerator.NameRule" Collapsed="true">
+    <Position X="25.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAEAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAgAAA=</HashCode>
+      <FileName>DataGenerators\NameRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.DataGenerator.NumberRule" Collapsed="true">
+    <Position X="27.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAEEAAAABAQAAAAEEAAAABAAAAAAgAAAAIAAAAgAAA=</HashCode>
+      <FileName>DataGenerators\NumberRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.DataGenerator.SerialRule" Collapsed="true">
+    <Position X="29.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAADAABAAgAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>DataGenerators\SerialRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.DataGenerator.TableBasedGenerator" Collapsed="true">
+    <Position X="187.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>DataGenerators\TableBasedGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.DataGenerator.TimeSpanRule" Collapsed="true">
+    <Position X="32" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBQEAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQgAAA=</HashCode>
+      <FileName>DataGenerators\TimeSpanRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.DataGenerators.LoremParts" Collapsed="true">
+    <Position X="281.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEgAAAAAAAAAEIAAAAAAAAAAAAAAAgACAAAAAABAA=</HashCode>
+      <FileName>DataGenerators\LoremParts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.DataGenerators.MaskedNumberRule" Collapsed="true">
+    <Position X="34.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAggAA=</HashCode>
+      <FileName>DataGenerators\MaskedNumberRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.DatasetOperations.AcceptChanges" Collapsed="true">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAgAAA=</HashCode>
+      <FileName>DatasetOperations\AcceptChanges.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.DatasetOperations.ClearDataset" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAgAAA=</HashCode>
+      <FileName>DatasetOperations\ClearDataset.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.DatasetOperations.DisableConstraints" Collapsed="true">
+    <Position X="16.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAgAAA=</HashCode>
+      <FileName>DatasetOperations\DisableConstraints.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.DatasetOperations.EnableConstraints" Collapsed="true">
+    <Position X="18.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAgAAA=</HashCode>
+      <FileName>DatasetOperations\EnableConstraints.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.DatasetOperations.RejectChanges" Collapsed="true">
+    <Position X="14" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAgAAA=</HashCode>
+      <FileName>DatasetOperations\RejectChanges.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.FileSystemOperations.BaseFileSystemOperation" Collapsed="true">
+    <Position X="262.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FileSystemOperations\BaseFileSystemOperation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.FileSystemOperations.BaseMaskedFileOperation" Collapsed="true">
+    <Position X="258" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAA=</HashCode>
+      <FileName>FileSystemOperations\BaseMaskedFileOperation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.FileSystemOperations.CopyFile" Collapsed="true">
+    <Position X="254.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQACAAAAAgAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>FileSystemOperations\CopyFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.FileSystemOperations.CreateDir" Collapsed="true">
+    <Position X="263.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>FileSystemOperations\CreateDir.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.FileSystemOperations.DeleteDir" Collapsed="true">
+    <Position X="266" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>FileSystemOperations\DeleteDir.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.FileSystemOperations.DeleteFile" Collapsed="true">
+    <Position X="257" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>FileSystemOperations\DeleteFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.FileSystemOperations.FileToVar" Collapsed="true">
+    <Position X="268.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>FileSystemOperations\FileToVar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.FileSystemOperations.MoveFile" Collapsed="true">
+    <Position X="259.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>FileSystemOperations\MoveFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.FileSystemOperations.RenameFile" Collapsed="true">
+    <Position X="261.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAUAAAAAAAAAAAAAAAEAAAAAAAAAAgAAA=</HashCode>
+      <FileName>FileSystemOperations\RenameFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.FileSystemOperations.VarToFile" Collapsed="true">
+    <Position X="270.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>FileSystemOperations\VarToFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.FtpOperations.BaseFtpOperation" Collapsed="true">
+    <Position X="127.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAYAAAAGAAAAIgAQACIAEACAAAAAgCAAAAJgAgAAY=</HashCode>
+      <FileName>FtpOperations\BaseFtpOperation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.FtpOperations.BaseMaskedFtpOperation" Collapsed="true">
+    <Position X="124.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAA=</HashCode>
+      <FileName>FtpOperations\BaseMaskedFtpOperation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.FtpOperations.BaseTwoFolderedFtpOperation" Collapsed="true">
+    <Position X="122" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAI=</HashCode>
+      <FileName>FtpOperations\BaseTwoFolderedFtpOperation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.FtpOperations.FtpChangeDir" Collapsed="true">
+    <Position X="131" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>FtpOperations\FtpChangeDir.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.FtpOperations.FtpCreateDir" Collapsed="true">
+    <Position X="133.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>FtpOperations\FtpCreateDir.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.FtpOperations.FtpDeleteDir" Collapsed="true">
+    <Position X="135.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>FtpOperations\FtpDeleteDir.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.FtpOperations.FtpDeleteFiles" Collapsed="true">
+    <Position X="126.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>FtpOperations\FtpDeleteFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.FtpOperations.FtpDownloadFiles" Collapsed="true">
+    <Position X="119.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAgAAA=</HashCode>
+      <FileName>FtpOperations\FtpDownloadFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.FtpOperations.FtpRenameFiles" Collapsed="true">
+    <Position X="128.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAgAAA=</HashCode>
+      <FileName>FtpOperations\FtpRenameFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.FtpOperations.FtpUploadDir" Collapsed="true">
+    <Position X="122" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAgAAAAIAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>FtpOperations\FtpUploadDir.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.FtpOperations.FtpUploadFiles" Collapsed="true">
+    <Position X="124.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>FtpOperations\FtpUploadFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebCamService.FtpClient" Collapsed="true">
+    <Position X="279.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAgQQEMAMAAIDQCAKBkgiAgCAAoCAAdQIkyBgCI=</HashCode>
+      <FileName>FtpOperations\FtpClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.LogOperations.AddToErrorLog" Collapsed="true">
+    <Position X="61.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>LogOperations\AddToErrorLog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.LogOperations.AddToLog" Collapsed="true">
+    <Position X="63.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>LogOperations\AddToLog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.LogOperations.BaseLogOperation" Collapsed="true">
+    <Position X="62.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAACAAAAAAAAAAAIAAAACI=</HashCode>
+      <FileName>LogOperations\BaseLogOperation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.LogOperations.LogToFile" Collapsed="true">
+    <Position X="272.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>LogOperations\LogToFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.LogOperations.LogToTable" Collapsed="true">
+    <Position X="277.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>LogOperations\LogToTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.WebOperations.BaseWebServiceOperation" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABCAAAgCgAAAAiAYACCAEEABgARCRQQIUgQEE=</HashCode>
+      <FileName>NetworkOperations\BaseWebServiceOperation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Iris.WebOperations.BatchWebService" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAACAAwCAAAFAAAAAAgAAAAAABAAAAAIAAAAACgAAA=</HashCode>
+      <FileName>NetworkOperations\BatchWebService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Iris.WebOperations.StoreWsConfig" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>NetworkOperations\StoreWsConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.WebOperations.WsConfigs" Collapsed="true">
+    <Position X="283.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAACAAEQQAAAAAAAIAgAAE=</HashCode>
+      <FileName>NetworkOperations\WsConfigs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Core.Networking.DynamicProxy" Collapsed="true">
+    <Position X="283.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAkEICAAAAIAAAAIEAAAAAAAAIMgAAAJAQAgAAAAAA=</HashCode>
+      <FileName>NetworkOperations\DynamicProxy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.NetworkOperations.InvokeWebService" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAAAAAiAAA=</HashCode>
+      <FileName>NetworkOperations\InvokeWebService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.NetworkOperations.NetworkOperation" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAQAAAQAAAAEgAAAAAAAA=</HashCode>
+      <FileName>NetworkOperations\NetworkOperation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Iris.Runtime.NetworkOperations.SendMail" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAIADIAAAARAAoABAAiACQAIAAgAAAAAAAAgAAA=</HashCode>
+      <FileName>NetworkOperations\SendMail.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Iris.ControlOperations.ProcessOperations.GetProcess" Collapsed="true">
+    <Position X="106.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAYAAAACAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ProcessOperations\GetProcess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.ControlOperations.ProcessOperations.SetProcPriority" Collapsed="true">
+    <Position X="110.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ProcessOperations\SetProcPriority.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.DataOperations.ResultSetOperations.Filter" Collapsed="true">
+    <Position X="50" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAgAAA=</HashCode>
+      <FileName>ResultSetOperations\Filter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.DataOperations.ResultSetOperations.Sort" Collapsed="true">
+    <Position X="43.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>ResultSetOperations\Sort.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.SchemaOperations.ReadFromSchema" Collapsed="true">
+    <Position X="194" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAAQAAAAAAAAAAAAAAAAAAAEAAAAAgAAA=</HashCode>
+      <FileName>SchemaOperations\ReadFromSchema.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.SchemaOperations.WriteToSchema" Collapsed="true">
+    <Position X="191.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAEAAAAAgAAA=</HashCode>
+      <FileName>SchemaOperations\WriteToSchema.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.SchemaOperations.BaseSchemaOperation" Collapsed="true">
+    <Position X="192.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ColumnBasedOperations.ColumnBasedOperation" Collapsed="true">
+    <Position X="155.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ColumnBasedOperations.Coluna" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="279.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ColumnBasedOperations.RelationBasedOperation" Collapsed="true">
+    <Position X="171.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ConnectionOperations.ConnectionOperation" Collapsed="true">
+    <Position X="180.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.Control.ControlOperation" Collapsed="true">
+    <Position X="105" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.Control.Loop" Collapsed="true">
+    <Position X="115.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.DataSetOperation" Collapsed="true">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.DynamicLinkOperation" Collapsed="true">
+    <Position X="191.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Iris.DynamicsServices.CRMPropMapper" Collapsed="true">
+    <Position X="281.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Iris.Runtime.Model.DisignSuport.ExecutionException" Collapsed="true">
+    <Position X="285" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Iris.Runtime.Model.DisignSuport.OperationCategory" Collapsed="true">
+    <Position X="285" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Iris.Runtime.Model.DisignSuport.OperationPluginAssembly" Collapsed="true">
+    <Position X="279.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Iris.Runtime.Model.DisignSuport.SortFieldsDialog" Collapsed="true">
+    <Position X="285" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Iris.Runtime.Model.DisignSuport.TxtStructureEditor" Collapsed="true">
+    <Position X="281.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Iris.WebOperations.ROMapping.ParameterMapping" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="281.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Iris.Designer.Dialogs.SelectSchemasDialog" Collapsed="true">
+    <Position X="283.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Iris.Runtime.Model.DesignuSuport.TxtStructureDialog" Collapsed="true">
+    <Position X="279.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Operations.ResultSetOperations.ResultSetOperation" Collapsed="true">
+    <Position X="50" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Iris.Runtime.Model.BaseObjects.Operation" Collapsed="true">
+    <Position X="138.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Iris.Interfaces.IOperation" Collapsed="true">
+    <Position X="279.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Enum Name="Iris.DataOperations.ColumnBasedOperations.AggregateType" Collapsed="true">
+    <Position X="279.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAABCAAAAAEAAAAAQAAAAAAAAAAAAAIAAAAAQ=</HashCode>
+      <FileName>ColumnBasedOperations\AggregateType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Iris.DynamicsServices.PropertyType" Collapsed="true">
+    <Position X="281.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Iris.Runtime.Model.DisignSuport.QueryType" Collapsed="true">
+    <Position X="283.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,10 @@
+<Item>
+  <Name>SearchReplace</Name>
+  <Caption>Search and Replace</Caption>
+  <Description>
+The demo shows how to use built-in search, replace and gotoline dialogs.
+  </Description>
+  <Note>
+When the user presses Ctrl+F or Ctrl+H key combination, the search/replace dialog box appears. You can specify various search/replace options, such as case sensitivity, search range or regular expressions. 
+  </Note>
+</Item>

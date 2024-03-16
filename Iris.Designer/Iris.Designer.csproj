@@ -1,0 +1,840 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A788D899-6887-4D2E-BD7E-601F10F53400}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Iris.Designer</RootNamespace>
+    <AssemblyName>Iris.Designer</AssemblyName>
+    <ApplicationIcon>Iris.ico</ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>IRIS.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NotLicensed</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Demo|AnyCPU' ">
+    <OutputPath>bin\Demo\</OutputPath>
+    <DefineConstants>TRACE;Not</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Demo|x86' ">
+    <OutputPath>bin\x86\Demo\</OutputPath>
+    <DefineConstants>TRACE;Demo</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release x86|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Release x86\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release x86|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Release x86\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NotLicensed</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Demo|x64' ">
+    <OutputPath>bin\x64\Demo\</OutputPath>
+    <DefineConstants>TRACE;Demo</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release x86|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Release x86\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Iris.Designer.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Licensed|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Licensed\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;Licensed</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Iris.Designer.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;D:\Prog\Vs2010\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;D:\Prog\Vs2010\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Licensed|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Licensed\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;Licensed</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\x86\Debug\Iris.Designer.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;D:\Prog\Vs2010\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;D:\Prog\Vs2010\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Licensed|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Licensed\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;Licensed</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\x64\Debug\Iris.Designer.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;D:\Prog\Vs2010\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;D:\Prog\Vs2010\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FlowChart.NET, Version=4.3.0.20963, Culture=neutral, PublicKeyToken=aac75e4c323875a2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibTerceiros\FlowChart.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="MindFusion.Common, Version=1.0.2608.20825, Culture=neutral, PublicKeyToken=7fed53ada5b92263, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibTerceiros\MindFusion.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="QWhale.Common, Version=1.47.2667.26052, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibTerceiros\QWhale.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="QWhale.Editor, Version=1.47.2667.26054, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibTerceiros\QWhale.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="QWhale.Syntax, Version=1.47.2667.26053, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibTerceiros\QWhale.Syntax.dll</HintPath>
+    </Reference>
+    <Reference Include="QWhale.Syntax.Parsers, Version=1.47.2667.26054, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibTerceiros\QWhale.Syntax.Parsers.dll</HintPath>
+    </Reference>
+    <Reference Include="QWhale.Syntax.Schemes, Version=1.47.2667.26054, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibTerceiros\QWhale.Syntax.Schemes.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DesignerActions\KeyActionAttribute.cs" />
+    <Compile Include="DesignerActions\ActionManager.cs" />
+    <Compile Include="DesignerActions\BaseDesignerAction.cs" />
+    <Compile Include="DesignerActions\BaseMemoryObject.cs" />
+    <Compile Include="DesignerActions\CreationAction.cs" />
+    <Compile Include="DesignerActions\LayoutManager.cs" />
+    <Compile Include="DesignerActions\MovementAction.cs" />
+    <Compile Include="DesignerActions\ObjectCloner.cs" />
+    <Compile Include="DesignerActions\PropertyChangeAction.cs" />
+    <Compile Include="Loader\Category.cs" />
+    <Compile Include="Loader\LicensedPluginLoader.cs" />
+    <Compile Include="Loader\OperationLoader.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualObjects\VisualLink.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Plugs.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Plugs.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StructureDesigner.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StructureDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Documentação\ClassDiagram1.cd" />
+    <None Include="IRIS.snk" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Properties\Plugs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Plugs.resx</DependentUpon>
+    </Compile>
+    <Compile Include="VisualObjects\VisualOperation.cs" />
+    <Compile Include="StructureDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StructureDesigner.Designer.cs">
+      <DependentUpon>StructureDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualObjects\PersistenceStructure.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Databridge\Databridge.Engine\Databridge.Engine.csproj">
+      <Project>{8610EC6B-7E61-49C9-A8E6-382A9D652FD9}</Project>
+      <Name>Databridge.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Databridge\Databridge.Interfaces\Databridge.Interfaces.csproj">
+      <Project>{BA3D38A8-E0B1-4FF1-B508-B2FED5C66A89}</Project>
+      <Name>Databridge.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Iris.PropertyEditors\Iris.PropertyEditors.csproj">
+      <Project>{567D5875-FD91-4F5E-8205-8B797C4365CF}</Project>
+      <Name>Iris.PropertyEditors</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Iris.Runtime.Model\Iris.Runtime.Model.csproj">
+      <Project>{9CD6D183-83C6-49DA-85D3-E5187A05C5EB}</Project>
+      <Name>Iris.Runtime.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Iris.Interfaces\Iris.Interfaces.csproj">
+      <Project>{507C1041-2A07-4637-A644-F5AA5D258A99}</Project>
+      <Name>Iris.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Iris.Runtime.Core\Iris.Runtime.Core.csproj">
+      <Project>{A7EBF228-737B-42A3-B798-5F0B1FE129D7}</Project>
+      <Name>Iris.Runtime.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LicencingBase\LicencingBase.csproj">
+      <Project>{E11849C0-E222-4D5E-8912-575B660217F9}</Project>
+      <Name>LicencingBase</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StartPlug.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CompletionPlug.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SuccessPlug.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InputPlug.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FailurePlug.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BulkLoad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SQLCommand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ForLoop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ForEachLoop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bulk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CCode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StartPoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EndPoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Union.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sort.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RowSampler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RowCount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MultiCast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Join.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Merge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lookup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DerivedColumn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConvertData.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CopyColumn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConditionalSplit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CharCase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Audit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aggregate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GlobalVar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ResultSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rebuild Indexes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdateStatistics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShrinkDb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackupDatabase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SendMail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Script.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FtpTask.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FileSystemTask.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExecProc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataFlow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExecSQL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SubStructure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ForEach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\For.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Failure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Output.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Input.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HideOutput.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HideVars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HideTools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpenSelectedItemHS.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveHS.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormRun.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newdocument.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formrunHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newdocumentHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RestartHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Step.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Build_as.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Build.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpenSelectedItemHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XEval.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DatasetSQL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AcceptChanges.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DisableConstraints.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnableConstraints.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RejectChanges.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BeginTrans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseConnection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpenConnection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CommitTrans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\RollbackTrans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Iris.ico" />
+    <None Include="Resources\Treshold.png" />
+    <None Include="Resources\RunPython.png" />
+    <None Include="Resources\CreateSQLTable.png" />
+    <None Include="Resources\IsNumber.png" />
+    <None Include="Resources\ProcessWaitExit.png" />
+    <None Include="Resources\ColumnLength.png" />
+    <None Include="Resources\RandomColumn.png" />
+    <None Include="Resources\AccumulateColumn.png" />
+    <None Include="Resources\MergeColumns.png" />
+    <None Include="Resources\AlphaSeq.png" />
+    <None Include="Resources\ReadGenericFixedFile.png" />
+    <None Include="Resources\FB_Comments.png" />
+    <None Include="Resources\FB_Feed.png" />
+    <None Include="Resources\FB_Friends.png" />
+    <None Include="Resources\FB_React.png" />
+    <None Include="Resources\FB_User.png" />
+    <None Include="Resources\FB_Links.png" />
+    <Content Include="Resources\RequestValue.png" />
+    <None Include="Resources\SaveGenericTextFile.png" />
+    <None Include="Resources\ReadGenericTextFile.png" />
+    <None Include="Resources\VarToProp.png" />
+    <None Include="Resources\FileExists.png" />
+    <None Include="Resources\CopyTable.png" />
+    <None Include="Resources\TextStripper.png" />
+    <None Include="Resources\FuzzyMatchScore.png" />
+    <None Include="Resources\ApproxPoint.png" />
+    <None Include="Resources\TableExists.png" />
+    <None Include="Resources\OperDiff0.png" />
+    <None Include="Resources\OperLgtEq0.png" />
+    <None Include="Resources\OperLgt0.png" />
+    <None Include="Resources\OperGtEq0.png" />
+    <None Include="Resources\OperGt0.png" />
+    <None Include="Resources\OperEq0.png" />
+    <None Include="Resources\DeduplicateTable.png" />
+    <None Include="Resources\NormalizeColumn.png" />
+    <None Include="Resources\Stop.png" />
+    <None Include="Resources\SplitColumn.png" />
+    <None Include="Resources\SpTransport.png" />
+    <None Include="Resources\AddToLog.png" />
+    <None Include="Resources\AddToErrorLog.png" />
+    <None Include="Resources\LogToTable.png" />
+    <None Include="Resources\LogToFile.png" />
+    <None Include="Resources\Decode.png" />
+    <None Include="Resources\GUIDColumn.png" />
+    <None Include="Resources\ConditionalMaskColumn.png" />
+    <None Include="Resources\ColumnAlias.png" />
+    <None Include="Resources\ObjListToTable.png" />
+    <None Include="Resources\StoreWsConfig.png" />
+    <None Include="Resources\DynamicsUpdater.png" />
+    <None Include="Resources\CRM2011Updater.png" />
+    <None Include="Resources\dex.png" />
+    <None Include="Resources\BatchWebService.png" />
+    <None Include="Resources\ToggleSnapshotOff.png" />
+    <None Include="Resources\ToggleSnapshotOn.png" />
+    <None Include="Resources\BreakPoint.png" />
+    <None Include="Resources\TrimEnd.png" />
+    <None Include="Resources\OracleBulk.png" />
+    <None Include="Resources\Filter.png" />
+    <None Include="Resources\OutputPoint.png" />
+    <None Include="Resources\OperCase.png" />
+    <None Include="Resources\OperIsNotNull.png" />
+    <None Include="Resources\OperIsTrue.png" />
+    <None Include="Resources\OperMod.png" />
+    <None Include="Resources\OperTimes.png" />
+    <None Include="Resources\OperDiv.png" />
+    <None Include="Resources\OperSub.png" />
+    <None Include="Resources\OperAdd.png" />
+    <None Include="Resources\OperIsNull.png" />
+    <None Include="Resources\OperIn.png" />
+    <None Include="Resources\OperGtEq.png" />
+    <None Include="Resources\OperLgtEq.png" />
+    <None Include="Resources\OperGt.png" />
+    <None Include="Resources\OperLgt.png" />
+    <None Include="Resources\OperEq.png" />
+    <None Include="Resources\OperNot.png" />
+    <None Include="Resources\OperOr.png" />
+    <None Include="Resources\OperAnd.png" />
+    <None Include="Resources\OperMin.png" />
+    <None Include="Resources\OperMax.png" />
+    <None Include="Resources\OperCount.png" />
+    <None Include="Resources\OperAvg.png" />
+    <None Include="Resources\OperSum.png" />
+    <None Include="Resources\OperVal.png" />
+    <None Include="Resources\OperDiff.png" />
+    <None Include="Resources\OperBetween.png" />
+    <None Include="Resources\OperIsFalse.png" />
+    <None Include="Resources\OperLike.png" />
+    <None Include="Resources\SetProcPriority.png" />
+    <None Include="Resources\ProcWatchDog.png" />
+    <None Include="Resources\GetProcess.png" />
+    <None Include="Resources\SetProcAttributes.png" />
+    <None Include="Resources\StopProcess.png" />
+    <None Include="Resources\RunProccess.png" />
+    <None Include="Resources\FindNextError.png" />
+    <None Include="Resources\FindPrevError.png" />
+    <None Include="Resources\GarbageCollection.png" />
+    <None Include="Resources\AutoIncColumn.png" />
+    <None Include="Resources\saveSnapShot.png" />
+    <None Include="Resources\FtpRenameFile.png" />
+    <None Include="Resources\FtpUploadDir.png" />
+    <None Include="Resources\FtpUploadFiles.png" />
+    <None Include="Resources\FtpDownloadFiles.png" />
+    <None Include="Resources\FtpChangeDir.png" />
+    <None Include="Resources\FtpDeleteFiles.png" />
+    <None Include="Resources\FtpDeleteDir.png" />
+    <None Include="Resources\FtpCreateDir.png" />
+    <None Include="Resources\VarToFile.png" />
+    <None Include="Resources\FileToVar.png" />
+    <None Include="Resources\RenameFile.png" />
+    <None Include="Resources\MoveFile.png" />
+    <None Include="Resources\DeleteFile.png" />
+    <None Include="Resources\DeleteDir.png" />
+    <None Include="Resources\CopyFile.png" />
+    <None Include="Resources\CreateDir.png" />
+    <None Include="Resources\ImediateWindow.png" />
+    <None Include="Resources\ClearLog.png" />
+    <None Include="Resources\save_As.png" />
+    <None Include="Resources\ForeachFile.png" />
+    <None Include="Resources\VarToTable.png" />
+    <None Include="Resources\VarToDataset.png" />
+    <None Include="Resources\CompressVar.png" />
+    <None Include="Resources\UncompressVar.png" />
+    <None Include="Resources\TableToVar.png" />
+    <None Include="Resources\DatasetToVar.png" />
+    <None Include="Resources\SaveVar.png" />
+    <None Include="Resources\OpenVar.png" />
+    <None Include="Resources\VarToVar.png" />
+    <None Include="Resources\VarToRow.png" />
+    <None Include="Resources\RowToVar.png" />
+    <None Include="Resources\RowToRow.png" />
+    <None Include="Resources\Find.png" />
+    <None Include="Resources\FindBreakPoint.png" />
+    <None Include="Resources\Delete.png" />
+    <None Include="Resources\DeleteBreakPoints.png" />
+    <None Include="Resources\ReadFromSchema.png" />
+    <None Include="Resources\WriteToSchema.png" />
+    <None Include="Resources\TextFile.png" />
+    <None Include="Resources\XMLFile.png" />
+    <None Include="Resources\BuildWS.png" />
+    <None Include="Resources\BuildExe.png" />
+    <None Include="Resources\BuildDll.png" />
+    <None Include="Resources\InvokeWebService.png" />
+    <None Include="Resources\ReRun.png" />
+    <None Include="Resources\Choice.png" />
+    <None Include="Resources\CreateRelation.png" />
+    <None Include="Resources\RejectTable.png" />
+    <None Include="Resources\ClearTable.png" />
+    <None Include="Resources\AcceptTable.png" />
+    <None Include="Resources\NewColumn.png" />
+    <None Include="Resources\IffOper.png" />
+    <None Include="Resources\TrimOper.png" />
+    <None Include="Resources\IsNullOper.png" />
+    <None Include="Resources\ConstantColumn.png" />
+    <None Include="Resources\ConvertColumn.png" />
+    <None Include="Resources\SubString.png" />
+    <EmbeddedResource Include="Dialogs\CreateLineTypeDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CreateLineTypeDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CreateTableDialog.resx">
+      <DependentUpon>CreateTableDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\FindItemDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FindItemDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="runtime.lic" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="Dialogs\CreateLineTypeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CreateLineTypeDialog.Designer.cs">
+      <DependentUpon>CreateLineTypeDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\CreateTableDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CreateTableDialog.Designer.cs">
+      <DependentUpon>CreateTableDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\FindItemDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\FindItemDialog.Designer.cs">
+      <DependentUpon>FindItemDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NameValidator.cs" />
+    <Compile Include="Settings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_UseGlobalSettings="True" BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,10 @@
+<Item>
+  <Name>CodeCompletion</Name>
+  <Caption>Code Completion</Caption>
+  <Description>
+The demo project shows ability to display intellisense listboxes and hints.
+  </Description>
+  <Note>
+Editor.Net supports code completion (intellisence) feature, allowing displaying code completion ListBox and ToolTip to represent appropriate functions, statements or other syntax entities.
+  </Note>
+</Item>

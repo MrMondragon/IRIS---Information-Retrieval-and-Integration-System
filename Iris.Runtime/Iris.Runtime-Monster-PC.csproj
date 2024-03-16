@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{55E97FD7-D6F2-4137-8DC8-69B3ECF3C5E9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Iris.Runtime</RootNamespace>
+    <AssemblyName>Iris.Runtime</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Iris.Runtime.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;E:\Prog\Vs2010\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;E:\Prog\Vs2010\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Iris.Runtime.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;E:\Prog\Vs2010\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;E:\Prog\Vs2010\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Iris.Runtime.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Iris.Runtime.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>IRIS.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Licensed|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Licensed\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Iris.Runtime.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;D:\Prog\Vs2010\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;D:\Prog\Vs2010\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Licensed|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Licensed\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Iris.Runtime.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;E:\Prog\Vs2010\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;E:\Prog\Vs2010\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Licensed|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Licensed\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Iris.Runtime.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets;D:\Prog\Vs2010\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules;D:\Prog\Vs2010\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ColumnBasedOperations\Aggregate.cs" />
+    <Compile Include="ColumnBasedOperations\AggregateType.cs" />
+    <Compile Include="ColumnBasedOperations\AutoIncColumn.cs" />
+    <Compile Include="ColumnBasedOperations\ConditionalMaskColumn.cs" />
+    <Compile Include="ColumnBasedOperations\ConstantColumn.cs" />
+    <Compile Include="ColumnBasedOperations\ConvertColumn.cs" />
+    <Compile Include="ColumnBasedOperations\CopyColumn.cs" />
+    <Compile Include="ColumnBasedOperations\CreateRelation.cs" />
+    <Compile Include="ColumnBasedOperations\Decode.cs" />
+    <Compile Include="ColumnBasedOperations\DerivedColumn.cs" />
+    <Compile Include="ColumnBasedOperations\FuzzyMatchScore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ColumnBasedOperations\GUIDColumn.cs" />
+    <Compile Include="ColumnBasedOperations\Idade.cs" />
+    <Compile Include="ColumnBasedOperations\IIFOper.cs" />
+    <Compile Include="ColumnBasedOperations\IsNullOper.cs" />
+    <Compile Include="ColumnBasedOperations\Lookup.cs" />
+    <Compile Include="ColumnBasedOperations\NewColumn.cs" />
+    <Compile Include="ColumnBasedOperations\NormalizeColumn.cs" />
+    <Compile Include="ColumnBasedOperations\RangeOperation.cs" />
+    <Compile Include="ColumnBasedOperations\RemoveMask.cs" />
+    <Compile Include="ColumnBasedOperations\SplitColumn.cs" />
+    <Compile Include="ColumnBasedOperations\SubString.cs" />
+    <Compile Include="ColumnBasedOperations\TextStripper.cs" />
+    <Compile Include="ColumnBasedOperations\TimeSpanOperation.cs" />
+    <Compile Include="ColumnBasedOperations\TrimEnd.cs" />
+    <Compile Include="ColumnBasedOperations\TrimOper.cs" />
+    <Compile Include="FileSystemOperations\FileExists.cs" />
+    <Compile Include="ResultSetOperations\CopyTable.cs" />
+    <Compile Include="ResultSetOperations\TableExists.cs" />
+    <Compile Include="DataGenerators\LoremParts.cs" />
+    <Compile Include="DataGenerators\MaskedNumberRule.cs" />
+    <Compile Include="DatasetOperations\AcceptChanges.cs" />
+    <Compile Include="DatasetOperations\ClearDataset.cs" />
+    <Compile Include="DatasetOperations\DisableConstraints.cs" />
+    <Compile Include="DatasetOperations\EnableConstraints.cs" />
+    <Compile Include="DatasetOperations\RejectChanges.cs" />
+    <Compile Include="FileSystemOperations\BaseFileSystemOperation.cs" />
+    <Compile Include="FileSystemOperations\BaseMaskedFileOperation.cs" />
+    <Compile Include="FileSystemOperations\CopyFile.cs" />
+    <Compile Include="FileSystemOperations\CreateDir.cs" />
+    <Compile Include="FileSystemOperations\DeleteDir.cs" />
+    <Compile Include="FileSystemOperations\DeleteFile.cs" />
+    <Compile Include="FileSystemOperations\FileToVar.cs" />
+    <Compile Include="FileSystemOperations\ForeachFile.cs" />
+    <Compile Include="FileSystemOperations\MoveFile.cs" />
+    <Compile Include="FileSystemOperations\RenameFile.cs" />
+    <Compile Include="FileSystemOperations\VarToFile.cs" />
+    <Compile Include="FtpOperations\BaseFtpOperation.cs" />
+    <Compile Include="FtpOperations\BaseMaskedFtpOperation.cs" />
+    <Compile Include="FtpOperations\BaseTwoFolderedFtpOperation.cs" />
+    <Compile Include="FtpOperations\FtpClient.cs" />
+    <Compile Include="FtpOperations\FtpCreateDir.cs" />
+    <Compile Include="FtpOperations\FtpDeleteDir.cs" />
+    <Compile Include="FtpOperations\FtpDeleteFile.cs" />
+    <Compile Include="FtpOperations\FtpDownloadFile.cs" />
+    <Compile Include="FtpOperations\FtpRenameFile.cs" />
+    <Compile Include="FtpOperations\FtpUploadFile.cs" />
+    <Compile Include="Geo\ApproxPoint.cs" />
+    <Compile Include="Geo\Coordinate.cs" />
+    <Compile Include="Geo\LineSegment.cs" />
+    <Compile Include="Geo\PolyLine.cs" />
+    <Compile Include="LeuzePlugin1.cs" />
+    <Compile Include="LeuzePlugin2.cs" />
+    <Compile Include="LogOperations\AddToErrorLog.cs" />
+    <Compile Include="LogOperations\AddToLog.cs" />
+    <Compile Include="LogOperations\BaseLogOperation.cs" />
+    <Compile Include="LogOperations\LogToFile.cs" />
+    <Compile Include="LogOperations\LogToTable.cs" />
+    <Compile Include="NetworkOperations\BaseWebServiceOperation.cs" />
+    <Compile Include="NetworkOperations\DynamicProxy.cs" />
+    <Compile Include="NetworkOperations\BatchWebService.cs" />
+    <Compile Include="NetworkOperations\InvokeWebService.cs" />
+    <Compile Include="NetworkOperations\NetworkOperation.cs" />
+    <Compile Include="DataGenerators\AbsoluteAmmountGenerator.cs" />
+    <Compile Include="DataGenerators\BaseRowGenerator.cs" />
+    <Compile Include="DataGenerators\BaseValueRule.cs" />
+    <Compile Include="ConnectionOperations\BeginTrans.cs" />
+    <Compile Include="ConnectionOperations\CloseConnection.cs" />
+    <Compile Include="ConnectionOperations\CommitTrans.cs" />
+    <Compile Include="ConnectionOperations\OpenConnection.cs" />
+    <Compile Include="ConnectionOperations\RollbackTrans.cs" />
+    <Compile Include="DataGenerators\ConstantRule.cs" />
+    <Compile Include="ControlOperations\CCode.cs" />
+    <Compile Include="ControlOperations\Choice.cs" />
+    <Compile Include="ControlOperations\ForEachLoop.cs" />
+    <Compile Include="ControlOperations\ForLoop.cs" />
+    <Compile Include="ControlOperations\GarbageCollection.cs" />
+    <Compile Include="ControlOperations\SQLCommand.cs" />
+    <Compile Include="ControlOperations\WhileLoop.cs" />
+    <Compile Include="ControlOperations\XEval.cs" />
+    <Compile Include="DataGenerators\DateRule.cs" />
+    <Compile Include="DataGenerators\ListLookup.cs" />
+    <Compile Include="DataGenerators\LookupRule.cs" />
+    <Compile Include="DataGenerators\NameParts.cs" />
+    <Compile Include="DataGenerators\NameRule.cs" />
+    <Compile Include="DataGenerators\NumberRule.cs" />
+    <Compile Include="NetworkOperations\SendMail.cs" />
+    <Compile Include="NetworkOperations\WsConfigs.cs" />
+    <Compile Include="ProcessOperations\GetProcess.cs" />
+    <Compile Include="ProcessOperations\RunProcess.cs" />
+    <Compile Include="ProcessOperations\SetProcPriority.cs" />
+    <Compile Include="ProcessOperations\StopProcess.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DataGenerators\SerialRule.cs" />
+    <Compile Include="DataGenerators\TableBasedGenerator.cs" />
+    <Compile Include="DataGenerators\TimeSpanRule.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ResultSetOperations\AcceptTable.cs" />
+    <Compile Include="ResultSetOperations\Apply.cs" />
+    <Compile Include="ResultSetOperations\ClearTable.cs" />
+    <Compile Include="ResultSetOperations\ColumnAlias.cs" />
+    <Compile Include="ResultSetOperations\DatasetSQL.cs" />
+    <Compile Include="ResultSetOperations\DeduplicateTable.cs" />
+    <Compile Include="ResultSetOperations\Fill.cs" />
+    <Compile Include="ResultSetOperations\Filter.cs" />
+    <Compile Include="ResultSetOperations\RejectTable.cs" />
+    <Compile Include="ResultSetOperations\Sort.cs" />
+    <Compile Include="ResultSetOperations\SpTransport.cs" />
+    <Compile Include="ResultSetOperations\Transport.cs" />
+    <Compile Include="VarOperations\RuleOperations\BaseFunctionRuleOperation.cs" />
+    <Compile Include="VarOperations\RuleOperations\BasePredicateRuleOperation.cs" />
+    <Compile Include="VarOperations\RuleOperations\BaseRuleOperation.cs" />
+    <Compile Include="VarOperations\RuleOperations\BaseUnaryPredicate.cs" />
+    <Compile Include="VarOperations\RuleOperations\BaseValueRuleOpearation.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperAdd.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperAnd.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperAvg.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperBetween.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperCase.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperCount.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperDiff0.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperDiff.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperDiv.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperEq0.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperEq.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperGt0.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperGt.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperGtEq0.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperGtEq.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperIn.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperIsNotNull.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperIsNull.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperIsTrue.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperLgt0.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperLgt.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperLgtEq0.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperLgtEq.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperLike.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperMax.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperMin.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperMod.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperNot.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperOr.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperSub.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperSum.cs" />
+    <Compile Include="VarOperations\RuleOperations\OperTimes.cs" />
+    <Compile Include="SchemaOperations\ReadFromSchema.cs" />
+    <Compile Include="SchemaOperations\WriteToSchema.cs" />
+    <Compile Include="VarOperations\BaseCompressionOperation.cs" />
+    <Compile Include="VarOperations\BaseIOVarOperation.cs" />
+    <Compile Include="VarOperations\BaseVarOperation.cs" />
+    <Compile Include="VarOperations\CompressVar.cs" />
+    <Compile Include="VarOperations\DatasetToVar.cs" />
+    <Compile Include="VarOperations\ObjListToTable.cs" />
+    <Compile Include="VarOperations\RowToRow.cs" />
+    <Compile Include="VarOperations\RowToVar.cs" />
+    <Compile Include="NetworkOperations\StoreWsConfig.cs" />
+    <Compile Include="VarOperations\TableToVar.cs" />
+    <Compile Include="VarOperations\UncompressVar.cs" />
+    <Compile Include="VarOperations\VarToDataset.cs" />
+    <Compile Include="VarOperations\VarToRow.cs" />
+    <Compile Include="VarOperations\VarToTable.cs" />
+    <Compile Include="VarOperations\VarToVar.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ApproxPoint_doExecute.sequencediagram" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="DataGenerators\ClassDiagram1.cd" />
+    <None Include="ControlOperations\Control.cd" />
+    <None Include="IRIS.snk" />
+    <None Include="ResultSetOperations\ClassDiagram1.cd" />
+    <None Include="VarOperations\RuleOperations\ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\AbsGen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Const.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\DateTime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\ListLookup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Lookup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Name.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Number.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Serial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\TabGen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\TimeStamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\MaskedNumberRule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Databridge\Databridge.Engine\Databridge.Engine.csproj">
+      <Project>{8610EC6B-7E61-49C9-A8E6-382A9D652FD9}</Project>
+      <Name>Databridge.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Databridge\Databridge.Interfaces\Databridge.Interfaces.csproj">
+      <Project>{BA3D38A8-E0B1-4FF1-B508-B2FED5C66A89}</Project>
+      <Name>Databridge.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Databridge\Databridge.PropertyEditors\Databridge.PropertyEditors.csproj">
+      <Project>{7079F477-2B7A-4C8B-8EB9-BD587FCA3CF2}</Project>
+      <Name>Databridge.PropertyEditors</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Iris.Interfaces\Iris.Interfaces.csproj">
+      <Project>{507C1041-2A07-4637-A644-F5AA5D258A99}</Project>
+      <Name>Iris.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Iris.PropertyEditors\Iris.PropertyEditors.csproj">
+      <Project>{567D5875-FD91-4F5E-8205-8B797C4365CF}</Project>
+      <Name>Iris.PropertyEditors</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Iris.Runtime.Core\Iris.Runtime.Core.csproj">
+      <Project>{A7EBF228-737B-42A3-B798-5F0B1FE129D7}</Project>
+      <Name>Iris.Runtime.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Iris.Runtime.Model\Iris.Runtime.Model.csproj">
+      <Project>{9CD6D183-83C6-49DA-85D3-E5187A05C5EB}</Project>
+      <Name>Iris.Runtime.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ApproxPoint_doExecute.sequencediagram.layout">
+      <DependentUpon>ApproxPoint_doExecute.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\RemoveMask.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Idade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\TimeSpan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Ranges.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FtpOperations\TextFile1.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetDir)$(TargetFileName)  $(SolutionDir)Iris.Designer\$(OutDir)\$(TargetFileName)</PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" BuildVersion_UseGlobalSettings="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

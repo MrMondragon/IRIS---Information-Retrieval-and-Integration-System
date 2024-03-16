@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="989542EB-7" name="Iris Designer" version="1.0" notes="Iris Designer"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="Operação" notes="" cx="188" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAAB61jh9rWqN7wAAAOICAAAHABEAc3RyLmRhdFVUDQAHsGxeSLBsXkiwbF5I
+lZHLbsIwEEXvOl8RhU0rsSiRWrVCLFh0Cb+AouBCpWCiEGBR9d85tnGbSDxaWeMZec6dm9g7
+rVWollGqDdWnrL6UsKy22vnukupIf0JkatVoD59pDLXWAqJCt0IRmZK+hTSwgTtc5Fom12ci
+wc1w8gFTsUp6FdHoQSO96UVD8jNr6PdHr2og9kxcUhk0LfQThIsRezenyn12e1Df8szPXv18
+2zXMv+8bXN2t2394BqcCzQqFueiZ6vWuS7yfyG04P3h225kZeu7FbK/3O7+vi19wTRv71/R/
+0XZfruZfHOPuPtNAc0010ztV9sN8EydQSwECFwsUAAAACAAAetY4fa1qje8AAADiAgAABwAJ
+AAAAAAAAAAAAAIAAAAAAc3RyLmRhdFVUBQAHsGxeSFBLBQYAAAAAAQABAD4AAAAlAQAA
+AAA=</Image>
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Resultset" notes="" cx="188" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIALZ51jiENtrYtwAAAGYBAAAHABEAc3RyLmRhdFVUDQAHN2xeSDdsXkg3bF5I
+bY/NCoJAFIXPep5CbFPgIoOCiBYtWtYrRKhlYCr+1CJ6974Z01zEcH+Y8517Z2qlOqtUIk93
+uptyvWTIhWqnxXRP1C3hq1GlFtrXBirVCSLDdcXRMxF6DpnAdtzjL9cwufwShm0JNxeYjBOh
+ZUSlqUKttVJAXXICl2fOVUG0TIzpEjwN9BzCRkgeV08LV23u3IYfF7zN7i2+zp9qX5sPWj9l
+7C7Zahm71ddER+100J7OHxijN/EBUEsBAhcLFAAAAAgAtnnWOIQ22ti3AAAAZgEAAAcACQAA
+AAAAAAAAAACAAAAAAHN0ci5kYXRVVAUABzdsXkhQSwUGAAAAAAEAAQA+AAAA7QAAAAAA
+</Image>
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Layout" notes="" cx="188" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIANZ51jihNj05twAAAGgBAAAHABEAc3RyLmRhdFVUDQAHQ2xeSENsXkhDbF5I
+bY+5CsJAFEVvna+QsVGwMIqCiIWFpf6CSDIaISYhixbiv3smmylkeAtzz31vplCkizJZjfSg
+uyvRWx45VVFrId0LdUcYlcpVQRttoSKdIWJcNxwdE6AnkBa24Z5/uZLJWUt4bLPcXGFiToAW
+E7km8jkbzchLreu6opvWvhymYmZIZ3GV8HMYFz55WEda1NXlxu3x55TXuc1p6/yp7r1Jr3VT
+hu6MrY5xW43GOmmvow50pmc8fYgvUEsBAhcLFAAAAAgA1nnWOKE2PTm3AAAAaAEAAAcACQAA
+AAAAAAAAAACAAAAAAHN0ci5kYXRVVAUAB0NsXkhQSwUGAAAAAAEAAQA+AAAA7QAAAAAA
+</Image>
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Startup" notes="" cx="188" cy="64" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAMR71jhKZFpI0AAAAHgCAAAHABEAc3RyLmRhdFVUDQAHKnBeSCpwXkgqcF5I
+nVBLCsIwEH1rT1G6quDCKn5APIfr0LRUbLWkVRfi3X2ZJIjYuJAwk5m8T5LpUUOhQ4kELasj
+znhgwnxBL5hmdSe6Z6QYYHAlO8WOrI5diYphpNI40EGTVXtFjrUw7ep5rsgbqFPCyTAVtOUd
+N+oH7hlWmGPGcFgjbwpY7lGbx3CH5sy/8ICVRPTXa+xLLb+isuEqqGwYhoyFdwh7cApcJY72
+p4aKE33G3GNzsKcFu6V4u7yVvJGc+Fs/O8uLz9Fy45N4a8dnEZ+E+/0/E3gyXlBLAQIXCxQA
+AAAIAMR71jhKZFpI0AAAAHgCAAAHAAkAAAAAAAAAAAAAgAAAAABzdHIuZGF0VVQFAAcqcF5I
+UEsFBgAAAAABAAEAPgAAAAYBAAAAAA==</Image>
+				<AppliesTo>
+					<Apply type="Port">
+						<Property name="isBehavior" value="false"/>
+						<Property name="isService" value="true"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Input" notes="" cx="188" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAA581jiM3Aen0gAAAH4CAAAHABEAc3RyLmRhdFVUDQAHh3BeSIdwXkiHcF5I
+jVDLDoIwEJyzX0E4YeJBYnwkxu/w3FAIRlACqAfjvzu7hSCRGtPsdtuZ2W2nQQ6DCikClKxO
+uOCJGfMVjWKW1YPogRGiRY0b2SH2ZFU8pcgYtVYWR3awZOWdIsZGmbIa3hvyWuqMciLMFS05
+4059yz3CGkssGA4r9E09Fneo5CncoTHzL7zHUiL26zXyUuFnVBZcCZUFo/6YP96drucb7Sq/
+rak6s9fUBJ8XcpvwtNL+Lu80bzUH3eTxSXh+L4Xrd2PQTvvhd8N5Ofj5vwMvdeENUEsBAhcL
+FAAAAAgADnzWOIzcB6fSAAAAfgIAAAcACQAAAAAAAAAAAACAAAAAAHN0ci5kYXRVVAUAB4dw
+XkhQSwUGAAAAAAEAAQA+AAAACAEAAAAA</Image>
+				<AppliesTo>
+					<Apply type="Port">
+						<Property name="isBehavior" value="false"/>
+						<Property name="isService" value="true"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Success" notes="" cx="188" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIACR81jgfYHG3rgAAAEYCAAAHABEAc3RyLmRhdFVUDQAHznBeSM5wXkjOcF5I
+nZDNCoJAFIXPuqcIVwYF/RAtoocZ0jDSCrVaRO/eNzOIC6cpQu519PzMubdRIaOrco1VcTrq
+rKdG9Isah2WcHqA7KlGrWjfYibawGr4Nf1ocDL1QqolDKlR3eC3vVDOtNdfUdY+X7qYO92gM
+W9DD+NA7B80GiWxaqzmgLnn2qEuqhmH1S3dDn6LjGedmJ61hn/AIOf+2B59082ESm+DbjlZR
+tHcO7yC+gf+mf1FvUEsBAhcLFAAAAAgAJHzWOB9gcbeuAAAARgIAAAcACQAAAAAAAAAAAACA
+AAAAAHN0ci5kYXRVVAUAB85wXkhQSwUGAAAAAAEAAQA+AAAA5AAAAAAA</Image>
+				<AppliesTo>
+					<Apply type="Port">
+						<Property name="isBehavior" value="false"/>
+						<Property name="isService" value="true"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Failure" notes="" cx="188" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAEx81jh/a8ksrwAAAEYCAAAHABEAc3RyLmRhdFVUDQAH7nBeSO5wXkjucF5I
+nZBLC8IwEITn7K+Qnioo+EA8iD8m2ErFViVp9SD+d7+klB76UCTs5jGzk9l1ymR0V6qpCk5n
+XfXShHyTC1jC6Ql6ICKVsqpgR9rDctwNLyUKhpwp1iwgBVUPeCV7rIW2Wmoeco3n4acGr9Ex
+bEXux7vaKWjSceTd+poT1TnrSHVOWBjroO4dtC4anglqvlML+4JGn/Jvc6id7gY68S6+zWgz
+irbK/TMYnsD/3b+JD1BLAQIXCxQAAAAIAEx81jh/a8ksrwAAAEYCAAAHAAkAAAAAAAAAAAAA
+gAAAAABzdHIuZGF0VVQFAAfucF5IUEsFBgAAAAABAAEAPgAAAOUAAAAAAA==</Image>
+				<AppliesTo>
+					<Apply type="Port">
+						<Property name="isBehavior" value="false"/>
+						<Property name="isService" value="true"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Output" notes="" cx="188" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAEx81jgbqvVWrgAAAEYCAAAHABEAc3RyLmRhdFVUDQAH/nBeSP5wXkj+cF5I
+lZDdCoJAEIXPdU8RXhkY9EN0ET3MkoaRVqxWF9G79+0uUqBpITOufmfOzE6lXEYXZRqr5HTQ
+SQ+NyGdVnqWc7tAtEamW1RV1pA2qim/DnxoHQ84Va+JJSdUNXc071lQrzZT4HHjhOzU80D42
+J3fztncGTVsTuWldzZ7qgmdHdUFYFKF7osVHl0ZnvJu7qUV9xKPL+bc9hEnXX27iug/taNlL
+387dOxjewP+3fxIvUEsBAhcLFAAAAAgATHzWOBuq9VauAAAARgIAAAcACQAAAAAAAAAAAACA
+AAAAAHN0ci5kYXRVVAUAB/5wXkhQSwUGAAAAAAEAAQA+AAAA5AAAAAAA</Image>
+				<AppliesTo>
+					<Apply type="Port">
+						<Property name="isBehavior" value="false"/>
+						<Property name="isService" value="true"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Estado" notes="" cx="188" cy="70" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAEZ61jj9BAIsxAAAAAoCAAAHABEAc3RyLmRhdFVUDQAHS21eSEttXkhLbV5I
+nZFNCwFRFIbftV+ha0NZoBTJwsKSvyBxzagxpvlgIf/dc2YYlCidzj2ne573vLduplBrJfJq
+6kC3V6yLGkSso7JyuqU7M5+STrlSFfBOE6hQK4gIXYDiwWyYx5AetuJOH7mczcmdaODmudnB
+RMSGWUSmaquvIdGt66CsnVKXwhTs3NJ5VDl8D8ayz/lamyit2lmpv7ka9aCf9btrtf+377+u
+ldca5wCFf3MdE+Y1qnmLBJX9qr3QqaWlZlpoTudq6kreAFBLAQIXCxQAAAAIAEZ61jj9BAIs
+xAAAAAoCAAAHAAkAAAAAAAAAAAAAgAAAAABzdHIuZGF0VVQFAAdLbV5IUEsFBgAAAAABAAEA
+PgAAAPoAAAAAAA==</Image>
+				<AppliesTo>
+					<Apply type="Class">
+						<Property name="isActive" value=""/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="EventPart" notes="" cx="75" cy="28" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAICI1jiRZrs8vAAAAMoBAAAHABEAc3RyLmRhdFVUDQAHAIZeSACGXkgAhl5I
+hZC7DoJAEEVvq19hsMGEAl+FMRYWlvoLxgcKCQIB1ML47x52gUoxk5md3TlzZ3cLhTooU6CB
+bmSREr3UJ6YqTO1M9qS6wh2VynWHdrSEemgPEdN1paNhjnSUWIqi5cKvXG72IaSl+kwM2F04
+j7ETCjGey9VEPuZpXK++RqYnMGTEC6pet655mrfRct3all50KleT7XxPszb+V29u9Eu3eplX
+x2kbLZuZP0pQdvmjoXZaa6sNmdNO7uFv/ANQSwECFwsUAAAACACAiNY4kWa7PLwAAADKAQAA
+BwAJAAAAAAAAAAAAAIAAAAAAc3RyLmRhdFVUBQAHAIZeSFBLBQYAAAAAAQABAD4AAADyAAAA
+AAA=</Image>
+				<AppliesTo>
+					<Apply type="Part">
+						<Property name="isReference" value="false"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="StartPoint" notes="" cx="76" cy="28" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIAGCH1jjdiruRpAAAAMABAAAHABEAc3RyLmRhdFVUDQAHBIVeSASFXkgEhV5I
+dY7BDoIwEETn7FcYTppwQNST8WOMYiSBYijqwfjvzrRQFGua3TaZ93ZrccEBVxSYo+arhMET
+M/YG1mUnvh5M96wEHVrcSCfYkbJ8dTjTqniOJCtWiwUypMjZdWdYOrpwVMlt8jyj2obuuWGu
+fmXI5T3xew98za135zQ9n/K3qzBRW80k34T025bld8RcWZ/p1NVk9Zi7dqn6f3dMY+44WefF
+egNQSwECFwsUAAAACABgh9Y43Yq7kaQAAADAAQAABwAJAAAAAAAAAAAAAIAAAAAAc3RyLmRh
+dFVUBQAHBIVeSFBLBQYAAAAAAQABAD4AAADaAAAAAAA=</Image>
+				<AppliesTo>
+					<Apply type="Part">
+						<Property name="isReference" value="false"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+	</Content>
+</UMLProfile>

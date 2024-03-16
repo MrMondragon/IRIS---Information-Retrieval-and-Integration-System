@@ -1,0 +1,5295 @@
+Variable,Description,Position
+SbjNum,"Label: SbjNum
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8",1
+Q_1,"Label: Bom dia /Boa tarde /Boa noite. Meu nome é (NOME DO ENTREVISTADOR). Eu sou entrevistador(a) da IDEALIS PESQUISA e nós estamos realizando um estudo de opinião pública na cidade de Campo Grande/MS. O(a) Sr(a) pode responder algumas perguntas?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Sim
+2,Não",2
+Q_2,"Label: Filtro 1. O(a) Sr(a) ou alguém de sua família trabalha em (LEIA OPÇÕES): ?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Agência de Publicidade
+2,Área de Marketing
+3,Televisão/Rádio/Jornal/Revista
+4,Pesquisa de Mercado e Opinião
+5,Trabalha em ou para algum Partido político?
+6,Afiliado a algum Partido político?
+7,Nenhum deles",3
+Q_3,"Label: Filtro 2. O(a) Sr(a) tem título de eleitor aqui do município de Campo Grande? Ou seja, o Sr. vota aqui na cidade?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Sim
+2,Não",4
+Q_4,"Label: Filtro 3. O(a) Sr(a) pretende votar na próxima eleição?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Sim
+2,Não",5
+Q_5,"Label: Filtro 4. O(a) Sr(a) mora aqui nesta casa, de Campo Grande?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Sim
+2,Não",6
+região,"Label: Região
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Centro
+2,Segredo
+3,Prosa
+4,Bandeira
+5,Anhanduzinho
+6,Lagoa
+7,Imbirissu
+8,Região RURAL - Rochedinho",7
+Q_7,"Label: Centro
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Cruzeiro
+2,São Francisco
+3,Glória
+4,Amambaí
+5,Monte Líbano
+6,Glória
+7,Cabreúva",8
+Q_8,"Label: Segredo
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Nova Lima
+2,Nasser
+3,Coronel Antonino
+4,José Abrão",9
+Q_9,"Label: Prosa
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Novos Estados
+2,Carandá
+3,Veraneio
+4,Margarida
+5,Autonomista
+6,Estrela Dalva",10
+Q_10,"Label: Bandeira
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Tiradentes
+2,Universitário
+3,Maria Aparecida Pedrossian
+4,São Lourenço
+5,Jardim Paulista",11
+Q_11,"Label: Anhanduizinho 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Aero Rancho
+2,Centenário
+3,Pioneiro
+4,Piratininga
+5,Taquarussu",12
+Q_12,"Label: Lagoa
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,São Conrado
+2,Tijuca
+3,Coophavilla II
+4,Caiçara",13
+Q_13,"Label: Imbirussu
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Santo Amaro
+2,Popular
+3,Panamá
+4,Santo Antônio",14
+sexo,"Label: A-Sexo
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Masculino
+2,Feminino",15
+Q_15,"Label: B-Qual é a sua idade?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,""De  16 a 17 anos (só se for votar, possui título de eleitor)""
+2,De 18 a 24 anos
+3,De 25 a 34 anos
+4,De 35 a 44 anos
+5,De 45 a 59 anos
+6,60 anos ou mais (mais de 70 anos só se for votar)",16
+Instr,"Label: C-Qual é o seu grau de instrução/escolaridade?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Baixo
+2,Médio
+3,Superior",17
+Q_17,"Label: D-Qual destas alternativas descreve melhor a sua ocupação atual?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Trabalha em casa para uma Empresa
+2,Trabalha fora meio período para uma Empresa
+3,Trabalha fora período integral para uma Empresa
+4,Profissional liberal/negócio próprio
+5,Autonômo
+6,Funcionário público
+7,Tem outras fontes: rendimentos/aplicações
+8,Tem outras fontes: aposentadoria
+9,Tem outras fontes: recebo doações
+10,Tem outras fontes: mesada/pensão
+12,""Não está trabalhando, 06 meses ou mais""
+13,Outro (especifique):
+99,""Não está trabalhando atualmente, menos de 06 meses""",18
+Q_17_S,"Label: D-Qual destas alternativas descreve melhor a sua ocupação atual? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 13",19
+estado_civil,"Label: E - Qual é o seu estado civil?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Casado / Vive junto
+2,Separado / Divorciado
+3,Viúvo
+4,Solteiro
+5,NR",20
+Q_19,"Label: F - De uma maneira geral, o(a) Sr(a) é uma pessoa que tem... (LEIA OPÇÕES)
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Muito interesse por política em geral
+2,Algum interesse por política
+3,Pouco interesse por política
+4,Nenhum interesse por política em geral",21
+Q_20,"Label: 1.De maneira geral, como o(a) Sr(a) avalia a situação de Campo Grande? Atualmente a cidade de Campo Grande está... ótima, boa, regular, ruim ou péssima? Se regular, positiva ou negativa?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Ótima
+2,Boa
+3,Regular positiva
+4,Regular negativa
+5,Ruim
+6,Péssima
+99,NS/NR",22
+Q_21,"Label: VAMOS FALAR DE ELEIÇÕES PARA PREFEITO DE CAMPO GRANDE....  2. Se as eleições para Prefeito de Campo Grande fossem realizadas hoje, em quem o(a) Sr(a) votaria? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Anote nome citado:
+2,NS/Indeciso
+3,NR
+4,Nenhum",23
+Q_21_S,"Label: VAMOS FALAR DE ELEIÇÕES PARA PREFEITO DE CAMPO GRANDE....  2. Se as eleições para Prefeito de Campo Grande fossem realizadas hoje, em quem o(a) Sr(a) votaria?  [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 22",24
+Q_22,"Label: 3. Agora, vou te mostrar uma série de situações que podem acontecer nas eleições para Prefeito que vão ocorrer esse ano, em termos de candidatos. Gostaria que o(a) Sr(a) avaliasse cada situação.  3. 1. Se os candidatos fossem esses, em quem votaria? APRESE
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 18
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",25
+Q_23,"Label: 3.1. Por que votaria no (REPETIR RESPOSTA DA PERGUNTA 3.1.) para prefeito de Campo Grande? 
+Format: A50
+Measure: Nominal
+Display Width: 11",26
+Q_24,"Label: 3.1.1. E se o (REPETIR RESPOSTA DA PERGUNTA 3.1.)  não for candidato, em quem votaria? (DISCO 01) 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 14
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",27
+Q_25,"Label: 3.3. E se fossem estes? (APRESENTE DISCO 02)
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Professor Sidney - PSOL
+6,Suel Ferrante - PSTU
+7,Marcelo Bluma - PV
+8,Alex do PT - PT
+9,Indeciso/NS
+10,NR
+11,Nenhum",28
+Q_26,"Label: 3.3. E se fossem estes? (APRESENTE DISCO 03)
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Indeciso/NS
+5,NR
+6,Nenhum",29
+Q_27,"Label: 3.4. E se fossem estes? (APRESENTE O DISCO 04)
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Indeciso/NS
+4,NR
+5,Nenhum",30
+Q_28,"Label: 3.5. E se fossem esses? (APRESENTE O DISCO 05)
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Alcides Bernal - PP
+3,Indeciso/NS
+4,NR
+5,Nenhum",31
+Q_29,"Label: 3.6. E se fossem esses? (APRESENTE DISCO 06)
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Marquinhos Trad - PSD
+2,Alcides Bernal - PP
+3,Indeciso/NS
+4,NR
+5,Nenhum",32
+Q_30,"Label: 4. O(a) Sr(a)  ainda pode mudar sua escolha?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,""Sim, poderia ainda mudar""
+2,""Não, já está totalmente certo de sua escolha""
+3,NS
+4,NR",33
+Q_31,"Label: 5. Agora, gostaria que o(a) Sr(a) avaliasse e me dissesse em quem o(a) Sr(a) NÃO VOTARIA DE JEITO NENHUM para Prefeito de Campo Grande. 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Todos",34
+Q_32,"Label: 5.1.  Por que o(a) Sr(a) NÃO VOTARIA no (REPETIR RESPOSTA DA P.5)?
+Format: A50
+Measure: Nominal
+Display Width: 50",35
+T_33_1,"Label: Rose Modesto - PSDB
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Conhece bem/tem muitas informações sobre ele(a)
+2,""Conhece pouco, tem algumas informações sobre ele(a)""
+3,Conhece só de nome/só de ouvir falar
+4,Não conhece/é a primeira vez que ouve falar o nome
+5,NS/NR",36
+T_33_2,"Label: Marquinhos Trad - PSD
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Conhece bem/tem muitas informações sobre ele(a)
+2,""Conhece pouco, tem algumas informações sobre ele(a)""
+3,Conhece só de nome/só de ouvir falar
+4,Não conhece/é a primeira vez que ouve falar o nome
+5,NS/NR",37
+T_33_3,"Label: Alcides Bernal - PP
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Conhece bem/tem muitas informações sobre ele(a)
+2,""Conhece pouco, tem algumas informações sobre ele(a)""
+3,Conhece só de nome/só de ouvir falar
+4,Não conhece/é a primeira vez que ouve falar o nome
+5,NS/NR",38
+T_33_4,"Label: Athayde Nery - PPS
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Conhece bem/tem muitas informações sobre ele(a)
+2,""Conhece pouco, tem algumas informações sobre ele(a)""
+3,Conhece só de nome/só de ouvir falar
+4,Não conhece/é a primeira vez que ouve falar o nome
+5,NS/NR",39
+T_33_5,"Label: Coronel David - PSC
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Conhece bem/tem muitas informações sobre ele(a)
+2,""Conhece pouco, tem algumas informações sobre ele(a)""
+3,Conhece só de nome/só de ouvir falar
+4,Não conhece/é a primeira vez que ouve falar o nome
+5,NS/NR",40
+T_33_6,"Label: Professor Sidney - PSOL
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Conhece bem/tem muitas informações sobre ele(a)
+2,""Conhece pouco, tem algumas informações sobre ele(a)""
+3,Conhece só de nome/só de ouvir falar
+4,Não conhece/é a primeira vez que ouve falar o nome
+5,NS/NR",41
+T_33_7,"Label: Suel Ferrante - PSTU
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Conhece bem/tem muitas informações sobre ele(a)
+2,""Conhece pouco, tem algumas informações sobre ele(a)""
+3,Conhece só de nome/só de ouvir falar
+4,Não conhece/é a primeira vez que ouve falar o nome
+5,NS/NR",42
+T_33_8,"Label: Marcelo Bluma - PV
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Conhece bem/tem muitas informações sobre ele(a)
+2,""Conhece pouco, tem algumas informações sobre ele(a)""
+3,Conhece só de nome/só de ouvir falar
+4,Não conhece/é a primeira vez que ouve falar o nome
+5,NS/NR",43
+T_33_9,"Label: Dagoberto Nogueira - PDT
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Conhece bem/tem muitas informações sobre ele(a)
+2,""Conhece pouco, tem algumas informações sobre ele(a)""
+3,Conhece só de nome/só de ouvir falar
+4,Não conhece/é a primeira vez que ouve falar o nome
+5,NS/NR",44
+T_33_10,"Label: Alex do PT - PT
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Conhece bem/tem muitas informações sobre ele(a)
+2,""Conhece pouco, tem algumas informações sobre ele(a)""
+3,Conhece só de nome/só de ouvir falar
+4,Não conhece/é a primeira vez que ouve falar o nome
+5,NS/NR",45
+T_34_1,"Label: Rose Modesto - PSDB
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza
+2,Poderia votar
+4,""Não votaria, com certeza""
+5,NS/NR
+99,Possivelmente não votaria",46
+T_34_2,"Label: Marquinhos Trad - PSD
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza
+2,Poderia votar
+4,""Não votaria, com certeza""
+5,NS/NR
+99,Possivelmente não votaria",47
+T_34_3,"Label: Alcides Bernal - PP
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza
+2,Poderia votar
+4,""Não votaria, com certeza""
+5,NS/NR
+99,Possivelmente não votaria",48
+T_34_4,"Label: Athayde Nery - PPS
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza
+2,Poderia votar
+4,""Não votaria, com certeza""
+5,NS/NR
+99,Possivelmente não votaria",49
+T_34_5,"Label: Coronel David - PSC
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza
+2,Poderia votar
+4,""Não votaria, com certeza""
+5,NS/NR
+99,Possivelmente não votaria",50
+T_34_6,"Label: Professor Sidney - PSOL
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza
+2,Poderia votar
+4,""Não votaria, com certeza""
+5,NS/NR
+99,Possivelmente não votaria",51
+T_34_7,"Label: Suel Ferrante - PSTU
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza
+2,Poderia votar
+4,""Não votaria, com certeza""
+5,NS/NR
+99,Possivelmente não votaria",52
+T_34_8,"Label: Marcelo Bluma - PV
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza
+2,Poderia votar
+4,""Não votaria, com certeza""
+5,NS/NR
+99,Possivelmente não votaria",53
+T_34_9,"Label: Dagoberto Nogueira - PDT
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza
+2,Poderia votar
+4,""Não votaria, com certeza""
+5,NS/NR
+99,Possivelmente não votaria",54
+T_34_10,"Label: Alex do PT - PT
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza
+2,Poderia votar
+4,""Não votaria, com certeza""
+5,NS/NR
+99,Possivelmente não votaria",55
+Q_35,"Label: Agora vamos avaliar como o(a) Sr(a) vai escolher seu candidato à PREFEITO DE CAMPO GRANDE...  8. Na hora de o(a) Sr(a) escolher um candidato a PREFEITO, QUAL dessas qualidades (LER OPÇÕES) é a mais importantes, que ele deve ter para merecer seu voto em 1º 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Ser honesto/não ser corrupto
+2,""Ter capacidade administrativa, saber governar""
+3,Ter apoios políticos
+4,Ter experiência administrativa
+5,Ser próximo do povo
+6,Ser trabalhador
+7,Cumprir o que promete
+8,Ser competente / competência
+9,Outro (especifique):
+10,NS/NR",56
+Q_35_S,"Label: Agora vamos avaliar como o(a) Sr(a) vai escolher seu candidato à PREFEITO DE CAMPO GRANDE...  8. Na hora de o(a) Sr(a) escolher um candidato a PREFEITO, QUAL dessas qualidades (LER OPÇÕES) é a mais importantes, que ele deve ter para merecer seu voto em 1º 
+Format: A50
+Measure: Nominal
+Display Width: 50",57
+T_36_1,"Label: Rose Modesto - PSDB
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Possui
+2,Não possui
+3,NS/NR",58
+T_36_2,"Label: Marquinhos Trad - PSD
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Possui
+2,Não possui
+3,NS/NR",59
+T_36_3,"Label: Alcides Bernal - PP
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Possui
+2,Não possui
+3,NS/NR",60
+T_36_4,"Label: Athayde Nery - PPS
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Possui
+2,Não possui
+3,NS/NR",61
+T_36_5,"Label: Coronel David - PSC
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Possui
+2,Não possui
+3,NS/NR",62
+T_36_6,"Label: Professor Sidney - PSOL
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Possui
+2,Não possui
+3,NS/NR",63
+T_36_7,"Label: Suel Ferrante - PSTU
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Possui
+2,Não possui
+3,NS/NR",64
+T_36_8,"Label: Marcelo Bluma - PV
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Possui
+2,Não possui
+3,NS/NR",65
+T_36_9,"Label: Dagoberto Nogueira - PDT
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Possui
+2,Não possui
+3,NS/NR",66
+T_36_10,"Label: Alex do PT - PT
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Possui
+2,Não possui
+3,NS/NR",67
+T_37_1,"Label: O mais honesto?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",68
+T_37_2,"Label: O mais próximo do povo?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",69
+T_37_3,"Label: O mais competente?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",70
+T_37_4,"Label: O mais trabalhador?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",71
+T_37_5,"Label: O que tem mais experiência/experiente?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",72
+T_37_6,"Label: O que mais vai cumprir suas promessas?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",73
+Q_38,"Label: 11. Se pudesse escolher, o(a) Sr(a) preferiria que o próximo Prefeito de Campo Grande fosse um homem ou uma mulher?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Homem
+2,Mulher
+3,""Tanto faz, não é relevante.""
+4,NS/NR",74
+Q_39,"Label: 12. Aqui estão alguns problemas que as cidades têm enfrentado atualmente. Pensando em Campo Grande, qual é o problema mais grave, que o próximo prefeito deve cuidar em 1º lugar? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Saúde
+2,Segurança
+3,Educação
+4,Emprego
+5,Situação das ruas (buracos)
+6,Limpeza urbana
+7,Habitação
+8,Falta de creches
+9,Iluminação pública
+10,Transporte público
+11,Saneamento básico/Falta de esgoto
+12,Pobreza
+13,Gestão/Administração da Prefeitura
+14,Outro. Qual? (descreva):
+15,NS/NR",75
+Q_39_S,"Label: 12. Aqui estão alguns problemas que as cidades têm enfrentado atualmente. Pensando em Campo Grande, qual é o problema mais grave, que o próximo prefeito deve cuidar em 1º lugar?  [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 10",76
+Q_40,"Label: 12.1. Na sua opinião, qual desses candidatos (MOSTRE DISCO 01) a prefeito tem mais condições de resolver este problema (CITE RESPOSTA DA P12)?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",77
+Q_41,"Label: 13. E qual problema o próximo prefeito deveria cuidar, em 2º lugar?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Saúde
+2,Segurança
+3,Educação
+4,Emprego
+5,Situação das ruas (buracos)
+6,Limpeza urbana
+7,Habitação
+8,Falta de creches
+9,Iluminação pública
+10,Transporte público
+11,Saneamento básico/Falta de esgoto
+12,Pobreza
+13,Gestão/Administração da Prefeitura
+14,Outro. Qual? (descreva):
+15,NS/NR",78
+Q_41_S,"Label: 13. E qual problema o próximo prefeito deveria cuidar, em 2º lugar? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 11",79
+Q_42,"Label: 13.1. Na sua opinião, qual desses candidatos (MOSTRE DISCO 01) a prefeito tem mais condições de resolver este problema (CITE RESPOSTA DA P13)?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",80
+Q_43,"Label: 14. E qual problema o próximo prefeito deveria cuidar, em 3º lugar?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Saúde
+2,Segurança
+3,Educação
+4,Emprego
+5,Situação das ruas (buracos)
+6,Limpeza urbana
+7,Habitação
+8,Falta de creches
+9,Iluminação pública
+10,Transporte público
+11,Saneamento básico/Falta de esgoto
+12,Pobreza
+13,Gestão/Administração da Prefeitura
+14,Outro. Qual? (descreva):
+15,NS/NR",81
+Q_43_S,"Label: 14. E qual problema o próximo prefeito deveria cuidar, em 3º lugar? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 10",82
+Q_44,"Label: 14.1. Na sua opinião, qual desses candidatos (MOSTRE DISCO 01) a prefeito tem mais condições de resolver este problema (CITE RESPOSTA DA P14)?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",83
+Q_45,"Label: 15. Na sua opinião, o Prefeito Alcides Bernal está fazendo uma administração: ótima, boa, regular, ruim ou péssima?  Se regular, positiva ou negativa?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Ótimo
+2,Bom
+3,Regular positivo
+4,Regular negativo
+5,Ruim
+6,Péssimo
+99,NS/NR",84
+Q_46,"Label: 15.1. Por que avalia dessa forma, ÓTIMO?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,""Construção, reforma de ruas e avenidas/ tapa-buracos""
+2,""Investimento na educação do município, construção de escolas""
+3,Está trabalhando para desenvolvimento economico da cidade
+4,""Investimento em habitação, construção de casas""
+5,""É um prefeito honesto, cumpre as promessas, trabalhador e co""
+6,""Está combatendo a miséria, fome dos moradores""
+7,Desenvolvimento industrial
+8,Geração de empregos com chegada de novas empresas na cidade
+9,Construção e/ou reforma de postos de saúde (UPA's)
+10,Investimento na área da segurança/câmeras nas ruas/mais poli
+11,Novos programas na área da saúde/Saúde da Família PSF/Agente
+12,Construção de creches e mais vagas
+13,Melhoria no transporte urbano/público da cidade
+14,Outro (descreva):",85
+Q_46_S,"Label: 15.1. Por que avalia dessa forma, ÓTIMO? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",86
+Q_47,"Label: 15.2. Por que avalia dessa forma, BOM?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,""Construção, reforma de ruas e avenidas/ tapa-buracos""
+2,""Investimento na educação do município, construção de escolas""
+3,Está trabalhando para desenvolvimento economico da cidade
+4,""Investimento em habitação, construção de casas""
+5,""É um prefeito honesto, cumpre as promessas, trabalhador e co""
+6,""Está combatendo a miséria, fome dos moradores""
+7,Desenvolvimento industrial
+8,Geração de empregos com chegada de novas empresas na cidade
+9,Construção e/ou reforma de postos de saúde (UPA's)
+10,Investimento na área da segurança/câmeras nas ruas/mais poli
+11,Novos programas na área da saúde/Saúde da Família PSF/Agente
+12,Construção de creches e mais vagas
+13,Melhoria no transporte urbano/público da cidade
+14,Outro (descreva):",87
+Q_47_S,"Label: 15.2. Por que avalia dessa forma, BOM? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",88
+Q_48,"Label: 15.3. Por que avalia dessa forma, REGULAR POSITIVO?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Não investe em saúde (precária/ruim)/reforma e construção de
+2,Falta construir e reformar escolas / creches
+3,Falta asfaltar / recapeamento de ruas e avenidas
+4,Gerar mais empregos para os moradores da cidade
+5,Criar/ampliar o pólo industrial
+6,Faltam políticas de combate ao desemprego
+7,Falta investir em segurança/ diminuir a violência
+8,""Fraco, não fez muito pela cidade""
+9,""Falta investir em educação (novas escolas, merenda, transpor""
+10,Não tem programa para combater a fome/miséria/pobreza
+11,Falta construir novas casas/´programa habitacional
+12,Outro (descreva):",89
+Q_48_S,"Label: 15.3. Por que avalia dessa forma, REGULAR POSITIVO? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",90
+Q_49,"Label: 15.4. Por que avalia dessa forma, REGULAR NEGATIVO?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Não investe em saúde (precária/ruim)/reforma e construção de
+2,Falta construir e reformar escolas / creches
+3,Falta asfaltar / recapeamento de ruas e avenidas
+4,Gerar mais empregos para os moradores da cidade
+5,Criar/ampliar o pólo industrial
+6,Faltam políticas de combate ao desemprego
+7,Falta investir em segurança/ diminuir a violência
+8,""Fraco, não fez muito pela cidade""
+9,""Falta investir em educação (novas escolas, merenda, transpor""
+10,Não tem programa para combater a fome/miséria/pobreza
+11,Falta construir novas casas/´programa habitacional
+12,Outro (descreva):",91
+Q_49_S,"Label: 15.4. Por que avalia dessa forma, REGULAR NEGATIVO? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",92
+Q_50,"Label: 15.5. Por que avalia dessa forma, RUIM?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Não investe na saúde/precária/ruim/faltam hospitais e postos
+2,Não investe na segurança/muita violência
+3,Incompetente/fraco
+4,Não faz/cumpre as promessas de campanha
+5,Falta política para gerar emprego
+6,Não investe na educação/não constroi novas escolas e creches
+7,Não combate a fome/miséria/pobreza
+8,Não investe na infraestrutura da cidade
+9,Não asfalta ruas e avenidas/recapeamento
+10,Desonesto/corrupto
+11,Outro (descreva):",93
+Q_50_S,"Label: 15.5. Por que avalia dessa forma, RUIM? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",94
+Q_51,"Label: 15.6. Por que avalia dessa forma, PÉSSIMO?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Não investe na saúde/precária/ruim/faltam hospitais e postos
+2,Não investe na segurança/muita violência
+3,Incompetente/fraco
+4,Não faz/cumpre as promessas de campanha
+5,Falta política para gerar emprego
+6,Não investe na educação/não constroi novas escolas e creches
+7,Não combate a fome/miséria/pobreza
+8,Não investe na infraestrutura da cidade
+9,Não asfalta ruas e avenidas/recapeamento
+10,Desonesto/corrupto
+11,Outro (descreva):",95
+Q_51_S,"Label: 15.6. Por que avalia dessa forma, PÉSSIMO? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",96
+Q_52,"Label: 16. Na sua opinião, qual foi a(o) principal obra, programa ou realização da administração do Prefeito Alcides Bernal? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Obras de saneamento/esgoto
+2,""Programas de prevenção à saúde (à criança, à mulher, ao idos""
+3,Obras viárias(asfalto em ruas e avenidas)/operação tapa-bura
+4,""Investimento na educação (entrega de material escolar, table""
+5,Programa de Agendas comunitários de Saúde (PSC's) e/ou PSF's
+6,Obra Orla Morena (urbanização ferrovia)
+7,Investimento em habitação (distribuição de casas)
+8,Obras de infraestrutura e drenagem
+9,Reforma CEINF'S
+10,Construção ou reforma de postos de saúde/UPA's
+11,OUTRO (DESCREVA):
+12,Não se lembra
+13,NS/NR",97
+Q_52_S,"Label: 16. Na sua opinião, qual foi a(o) principal obra, programa ou realização da administração do Prefeito Alcides Bernal?  [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",98
+Q_53,"Label: 17. Na sua opinião, em que área que a administração do Bernal está MAIS ACERTANDO?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Saúde
+2,Segurança
+3,Educação
+4,Emprego
+5,Situação das ruas (buracos)
+6,Limpeza urbana
+7,Habitação
+8,Falta de creches
+9,Iluminação pública
+10,Transporte público
+11,Saneamento básico/falta de esgoto
+12,Pobreza
+13,Outro (descreva)
+14,NS/NR
+15,Tudo",99
+Q_53_S,"Label: 17. Na sua opinião, em que área que a administração do Bernal está MAIS ACERTANDO? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",100
+Q_54,"Label: 18. Na sua opinião, em que área que a administração do Bernal está MAIS ERRANDO? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Saúde
+2,Segurança
+3,Educação
+4,Emprego
+5,Situação das ruas (buracos)
+6,Limpeza urbana
+7,Habitação
+8,Falta de creches
+9,Iluminação pública
+10,Transporte público
+11,Saneamento básico/falta de esgoto
+12,Pobreza
+13,Outro (descreva)
+14,NS/NR
+15,Tudo",101
+Q_54_S,"Label: 18. Na sua opinião, em que área que a administração do Bernal está MAIS ERRANDO?  [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",102
+Q_55,"Label: 19. Na hora de escolher um candidato a prefeito, o(a) Sr(a) prefere votar... (LEIA OPÇÕES):
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Na reeleição do prefeito Bernal para que continue a maioria 
+2,Em um candidato que mude a maioria das coisas que o prefeito
+3,NS/NR",103
+Q_56,"Label: 20. Em relação a expectativa que o(a) Sr(a) tinha em relação à administração do Prefeito Alcides Bernal, como se sente HOJE? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Decepcionado com o desempenho do prefeito no mandato
+2,Indiferente
+3,Satisfeito com o desempenho do prefeito no mandato dele
+4,NS/NR",104
+Q_57,"Label: 21. A Câmara de Vereadores cassou o mandato do Prefeito Bernal, fala-se que houve um golpe. Na sua opinião: (LER OPÇÕES)
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Houve um golpe?
+2,""Não houve golpe, ele foi cassado na verdade por corrupção?""
+3,NS/NR",105
+Q_58,"Label: 22. Considerando que o Prefeito Bernal governa a cidade há 01 ANO E MEIO, para o(a) Sr(a)... (LEIA OPÇÕES):
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Ele merece uma segunda chance?
+2,Campo Grande merece um novo prefeito?
+3,NS/NR",106
+T_59_1,"Label: Governador Reinaldo Azambuja
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza no candidato apoiado por ele(a)
+2,""Poderia votar, mas dependendo do candidato""
+3,Não votaria no candidato apoiado por ele(a)
+4,Não levaria isso em conta na hora de escolher o candidato
+5,NS/NR",107
+T_59_2,"Label: Ex Governador André Pucinelli
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza no candidato apoiado por ele(a)
+2,""Poderia votar, mas dependendo do candidato""
+3,Não votaria no candidato apoiado por ele(a)
+4,Não levaria isso em conta na hora de escolher o candidato
+5,NS/NR",108
+T_58_4,"Label: Nelsinho Trad
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza no candidato apoiado por ele(a)
+2,""Poderia votar, mas dependendo do candidato""
+3,Não votaria no candidato apoiado por ele(a)
+4,Não levaria isso em conta na hora de escolher o candidato
+5,NS/NR",109
+T_58_5,"Label: Deputado Zeca do PT
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza no candidato apoiado por ele(a)
+2,""Poderia votar, mas dependendo do candidato""
+3,Não votaria no candidato apoiado por ele(a)
+4,Não levaria isso em conta na hora de escolher o candidato
+5,NS/NR",110
+T_58_6,"Label: PT
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza no candidato apoiado por ele(a)
+2,""Poderia votar, mas dependendo do candidato""
+3,Não votaria no candidato apoiado por ele(a)
+4,Não levaria isso em conta na hora de escolher o candidato
+5,NS/NR",111
+T_58_7,"Label: PMDB
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza no candidato apoiado por ele(a)
+2,""Poderia votar, mas dependendo do candidato""
+3,Não votaria no candidato apoiado por ele(a)
+4,Não levaria isso em conta na hora de escolher o candidato
+5,NS/NR",112
+T_58_8,"Label: Lula
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza no candidato apoiado por ele(a)
+2,""Poderia votar, mas dependendo do candidato""
+3,Não votaria no candidato apoiado por ele(a)
+4,Não levaria isso em conta na hora de escolher o candidato
+5,NS/NR",113
+T_58_9,"Label: Michel Temer
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza no candidato apoiado por ele(a)
+2,""Poderia votar, mas dependendo do candidato""
+3,Não votaria no candidato apoiado por ele(a)
+4,Não levaria isso em conta na hora de escolher o candidato
+5,NS/NR",114
+T_58_10,"Label: Aécio Neves
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza no candidato apoiado por ele(a)
+2,""Poderia votar, mas dependendo do candidato""
+3,Não votaria no candidato apoiado por ele(a)
+4,Não levaria isso em conta na hora de escolher o candidato
+5,NS/NR",115
+T_58_11,"Label: Serra
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza no candidato apoiado por ele(a)
+2,""Poderia votar, mas dependendo do candidato""
+3,Não votaria no candidato apoiado por ele(a)
+4,Não levaria isso em conta na hora de escolher o candidato
+5,NS/NR",116
+T_58_12,"Label: Fernando Henrique Cardoso
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza no candidato apoiado por ele(a)
+2,""Poderia votar, mas dependendo do candidato""
+3,Não votaria no candidato apoiado por ele(a)
+4,Não levaria isso em conta na hora de escolher o candidato
+5,NS/NR",117
+T_58_13,"Label: Família Trad
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza no candidato apoiado por ele(a)
+2,""Poderia votar, mas dependendo do candidato""
+3,Não votaria no candidato apoiado por ele(a)
+4,Não levaria isso em conta na hora de escolher o candidato
+5,NS/NR",118
+Q_60,"Label: 24. Na hora de escolher um candidato a prefeito, o(a) Sr(a) (LEIA OPÇÕES):
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria em qualquer candidato apoiado pelo Governador Reinal
+2,Poderia votar em um candidato apoiado pelo Governador Reinal
+3,Não votaria em nenhum candidato apoiado pelo Governado Reina
+4,NS/NR",119
+Q_61,"Label: 25. Na sua opinião, o futuro Prefeito de Campo Grande ser do mesmo partido, grupo ou aliado do Governador do Estado, Reinaldo Azambuja, seria ótimo, bom, regular, ruim ou péssimo? Se regular, positiva ou negativa?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Ótimo
+2,Bom
+3,Regular positivo
+4,Regular negativo
+5,Ruim
+6,Péssimo
+99,NS/NR",120
+T_62_1,"Label: Partido político que mais gosta?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,PMDB
+2,PTB
+3,PDT
+4,PT
+5,DEM
+6,PC DO B
+7,PSB
+8,PSDB
+9,PTC
+10,PSC
+11,PMN
+12,PRP
+13,PPS
+14,PV
+15,PT DO B
+16,PP
+17,PSTU
+18,PCB
+19,PRTB
+20,PHS
+21,PSDC
+22,PCO
+23,PTN
+24,PSL
+25,PRB
+26,PSOL
+27,PR
+28,PSD
+29,PPL
+30,PEN
+31,PROS
+32,SD - SOLIDARIEDADE
+33,NOVO
+34,REDE
+35,PMB
+36,Nenhum
+37,Todos
+38,NS/NR",121
+T_62_2,"Label: Partido político que menos gosta
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,PMDB
+2,PTB
+3,PDT
+4,PT
+5,DEM
+6,PC DO B
+7,PSB
+8,PSDB
+9,PTC
+10,PSC
+11,PMN
+12,PRP
+13,PPS
+14,PV
+15,PT DO B
+16,PP
+17,PSTU
+18,PCB
+19,PRTB
+20,PHS
+21,PSDC
+22,PCO
+23,PTN
+24,PSL
+25,PRB
+26,PSOL
+27,PR
+28,PSD
+29,PPL
+30,PEN
+31,PROS
+32,SD - SOLIDARIEDADE
+33,NOVO
+34,REDE
+35,PMB
+36,Nenhum
+37,Todos
+38,NS/NR",122
+Q_63,"Label: 28. Até este momento, o(a) Sr(a) diria que aprova ou desaprova a maneira como o Governador Reinaldo Azambuja está governando o Estado do Mato Grosso do Sul?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Aprova
+2,Nem aprova e nem desaprova
+4,NS/NR
+99,Desaprova",123
+Q_64,"Label: 29. De maneira geral, como o(a) Sr(a) avalia o desempenho do Governador Reinaldo Azambuja à frente do Governo do MS: ótimo, bom, regular, ruim ou péssimo? Se regular, positiva ou negativa?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Ótimo
+2,Bom
+3,Regular positivo
+4,Regular negativo
+5,Ruim
+6,Péssimo
+99,NS/NR",124
+Q_65,"Label: 29.1. Por que avalia dessa forma ÓTIMO?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Está tentando melhorar a saúde (Caravana da Saúde)
+2,Está fazendo algumas coisas
+3,Boa administração
+4,Cumpre com as promessas
+5,Tem boas propostas
+6,Está colocando a casa em ordem
+7,Está dando continuidade nas obras paradas (Programa Obras Pa
+8,Investe na educação estadual (Kits escolares)
+9,Construção e/ou reforma de escolas
+10,Negociação da dívida do Estado
+11,Aumento do efeitovo policial (polícia militar e bombeiros)
+12,Concurso público
+13,Aumento de salário dos funcionários públicos
+14,Reduziu o salário de Governador
+15,Geração de empregos
+16,OUTROS (DESCREVA):
+17,NS/NR",125
+Q_65_S,"Label: 29.1. Por que avalia dessa forma ÓTIMO? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",126
+Q_66,"Label: 29.2. Por que avalia dessa forma BOM?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Está tentando melhorar a saúde (Caravana da Saúde)
+2,Está fazendo algumas coisas
+3,Boa administração
+4,Cumpre com as promessas
+5,Tem boas propostas
+6,Está colocando a casa em ordem
+7,Está dando continuidade nas obras paradas (Programa Obras Pa
+8,Investe na educação estadual (Kits escolares)
+9,Construção e/ou reforma de escolas
+10,Negociação da dívida do Estado
+11,Aumento do efeitovo policial (polícia militar e bombeiros)
+12,Concurso público
+13,Aumento de salário dos funcionários públicos
+14,Reduziu o salário de Governador
+15,Geração de empregos
+16,OUTROS (DESCREVA):
+17,NS/NR",127
+Q_66_S,"Label: 29.2. Por que avalia dessa forma BOM? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",128
+Q_67,"Label: 29.3. Por que avalia dessa forma REGULAR POSITIVO?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Está comprometido com a saúde (Caravana da Saúde)
+2,Está tentando melhorar o Estado
+3,Está investindo na Educação (Kit Escolar)
+4,Bom administrador
+5,Não ouvi falar mal / sem envolvimento com corrupção
+6,Ainda não fez nada
+7,Não sei nada que ele fez até agora
+8,OUTROS (DESCREVA):
+9,NS/NR",129
+Q_67_S,"Label: 29.3. Por que avalia dessa forma REGULAR POSITIVO? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",130
+Q_68,"Label: 29.4. Por que avalia dessa forma REGULAR NEGATIVO?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Está comprometido com a saúde (Caravana da Saúde)
+2,Está tentando melhorar o Estado
+3,Está investindo na Educação (Kit Escolar)
+4,Bom administrador
+5,Não ouvi falar mal / sem envolvimento com corrupção
+6,Ainda não fez nada
+7,Não sei nada que ele fez até agora
+8,OUTROS (DESCREVA):
+9,NS/NR",131
+Q_68_S,"Label: 29.4. Por que avalia dessa forma REGULAR NEGATIVO? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",132
+Q_69,"Label: 29.5. Por que avalia dessa forma RUIM?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Não fez nada até agora
+2,Nâo cumpre as promessas
+3,Corrupto/desonesto
+4,Mau administrador
+5,Não está investindo na saúde
+6,Aumento do preço da energia elétrica
+7,Incompetente
+8,Não investe na educação
+9,Continua com a cobrança da vistoria veicular
+10,OUTROS (DESCREVA):
+11,NS/NR",133
+Q_69_S,"Label: 29.5. Por que avalia dessa forma RUIM? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",134
+Q_70,"Label: 29.6. Por que avalia dessa forma PÉSSIMO?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Não fez nada até agora
+2,Nâo cumpre as promessas
+3,Corrupto/desonesto
+4,Mau administrador
+5,Não está investindo na saúde
+6,Aumento do preço da energia elétrica
+7,Incompetente
+8,Não investe na educação
+9,Continua com a cobrança da vistoria veicular
+10,OUTROS (DESCREVA):
+11,NS/NR",135
+Q_70_S,"Label: 29.6. Por que avalia dessa forma PÉSSIMO? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",136
+Q_71_O1,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",137
+Q_71_O2,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",138
+Q_71_O3,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",139
+Q_71_O4,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",140
+Q_71_O5,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",141
+Q_71_O6,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",142
+Q_71_O7,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",143
+Q_71_O8,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",144
+Q_71_O9,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",145
+Q_71_O10,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",146
+Q_71_O11,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",147
+Q_71_O12,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",148
+Q_71_O13,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",149
+Q_71_O14,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",150
+Q_71_O15,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",151
+S_71_13,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja?  (OUTRO (DESCREVA):) [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",152
+T_72_1,"Label: O que mais gostou? Mais algum?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",153
+T_72_2,"Label: O que não gostou? Mais algum?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",154
+Q_73,"Label: 31.1.1. Qual OUTRO programa/ação que mais gostou?
+Format: A50
+Measure: Nominal
+Display Width: 50",155
+Q_74,"Label: 31.2.1. Qual OUTRO programa/ação que não gostou?
+Format: A50
+Measure: Nominal
+Display Width: 50",156
+Q_75,"Label: 32. Na sua opinião, o Governo do Reinaldo Azambuja está no rumo certo ou errado? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Totalmente certo
+2,Mais certo do que errado
+3,Mais errado do que certo
+4,Totalmente errado
+99,NS/NR",157
+Q_76,"Label: Vou te dar algumas informações e gostaria que o (a) Sr(a) avaliasse o quadro de candidatos a Prefeito de Campo Grande, depois dessas informações.  33. O Governador Reinaldo Azambuja (PSDB) apoia a Rose Modesto (que é a vice-governadora e foi secretária de 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",158
+Q_77,"Label: 34. O ex-prefeito Nelsinho Trad deve apoiar o seu irmão Marquinhos Trad. Ou seja, o Marquinhos é o candidato do Nelsinho. Sabendo disso, e se os candidatos a Prefeito fossem esses (mostrar DISCO 01), em quem o(a) Sr(a) votaria? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",159
+Q_78,"Label: 35. O PMDB (do ex-governador André Pucinnelli) poderá vir apoiar a Rose Modesto. Sabendo disso, e se os candidatos a Prefeito fossem esses (mostrar DISCO 01), em que o(a) Sr(a) votaria? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",160
+Q_79,"Label: 36. A outra opção, é o PMDB (do ex-governador André Puccinelli) vir apoiar o Marquinhos Trad. Sabendo disso, e se os candidatos a Prefeito fossem esses (MOSTRAR DISCO 01), em quem o(a) Sr(a) votaria? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",161
+Q_80,"Label: 37. O(a) Sr(a) ouviu falar do envolvimento de algum desses candidatos (MOSTRAR DISCO 01) com corrupção? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Sim. Qual?
+2,Não
+3,NS/NR",162
+Q_80_S,"Label: 37. O(a) Sr(a) ouviu falar do envolvimento de algum desses candidatos (MOSTRAR DISCO 01) com corrupção?  [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",163
+T_81_1,"Label: Tomou conhecimento da Operação Coffee-break? Aquela que investiga a compra de votos de vereadores para cassar o prefeito Bernal?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,""Sim, tomou conhecimento""
+2,Não tomou conhecimento
+3,NS/NR",164
+T_81_2,"Label: Tomou conhecimento da Operação Lama Asfáltica? Aquele que investiga a corrupção nas obras do Estado?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,""Sim, tomou conhecimento""
+2,Não tomou conhecimento
+3,NS/NR",165
+T_82_1,"Label: Com a operação Coffee-break?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Não ouviu falar
+11,NS/NR",166
+T_82_2,"Label: Com a operação Lama Asfáltica?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Não ouviu falar
+11,NS/NR",167
+T_83_1,"Label: Banheiros
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,0
+2,1
+3,2
+4,3
+5,4 ou mais",168
+T_83_2,"Label: Empregados domésticos
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,0
+2,1
+3,2
+4,3
+5,4 ou mais",169
+T_83_3,"Label: Automóveis
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,0
+2,1
+3,2
+4,3
+5,4 ou mais",170
+T_83_4,"Label: Microcomputador
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,0
+2,1
+3,2
+4,3
+5,4 ou mais",171
+T_83_5,"Label: Lava louça
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,0
+2,1
+3,2
+4,3
+5,4 ou mais",172
+T_83_6,"Label: Geladeira
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,0
+2,1
+3,2
+4,3
+5,4 ou mais",173
+T_83_7,"Label: Freezer
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,0
+2,1
+3,2
+4,3
+5,4 ou mais",174
+T_83_8,"Label: Lava roupa
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,0
+2,1
+3,2
+4,3
+5,4 ou mais",175
+T_83_9,"Label: DVD
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,0
+2,1
+3,2
+4,3
+5,4 ou mais",176
+T_83_10,"Label: Microondas
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,0
+2,1
+3,2
+4,3
+5,4 ou mais",177
+T_83_11,"Label: Motocicleta
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,0
+2,1
+3,2
+4,3
+5,4 ou mais",178
+T_83_12,"Label: Secadora roupa
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,0
+2,1
+3,2
+4,3
+5,4 ou mais",179
+Q_84,"Label: 41.1.  Grau de instrução do chefe de família
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Analfabeto/Fundamental I incompleto
+2,Fundamento I Completo / Fundamento II Incompleto
+3,Fundamental II completo / Médio incompleto
+4,Médio completo / Superior incompleto
+5,Superior completo",180
+T_85_1,"Label: Água utlizada neste domicílio é encanada?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Sim
+2,Não",181
+T_85_2,"Label: Considerando o trecho da rua do seu domícilio, sua rua é pavimentada/asfaltada?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Sim
+2,Não",182
+Q_86,"Label: 42. Qual a sua renda familiar, somando todos os seus reindmentos e de todas as pessoas que vivem em sua residência? (APRESENTAR CARTÃO DE RENDA)
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Até 01 Salário Mínimo
+2,Mais de 01 a 02 Salários Mínimos
+3,Mais de 02 a 03 Salários Mínimos
+4,Mais de 03 a 05 Salários Mínimos
+5,Mais de 05 a 10 Salários Mínimos
+6,Mais de 10 a 20 Salários Mínimos
+8,NS/NR
+99,Mais de 20 Salários Mínimos",183
+Q_86_1,"Label: 43. Qual é a sua religião?
+Format: F6.0
+Measure: Nominal
+Display Width: 6
+Missing Values: -1
+
+Value,Label
+1,Católica
+2,Protestante
+3,Evangélica
+4,Espírita Kardecista
+5,Candomblé / Afro
+6,Outra
+7,Não tem religião
+8,NR",184
+Q_92,"Label: TERMINAMOS A PESQUISA, AGRADECEMOS SUA PARTICIPAÇÃO.
+Print Format: F7.0
+Write Format: F7.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1",185
+
+Variable,Description,Position
+SbjNum,"Label: SbjNum
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8",1
+Q_1,"Label: Bom dia /Boa tarde /Boa noite. Meu nome é (NOME DO ENTREVISTADOR). Eu sou entrevistador(a) da IDEALIS PESQUISA e nós estamos realizando um estudo de opinião pública na cidade de Campo Grande/MS. O(a) Sr(a) pode responder algumas perguntas?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Sim
+2,Não",2
+Q_2,"Label: Filtro 1. O(a) Sr(a) ou alguém de sua família trabalha em (LEIA OPÇÕES): ?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Agência de Publicidade
+2,Área de Marketing
+3,Televisão/Rádio/Jornal/Revista
+4,Pesquisa de Mercado e Opinião
+5,Trabalha em ou para algum Partido político?
+6,Afiliado a algum Partido político?
+7,Nenhum deles",3
+Q_3,"Label: Filtro 2. O(a) Sr(a) tem título de eleitor aqui do município de Campo Grande? Ou seja, o Sr. vota aqui na cidade?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Sim
+2,Não",4
+Q_4,"Label: Filtro 3. O(a) Sr(a) pretende votar na próxima eleição?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Sim
+2,Não",5
+Q_5,"Label: Filtro 4. O(a) Sr(a) mora aqui nesta casa, de Campo Grande?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Sim
+2,Não",6
+região,"Label: Região
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Centro
+2,Segredo
+3,Prosa
+4,Bandeira
+5,Anhanduzinho
+6,Lagoa
+7,Imbirissu
+8,Região RURAL - Rochedinho",7
+Q_7,"Label: Centro
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Cruzeiro
+2,São Francisco
+3,Glória
+4,Amambaí
+5,Monte Líbano
+6,Glória
+7,Cabreúva",8
+Q_8,"Label: Segredo
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Nova Lima
+2,Nasser
+3,Coronel Antonino
+4,José Abrão",9
+Q_9,"Label: Prosa
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Novos Estados
+2,Carandá
+3,Veraneio
+4,Margarida
+5,Autonomista
+6,Estrela Dalva",10
+Q_10,"Label: Bandeira
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Tiradentes
+2,Universitário
+3,Maria Aparecida Pedrossian
+4,São Lourenço
+5,Jardim Paulista",11
+Q_11,"Label: Anhanduizinho 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Aero Rancho
+2,Centenário
+3,Pioneiro
+4,Piratininga
+5,Taquarussu",12
+Q_12,"Label: Lagoa
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,São Conrado
+2,Tijuca
+3,Coophavilla II
+4,Caiçara",13
+Q_13,"Label: Imbirussu
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Santo Amaro
+2,Popular
+3,Panamá
+4,Santo Antônio",14
+sexo,"Label: A-Sexo
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Masculino
+2,Feminino",15
+Q_15,"Label: B-Qual é a sua idade?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,""De  16 a 17 anos (só se for votar, possui título de eleitor)""
+2,De 18 a 24 anos
+3,De 25 a 34 anos
+4,De 35 a 44 anos
+5,De 45 a 59 anos
+6,60 anos ou mais (mais de 70 anos só se for votar)",16
+Instr,"Label: C-Qual é o seu grau de instrução/escolaridade?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Baixo
+2,Médio
+3,Superior",17
+Q_17,"Label: D-Qual destas alternativas descreve melhor a sua ocupação atual?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Trabalha em casa para uma Empresa
+2,Trabalha fora meio período para uma Empresa
+3,Trabalha fora período integral para uma Empresa
+4,Profissional liberal/negócio próprio
+5,Autonômo
+6,Funcionário público
+7,Tem outras fontes: rendimentos/aplicações
+8,Tem outras fontes: aposentadoria
+9,Tem outras fontes: recebo doações
+10,Tem outras fontes: mesada/pensão
+12,""Não está trabalhando, 06 meses ou mais""
+13,Outro (especifique):
+99,""Não está trabalhando atualmente, menos de 06 meses""",18
+Q_17_S,"Label: D-Qual destas alternativas descreve melhor a sua ocupação atual? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 13",19
+estado_civil,"Label: E - Qual é o seu estado civil?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Casado / Vive junto
+2,Separado / Divorciado
+3,Viúvo
+4,Solteiro
+5,NR",20
+Q_19,"Label: F - De uma maneira geral, o(a) Sr(a) é uma pessoa que tem... (LEIA OPÇÕES)
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Muito interesse por política em geral
+2,Algum interesse por política
+3,Pouco interesse por política
+4,Nenhum interesse por política em geral",21
+Q_20,"Label: 1.De maneira geral, como o(a) Sr(a) avalia a situação de Campo Grande? Atualmente a cidade de Campo Grande está... ótima, boa, regular, ruim ou péssima? Se regular, positiva ou negativa?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Ótima
+2,Boa
+3,Regular positiva
+4,Regular negativa
+5,Ruim
+6,Péssima
+99,NS/NR",22
+Q_21,"Label: VAMOS FALAR DE ELEIÇÕES PARA PREFEITO DE CAMPO GRANDE....  2. Se as eleições para Prefeito de Campo Grande fossem realizadas hoje, em quem o(a) Sr(a) votaria? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Anote nome citado:
+2,NS/Indeciso
+3,NR
+4,Nenhum",23
+Q_21_S,"Label: VAMOS FALAR DE ELEIÇÕES PARA PREFEITO DE CAMPO GRANDE....  2. Se as eleições para Prefeito de Campo Grande fossem realizadas hoje, em quem o(a) Sr(a) votaria?  [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 22",24
+Q_22,"Label: 3. Agora, vou te mostrar uma série de situações que podem acontecer nas eleições para Prefeito que vão ocorrer esse ano, em termos de candidatos. Gostaria que o(a) Sr(a) avaliasse cada situação.  3. 1. Se os candidatos fossem esses, em quem votaria? APRESE
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 18
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",25
+Q_23,"Label: 3.1. Por que votaria no (REPETIR RESPOSTA DA PERGUNTA 3.1.) para prefeito de Campo Grande? 
+Format: A50
+Measure: Nominal
+Display Width: 11",26
+Q_24,"Label: 3.1.1. E se o (REPETIR RESPOSTA DA PERGUNTA 3.1.)  não for candidato, em quem votaria? (DISCO 01) 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 14
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",27
+Q_25,"Label: 3.3. E se fossem estes? (APRESENTE DISCO 02)
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Professor Sidney - PSOL
+6,Suel Ferrante - PSTU
+7,Marcelo Bluma - PV
+8,Alex do PT - PT
+9,Indeciso/NS
+10,NR
+11,Nenhum",28
+Q_26,"Label: 3.3. E se fossem estes? (APRESENTE DISCO 03)
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Indeciso/NS
+5,NR
+6,Nenhum",29
+Q_27,"Label: 3.4. E se fossem estes? (APRESENTE O DISCO 04)
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Indeciso/NS
+4,NR
+5,Nenhum",30
+Q_28,"Label: 3.5. E se fossem esses? (APRESENTE O DISCO 05)
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Alcides Bernal - PP
+3,Indeciso/NS
+4,NR
+5,Nenhum",31
+Q_29,"Label: 3.6. E se fossem esses? (APRESENTE DISCO 06)
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Marquinhos Trad - PSD
+2,Alcides Bernal - PP
+3,Indeciso/NS
+4,NR
+5,Nenhum",32
+Q_30,"Label: 4. O(a) Sr(a)  ainda pode mudar sua escolha?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,""Sim, poderia ainda mudar""
+2,""Não, já está totalmente certo de sua escolha""
+3,NS
+4,NR",33
+Q_31,"Label: 5. Agora, gostaria que o(a) Sr(a) avaliasse e me dissesse em quem o(a) Sr(a) NÃO VOTARIA DE JEITO NENHUM para Prefeito de Campo Grande. 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Todos",34
+Q_32,"Label: 5.1.  Por que o(a) Sr(a) NÃO VOTARIA no (REPETIR RESPOSTA DA P.5)?
+Format: A50
+Measure: Nominal
+Display Width: 50",35
+T_33_1,"Label: Rose Modesto - PSDB
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Conhece bem/tem muitas informações sobre ele(a)
+2,""Conhece pouco, tem algumas informações sobre ele(a)""
+3,Conhece só de nome/só de ouvir falar
+4,Não conhece/é a primeira vez que ouve falar o nome
+5,NS/NR",36
+T_33_2,"Label: Marquinhos Trad - PSD
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Conhece bem/tem muitas informações sobre ele(a)
+2,""Conhece pouco, tem algumas informações sobre ele(a)""
+3,Conhece só de nome/só de ouvir falar
+4,Não conhece/é a primeira vez que ouve falar o nome
+5,NS/NR",37
+T_33_3,"Label: Alcides Bernal - PP
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Conhece bem/tem muitas informações sobre ele(a)
+2,""Conhece pouco, tem algumas informações sobre ele(a)""
+3,Conhece só de nome/só de ouvir falar
+4,Não conhece/é a primeira vez que ouve falar o nome
+5,NS/NR",38
+T_33_4,"Label: Athayde Nery - PPS
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Conhece bem/tem muitas informações sobre ele(a)
+2,""Conhece pouco, tem algumas informações sobre ele(a)""
+3,Conhece só de nome/só de ouvir falar
+4,Não conhece/é a primeira vez que ouve falar o nome
+5,NS/NR",39
+T_33_5,"Label: Coronel David - PSC
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Conhece bem/tem muitas informações sobre ele(a)
+2,""Conhece pouco, tem algumas informações sobre ele(a)""
+3,Conhece só de nome/só de ouvir falar
+4,Não conhece/é a primeira vez que ouve falar o nome
+5,NS/NR",40
+T_33_6,"Label: Professor Sidney - PSOL
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Conhece bem/tem muitas informações sobre ele(a)
+2,""Conhece pouco, tem algumas informações sobre ele(a)""
+3,Conhece só de nome/só de ouvir falar
+4,Não conhece/é a primeira vez que ouve falar o nome
+5,NS/NR",41
+T_33_7,"Label: Suel Ferrante - PSTU
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Conhece bem/tem muitas informações sobre ele(a)
+2,""Conhece pouco, tem algumas informações sobre ele(a)""
+3,Conhece só de nome/só de ouvir falar
+4,Não conhece/é a primeira vez que ouve falar o nome
+5,NS/NR",42
+T_33_8,"Label: Marcelo Bluma - PV
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Conhece bem/tem muitas informações sobre ele(a)
+2,""Conhece pouco, tem algumas informações sobre ele(a)""
+3,Conhece só de nome/só de ouvir falar
+4,Não conhece/é a primeira vez que ouve falar o nome
+5,NS/NR",43
+T_33_9,"Label: Dagoberto Nogueira - PDT
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Conhece bem/tem muitas informações sobre ele(a)
+2,""Conhece pouco, tem algumas informações sobre ele(a)""
+3,Conhece só de nome/só de ouvir falar
+4,Não conhece/é a primeira vez que ouve falar o nome
+5,NS/NR",44
+T_33_10,"Label: Alex do PT - PT
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Conhece bem/tem muitas informações sobre ele(a)
+2,""Conhece pouco, tem algumas informações sobre ele(a)""
+3,Conhece só de nome/só de ouvir falar
+4,Não conhece/é a primeira vez que ouve falar o nome
+5,NS/NR",45
+T_34_1,"Label: Rose Modesto - PSDB
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza
+2,Poderia votar
+4,""Não votaria, com certeza""
+5,NS/NR
+99,Possivelmente não votaria",46
+T_34_2,"Label: Marquinhos Trad - PSD
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza
+2,Poderia votar
+4,""Não votaria, com certeza""
+5,NS/NR
+99,Possivelmente não votaria",47
+T_34_3,"Label: Alcides Bernal - PP
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza
+2,Poderia votar
+4,""Não votaria, com certeza""
+5,NS/NR
+99,Possivelmente não votaria",48
+T_34_4,"Label: Athayde Nery - PPS
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza
+2,Poderia votar
+4,""Não votaria, com certeza""
+5,NS/NR
+99,Possivelmente não votaria",49
+T_34_5,"Label: Coronel David - PSC
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza
+2,Poderia votar
+4,""Não votaria, com certeza""
+5,NS/NR
+99,Possivelmente não votaria",50
+T_34_6,"Label: Professor Sidney - PSOL
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza
+2,Poderia votar
+4,""Não votaria, com certeza""
+5,NS/NR
+99,Possivelmente não votaria",51
+T_34_7,"Label: Suel Ferrante - PSTU
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza
+2,Poderia votar
+4,""Não votaria, com certeza""
+5,NS/NR
+99,Possivelmente não votaria",52
+T_34_8,"Label: Marcelo Bluma - PV
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza
+2,Poderia votar
+4,""Não votaria, com certeza""
+5,NS/NR
+99,Possivelmente não votaria",53
+T_34_9,"Label: Dagoberto Nogueira - PDT
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza
+2,Poderia votar
+4,""Não votaria, com certeza""
+5,NS/NR
+99,Possivelmente não votaria",54
+T_34_10,"Label: Alex do PT - PT
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza
+2,Poderia votar
+4,""Não votaria, com certeza""
+5,NS/NR
+99,Possivelmente não votaria",55
+Q_35,"Label: Agora vamos avaliar como o(a) Sr(a) vai escolher seu candidato à PREFEITO DE CAMPO GRANDE...  8. Na hora de o(a) Sr(a) escolher um candidato a PREFEITO, QUAL dessas qualidades (LER OPÇÕES) é a mais importantes, que ele deve ter para merecer seu voto em 1º 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Ser honesto/não ser corrupto
+2,""Ter capacidade administrativa, saber governar""
+3,Ter apoios políticos
+4,Ter experiência administrativa
+5,Ser próximo do povo
+6,Ser trabalhador
+7,Cumprir o que promete
+8,Ser competente / competência
+9,Outro (especifique):
+10,NS/NR",56
+Q_35_S,"Label: Agora vamos avaliar como o(a) Sr(a) vai escolher seu candidato à PREFEITO DE CAMPO GRANDE...  8. Na hora de o(a) Sr(a) escolher um candidato a PREFEITO, QUAL dessas qualidades (LER OPÇÕES) é a mais importantes, que ele deve ter para merecer seu voto em 1º 
+Format: A50
+Measure: Nominal
+Display Width: 50",57
+T_36_1,"Label: Rose Modesto - PSDB
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Possui
+2,Não possui
+3,NS/NR",58
+T_36_2,"Label: Marquinhos Trad - PSD
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Possui
+2,Não possui
+3,NS/NR",59
+T_36_3,"Label: Alcides Bernal - PP
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Possui
+2,Não possui
+3,NS/NR",60
+T_36_4,"Label: Athayde Nery - PPS
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Possui
+2,Não possui
+3,NS/NR",61
+T_36_5,"Label: Coronel David - PSC
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Possui
+2,Não possui
+3,NS/NR",62
+T_36_6,"Label: Professor Sidney - PSOL
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Possui
+2,Não possui
+3,NS/NR",63
+T_36_7,"Label: Suel Ferrante - PSTU
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Possui
+2,Não possui
+3,NS/NR",64
+T_36_8,"Label: Marcelo Bluma - PV
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Possui
+2,Não possui
+3,NS/NR",65
+T_36_9,"Label: Dagoberto Nogueira - PDT
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Possui
+2,Não possui
+3,NS/NR",66
+T_36_10,"Label: Alex do PT - PT
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Possui
+2,Não possui
+3,NS/NR",67
+T_37_1,"Label: O mais honesto?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",68
+T_37_2,"Label: O mais próximo do povo?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",69
+T_37_3,"Label: O mais competente?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",70
+T_37_4,"Label: O mais trabalhador?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",71
+T_37_5,"Label: O que tem mais experiência/experiente?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",72
+T_37_6,"Label: O que mais vai cumprir suas promessas?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",73
+Q_38,"Label: 11. Se pudesse escolher, o(a) Sr(a) preferiria que o próximo Prefeito de Campo Grande fosse um homem ou uma mulher?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Homem
+2,Mulher
+3,""Tanto faz, não é relevante.""
+4,NS/NR",74
+Q_39,"Label: 12. Aqui estão alguns problemas que as cidades têm enfrentado atualmente. Pensando em Campo Grande, qual é o problema mais grave, que o próximo prefeito deve cuidar em 1º lugar? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Saúde
+2,Segurança
+3,Educação
+4,Emprego
+5,Situação das ruas (buracos)
+6,Limpeza urbana
+7,Habitação
+8,Falta de creches
+9,Iluminação pública
+10,Transporte público
+11,Saneamento básico/Falta de esgoto
+12,Pobreza
+13,Gestão/Administração da Prefeitura
+14,Outro. Qual? (descreva):
+15,NS/NR",75
+Q_39_S,"Label: 12. Aqui estão alguns problemas que as cidades têm enfrentado atualmente. Pensando em Campo Grande, qual é o problema mais grave, que o próximo prefeito deve cuidar em 1º lugar?  [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 10",76
+Q_40,"Label: 12.1. Na sua opinião, qual desses candidatos (MOSTRE DISCO 01) a prefeito tem mais condições de resolver este problema (CITE RESPOSTA DA P12)?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",77
+Q_41,"Label: 13. E qual problema o próximo prefeito deveria cuidar, em 2º lugar?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Saúde
+2,Segurança
+3,Educação
+4,Emprego
+5,Situação das ruas (buracos)
+6,Limpeza urbana
+7,Habitação
+8,Falta de creches
+9,Iluminação pública
+10,Transporte público
+11,Saneamento básico/Falta de esgoto
+12,Pobreza
+13,Gestão/Administração da Prefeitura
+14,Outro. Qual? (descreva):
+15,NS/NR",78
+Q_41_S,"Label: 13. E qual problema o próximo prefeito deveria cuidar, em 2º lugar? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 11",79
+Q_42,"Label: 13.1. Na sua opinião, qual desses candidatos (MOSTRE DISCO 01) a prefeito tem mais condições de resolver este problema (CITE RESPOSTA DA P13)?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",80
+Q_43,"Label: 14. E qual problema o próximo prefeito deveria cuidar, em 3º lugar?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Saúde
+2,Segurança
+3,Educação
+4,Emprego
+5,Situação das ruas (buracos)
+6,Limpeza urbana
+7,Habitação
+8,Falta de creches
+9,Iluminação pública
+10,Transporte público
+11,Saneamento básico/Falta de esgoto
+12,Pobreza
+13,Gestão/Administração da Prefeitura
+14,Outro. Qual? (descreva):
+15,NS/NR",81
+Q_43_S,"Label: 14. E qual problema o próximo prefeito deveria cuidar, em 3º lugar? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 10",82
+Q_44,"Label: 14.1. Na sua opinião, qual desses candidatos (MOSTRE DISCO 01) a prefeito tem mais condições de resolver este problema (CITE RESPOSTA DA P14)?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",83
+Q_45,"Label: 15. Na sua opinião, o Prefeito Alcides Bernal está fazendo uma administração: ótima, boa, regular, ruim ou péssima?  Se regular, positiva ou negativa?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Ótimo
+2,Bom
+3,Regular positivo
+4,Regular negativo
+5,Ruim
+6,Péssimo
+99,NS/NR",84
+Q_46,"Label: 15.1. Por que avalia dessa forma, ÓTIMO?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,""Construção, reforma de ruas e avenidas/ tapa-buracos""
+2,""Investimento na educação do município, construção de escolas""
+3,Está trabalhando para desenvolvimento economico da cidade
+4,""Investimento em habitação, construção de casas""
+5,""É um prefeito honesto, cumpre as promessas, trabalhador e co""
+6,""Está combatendo a miséria, fome dos moradores""
+7,Desenvolvimento industrial
+8,Geração de empregos com chegada de novas empresas na cidade
+9,Construção e/ou reforma de postos de saúde (UPA's)
+10,Investimento na área da segurança/câmeras nas ruas/mais poli
+11,Novos programas na área da saúde/Saúde da Família PSF/Agente
+12,Construção de creches e mais vagas
+13,Melhoria no transporte urbano/público da cidade
+14,Outro (descreva):",85
+Q_46_S,"Label: 15.1. Por que avalia dessa forma, ÓTIMO? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",86
+Q_47,"Label: 15.2. Por que avalia dessa forma, BOM?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,""Construção, reforma de ruas e avenidas/ tapa-buracos""
+2,""Investimento na educação do município, construção de escolas""
+3,Está trabalhando para desenvolvimento economico da cidade
+4,""Investimento em habitação, construção de casas""
+5,""É um prefeito honesto, cumpre as promessas, trabalhador e co""
+6,""Está combatendo a miséria, fome dos moradores""
+7,Desenvolvimento industrial
+8,Geração de empregos com chegada de novas empresas na cidade
+9,Construção e/ou reforma de postos de saúde (UPA's)
+10,Investimento na área da segurança/câmeras nas ruas/mais poli
+11,Novos programas na área da saúde/Saúde da Família PSF/Agente
+12,Construção de creches e mais vagas
+13,Melhoria no transporte urbano/público da cidade
+14,Outro (descreva):",87
+Q_47_S,"Label: 15.2. Por que avalia dessa forma, BOM? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",88
+Q_48,"Label: 15.3. Por que avalia dessa forma, REGULAR POSITIVO?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Não investe em saúde (precária/ruim)/reforma e construção de
+2,Falta construir e reformar escolas / creches
+3,Falta asfaltar / recapeamento de ruas e avenidas
+4,Gerar mais empregos para os moradores da cidade
+5,Criar/ampliar o pólo industrial
+6,Faltam políticas de combate ao desemprego
+7,Falta investir em segurança/ diminuir a violência
+8,""Fraco, não fez muito pela cidade""
+9,""Falta investir em educação (novas escolas, merenda, transpor""
+10,Não tem programa para combater a fome/miséria/pobreza
+11,Falta construir novas casas/´programa habitacional
+12,Outro (descreva):",89
+Q_48_S,"Label: 15.3. Por que avalia dessa forma, REGULAR POSITIVO? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",90
+Q_49,"Label: 15.4. Por que avalia dessa forma, REGULAR NEGATIVO?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Não investe em saúde (precária/ruim)/reforma e construção de
+2,Falta construir e reformar escolas / creches
+3,Falta asfaltar / recapeamento de ruas e avenidas
+4,Gerar mais empregos para os moradores da cidade
+5,Criar/ampliar o pólo industrial
+6,Faltam políticas de combate ao desemprego
+7,Falta investir em segurança/ diminuir a violência
+8,""Fraco, não fez muito pela cidade""
+9,""Falta investir em educação (novas escolas, merenda, transpor""
+10,Não tem programa para combater a fome/miséria/pobreza
+11,Falta construir novas casas/´programa habitacional
+12,Outro (descreva):",91
+Q_49_S,"Label: 15.4. Por que avalia dessa forma, REGULAR NEGATIVO? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",92
+Q_50,"Label: 15.5. Por que avalia dessa forma, RUIM?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Não investe na saúde/precária/ruim/faltam hospitais e postos
+2,Não investe na segurança/muita violência
+3,Incompetente/fraco
+4,Não faz/cumpre as promessas de campanha
+5,Falta política para gerar emprego
+6,Não investe na educação/não constroi novas escolas e creches
+7,Não combate a fome/miséria/pobreza
+8,Não investe na infraestrutura da cidade
+9,Não asfalta ruas e avenidas/recapeamento
+10,Desonesto/corrupto
+11,Outro (descreva):",93
+Q_50_S,"Label: 15.5. Por que avalia dessa forma, RUIM? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",94
+Q_51,"Label: 15.6. Por que avalia dessa forma, PÉSSIMO?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Não investe na saúde/precária/ruim/faltam hospitais e postos
+2,Não investe na segurança/muita violência
+3,Incompetente/fraco
+4,Não faz/cumpre as promessas de campanha
+5,Falta política para gerar emprego
+6,Não investe na educação/não constroi novas escolas e creches
+7,Não combate a fome/miséria/pobreza
+8,Não investe na infraestrutura da cidade
+9,Não asfalta ruas e avenidas/recapeamento
+10,Desonesto/corrupto
+11,Outro (descreva):",95
+Q_51_S,"Label: 15.6. Por que avalia dessa forma, PÉSSIMO? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",96
+Q_52,"Label: 16. Na sua opinião, qual foi a(o) principal obra, programa ou realização da administração do Prefeito Alcides Bernal? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Obras de saneamento/esgoto
+2,""Programas de prevenção à saúde (à criança, à mulher, ao idos""
+3,Obras viárias(asfalto em ruas e avenidas)/operação tapa-bura
+4,""Investimento na educação (entrega de material escolar, table""
+5,Programa de Agendas comunitários de Saúde (PSC's) e/ou PSF's
+6,Obra Orla Morena (urbanização ferrovia)
+7,Investimento em habitação (distribuição de casas)
+8,Obras de infraestrutura e drenagem
+9,Reforma CEINF'S
+10,Construção ou reforma de postos de saúde/UPA's
+11,OUTRO (DESCREVA):
+12,Não se lembra
+13,NS/NR",97
+Q_52_S,"Label: 16. Na sua opinião, qual foi a(o) principal obra, programa ou realização da administração do Prefeito Alcides Bernal?  [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",98
+Q_53,"Label: 17. Na sua opinião, em que área que a administração do Bernal está MAIS ACERTANDO?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Saúde
+2,Segurança
+3,Educação
+4,Emprego
+5,Situação das ruas (buracos)
+6,Limpeza urbana
+7,Habitação
+8,Falta de creches
+9,Iluminação pública
+10,Transporte público
+11,Saneamento básico/falta de esgoto
+12,Pobreza
+13,Outro (descreva)
+14,NS/NR
+15,Tudo",99
+Q_53_S,"Label: 17. Na sua opinião, em que área que a administração do Bernal está MAIS ACERTANDO? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",100
+Q_54,"Label: 18. Na sua opinião, em que área que a administração do Bernal está MAIS ERRANDO? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Saúde
+2,Segurança
+3,Educação
+4,Emprego
+5,Situação das ruas (buracos)
+6,Limpeza urbana
+7,Habitação
+8,Falta de creches
+9,Iluminação pública
+10,Transporte público
+11,Saneamento básico/falta de esgoto
+12,Pobreza
+13,Outro (descreva)
+14,NS/NR
+15,Tudo",101
+Q_54_S,"Label: 18. Na sua opinião, em que área que a administração do Bernal está MAIS ERRANDO?  [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",102
+Q_55,"Label: 19. Na hora de escolher um candidato a prefeito, o(a) Sr(a) prefere votar... (LEIA OPÇÕES):
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Na reeleição do prefeito Bernal para que continue a maioria 
+2,Em um candidato que mude a maioria das coisas que o prefeito
+3,NS/NR",103
+Q_56,"Label: 20. Em relação a expectativa que o(a) Sr(a) tinha em relação à administração do Prefeito Alcides Bernal, como se sente HOJE? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Decepcionado com o desempenho do prefeito no mandato
+2,Indiferente
+3,Satisfeito com o desempenho do prefeito no mandato dele
+4,NS/NR",104
+Q_57,"Label: 21. A Câmara de Vereadores cassou o mandato do Prefeito Bernal, fala-se que houve um golpe. Na sua opinião: (LER OPÇÕES)
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Houve um golpe?
+2,""Não houve golpe, ele foi cassado na verdade por corrupção?""
+3,NS/NR",105
+Q_58,"Label: 22. Considerando que o Prefeito Bernal governa a cidade há 01 ANO E MEIO, para o(a) Sr(a)... (LEIA OPÇÕES):
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Ele merece uma segunda chance?
+2,Campo Grande merece um novo prefeito?
+3,NS/NR",106
+T_59_1,"Label: Governador Reinaldo Azambuja
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza no candidato apoiado por ele(a)
+2,""Poderia votar, mas dependendo do candidato""
+3,Não votaria no candidato apoiado por ele(a)
+4,Não levaria isso em conta na hora de escolher o candidato
+5,NS/NR",107
+T_59_2,"Label: Ex Governador André Pucinelli
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza no candidato apoiado por ele(a)
+2,""Poderia votar, mas dependendo do candidato""
+3,Não votaria no candidato apoiado por ele(a)
+4,Não levaria isso em conta na hora de escolher o candidato
+5,NS/NR",108
+T_58_4,"Label: Nelsinho Trad
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza no candidato apoiado por ele(a)
+2,""Poderia votar, mas dependendo do candidato""
+3,Não votaria no candidato apoiado por ele(a)
+4,Não levaria isso em conta na hora de escolher o candidato
+5,NS/NR",109
+T_58_5,"Label: Deputado Zeca do PT
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza no candidato apoiado por ele(a)
+2,""Poderia votar, mas dependendo do candidato""
+3,Não votaria no candidato apoiado por ele(a)
+4,Não levaria isso em conta na hora de escolher o candidato
+5,NS/NR",110
+T_58_6,"Label: PT
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza no candidato apoiado por ele(a)
+2,""Poderia votar, mas dependendo do candidato""
+3,Não votaria no candidato apoiado por ele(a)
+4,Não levaria isso em conta na hora de escolher o candidato
+5,NS/NR",111
+T_58_7,"Label: PMDB
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza no candidato apoiado por ele(a)
+2,""Poderia votar, mas dependendo do candidato""
+3,Não votaria no candidato apoiado por ele(a)
+4,Não levaria isso em conta na hora de escolher o candidato
+5,NS/NR",112
+T_58_8,"Label: Lula
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza no candidato apoiado por ele(a)
+2,""Poderia votar, mas dependendo do candidato""
+3,Não votaria no candidato apoiado por ele(a)
+4,Não levaria isso em conta na hora de escolher o candidato
+5,NS/NR",113
+T_58_9,"Label: Michel Temer
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza no candidato apoiado por ele(a)
+2,""Poderia votar, mas dependendo do candidato""
+3,Não votaria no candidato apoiado por ele(a)
+4,Não levaria isso em conta na hora de escolher o candidato
+5,NS/NR",114
+T_58_10,"Label: Aécio Neves
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza no candidato apoiado por ele(a)
+2,""Poderia votar, mas dependendo do candidato""
+3,Não votaria no candidato apoiado por ele(a)
+4,Não levaria isso em conta na hora de escolher o candidato
+5,NS/NR",115
+T_58_11,"Label: Serra
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza no candidato apoiado por ele(a)
+2,""Poderia votar, mas dependendo do candidato""
+3,Não votaria no candidato apoiado por ele(a)
+4,Não levaria isso em conta na hora de escolher o candidato
+5,NS/NR",116
+T_58_12,"Label: Fernando Henrique Cardoso
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza no candidato apoiado por ele(a)
+2,""Poderia votar, mas dependendo do candidato""
+3,Não votaria no candidato apoiado por ele(a)
+4,Não levaria isso em conta na hora de escolher o candidato
+5,NS/NR",117
+T_58_13,"Label: Família Trad
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria com certeza no candidato apoiado por ele(a)
+2,""Poderia votar, mas dependendo do candidato""
+3,Não votaria no candidato apoiado por ele(a)
+4,Não levaria isso em conta na hora de escolher o candidato
+5,NS/NR",118
+Q_60,"Label: 24. Na hora de escolher um candidato a prefeito, o(a) Sr(a) (LEIA OPÇÕES):
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Votaria em qualquer candidato apoiado pelo Governador Reinal
+2,Poderia votar em um candidato apoiado pelo Governador Reinal
+3,Não votaria em nenhum candidato apoiado pelo Governado Reina
+4,NS/NR",119
+Q_61,"Label: 25. Na sua opinião, o futuro Prefeito de Campo Grande ser do mesmo partido, grupo ou aliado do Governador do Estado, Reinaldo Azambuja, seria ótimo, bom, regular, ruim ou péssimo? Se regular, positiva ou negativa?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Ótimo
+2,Bom
+3,Regular positivo
+4,Regular negativo
+5,Ruim
+6,Péssimo
+99,NS/NR",120
+T_62_1,"Label: Partido político que mais gosta?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,PMDB
+2,PTB
+3,PDT
+4,PT
+5,DEM
+6,PC DO B
+7,PSB
+8,PSDB
+9,PTC
+10,PSC
+11,PMN
+12,PRP
+13,PPS
+14,PV
+15,PT DO B
+16,PP
+17,PSTU
+18,PCB
+19,PRTB
+20,PHS
+21,PSDC
+22,PCO
+23,PTN
+24,PSL
+25,PRB
+26,PSOL
+27,PR
+28,PSD
+29,PPL
+30,PEN
+31,PROS
+32,SD - SOLIDARIEDADE
+33,NOVO
+34,REDE
+35,PMB
+36,Nenhum
+37,Todos
+38,NS/NR",121
+T_62_2,"Label: Partido político que menos gosta
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,PMDB
+2,PTB
+3,PDT
+4,PT
+5,DEM
+6,PC DO B
+7,PSB
+8,PSDB
+9,PTC
+10,PSC
+11,PMN
+12,PRP
+13,PPS
+14,PV
+15,PT DO B
+16,PP
+17,PSTU
+18,PCB
+19,PRTB
+20,PHS
+21,PSDC
+22,PCO
+23,PTN
+24,PSL
+25,PRB
+26,PSOL
+27,PR
+28,PSD
+29,PPL
+30,PEN
+31,PROS
+32,SD - SOLIDARIEDADE
+33,NOVO
+34,REDE
+35,PMB
+36,Nenhum
+37,Todos
+38,NS/NR",122
+Q_63,"Label: 28. Até este momento, o(a) Sr(a) diria que aprova ou desaprova a maneira como o Governador Reinaldo Azambuja está governando o Estado do Mato Grosso do Sul?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Aprova
+2,Nem aprova e nem desaprova
+4,NS/NR
+99,Desaprova",123
+Q_64,"Label: 29. De maneira geral, como o(a) Sr(a) avalia o desempenho do Governador Reinaldo Azambuja à frente do Governo do MS: ótimo, bom, regular, ruim ou péssimo? Se regular, positiva ou negativa?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Ótimo
+2,Bom
+3,Regular positivo
+4,Regular negativo
+5,Ruim
+6,Péssimo
+99,NS/NR",124
+Q_65,"Label: 29.1. Por que avalia dessa forma ÓTIMO?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Está tentando melhorar a saúde (Caravana da Saúde)
+2,Está fazendo algumas coisas
+3,Boa administração
+4,Cumpre com as promessas
+5,Tem boas propostas
+6,Está colocando a casa em ordem
+7,Está dando continuidade nas obras paradas (Programa Obras Pa
+8,Investe na educação estadual (Kits escolares)
+9,Construção e/ou reforma de escolas
+10,Negociação da dívida do Estado
+11,Aumento do efeitovo policial (polícia militar e bombeiros)
+12,Concurso público
+13,Aumento de salário dos funcionários públicos
+14,Reduziu o salário de Governador
+15,Geração de empregos
+16,OUTROS (DESCREVA):
+17,NS/NR",125
+Q_65_S,"Label: 29.1. Por que avalia dessa forma ÓTIMO? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",126
+Q_66,"Label: 29.2. Por que avalia dessa forma BOM?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Está tentando melhorar a saúde (Caravana da Saúde)
+2,Está fazendo algumas coisas
+3,Boa administração
+4,Cumpre com as promessas
+5,Tem boas propostas
+6,Está colocando a casa em ordem
+7,Está dando continuidade nas obras paradas (Programa Obras Pa
+8,Investe na educação estadual (Kits escolares)
+9,Construção e/ou reforma de escolas
+10,Negociação da dívida do Estado
+11,Aumento do efeitovo policial (polícia militar e bombeiros)
+12,Concurso público
+13,Aumento de salário dos funcionários públicos
+14,Reduziu o salário de Governador
+15,Geração de empregos
+16,OUTROS (DESCREVA):
+17,NS/NR",127
+Q_66_S,"Label: 29.2. Por que avalia dessa forma BOM? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",128
+Q_67,"Label: 29.3. Por que avalia dessa forma REGULAR POSITIVO?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Está comprometido com a saúde (Caravana da Saúde)
+2,Está tentando melhorar o Estado
+3,Está investindo na Educação (Kit Escolar)
+4,Bom administrador
+5,Não ouvi falar mal / sem envolvimento com corrupção
+6,Ainda não fez nada
+7,Não sei nada que ele fez até agora
+8,OUTROS (DESCREVA):
+9,NS/NR",129
+Q_67_S,"Label: 29.3. Por que avalia dessa forma REGULAR POSITIVO? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",130
+Q_68,"Label: 29.4. Por que avalia dessa forma REGULAR NEGATIVO?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Está comprometido com a saúde (Caravana da Saúde)
+2,Está tentando melhorar o Estado
+3,Está investindo na Educação (Kit Escolar)
+4,Bom administrador
+5,Não ouvi falar mal / sem envolvimento com corrupção
+6,Ainda não fez nada
+7,Não sei nada que ele fez até agora
+8,OUTROS (DESCREVA):
+9,NS/NR",131
+Q_68_S,"Label: 29.4. Por que avalia dessa forma REGULAR NEGATIVO? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",132
+Q_69,"Label: 29.5. Por que avalia dessa forma RUIM?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Não fez nada até agora
+2,Nâo cumpre as promessas
+3,Corrupto/desonesto
+4,Mau administrador
+5,Não está investindo na saúde
+6,Aumento do preço da energia elétrica
+7,Incompetente
+8,Não investe na educação
+9,Continua com a cobrança da vistoria veicular
+10,OUTROS (DESCREVA):
+11,NS/NR",133
+Q_69_S,"Label: 29.5. Por que avalia dessa forma RUIM? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",134
+Q_70,"Label: 29.6. Por que avalia dessa forma PÉSSIMO?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Não fez nada até agora
+2,Nâo cumpre as promessas
+3,Corrupto/desonesto
+4,Mau administrador
+5,Não está investindo na saúde
+6,Aumento do preço da energia elétrica
+7,Incompetente
+8,Não investe na educação
+9,Continua com a cobrança da vistoria veicular
+10,OUTROS (DESCREVA):
+11,NS/NR",135
+Q_70_S,"Label: 29.6. Por que avalia dessa forma PÉSSIMO? [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",136
+Q_71_O1,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",137
+Q_71_O2,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",138
+Q_71_O3,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",139
+Q_71_O4,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",140
+Q_71_O5,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",141
+Q_71_O6,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",142
+Q_71_O7,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",143
+Q_71_O8,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",144
+Q_71_O9,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",145
+Q_71_O10,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",146
+Q_71_O11,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",147
+Q_71_O12,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",148
+Q_71_O13,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",149
+Q_71_O14,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",150
+Q_71_O15,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",151
+S_71_13,"Label: 30. O(a) Sr(a) se lembra de algum programa, ação, obra, realização do Governo do Estado do MS, na administração de Reinaldo Azambuja?  (OUTRO (DESCREVA):) [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",152
+T_72_1,"Label: O que mais gostou? Mais algum?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",153
+T_72_2,"Label: O que não gostou? Mais algum?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Caravana da Saúde (carretas)
+2,Entrega de Kits Escolares para os alunos
+3,Compra de mais viaturas e munições para policiamento
+4,Aumento de salário dos funcionários públicos
+5,Programa Vale UNI
+6,Entrega de casas / programa de habitação
+7,Reforma/privatização de estradas
+8,Continuidade da obra do aquário
+9,Programa Obras inacabadas zero
+10,Redução do salário do Governador
+11,Concursos públicos
+12,Renegociação da dívida do Estado
+13,OUTRO (DESCREVA):
+14,Não se lembra
+15,NS/NR",154
+Q_73,"Label: 31.1.1. Qual OUTRO programa/ação que mais gostou?
+Format: A50
+Measure: Nominal
+Display Width: 50",155
+Q_74,"Label: 31.2.1. Qual OUTRO programa/ação que não gostou?
+Format: A50
+Measure: Nominal
+Display Width: 50",156
+Q_75,"Label: 32. Na sua opinião, o Governo do Reinaldo Azambuja está no rumo certo ou errado? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Totalmente certo
+2,Mais certo do que errado
+3,Mais errado do que certo
+4,Totalmente errado
+99,NS/NR",157
+Q_76,"Label: Vou te dar algumas informações e gostaria que o (a) Sr(a) avaliasse o quadro de candidatos a Prefeito de Campo Grande, depois dessas informações.  33. O Governador Reinaldo Azambuja (PSDB) apoia a Rose Modesto (que é a vice-governadora e foi secretária de 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",158
+Q_77,"Label: 34. O ex-prefeito Nelsinho Trad deve apoiar o seu irmão Marquinhos Trad. Ou seja, o Marquinhos é o candidato do Nelsinho. Sabendo disso, e se os candidatos a Prefeito fossem esses (mostrar DISCO 01), em quem o(a) Sr(a) votaria? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",159
+Q_78,"Label: 35. O PMDB (do ex-governador André Pucinnelli) poderá vir apoiar a Rose Modesto. Sabendo disso, e se os candidatos a Prefeito fossem esses (mostrar DISCO 01), em que o(a) Sr(a) votaria? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",160
+Q_79,"Label: 36. A outra opção, é o PMDB (do ex-governador André Puccinelli) vir apoiar o Marquinhos Trad. Sabendo disso, e se os candidatos a Prefeito fossem esses (MOSTRAR DISCO 01), em quem o(a) Sr(a) votaria? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Alex do PT - PT
+11,Indeciso/NS
+12,NR
+13,Nenhum",161
+Q_80,"Label: 37. O(a) Sr(a) ouviu falar do envolvimento de algum desses candidatos (MOSTRAR DISCO 01) com corrupção? 
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Sim. Qual?
+2,Não
+3,NS/NR",162
+Q_80_S,"Label: 37. O(a) Sr(a) ouviu falar do envolvimento de algum desses candidatos (MOSTRAR DISCO 01) com corrupção?  [Other (specify)]
+Format: A50
+Measure: Nominal
+Display Width: 50",163
+T_81_1,"Label: Tomou conhecimento da Operação Coffee-break? Aquela que investiga a compra de votos de vereadores para cassar o prefeito Bernal?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,""Sim, tomou conhecimento""
+2,Não tomou conhecimento
+3,NS/NR",164
+T_81_2,"Label: Tomou conhecimento da Operação Lama Asfáltica? Aquele que investiga a corrupção nas obras do Estado?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,""Sim, tomou conhecimento""
+2,Não tomou conhecimento
+3,NS/NR",165
+T_82_1,"Label: Com a operação Coffee-break?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Não ouviu falar
+11,NS/NR",166
+T_82_2,"Label: Com a operação Lama Asfáltica?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Rose Modesto - PSDB
+2,Marquinhos Trad - PSD
+3,Alcides Bernal - PP
+4,Athayde Nery - PPS
+5,Coronel David - PSC
+6,Professor Sidney - PSOL
+7,Suel Ferrante - PSTU
+8,Marcelo Bluma - PV
+9,Dagoberto Nogueira - PDT
+10,Não ouviu falar
+11,NS/NR",167
+T_83_1,"Label: Banheiros
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,0
+2,1
+3,2
+4,3
+5,4 ou mais",168
+T_83_2,"Label: Empregados domésticos
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,0
+2,1
+3,2
+4,3
+5,4 ou mais",169
+T_83_3,"Label: Automóveis
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,0
+2,1
+3,2
+4,3
+5,4 ou mais",170
+T_83_4,"Label: Microcomputador
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,0
+2,1
+3,2
+4,3
+5,4 ou mais",171
+T_83_5,"Label: Lava louça
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,0
+2,1
+3,2
+4,3
+5,4 ou mais",172
+T_83_6,"Label: Geladeira
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,0
+2,1
+3,2
+4,3
+5,4 ou mais",173
+T_83_7,"Label: Freezer
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,0
+2,1
+3,2
+4,3
+5,4 ou mais",174
+T_83_8,"Label: Lava roupa
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,0
+2,1
+3,2
+4,3
+5,4 ou mais",175
+T_83_9,"Label: DVD
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,0
+2,1
+3,2
+4,3
+5,4 ou mais",176
+T_83_10,"Label: Microondas
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,0
+2,1
+3,2
+4,3
+5,4 ou mais",177
+T_83_11,"Label: Motocicleta
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,0
+2,1
+3,2
+4,3
+5,4 ou mais",178
+T_83_12,"Label: Secadora roupa
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,0
+2,1
+3,2
+4,3
+5,4 ou mais",179
+Q_84,"Label: 41.1.  Grau de instrução do chefe de família
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Analfabeto/Fundamental I incompleto
+2,Fundamento I Completo / Fundamento II Incompleto
+3,Fundamental II completo / Médio incompleto
+4,Médio completo / Superior incompleto
+5,Superior completo",180
+T_85_1,"Label: Água utlizada neste domicílio é encanada?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Sim
+2,Não",181
+T_85_2,"Label: Considerando o trecho da rua do seu domícilio, sua rua é pavimentada/asfaltada?
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Sim
+2,Não",182
+Q_86,"Label: 42. Qual a sua renda familiar, somando todos os seus reindmentos e de todas as pessoas que vivem em sua residência? (APRESENTAR CARTÃO DE RENDA)
+Print Format: F8.0
+Write Format: F8.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1
+
+Value,Label
+1,Até 01 Salário Mínimo
+2,Mais de 01 a 02 Salários Mínimos
+3,Mais de 02 a 03 Salários Mínimos
+4,Mais de 03 a 05 Salários Mínimos
+5,Mais de 05 a 10 Salários Mínimos
+6,Mais de 10 a 20 Salários Mínimos
+8,NS/NR
+99,Mais de 20 Salários Mínimos",183
+Q_86_1,"Label: 43. Qual é a sua religião?
+Format: F6.0
+Measure: Nominal
+Display Width: 6
+Missing Values: -1
+
+Value,Label
+1,Católica
+2,Protestante
+3,Evangélica
+4,Espírita Kardecista
+5,Candomblé / Afro
+6,Outra
+7,Não tem religião
+8,NR",184
+Q_92,"Label: TERMINAMOS A PESQUISA, AGRADECEMOS SUA PARTICIPAÇÃO.
+Print Format: F7.0
+Write Format: F7.2
+Measure: Nominal
+Display Width: 8
+Missing Values: -1",185

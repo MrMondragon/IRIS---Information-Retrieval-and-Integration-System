@@ -1,0 +1,10 @@
+<Item>
+  <Name>TextDifference</Name>
+  <Caption>Text Difference</Caption>
+  <Description>
+The demo project shows how to use Editor.NET to highlight differences between two texts.
+  </Description>
+  <Note>
+Editor.NET does not provide own algorithm for finding differences in the text, you should use third-party tools.
+  </Note>
+</Item>

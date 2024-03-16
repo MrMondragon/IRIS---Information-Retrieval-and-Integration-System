@@ -1,0 +1,13 @@
+<Item>
+  <Name>MainDemo</Name>
+  <Executable>..\..\..\bin\</Executable>
+  <CSharp>..\..\C#\main\</CSharp>
+  <VB.NET>..\..\VB\main\</VB.NET>
+  <Caption>Editor Demo</Caption>
+  <Description>
+Main demo shows most features of Editor.NET product. 
+  </Description>
+  <Note>
+It is a good idea to start your tour with this demo, especially if it is the first time you see our product.
+  </Note>
+</Item>

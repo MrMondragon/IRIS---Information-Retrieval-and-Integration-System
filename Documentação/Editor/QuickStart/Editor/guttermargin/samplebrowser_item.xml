@@ -1,0 +1,10 @@
+<Item>
+  <Name>GutterMargin</Name>
+  <Caption>Gutter and Margin</Caption>
+  <Description>
+The demo shows how to customize appearance of the gutter and margin.
+  </Description>
+  <Note>
+The gutter is the area to the left of the text, the purpose of which is to display miscellaneous indicators for the corresponding lines of text. Among these indicators are bookmark indicators, line wrapping indicators, line styles icons, and line numbers. 
+  </Note>
+</Item>

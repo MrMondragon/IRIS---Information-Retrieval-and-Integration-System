@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{DD86DBF8-B63E-4704-B311-864BCB458F75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iris.RuleOperations", "..\Plugins\Iris.RuleOperations\Iris.RuleOperations.csproj", "{36D8F46F-25DC-48E4-A64C-03B77DA73696}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Demo|Any CPU = Demo|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36D8F46F-25DC-48E4-A64C-03B77DA73696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36D8F46F-25DC-48E4-A64C-03B77DA73696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36D8F46F-25DC-48E4-A64C-03B77DA73696}.Demo|Any CPU.ActiveCfg = Debug|Any CPU
+		{36D8F46F-25DC-48E4-A64C-03B77DA73696}.Demo|Any CPU.Build.0 = Debug|Any CPU
+		{36D8F46F-25DC-48E4-A64C-03B77DA73696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36D8F46F-25DC-48E4-A64C-03B77DA73696}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

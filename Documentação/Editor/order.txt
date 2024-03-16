@@ -1,0 +1,50 @@
+
+The latest version of our components can be downloaded from our web site:
+  http://www.qwhale.net
+
+ORDERING BENEFITS
+PRICES
+HOW TO GET REGISTERED VERSION
+TECH SUPPORT
+HOW TO ORDER
+
+============================================================
+ORDERING BENEFITS
+============================================================
+After ordering of our product you will receive:
+* Full C# sources, including design time code.
+* Free updates for all minor and major releases of that product during one year; 
+* Free lifetime technical support for the product (via email); 
+* Discounts on other products by Quantum Whale. 
+* The royalty-free right to use code in your end-user applications.
+
+============================================================
+PRICES
+============================================================
+
+Item Name                       Price  
+------------------------------------------------------------
+
+Editor.NET (with sources)      $249
+Outbar.NET (with sources)      $39
+Scripter.NET sources           $29
+
+============================================================
+HOW TO GET REGISTERED VERSION
+============================================================
+
+After you  register  (Read "How to Order" section below)  we will e-mail provide a 
+link to download the registered version.
+
+============================================================
+TECH SUPPORT
+============================================================
+
+For technical support or comments about components,  you may write us to 
+support@qwhale.net
+
+============================================================
+HOW TO ORDER
+============================================================
+
+Please visit http://www.qwhale.net/order/ to register.

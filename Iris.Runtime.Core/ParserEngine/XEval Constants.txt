@@ -1,0 +1,143 @@
+
+namespace Iris.Runtime.Core
+{
+    enum SymbolConstants : int
+    {
+        SYMBOL_EOF           =  0, // (EOF)
+        SYMBOL_ERROR         =  1, // (Error)
+        SYMBOL_WHITESPACE    =  2, // (Whitespace)
+        SYMBOL_MINUS         =  3, // -
+        SYMBOL_EXCLAMEQ      =  4, // !=
+        SYMBOL_NUM           =  5, // #
+        SYMBOL_PERCENT       =  6, // %
+        SYMBOL_AMP           =  7, // &
+        SYMBOL_LPARAN        =  8, // (
+        SYMBOL_RPARAN        =  9, // )
+        SYMBOL_TIMES         = 10, // *
+        SYMBOL_COMMA         = 11, // ,
+        SYMBOL_DIV           = 12, // /
+        SYMBOL_AT            = 13, // @
+        SYMBOL_LBRACKET      = 14, // [
+        SYMBOL_RBRACKET      = 15, // ]
+        SYMBOL_PLUS          = 16, // +
+        SYMBOL_LT            = 17, // <
+        SYMBOL_LTEQ          = 18, // <=
+        SYMBOL_LTGT          = 19, // <>
+        SYMBOL_EQEQ          = 20, // ==
+        SYMBOL_GT            = 21, // >
+        SYMBOL_GTEQ          = 22, // >=
+        SYMBOL_AND           = 23, // AND
+        SYMBOL_AVG           = 24, // Avg
+        SYMBOL_AVGDISTINCT   = 25, // AvgDistinct
+        SYMBOL_BETWEEN       = 26, // BETWEEN
+        SYMBOL_COUNT         = 27, // Count
+        SYMBOL_COUNTDISTINCT = 28, // CountDistinct
+        SYMBOL_DATE          = 29, // Date
+        SYMBOL_DD            = 30, // Dd
+        SYMBOL_ID            = 31, // Id
+        SYMBOL_IS            = 32, // IS
+        SYMBOL_LIKE          = 33, // LIKE
+        SYMBOL_MAX           = 34, // Max
+        SYMBOL_MIN           = 35, // Min
+        SYMBOL_NOT           = 36, // NOT
+        SYMBOL_NOW           = 37, // Now
+        SYMBOL_NULL          = 38, // NULL
+        SYMBOL_NUMBER        = 39, // Number
+        SYMBOL_OR            = 40, // OR
+        SYMBOL_REQUESTOBJECT = 41, // RequestObject
+        SYMBOL_STRING        = 42, // String
+        SYMBOL_SUBSTRING     = 43, // Substring
+        SYMBOL_SUM           = 44, // Sum
+        SYMBOL_SUMDISTINCT   = 45, // SumDistinct
+        SYMBOL_TODAY         = 46, // Today
+        SYMBOL_YY            = 47, // Yy
+        SYMBOL_ADDEXP        = 48, // <Add Exp>
+        SYMBOL_ANDEXP        = 49, // <And Exp>
+        SYMBOL_DATAFIELD     = 50, // <DataField>
+        SYMBOL_DATATABLE     = 51, // <DataTable>
+        SYMBOL_DATE2         = 52, // <Date>
+        SYMBOL_EXPRESSION    = 53, // <Expression>
+        SYMBOL_EXTERNALPARAM = 54, // <External Param>
+        SYMBOL_EXTERNALVAR   = 55, // <External Var>
+        SYMBOL_FUNCTION      = 56, // <Function>
+        SYMBOL_MULTEXP       = 57, // <Mult Exp>
+        SYMBOL_NEGATEEXP     = 58, // <Negate Exp>
+        SYMBOL_NOTEXP        = 59, // <Not Exp>
+        SYMBOL_PREDEXP       = 60, // <Pred Exp>
+        SYMBOL_VALUE         = 61, // <Value>
+        SYMBOL_VAR           = 62  // <Var>
+    };
+
+    enum RuleConstants : int
+    {
+        RULE_EXPRESSION_OR                                              =  0, // <Expression> ::= <And Exp> OR <Expression>
+        RULE_EXPRESSION                                                 =  1, // <Expression> ::= <And Exp>
+        RULE_EXPRESSION2                                                =  2, // <Expression> ::= 
+        RULE_ANDEXP_AND                                                 =  3, // <And Exp> ::= <Not Exp> AND <And Exp>
+        RULE_ANDEXP                                                     =  4, // <And Exp> ::= <Not Exp>
+        RULE_NOTEXP_NOT                                                 =  5, // <Not Exp> ::= NOT <Pred Exp>
+        RULE_NOTEXP                                                     =  6, // <Not Exp> ::= <Pred Exp>
+        RULE_PREDEXP_BETWEEN_AND                                        =  7, // <Pred Exp> ::= <Add Exp> BETWEEN <Add Exp> AND <Add Exp>
+        RULE_PREDEXP_IS_NOT_NULL                                        =  8, // <Pred Exp> ::= <Value> IS NOT NULL
+        RULE_PREDEXP_IS_NULL                                            =  9, // <Pred Exp> ::= <Value> IS NULL
+        RULE_PREDEXP_LIKE_STRING                                        = 10, // <Pred Exp> ::= <Add Exp> LIKE String
+        RULE_PREDEXP_EQEQ                                               = 11, // <Pred Exp> ::= <Add Exp> == <Add Exp>
+        RULE_PREDEXP_LTGT                                               = 12, // <Pred Exp> ::= <Add Exp> <> <Add Exp>
+        RULE_PREDEXP_EXCLAMEQ                                           = 13, // <Pred Exp> ::= <Add Exp> != <Add Exp>
+        RULE_PREDEXP_GT                                                 = 14, // <Pred Exp> ::= <Add Exp> > <Add Exp>
+        RULE_PREDEXP_GTEQ                                               = 15, // <Pred Exp> ::= <Add Exp> >= <Add Exp>
+        RULE_PREDEXP_LT                                                 = 16, // <Pred Exp> ::= <Add Exp> < <Add Exp>
+        RULE_PREDEXP_LTEQ                                               = 17, // <Pred Exp> ::= <Add Exp> <= <Add Exp>
+        RULE_PREDEXP                                                    = 18, // <Pred Exp> ::= <Add Exp>
+        RULE_ADDEXP_PLUS                                                = 19, // <Add Exp> ::= <Add Exp> + <Mult Exp>
+        RULE_ADDEXP_MINUS                                               = 20, // <Add Exp> ::= <Add Exp> - <Mult Exp>
+        RULE_ADDEXP                                                     = 21, // <Add Exp> ::= <Mult Exp>
+        RULE_MULTEXP_TIMES                                              = 22, // <Mult Exp> ::= <Mult Exp> * <Negate Exp>
+        RULE_MULTEXP_DIV                                                = 23, // <Mult Exp> ::= <Mult Exp> / <Negate Exp>
+        RULE_MULTEXP_PERCENT                                            = 24, // <Mult Exp> ::= <Mult Exp> % <Negate Exp>
+        RULE_MULTEXP                                                    = 25, // <Mult Exp> ::= <Negate Exp>
+        RULE_NEGATEEXP_MINUS                                            = 26, // <Negate Exp> ::= - <Value>
+        RULE_NEGATEEXP                                                  = 27, // <Negate Exp> ::= <Value>
+        RULE_VALUE_NUMBER                                               = 28, // <Value> ::= Number
+        RULE_VALUE_DD                                                   = 29, // <Value> ::= Dd
+        RULE_VALUE_YY                                                   = 30, // <Value> ::= Yy
+        RULE_VALUE_STRING                                               = 31, // <Value> ::= String
+        RULE_VALUE                                                      = 32, // <Value> ::= <Var>
+        RULE_VALUE2                                                     = 33, // <Value> ::= <Function>
+        RULE_VALUE3                                                     = 34, // <Value> ::= <Date>
+        RULE_VALUE_LPARAN_RPARAN                                        = 35, // <Value> ::= ( <Expression> )
+        RULE_VAR                                                        = 36, // <Var> ::= <External Var>
+        RULE_VAR2                                                       = 37, // <Var> ::= <DataTable>
+        RULE_VAR3                                                       = 38, // <Var> ::= <DataField>
+        RULE_VAR4                                                       = 39, // <Var> ::= <External Param>
+        RULE_EXTERNALVAR_AT_ID                                          = 40, // <External Var> ::= @ Id
+        RULE_DATATABLE_NUM_ID                                           = 41, // <DataTable> ::= # Id
+        RULE_DATAFIELD_LBRACKET_NUMBER_RBRACKET_LBRACKET_ID_RBRACKET    = 42, // <DataField> ::= <DataTable> [ Number ] [ Id ]
+        RULE_DATAFIELD_LBRACKET_RBRACKET_LBRACKET_ID_RBRACKET           = 43, // <DataField> ::= <DataTable> [ <External Var> ] [ Id ]
+        RULE_EXTERNALPARAM_AMP_ID                                       = 44, // <External Param> ::= & Id
+        RULE_DATE_DATE_LPARAN_DD_DIV_DD_DIV_YY_RPARAN                   = 45, // <Date> ::= Date ( Dd / Dd / Yy )
+        RULE_DATE_TODAY                                                 = 46, // <Date> ::= Today
+        RULE_DATE_NOW                                                   = 47, // <Date> ::= Now
+        RULE_FUNCTION_COUNT_LPARAN_COMMA_ID_RPARAN                      = 48, // <Function> ::= Count ( <DataTable> , Id )
+        RULE_FUNCTION_AVG_LPARAN_COMMA_ID_RPARAN                        = 49, // <Function> ::= Avg ( <DataTable> , Id )
+        RULE_FUNCTION_MIN_LPARAN_COMMA_ID_RPARAN                        = 50, // <Function> ::= Min ( <DataTable> , Id )
+        RULE_FUNCTION_MAX_LPARAN_COMMA_ID_RPARAN                        = 51, // <Function> ::= Max ( <DataTable> , Id )
+        RULE_FUNCTION_SUM_LPARAN_COMMA_ID_RPARAN                        = 52, // <Function> ::= Sum ( <DataTable> , Id )
+        RULE_FUNCTION_COUNTDISTINCT_LPARAN_COMMA_ID_RPARAN              = 53, // <Function> ::= CountDistinct ( <DataTable> , Id )
+        RULE_FUNCTION_AVGDISTINCT_LPARAN_COMMA_ID_RPARAN                = 54, // <Function> ::= AvgDistinct ( <DataTable> , Id )
+        RULE_FUNCTION_SUMDISTINCT_LPARAN_COMMA_ID_RPARAN                = 55, // <Function> ::= SumDistinct ( <DataTable> , Id )
+        RULE_FUNCTION_COUNT_LPARAN_COMMA_ID_COMMA_STRING_RPARAN         = 56, // <Function> ::= Count ( <DataTable> , Id , String )
+        RULE_FUNCTION_AVG_LPARAN_COMMA_ID_COMMA_STRING_RPARAN           = 57, // <Function> ::= Avg ( <DataTable> , Id , String )
+        RULE_FUNCTION_MIN_LPARAN_COMMA_ID_COMMA_STRING_RPARAN           = 58, // <Function> ::= Min ( <DataTable> , Id , String )
+        RULE_FUNCTION_MAX_LPARAN_COMMA_ID_COMMA_STRING_RPARAN           = 59, // <Function> ::= Max ( <DataTable> , Id , String )
+        RULE_FUNCTION_SUM_LPARAN_COMMA_ID_COMMA_STRING_RPARAN           = 60, // <Function> ::= Sum ( <DataTable> , Id , String )
+        RULE_FUNCTION_COUNTDISTINCT_LPARAN_COMMA_ID_COMMA_STRING_RPARAN = 61, // <Function> ::= CountDistinct ( <DataTable> , Id , String )
+        RULE_FUNCTION_AVGDISTINCT_LPARAN_COMMA_ID_COMMA_STRING_RPARAN   = 62, // <Function> ::= AvgDistinct ( <DataTable> , Id , String )
+        RULE_FUNCTION_SUMDISTINCT_LPARAN_COMMA_ID_COMMA_STRING_RPARAN   = 63, // <Function> ::= SumDistinct ( <DataTable> , Id , String )
+        RULE_FUNCTION_SUBSTRING_LPARAN_COMMA_NUMBER_COMMA_NUMBER_RPARAN = 64, // <Function> ::= Substring ( <Value> , Number , Number )
+        RULE_FUNCTION_REQUESTOBJECT_LPARAN_ID_RPARAN                    = 65, // <Function> ::= RequestObject ( Id )
+        RULE_FUNCTION_LBRACKET_NUMBER_RBRACKET                          = 66, // <Function> ::= <Var> [ Number ]
+        RULE_FUNCTION_LBRACKET_NUMBER_COMMA_NUMBER_RBRACKET             = 67  // <Function> ::= <Var> [ Number , Number ]
+    };
+
+}

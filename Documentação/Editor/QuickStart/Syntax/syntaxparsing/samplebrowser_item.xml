@@ -1,0 +1,10 @@
+<Item>
+  <Name>SyntaxParsing</Name>
+  <Caption>Syntax parsing</Caption>
+  <Description>
+The demo shows how to apply different syntax schemes to highlight edit control's content.
+  </Description>
+  <Note>
+Editor.NET is designed to highlight syntax for virtually unlimited set of programming languages. Editor.NET is supplied with more than 20 ready-to-use syntax schemes for the most commonly used modern programming languages, including C, C#, Delphi, Xml, Html, Perl, etc. and has an ability to develop own syntax schemes.
+  </Note>
+</Item>

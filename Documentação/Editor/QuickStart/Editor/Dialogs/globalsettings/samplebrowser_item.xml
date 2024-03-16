@@ -1,0 +1,10 @@
+<Item>
+  <Name>GlobalSettings</Name>
+  <Caption>Global Settings</Caption>
+  <Description>
+This demo shows how to edit SyntaxEdit control settings and save/restore them.
+  </Description>
+  <Note>
+Normally this feature is used to synchronize key properties of all edit controls within the application and to save settings to the external location making them persistent next time you run the application.
+  </Note>
+</Item>

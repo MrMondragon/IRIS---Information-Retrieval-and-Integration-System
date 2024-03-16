@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Iris.Engine.QueryObjects.SelectItems.FromClause" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\SelectItems\FromClause.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.SelectItems.WhereClause" Collapsed="true">
+    <Position X="20.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\SelectItems\WhereClause.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.SelectItems.FromItem" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAMAAAAIAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Objects\SelectItems\FromItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.SelectItems.FromTableSource" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\SelectItems\FromTableSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.SelectItems.GroupClause" Collapsed="true">
+    <Position X="16.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAIAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Objects\SelectItems\GroupClause.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.SelectItems.HavingClause" Collapsed="true">
+    <Position X="23" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\SelectItems\HavingClause.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.SelectItems.OrderClause" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAIAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Objects\SelectItems\OrderClause.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.SelectItems.SelectionClause" Collapsed="true">
+    <Position X="18.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEACAAIAAAAAAAAAAAIAAAAAIAAAAgAAAA=</HashCode>
+      <FileName>Objects\SelectItems\SelectionClause.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.SelectItems.SimpleTableSource" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Objects\SelectItems\SimpleTableSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.SelectItems.SubQueryTableSource" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\SelectItems\SubQueryTableSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.SelectItems.Union" Collapsed="true">
+    <Position X="25.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAACAAAAAAAAAAAAAIAAAAAAACA=</HashCode>
+      <FileName>Objects\SelectItems\Union.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.SelectItems.ValueItem" Collapsed="true">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAIAAAAAAAAAAAAAAAQAAAAQAAAAAA=</HashCode>
+      <FileName>Objects\SelectItems\ValueItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.StatementPart" Collapsed="true">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\StatementPart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

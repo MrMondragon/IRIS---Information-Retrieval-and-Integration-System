@@ -1,0 +1,10 @@
+<Item>
+  <Name>Background</Name>
+  <Caption>Background</Caption>
+  <Description>
+The demo shows how to use various background styles to change editor exterior. 
+  </Description>
+  <Note>
+Editor.NET can display its background in the various ways. You can choose that the image should be used as a background, use some colors to draw gradient background or use color schemes to paint it. 
+  </Note>
+</Item>

@@ -1,0 +1,10 @@
+<Item>
+  <Name>Notification</Name>
+  <Caption>Notification</Caption>
+  <Description>
+The demo shows how to respond notification when edit control's content is changed.
+  </Description>
+  <Note>
+Each action with editor's content raises some notification for user, allowing taking appropriate actions like updating status information when navigating or editing the text.
+  </Note>
+</Item>

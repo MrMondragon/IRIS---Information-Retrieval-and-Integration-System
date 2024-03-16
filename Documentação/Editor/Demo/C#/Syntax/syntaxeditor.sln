@@ -1,0 +1,49 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyntaxEditor", "SyntaxEditor.csproj", "{20ABCE3E-4E82-477E-8BBD-73F13BC1CEA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QWhale.Editor", "..\..\..\bin\QWhale.Editor_Source\QWhale.Editor.csproj", "{6AB6DA56-AFF2-4FF2-9F08-A81CD353F56D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QWhale.Syntax.Parsers", "..\..\..\bin\QWhale.Syntax.Parsers_Source\QWhale.Syntax.Parsers.csproj", "{42C2C567-40DF-46A4-B895-87438DBF5297}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QWhale.Syntax", "..\..\..\bin\QWhale.Syntax_Source\QWhale.Syntax.csproj", "{AB09A075-B551-4454-B4A0-404CB87EC263}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QWhale.Common", "..\..\..\bin\QWhale.Common_Source\QWhale.Common.csproj", "{5F377287-73F0-48D0-92A0-FE7BA361454C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QWhale.Syntax.Schemes", "..\..\..\bin\QWhale.Syntax.Schemes_Source\QWhale.Syntax.Schemes.csproj", "{FE06B207-C96E-468E-AB9F-4B82A4DB31EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20ABCE3E-4E82-477E-8BBD-73F13BC1CEA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20ABCE3E-4E82-477E-8BBD-73F13BC1CEA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20ABCE3E-4E82-477E-8BBD-73F13BC1CEA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20ABCE3E-4E82-477E-8BBD-73F13BC1CEA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AB6DA56-AFF2-4FF2-9F08-A81CD353F56D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AB6DA56-AFF2-4FF2-9F08-A81CD353F56D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AB6DA56-AFF2-4FF2-9F08-A81CD353F56D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AB6DA56-AFF2-4FF2-9F08-A81CD353F56D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42C2C567-40DF-46A4-B895-87438DBF5297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42C2C567-40DF-46A4-B895-87438DBF5297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42C2C567-40DF-46A4-B895-87438DBF5297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42C2C567-40DF-46A4-B895-87438DBF5297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB09A075-B551-4454-B4A0-404CB87EC263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB09A075-B551-4454-B4A0-404CB87EC263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB09A075-B551-4454-B4A0-404CB87EC263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB09A075-B551-4454-B4A0-404CB87EC263}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F377287-73F0-48D0-92A0-FE7BA361454C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F377287-73F0-48D0-92A0-FE7BA361454C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F377287-73F0-48D0-92A0-FE7BA361454C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F377287-73F0-48D0-92A0-FE7BA361454C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE06B207-C96E-468E-AB9F-4B82A4DB31EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE06B207-C96E-468E-AB9F-4B82A4DB31EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE06B207-C96E-468E-AB9F-4B82A4DB31EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE06B207-C96E-468E-AB9F-4B82A4DB31EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

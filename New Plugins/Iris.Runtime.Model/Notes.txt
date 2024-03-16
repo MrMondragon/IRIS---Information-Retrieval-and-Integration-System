@@ -1,0 +1,61 @@
+Editor de SQL
+- Tool Itens para ocultar os 2 painéis auxiliares
+- Editor para expression
+- Seletor de tabelas
+- Seletor de campos da tabela
+- Validador de alias repetidos
+- Resolvedor de ciclos
+- Layout
+- Validador para sort order (impedir repetidos e impedir fora de ordem)
+- Implementar Union
+- Criar o caminho de volta (da sentença para o modelo)
+- Passar o link entre nome e caption das tabelas no editor de sql para evento
+- Criar o explorer de sub-query
+- Criar um userControl para conexão (ao invés de outro inspector)
+
+
+Operações: 
+	Validador de estrutura, para ver se existe alguma conexão indevida e se a estrutura está pronta pra rodar
+	Editor de colunas para resultset inMemory (não será feito: este efeito será obtido pela operação de adição de colunas)
+
+	O foreach passa como valor de input um resultset de um único registro
+
+	--Operação de transporte
+	
+	Opção para carga de estrutura com uma série de parâmetros dinâmicos (strings de conexão, caminhos de dlls, etc)				
+		Antes de executar a estrutura verifica se existe no diretório base um arquivo com o mesmo nome da dll+.icfg
+		Objeto de parâmetros dinâmicos
+			Sessão 1 -ConnectionStrings + Providers criptografados
+			Sessão 2 -Dicionário string,object de parâmetros dinâmicos
+			Sessão 3 -Assembly Refs
+	
+	Criar opçao de cache para objetos compilados
+	Passar a utilizar uma interface ILogProvider para log
+	
+	-- Pensar em um jeito de usar filtro baseado em XEval		
+	
+	Criar o gerador de icfg's baseado em reflection.
+	
+	-- Operação de atribuição de parâmetros?	
+	-- Passar a propriedade sql para query
+	
+	Colocar SynTex no editor de expressão
+	Criar operação de container de transporte (com disableConstraints, etc)
+	Operação XEval
+	
+--------------------------------------
+	XEval - RequestObject - Diálogo para solicitar valor
+	Serviço
+
+	Agendador
+		Criar um visualizador de log para servir de editor de propriedade para o log
+		Implementar o editor de conexões
+		Implementar o editor de parâmetros
+		
+		Criar rotina de envio
+			Criação do objeto de transporte
+			
+		
+	Testar XenoCode
+	Retirar excessões de CryBaby
+	

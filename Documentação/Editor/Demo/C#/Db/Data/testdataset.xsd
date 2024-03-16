@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="TestDataset" targetNamespace="http://tempuri.org/TestDataset.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/TestDataset.xsd" xmlns:mstns="http://tempuri.org/TestDataset.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="TestDataset" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="TestData">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Id" type="xs:int" minOccurs="0" msdata:AutoIncrementSeed="1" msdata:AutoIncrementStep="1" />
+							<xs:element name="Text" type="xs:string" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:key name="TestDatasetKey1">
+			<xs:selector xpath=".//mstns:TestData" />
+			<xs:field xpath="mstns:Id" />
+		</xs:key>
+	</xs:element>
+</xs:schema>

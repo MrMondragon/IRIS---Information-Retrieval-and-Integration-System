@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Iris.Engine.QueryObjects.Declare" Collapsed="true">
+    <Position X="2" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Declare.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Delete" Collapsed="true">
+    <Position X="6.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAIAAAAAAAAAAEAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Objects\Delete.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Select" Collapsed="true">
+    <Position X="2" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgIAAACAAAAAAAAIAAAAAAAEAAEAAAAAAAAAAEAAQAA=</HashCode>
+      <FileName>Objects\Select.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Set" Collapsed="true">
+    <Position X="2" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Set.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Statement" Collapsed="true">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Statement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Truncate" Collapsed="true">
+    <Position X="6.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Objects\Truncate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Update" Collapsed="true">
+    <Position X="6.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAABAAIAAAAAAAAAAEAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Objects\Update.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Insert" Collapsed="true">
+    <Position X="2" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAIAAAAAAAAAAAAAAgAgAAAAQgAAAA=</HashCode>
+      <FileName>Objects\Insert.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Union" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAACAAAAAAAAAAAAAIAAAAAAACA=</HashCode>
+      <FileName>Objects\Union.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Eval" Collapsed="true">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Objects\Eval.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

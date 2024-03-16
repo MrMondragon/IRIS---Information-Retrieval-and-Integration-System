@@ -1,0 +1,35 @@
+"Name"     = TextMerging
+"Author"   = Marcelo R. Andrade
+"About"    = Merging de mensagem utilizando XEval
+
+"Start Symbol" = <Message>
+
+! ------------------------------------------------- Sets
+
+{WS}           = {Whitespace} - {CR} - {LF}
+{Word Chars}   = {Printable} -[{] -[}]- {WS}  
+
+! ------------------------------------------------- Terminals
+
+Whitespace    = {WS}+
+NewLine       = {CR}{LF} | {CR} | {LF}
+BaseWord    = {Word Chars}+
+
+! ------------------------------------------------- Rules
+
+<Message> ::= <Words>
+            | <Words> NewLine <Message>
+            | NewLine <Message>
+            |
+
+<Words> ::= <Word>
+            | <Word> <Words>	            
+
+<Word>    ::= BaseWord
+            | <XEval>
+
+<XEval>   ::= '{'<Xpression>'}'
+
+<Xpression> ::= BaseWord
+              | BaseWord <Xpression>
+

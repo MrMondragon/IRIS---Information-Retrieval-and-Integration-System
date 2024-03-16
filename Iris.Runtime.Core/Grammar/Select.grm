@@ -1,0 +1,323 @@
+"Name"         = 'SQL 2007'
+"Version"      = '2007'
+"Start Symbol" = <Queries>
+
+! =============================================================================
+! Comments
+! =============================================================================
+
+Comment Start = '/*'
+Comment End   = '*/'
+Comment Line  = '--'
+
+! =============================================================================
+! Terminals
+! =============================================================================
+{String Ch 1}      = {Printable} - ["] + {Printable Extended} 
+{String Ch 2}      = {Printable} - [''] + {Printable Extended} 
+{Id Ch Standard}   = {Alphanumeric} + [_]
+{Id Ch Extended}   = {Printable} - ['['] - [']']
+{Id XEval}         = {Printable} -['{'] - ['}']
+
+StringLiteral   = '"'{String Ch 1}*'"' | ''{String Ch 2}*''
+IntegerLiteral  = {Digit}+
+RealLiteral     = {Digit}+'.'{Digit}
+XEvalExpresion  = '{'{Id XEval}+'}'
+
+!----- Identifiers in SQL are very complex. 
+
+Id = ({Letter}{Id Ch Standard}* | '['{Id Ch Extended}+']')  ('.'({Letter}{Id Ch Standard}* | '['{Id Ch Extended}+']'))?
+
+! =============================================================================
+! Query
+! =============================================================================
+
+<Queries>        ::= <Query>
+                   | <Query> <Queries>
+
+<Query>         ::= <Select Stm>
+                  | <Expression>
+                  | <Insert Stm>  <GO>
+                  | <Update Stm>  <GO>
+                  | <Delete Stm>  <GO>
+
+<GO>            ::= GO
+                  |
+
+! =============================================================================
+! Insert
+! =============================================================================
+
+<Insert Stm>    ::= INSERT <Into> Id <Insert Columns> <Select Stm>
+                  | INSERT <Into> Id <Insert Columns> VALUES '(' <Insert List> ')'
+
+
+<Insert Columns>        ::= '(' <Insert Column List> ')'
+                        |
+<Insert Column List>    ::= Id
+                        |   Id',' <Insert Column List>
+
+
+<Into>	::= INTO |
+
+<Insert Update Item> ::= <Txt Expression>
+		| DEFAULT
+
+<Insert List> ::= <Insert List> ',' <Insert Update Item>
+		| <Insert Update Item>
+
+! =============================================================================
+! Update
+! =============================================================================
+
+<Update Stm>    ::= UPDATE Id SET <Assign List> <Update From> <Where Clause>
+
+<Update From>   ::= <From Clause>
+                    |
+
+<Assign List>   ::= Id '=' <Insert Update Item> ',' <Assign List>
+                  | Id '=' <Insert Update Item>
+
+! =============================================================================
+! Delete
+! =============================================================================
+
+<Delete Stm>    ::= DELETE  FROM  Id <Where Clause>
+
+! =============================================================================
+! Select Statement
+! =============================================================================
+
+
+<Select Stm>    ::= SELECT <Columns> <From Clause> <Where Clause> <Group Clause> <Having Clause> <Order Clause> <Union>
+
+
+<Columns>       ::= <ColumnRestriction> '*'
+                  | <ColumnRestriction> <Column List>
+                  
+<ColumnRestriction> ::= <Restriction>
+                      | TOP IntegerLiteral
+                      | TOP IntegerLiteral PERCENT
+
+<Column List>   ::= <Column Item> ',' <Column List>
+                  | <Column Item>
+
+<Column Item>   ::= <Column Source>
+                  | <Column Source> Id      !ALIAS   
+                  | <Column Source> AS Id      !ALIAS
+
+<Column Source> ::= <Value>
+                  | Id '=' CASE <Txt Expression> <When Chain> <Case Else>  END
+                  | Id '=' CASE  <When Chain> <Case Else>  END
+
+<Case Else>     ::= ELSE <Value>
+                |
+
+<When Chain> ::= <When Case>
+                | <When Case> <When Chain>
+                  
+<When Case> ::= WHEN <Txt Expression> THEN <Value>
+
+<Restriction>   ::= DISTINCT
+                    |
+                  
+<Function>      ::= <Aggregate Fn>
+                |  <Date Time Fn>
+                |  <Convert Fn>
+                |  <Generic Function>
+                
+<Generic Function> ::= Id'('<Txt Expression>')'
+
+<Aggregate Fn>  ::= Count  '(' '*' ')'
+                  | Count_Big  '(' <Restriction> <Txt Expression> ')'
+                  | Count  '(' <Restriction> <Txt Expression> ')'
+                  | Avg    '('<Restriction>  <Txt Expression> ')'
+                  | Min    '(' <Restriction> <Txt Expression> ')'
+                  | Max    '(' <Restriction> <Txt Expression> ')'
+                  | StDev  '(' <Restriction> <Txt Expression> ')'
+                  | StDevP '(' <Restriction> <Txt Expression> ')'
+                  | Sum    '(' <Restriction> <Txt Expression> ')'
+                  | Var    '(' <Restriction> <Txt Expression> ')'
+                  | VarP   '(' <Restriction> <Txt Expression> ')'
+                  | CheckSum '(' '*' ')'
+                  | CheckSum '(' <Txt Expression> ')'
+                  | CheckSum_AGG '('<Restriction> <Txt Expression> ')'
+
+<Date Time Fn>  ::= DATEADD '('Id ','  IntegerLiteral ',' <Txt Expression> ')'
+                  | DATEDIFF '('Id ','  <Txt Expression> ',' <Txt Expression> ')'
+                  | DATENAME '('Id ',' <Txt Expression> ')'
+                  | DATEPART '('Id ',' <Txt Expression> ')'
+                  | DAY '('<Txt Expression> ')'
+                  | GETDATE '('')'
+                  | GETUTCDATE '('')'
+                  | MONTH '('<Txt Expression> ')'
+                  | YEAR '('<Txt Expression> ')'
+                  
+                  
+<Convert Fn>   ::= CAST '(' <Txt Expression> AS  <Data Type> ')'
+                 | CONVERT '('<Data Type>',' <Txt Expression>')'
+                 | CONVERT '('<Data Type>',' <Txt Expression>',' IntegerLiteral ')'
+
+<Data Type>    ::= <Base Type>
+                 | <Base Type> '('IntegerLiteral')'
+                 | <Base Type> '('IntegerLiteral ',' IntegerLiteral')'
+                 
+<Base Type>    ::= Bigint
+                  |Decimal
+                  |Int
+                  |Numeric
+                  |Smallint
+                  |Money
+                  |Tinyint
+                  |Smallmoney
+                  |Bit
+                  |Float
+                  |Real
+                  |Datetime
+                  |Smalldatetime
+                  |Char
+                  |Text
+                  |Varchar
+                  |Nchar
+                  |Ntext
+                  |Nvarchar
+                  |Binary
+                  |Image
+                  |Varbinary
+                  |Cursor
+                  |Timestamp
+                  |Sql_Variant
+                  |Uniqueidentifier
+
+<From Clause>   ::= FROM <From List> <Join Chain>
+
+<From List>      ::= <From Member> ',' <From List>
+                  | <From Member> CROSS JOIN <From List>
+                  | <From Member>
+
+<From Member>   ::= Id <Alias>
+                | '('<Select Stm>')' <Alias>
+                | '('<From List> <Join Chain>')' <Alias>
+                
+<Alias>         ::= Id
+                | 'as' Id
+                |
+
+<Join Chain>    ::= <Join> <Join Chain>
+                  |
+
+<Join>          ::= <Join Type> <Join List>  <Join Chain> ON <Expression>
+                  
+<Join Type> ::= INNER JOIN
+                | LEFT JOIN
+                | LEFT OUTER JOIN
+                | RIGHT JOIN
+                | RIGHT OUTER JOIN
+                | FULL JOIN
+                | FULL OUTER JOIN
+                | JOIN
+
+                  
+<Join List>       ::= <Join Member>
+                    | <Join Member>','<Join List>
+                  
+<Join Member>     ::= <From Member>
+                  | <Join Chain>
+                  
+<Where Clause>  ::= WHERE <Expression>
+                  |
+
+<Group Clause>  ::= GROUP BY <Group List>
+                  |
+
+<Group List>    ::= <Group Item> ',' <Group List>
+                  | <Group Item>
+
+<Group Item>    ::= Id
+                  | IntegerLiteral
+                  | <Function>
+
+<Order Clause>  ::= ORDER BY <Order List>
+                  |
+
+<Order List>    ::= ID <Order Type> ',' <Order List>
+                  | ID <Order Type>
+
+<Order Type>    ::= ASC
+                  | DESC
+                  |
+
+<Having Clause> ::= HAVING <Expression>
+                  |
+
+<Union>    ::= UNION <Select Stm>
+                  | UNION ALL <Select Stm>
+                  |
+
+! ============================================================================= 
+! Expressions
+! =============================================================================
+
+<Txt Expression> ::= <Expression>
+                   | <Expression>','<Txt Expression>
+
+
+<Expression> ::= <Expression> <Logic Operator> <Expression>
+                | NOT '('<Expression>')'
+                | <Operation>
+                | '('<Expression>')'
+
+
+<Operation>  ::= <Value> BETWEEN <Value> AND <Value>
+                | <Value> NOT BETWEEN <Value> AND <Value>
+                | <Value> IS NOT NULL
+                | <Value> IS NULL
+                | <Value> LIKE <Value>
+                | <Value> IN <Tuple>
+                | <Value> NOT IN <Tuple>
+                | <Value> <Comp Operator> <Value>
+                | <Value>
+
+
+
+<Comp Operator> ::= '='
+                  | '<>'
+                  | '!='
+                  | '>'
+                  | '>='
+                  | '<'
+                  | '<='
+
+<Logic Operator> ::= AND
+                   | OR
+
+
+<Value>       ::= <Tuple>
+                | <Function>
+                | <Parameter>
+                | ID
+                | IntegerLiteral
+                | RealLiteral
+                | StringLiteral
+                | <Value> <Arith Operator> <Value>
+                | '('<Value> <Arith Operator> <Value>')'
+                | '-'<Value>
+                | XEvalExpresion
+                | NULL
+
+
+
+<Arith Operator> ::= '+'
+                   | '-'
+                   | '*'
+                   | '/'
+                   | '%'
+
+<Parameter>   ::= ':'Id
+
+<Tuple>       ::= '(' <Select Stm> ')'
+                | '(' <Txt Expression> ')'
+
+
+
+

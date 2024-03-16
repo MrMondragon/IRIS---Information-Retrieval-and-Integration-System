@@ -1,0 +1,10 @@
+<Item>
+  <Name>WordWrap</Name>
+  <Caption>Wordwrap</Caption>
+  <Description>
+The demo shows how to use wordwrap mode to wrap lines within edit control's content.
+  </Description>
+  <Note>
+Editor.NET allows automatically wrapping words to the beginning of the next line when necessary. When a text extends beyond the visible code pane, it can automatically wrap to the next line.
+  </Note>
+</Item>

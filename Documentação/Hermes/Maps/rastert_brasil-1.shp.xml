@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<!--<!DOCTYPE metadata SYSTEM "http://www.esri.com/metadata/esriprof80.dtd">-->
+<metadata xml:lang="pt"><Esri><MetaID>{F30E3EB6-E817-49BC-B42F-EED7E3299279}</MetaID><CreaDate>20070527</CreaDate><CreaTime>16195800</CreaTime><SyncOnce>TRUE</SyncOnce><DataProperties><lineage><Process Name="RasterToPolygon_1" ToolSource="D:\Prog\ArcGIS\ArcToolbox\Toolboxes\Conversion Tools.tbx\RasterToPolygon" Date="20070527" Time="161958">RasterToPolygon brasil-mapa11.tif D:\Projetos\Hermes\Maps\RasterT_brasil-1.shp SIMPLIFY Value</Process></lineage></DataProperties></Esri></metadata>

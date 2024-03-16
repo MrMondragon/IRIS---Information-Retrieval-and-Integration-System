@@ -1,0 +1,124 @@
+
+using System;
+using System.IO;
+using System.Runtime.Serialization;
+using com.calitha.goldparser.lalr;
+using com.calitha.commons;
+
+namespace Iris.Runtime.Core
+{
+  public class XEvalParser: BaseParser
+  {
+        private LALRParser parser;
+
+        public MyParser():base("GrammarName")
+        {
+        }
+
+        public void Parse(string source)
+        {
+            NonterminalToken token = parser.Parse(source);
+            if (token != null)
+            {
+                Object obj = CreateObject(token);
+                //todo: Use your object any way you like
+            }
+        }
+
+        private Object CreateObject(Token token)
+        {
+            if (token is TerminalToken)
+                return CreateObjectFromTerminal((TerminalToken)token);
+            else
+                return CreateObjectFromNonterminal((NonterminalToken)token);
+        }
+
+        private Object CreateObjectFromTerminal(TerminalToken token)
+        {
+            switch (token.Symbol.Id)
+            {
+                case (int)SymbolConstants.SYMBOL_EOF :
+                //(EOF)
+                return null;
+                case (int)SymbolConstants.SYMBOL_ERROR :
+                //(Error)
+                return null;
+                case (int)SymbolConstants.SYMBOL_WHITESPACE :
+                //(Whitespace)
+                return null;
+                case (int)SymbolConstants.SYMBOL_LBRACE :
+                //{
+                return null;
+                case (int)SymbolConstants.SYMBOL_RBRACE :
+                //}
+                return null;
+                case (int)SymbolConstants.SYMBOL_BASEWORD :
+                //BaseWord
+                return null;
+                case (int)SymbolConstants.SYMBOL_NEWLINE :
+                //NewLine
+                return null;
+                case (int)SymbolConstants.SYMBOL_MESSAGE :
+                //<Message>
+                return null;
+                case (int)SymbolConstants.SYMBOL_WORD :
+                //<Word>
+                return null;
+                case (int)SymbolConstants.SYMBOL_WORDS :
+                //<Words>
+                return null;
+                case (int)SymbolConstants.SYMBOL_XEVAL :
+                //<XEval>
+                return null;
+                case (int)SymbolConstants.SYMBOL_XPRESSION :
+                //<Xpression>
+                return null;
+            }
+            throw new SymbolException("Unknown symbol");
+        }
+
+        ////////////////////////////////////////////////////////////////
+        //Rule Section
+        ////////////////////////////////////////////////////////////////
+        public Object CreateObjectFromNonterminal(NonterminalToken token)
+        {
+            switch (token.Rule.Id)
+            {
+                case (int)RuleConstants.RULE_MESSAGE :
+                //<Message> ::= <Words>
+                return null;
+                case (int)RuleConstants.RULE_MESSAGE_NEWLINE :
+                //<Message> ::= <Words> NewLine <Message>
+                return null;
+                case (int)RuleConstants.RULE_MESSAGE_NEWLINE2 :
+                //<Message> ::= NewLine <Message>
+                return null;
+                case (int)RuleConstants.RULE_MESSAGE2 :
+                //<Message> ::= 
+                return null;
+                case (int)RuleConstants.RULE_WORDS :
+                //<Words> ::= <Word>
+                return null;
+                case (int)RuleConstants.RULE_WORDS2 :
+                //<Words> ::= <Word> <Words>
+                return null;
+                case (int)RuleConstants.RULE_WORD_BASEWORD :
+                //<Word> ::= BaseWord
+                return null;
+                case (int)RuleConstants.RULE_WORD :
+                //<Word> ::= <XEval>
+                return null;
+                case (int)RuleConstants.RULE_XEVAL_LBRACE_RBRACE :
+                //<XEval> ::= { <Xpression> }
+                return null;
+                case (int)RuleConstants.RULE_XPRESSION_BASEWORD :
+                //<Xpression> ::= BaseWord
+                return null;
+                case (int)RuleConstants.RULE_XPRESSION_BASEWORD2 :
+                //<Xpression> ::= BaseWord <Xpression>
+                return null;
+            }
+            throw new RuleException("Unknown rule");
+        }
+    }
+}

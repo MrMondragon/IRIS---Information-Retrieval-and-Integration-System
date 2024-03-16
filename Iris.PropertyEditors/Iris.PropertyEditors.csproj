@@ -1,0 +1,633 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{567D5875-FD91-4F5E-8205-8B797C4365CF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Iris.PropertyEditors</RootNamespace>
+    <AssemblyName>Iris.PropertyEditors</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Demo|AnyCPU' ">
+    <OutputPath>bin\Demo\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Demo|x86' ">
+    <OutputPath>bin\x86\Demo\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release x86|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Release x86\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release x86|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Release x86\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Demo|x64' ">
+    <OutputPath>bin\x64\Demo\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release x86|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Release x86\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>IRIS.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Licensed|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Licensed\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Iris.PropertyEditors.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;D:\Prog\Vs2010\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;D:\Prog\Vs2010\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Licensed|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Licensed\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\x86\Debug\Iris.PropertyEditors.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;D:\Prog\Vs2010\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;D:\Prog\Vs2010\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Licensed|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Licensed\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\x64\Debug\Iris.PropertyEditors.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;D:\Prog\Vs2010\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;D:\Prog\Vs2010\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FlowChart.NET, Version=4.3.0.20963, Culture=neutral, PublicKeyToken=aac75e4c323875a2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibTerceiros\FlowChart.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MindFusion.Common, Version=1.0.2608.20825, Culture=neutral, PublicKeyToken=7fed53ada5b92263, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibTerceiros\MindFusion.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="QWhale.Common, Version=1.47.2667.26052, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibTerceiros\QWhale.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="QWhale.Editor, Version=1.47.2667.26054, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibTerceiros\QWhale.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="QWhale.Syntax, Version=1.47.2667.26053, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibTerceiros\QWhale.Syntax.dll</HintPath>
+    </Reference>
+    <Reference Include="QWhale.Syntax.Parsers, Version=1.47.2667.26054, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LibTerceiros\QWhale.Syntax.Parsers.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditors\CopyTableColumnListEditor.cs" />
+    <Compile Include="PropertyEditors\FuzzyColumnSelectorEditor.cs" />
+    <Compile Include="PropertyEditors\ColumnSetEditor.cs" />
+    <Compile Include="PropertyEditors\Dialogs\RangeEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\RangeEditorDialog.Designer.cs">
+      <DependentUpon>RangeEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditors\InputColumnListEditor.cs" />
+    <Compile Include="PropertyEditors\RangeEditor.cs" />
+    <Compile Include="PropertyEditors\BaseColumnListEditor.cs" />
+    <Compile Include="PropertyEditors\SourceColumnListEditor.cs" />
+    <Compile Include="PropertyEditors\SpFieldMapEditor.cs" />
+    <Compile Include="PropertyEditors\SpParamsEditor.cs" />
+    <Compile Include="PropertyEditors\WebCredentialsEditor.cs" />
+    <Compile Include="PropertyEditors\DecodeEditor.cs" />
+    <Compile Include="PropertyEditors\Dialogs\DataRelationEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\DataRelationEditorDialog.Designer.cs">
+      <DependentUpon>DataRelationEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\DecodeEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\DecodeEditorDialog.Designer.cs">
+      <DependentUpon>DecodeEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\GenericListEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\GenericListEditorDialog.Designer.cs">
+      <DependentUpon>GenericListEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\ParameterMappingEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\ParameterMappingEditorDialog.Designer.cs">
+      <DependentUpon>ParameterMappingEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditors\ListLookupValuesEditor.cs" />
+    <Compile Include="PropertyEditors\LookupColumnSelectorEditor.cs" />
+    <Compile Include="PropertyEditors\Controls\StringListEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyEditors\Controls\StringListEditorControl.Designer.cs">
+      <DependentUpon>StringListEditorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\FieldsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\FieldsDialog.designer.cs">
+      <DependentUpon>FieldsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\StringListEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\StringListEditorDialog.Designer.cs">
+      <DependentUpon>StringListEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditors\ForeachFieldsEditor.cs" />
+    <Compile Include="PropertyEditors\ParameterMappingEditor.cs" />
+    <Compile Include="PropertyEditors\RCRColumnSelector.cs" />
+    <Compile Include="PropertyEditors\ScalarValidValuesEditor.cs" />
+    <Compile Include="PropertyEditors\VarToRowFieldEditor.cs" />
+    <Compile Include="PropertyEditors\CredentialsEditor.cs" />
+    <Compile Include="PropertyEditors\CBOColumnSelectorEditor.cs" />
+    <Compile Include="PropertyEditors\ChoiceEditor.cs" />
+    <Compile Include="PropertyEditors\ColumnTypeEditor.cs" />
+    <Compile Include="PropertyEditors\ColunaDefValueEditor.cs" />
+    <Compile Include="PropertyEditors\ConnectionSelectorEditor.cs" />
+    <Compile Include="PropertyEditors\Controls\ChoiceEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyEditors\Controls\ConnectionEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyEditors\Controls\ConnectionEditorControl.Designer.cs">
+      <DependentUpon>ConnectionEditorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditors\Controls\GenericListEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyEditors\Controls\GenericListEditorControl.Designer.cs">
+      <DependentUpon>GenericListEditorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditors\Controls\ObjectEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyEditors\Controls\ObjectEditorControl.Designer.cs">
+      <DependentUpon>ObjectEditorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditors\Controls\Objects\ListEventArgs.cs" />
+    <Compile Include="PropertyEditors\Controls\SyntaxControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PropertyEditors\Controls\SyntaxControl.Designer.cs">
+      <DependentUpon>SyntaxControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditors\Controls\TreeViewControl.cs" />
+    <Compile Include="PropertyEditors\Dialogs\ChoiceEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\ChoiceEditorDialog.Designer.cs">
+      <DependentUpon>ChoiceEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\ConnectionEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\ConnectionEditorDialog.Designer.cs">
+      <DependentUpon>ConnectionEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\CredentialsEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\CredentialsEditorDialog.Designer.cs">
+      <DependentUpon>CredentialsEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\FieldMapEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\FieldMapEditorDialog.Designer.cs">
+      <DependentUpon>FieldMapEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\FieldSelectorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\FieldSelectorDialog.Designer.cs">
+      <DependentUpon>FieldSelectorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\NameEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\NameEditorDialog.Designer.cs">
+      <DependentUpon>NameEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\ObjectEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\ObjectEditorDialog.Designer.cs">
+      <DependentUpon>ObjectEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\PasswordEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\PasswordEditorDialog.Designer.cs">
+      <DependentUpon>PasswordEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\PKEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\PKEditorDialog.Designer.cs">
+      <DependentUpon>PKEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\RelationEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\RelationEditorDialog.Designer.cs">
+      <DependentUpon>RelationEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\ScriptEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\ScriptEditorDialog.Designer.cs">
+      <DependentUpon>ScriptEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\TableEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyEditors\Dialogs\TableEditorDialog.Designer.cs">
+      <DependentUpon>TableEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditors\EndPointEditor.cs" />
+    <Compile Include="PropertyEditors\FieldSelectorEditor.cs" />
+    <Compile Include="PropertyEditors\LookupFieldsEditor.cs" />
+    <Compile Include="PropertyEditors\PKEditor.cs" />
+    <Compile Include="PropertyEditors\ProviderEditor.cs" />
+    <Compile Include="PropertyEditors\RBOFieldMapEditor.cs" />
+    <Compile Include="PropertyEditors\RowToVarFieldEditor.cs" />
+    <Compile Include="PropertyEditors\TxtFieldDefaultValueEditor.cs" />
+    <Compile Include="PropertyEditors\TxtRelationEditor.cs" />
+    <Compile Include="PropertyEditors\ResultSetDeleteEditor.cs" />
+    <Compile Include="PropertyEditors\ResultSetInsertEditor.cs" />
+    <Compile Include="PropertyEditors\ResultSetUpdateEditor.cs" />
+    <Compile Include="PropertyEditors\ScalarVarValueEditor.cs" />
+    <Compile Include="PropertyEditors\ScriptEditor.cs" />
+    <Compile Include="PropertyEditors\StartPointEditor.cs" />
+    <Compile Include="PropertyEditors\TableEditor.cs" />
+    <Compile Include="PropertyEditors\TransportFieldMapEditor.cs" />
+    <Compile Include="PropertyEditors\TypeSelectorEditor.cs" />
+    <Compile Include="PropertyEditors\VerbSelectorEditor.cs" />
+    <Compile Include="PropertyEditors\WSMethodEditor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEditors\Controls\ConnectionEditorControl.resx">
+      <DependentUpon>ConnectionEditorControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEditors\Controls\GenericListEditorControl.resx">
+      <DependentUpon>GenericListEditorControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEditors\Controls\ObjectEditorControl.resx">
+      <DependentUpon>ObjectEditorControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEditors\Controls\SyntaxControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SyntaxControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEditors\Dialogs\ChoiceEditorDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ChoiceEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEditors\Dialogs\ConnectionEditorDialog.resx">
+      <DependentUpon>ConnectionEditorDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEditors\Dialogs\CredentialsEditorDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CredentialsEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEditors\Dialogs\DataRelationEditorDialog.resx">
+      <DependentUpon>DataRelationEditorDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEditors\Dialogs\DecodeEditorDialog.resx">
+      <DependentUpon>DecodeEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEditors\Dialogs\FieldMapEditorDialog.resx">
+      <DependentUpon>FieldMapEditorDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEditors\Dialogs\FieldsDialog.resx">
+      <DependentUpon>FieldsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEditors\Dialogs\FieldSelectorDialog.resx">
+      <DependentUpon>FieldSelectorDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEditors\Dialogs\GenericListEditorDialog.resx">
+      <DependentUpon>GenericListEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEditors\Dialogs\NameEditorDialog.resx">
+      <DependentUpon>NameEditorDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEditors\Dialogs\ObjectEditorDialog.resx">
+      <DependentUpon>ObjectEditorDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEditors\Dialogs\ParameterMappingEditorDialog.resx">
+      <DependentUpon>ParameterMappingEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEditors\Dialogs\PasswordEditorDialog.resx">
+      <DependentUpon>PasswordEditorDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEditors\Dialogs\PKEditorDialog.resx">
+      <DependentUpon>PKEditorDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEditors\Dialogs\RangeEditorDialog.resx">
+      <DependentUpon>RangeEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEditors\Dialogs\RelationEditorDialog.resx">
+      <DependentUpon>RelationEditorDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEditors\Dialogs\ScriptEditorDialog.resx">
+      <DependentUpon>ScriptEditorDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEditors\Dialogs\StringListEditorDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StringListEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEditors\Dialogs\TableEditorDialog.resx">
+      <DependentUpon>TableEditorDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Databridge\Databridge.Interfaces\Databridge.Interfaces.csproj">
+      <Project>{BA3D38A8-E0B1-4FF1-B508-B2FED5C66A89}</Project>
+      <Name>Databridge.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Iris.Interfaces\Iris.Interfaces.csproj">
+      <Project>{507C1041-2A07-4637-A644-F5AA5D258A99}</Project>
+      <Name>Iris.Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IRIS.snk" />
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FindNextError.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FindPrevError.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AutoSize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Diff.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" BuildVersion_UseGlobalSettings="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

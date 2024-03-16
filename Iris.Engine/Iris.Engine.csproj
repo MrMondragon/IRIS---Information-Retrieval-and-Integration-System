@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{529113AE-BA10-4315-83DD-ACA6D959753F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Iris.Engine</RootNamespace>
+    <AssemblyName>Iris.Engine</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseParser.cs" />
+    <Compile Include="DynConnection.cs" />
+    <Compile Include="HelperClasses\Constants.cs" />
+    <Compile Include="HelperClasses\ExecutionContext.cs" />
+    <Compile Include="MergerObjects\MergingObject.cs" />
+    <Compile Include="MergerParser.cs" />
+    <Compile Include="QueryObjects\Eval.cs" />
+    <Compile Include="QueryObjects\Expressions\BaseExpression.cs" />
+    <Compile Include="QueryObjects\Expressions\Values\CastValue.cs" />
+    <Compile Include="QueryObjects\Expressions\Values\FunctionValue.cs" />
+    <Compile Include="QueryObjects\Declare.cs" />
+    <Compile Include="goldparser\commons\AbstractSet.cs" />
+    <Compile Include="goldparser\commons\ArraySet.cs" />
+    <Compile Include="goldparser\commons\BinaryReader.cs" />
+    <Compile Include="goldparser\commons\FileUtil.cs" />
+    <Compile Include="goldparser\commons\HashSet.cs" />
+    <Compile Include="goldparser\commons\IntegerList.cs" />
+    <Compile Include="goldparser\commons\ISet.cs" />
+    <Compile Include="goldparser\commons\ResourceUtil.cs" />
+    <Compile Include="goldparser\commons\StringUtil.cs" />
+    <Compile Include="goldparser\commons\Util.cs" />
+    <Compile Include="goldparser\content\ActionSubRecord.cs" />
+    <Compile Include="goldparser\content\CGTContent.cs" />
+    <Compile Include="goldparser\content\CGTContentException.cs" />
+    <Compile Include="goldparser\content\CharacterSetRecord.cs" />
+    <Compile Include="goldparser\content\CharacterSetTable.cs" />
+    <Compile Include="goldparser\content\DFAStateRecord.cs" />
+    <Compile Include="goldparser\content\DFAStateTable.cs" />
+    <Compile Include="goldparser\content\EdgeSubRecord.cs" />
+    <Compile Include="goldparser\content\InitialStatesRecord.cs" />
+    <Compile Include="goldparser\content\LALRStateRecord.cs" />
+    <Compile Include="goldparser\content\LALRStateTable.cs" />
+    <Compile Include="goldparser\content\Parameters.cs" />
+    <Compile Include="goldparser\content\RuleRecord.cs" />
+    <Compile Include="goldparser\content\RuleTable.cs" />
+    <Compile Include="goldparser\content\SymbolRecord.cs" />
+    <Compile Include="goldparser\content\SymbolTable.cs" />
+    <Compile Include="goldparser\content\TableCounts.cs" />
+    <Compile Include="goldparser\dfa\DFA.cs" />
+    <Compile Include="goldparser\dfa\State.cs" />
+    <Compile Include="goldparser\dfa\Transition.cs" />
+    <Compile Include="goldparser\LALRParser.cs" />
+    <Compile Include="goldparser\lalr\AcceptAction.cs" />
+    <Compile Include="goldparser\lalr\Action.cs" />
+    <Compile Include="goldparser\lalr\ActionFactory.cs" />
+    <Compile Include="goldparser\lalr\GotoAction.cs" />
+    <Compile Include="goldparser\lalr\ReduceAction.cs" />
+    <Compile Include="goldparser\lalr\ShiftAction.cs" />
+    <Compile Include="goldparser\lalr\State.cs" />
+    <Compile Include="goldparser\Location.cs" />
+    <Compile Include="goldparser\ParserEvents.cs" />
+    <Compile Include="goldparser\ParserException.cs" />
+    <Compile Include="goldparser\Reader.cs" />
+    <Compile Include="goldparser\Rule.cs" />
+    <Compile Include="goldparser\StateStack.cs" />
+    <Compile Include="goldparser\StringTokenizer.cs" />
+    <Compile Include="goldparser\structure\CGTStructure.cs" />
+    <Compile Include="goldparser\structure\CGTStructureException.cs" />
+    <Compile Include="goldparser\structure\Entry.cs" />
+    <Compile Include="goldparser\structure\EntryFactory.cs" />
+    <Compile Include="goldparser\structure\Record.cs" />
+    <Compile Include="goldparser\Symbol.cs" />
+    <Compile Include="goldparser\SymbolFactory.cs" />
+    <Compile Include="goldparser\Token.cs" />
+    <Compile Include="goldparser\TokenStack.cs" />
+    <Compile Include="QueryObjects\DeclareItems\VariableDeclaration.cs" />
+    <Compile Include="QueryObjects\Expressions\BetweenPredicate.cs" />
+    <Compile Include="QueryObjects\Expressions\BinaryExpression.cs" />
+    <Compile Include="QueryObjects\Expressions\BinarySearchList.cs" />
+    <Compile Include="QueryObjects\Expressions\EngineComparison.cs" />
+    <Compile Include="QueryObjects\Expressions\EngineExpression.cs" />
+    <Compile Include="QueryObjects\Expressions\EnginePredicate.cs" />
+    <Compile Include="QueryObjects\Expressions\ExistsPredicate.cs" />
+    <Compile Include="QueryObjects\Expressions\InListPredicate.cs" />
+    <Compile Include="QueryObjects\Expressions\InQueryPredicate.cs" />
+    <Compile Include="QueryObjects\Expressions\Values\CaseValue.cs" />
+    <Compile Include="QueryObjects\Expressions\Values\DefaultValue.cs" />
+    <Compile Include="QueryObjects\Expressions\Values\IntValue.cs" />
+    <Compile Include="QueryObjects\Expressions\IsNullPredicate.cs" />
+    <Compile Include="QueryObjects\Expressions\LikePredicate.cs" />
+    <Compile Include="QueryObjects\Expressions\LogicOperator.cs" />
+    <Compile Include="QueryObjects\Expressions\NegateablePredicate.cs" />
+    <Compile Include="QueryObjects\Expressions\Values\NullValue.cs" />
+    <Compile Include="QueryObjects\Expressions\Values\QueryValue.cs" />
+    <Compile Include="QueryObjects\Expressions\SearchList.cs" />
+    <Compile Include="QueryObjects\Expressions\Values\RealValue.cs" />
+    <Compile Include="QueryObjects\Expressions\Values\SearchListValue.cs" />
+    <Compile Include="QueryObjects\Expressions\UnaryExpression.cs" />
+    <Compile Include="QueryObjects\Expressions\ValueExpression.cs" />
+    <Compile Include="QueryObjects\Expressions\Values\StringValue.cs" />
+    <Compile Include="QueryObjects\Insert.cs" />
+    <Compile Include="goldparser\helperClasses\ParserException.cs" />
+    <Compile Include="QueryObjects\Expressions\CompositeIdentifier.cs" />
+    <Compile Include="QueryObjects\SelectItems\FromClause.cs" />
+    <Compile Include="QueryObjects\SelectItems\FromItem.cs" />
+    <Compile Include="QueryObjects\SelectItems\FromTableSource.cs" />
+    <Compile Include="QueryObjects\SelectItems\GroupClause.cs" />
+    <Compile Include="QueryObjects\SelectItems\HavingClause.cs" />
+    <Compile Include="QueryObjects\SelectItems\JoinType.cs" />
+    <Compile Include="QueryObjects\SelectItems\OrderClause.cs" />
+    <Compile Include="QueryObjects\SelectItems\SelectionClause.cs" />
+    <Compile Include="QueryObjects\SelectItems\SimpleTableSource.cs" />
+    <Compile Include="QueryObjects\SelectItems\SubQueryTableSource.cs" />
+    <Compile Include="QueryObjects\Union.cs" />
+    <Compile Include="QueryObjects\SelectItems\WhereClause.cs" />
+    <Compile Include="QueryObjects\StatementPart.cs" />
+    <Compile Include="QueryObjects\UpdateItems\SetItem.cs" />
+    <Compile Include="QueryObjects\Expressions\Values\ParameterValue.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="goldparser\helperClasses\RuleException.cs" />
+    <Compile Include="QueryObjects\Delete.cs" />
+    <Compile Include="QueryObjects\Set.cs" />
+    <Compile Include="QueryObjects\Statement.cs" />
+    <Compile Include="QueryObjects\Truncate.cs" />
+    <Compile Include="QueryObjects\Select.cs" />
+    <Compile Include="QueryObjects\Update.cs" />
+    <Compile Include="goldparser\helperClasses\SymbolException.cs" />
+    <Compile Include="QueryObjects\Expressions\Values\XEvalValue.cs" />
+    <Compile Include="QueryParser.cs" />
+    <Compile Include="XEvalParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Grammar\IRISSQL.cgt" />
+    <None Include="Grammar\Merger.cgt" />
+    <None Include="Grammar\XEval.cgt" />
+    <None Include="QueryObjects\DeclareItems\Declare.cd" />
+    <None Include="QueryObjects\DeleteItems\Delete.cd" />
+    <None Include="QueryObjects\Expressions\Expressions.cd" />
+    <None Include="QueryObjects\InsertItems\Insert.cd" />
+    <None Include="QueryObjects\Objects.cd" />
+    <None Include="QueryObjects\SelectItems\Hierarchy.cd" />
+    <None Include="QueryObjects\SelectItems\Select.cd" />
+    <None Include="QueryObjects\UpdateItems\Update.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

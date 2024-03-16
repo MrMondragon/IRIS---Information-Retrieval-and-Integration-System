@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceProxy", "WebServiceProxy\WebServiceProxy.csproj", "{4635E2DF-5012-42C9-8F69-55881819D0EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallWebService", "CallWebService\CallWebService.csproj", "{F6A425EA-256F-4C0A-B97A-827B0413BF53}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4635E2DF-5012-42C9-8F69-55881819D0EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4635E2DF-5012-42C9-8F69-55881819D0EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4635E2DF-5012-42C9-8F69-55881819D0EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4635E2DF-5012-42C9-8F69-55881819D0EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6A425EA-256F-4C0A-B97A-827B0413BF53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6A425EA-256F-4C0A-B97A-827B0413BF53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6A425EA-256F-4C0A-B97A-827B0413BF53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6A425EA-256F-4C0A-B97A-827B0413BF53}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

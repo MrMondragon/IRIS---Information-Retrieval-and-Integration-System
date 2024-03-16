@@ -1,0 +1,45 @@
+Application...
+  Start Date      : 11/11/2004 16:02:35
+  Name/Description: ISISProject.exe
+  Version Number  : 1.0.0.1
+
+Exception...
+  Date   : 11/11/2004 16:02:45
+  Address: 00404264
+  Module : ISISProject.exe
+  Type   : EAccessViolation
+  Message: Access violation at address 00404264 in module 'ISISProject.exe'. Read of address FFFFFFFC
+
+Active Controls...
+  Form Class   : TEditWindow
+  Form Text    : ISISProject.dpr
+  Control Class: TPageControl
+  Control Text : 
+
+Computer...
+  Name        : MERCURIO
+  Total Memory: 223 Mb
+  Free Memory : 23 Mb
+  Total Disk  : 37.26 Gb
+  Free Disk   : 22.42 Gb
+
+Operating System...
+  Type    : Microsoft Windows XP
+  Build # : 2600
+  Language: Português (Brasil)
+
+-----------------------------------------------------------------------------------------------
+|Address |Module         |Unit                |Class           |Procedure/Method         |Line|
+-----------------------------------------------------------------------------------------------
+|006950FA|ISISProject.exe|_dlgDBConnection.pas|TdlgDBConnection|Execute                  |51  |
+|006950EC|ISISProject.exe|_dlgDBConnection.pas|TdlgDBConnection|Execute                  |48  |
+|00697DFE|ISISProject.exe|_ISISForm.pas       |TISISForm       |actNewDBConnectionExecute|873 |
+|77F5B380|ntdll.dll      |                    |                |RtlLeaveCriticalSection  |    |
+|77D2436F|user32.dll     |                    |                |DispatchMessageA         |    |
+|77D24369|user32.dll     |                    |                |DispatchMessageA         |    |
+|0069942B|ISISProject.exe|ISISProject.dpr     |                |                         |29  |
+|77F5C292|ntdll.dll      |                    |                |ZwSetInformationThread   |    |
+-----------------------------------------------------------------------------------------------
+
+
+

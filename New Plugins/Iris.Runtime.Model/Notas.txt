@@ -1,0 +1,81 @@
+Verificar 
+	- select into 
+	- select * from ((select * from) q inner join x)
+	- select T.q from t
+	
+no parser
+
+Implementar parsing condicional
+	Quando desligado, a sentença passa a ser gravada em um texto simples 
+
+Vale a pena verificar quais os métodos públicos que realmente precisam continuar públicos
+
+
+Operações com outputs dinâmicos
+	- Multicast
+
+Substructure:
+	- Strucutre implementando IOperation e possuindo uma propriedade parent.
+	- Um dicionário do tipo strucutrure/persist.structure, guardando o modelo e associando ao objeto.
+
+     
+----------------------------------------------------------------------------------------------------------------------------------
+Testar Xenocode para libs acessíveis como libs... 
+
+Pontos a serem estudados:
+Para transferência de datasets inteiros usando readers:
+	DataSet.CreateDataReader()
+	DataTableReader.NextResult()
+
+DataColumn.ExtendedProperties
+DataSet.ExtendedProperties
+DataSet.DataViewManager
+
+
+
+RunProc()
+ System.Diagnostics.Process myProcess = new System.Diagnostics.Process();
+ myProcess.StartInfo.WorkingDirectory = Request.MapPath("~/bin");
+ myProcess.StartInfo.FileName = Request.MapPath("~/bin/shutdownWindows.bat");
+ myProcess.Start();
+ 
+http://www.c-sharpcorner.com/UploadFile/vandita/PredicatesInArray10232006063515AM/PredicatesInArray.aspx
+
+http://msmvps.com/blogs/jon.skeet/archive/2006/01/20/foreachperf.aspx
+
+http://msdn2.microsoft.com/en-us/library/ms998569.aspx
+
+----------------------
+
+
+- Operações de criptografia, incluindo criptografia padrão e steganografia
+
+- Chamada de WServices
+- Disparo de e-mail
+
+
+----------------------
+
+Leitura e gravação de xml (em estágio inicial de implementação) 
+Manipulação de arquivos - Gravar/Ler o dataset de memória para arquivo (especificado, ainda não implementado)
+Compactação e Extração de arquivos (implementado, mas ainda não existem operações visíveis para isto)
+Operações de criptografia, incluindo o lance do BMP (implementado, mas ainda não existem operações visíveis para isto)
+Envio e recebimento via FTP (especificado, ainda não implementado)
+Disparo de SMS (especificado, ainda não implementado)
+Disparo de E-mail (especificado, ainda não implementado)
+Operação de desmembramento – Transformação de uma tabela em várias (especificado, ainda não implementado)
+            Exemplo: pegar a SZCadGeral e criar uma tabela de médicos, uma de convênios, etc
+Operação de rotação – Transformação de colunas em linhas ou de linhas em coluns (especificado, ainda não implementado)
+			Exemplo: no classis tem uma tabela com 20 colunas pra lançamento de notas. 
+			Na versão nova, essas colunas viraram linhas de uma nova tabela e o povo pena pra fazer essa transformação
+Conector para Dynamix AX (especificado, ainda não implementado)
+Conector para Sap/R3 (especificado, ainda não implementado)
+Conector para SQL Compact Edition (especificado, ainda não implementado)
+Conector para CORPORE RM (especificado, ainda não implementado)
+
+
+Foreach recebendo um RS e com saídas múltiplas 
+	Saídas dinâmicas para ScalarVars, a partir dos campos da tabela
+	Uma saída fixa para a operação a ser disparada para cada linha
+	Plug de sucesso normal, disparado após o término do loop
+	

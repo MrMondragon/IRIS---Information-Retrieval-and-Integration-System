@@ -1,0 +1,10 @@
+<Item>
+  <Name>PageMode</Name>
+  <Caption>Page Mode</Caption>
+  <Description>
+The demo shows how to use different page layout modes of the edit control text.
+  </Description>
+  <Note>
+Editor.NET supports page layout mode making it easy to see how text will be positioned on the printed page. Horizontal and vertical rulers are available and can be used to change page margins and other space settings. Displaying white space between pages can be switched on or off by single mouse click.
+  </Note>
+</Item>

@@ -1,0 +1,10 @@
+<Item>
+  <Name>Printing</Name>
+  <Caption>Printing</Caption>
+  <Description>
+The demo shows how to send edit control's content to the printer.
+  </Description>
+  <Note>
+You can print content of the editor with different options, including color printing, printing of line numbers, page numbers and date-time. Print preview feature allows previewing the document before sending it to the printer.
+  </Note>
+</Item>

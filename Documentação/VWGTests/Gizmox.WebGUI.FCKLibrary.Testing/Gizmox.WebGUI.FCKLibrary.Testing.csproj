@@ -1,0 +1,590 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F76611D7-5533-47E5-87B8-E933C1D13719}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gizmox.WebGUI.FCKLibrary.Testing</RootNamespace>
+    <AssemblyName>Gizmox.WebGUI.FCKLibrary.Testing</AssemblyName>
+    <StartPageUrl>Form1.wgx</StartPageUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StartPageUrl>Form1.wgx</StartPageUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gizmox.WebGUI.Client, Version=2.0.5701.0, Culture=neutral, PublicKeyToken=0fb8f99bd6cd7e23, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Core\Gizmox.WebGUI.Forms.Catalog\bin\Gizmox.WebGUI.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Gizmox.WebGUI.Common, Version=2.0.5701.0, Culture=neutral, PublicKeyToken=263fa4ef694acff6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Core\Gizmox.WebGUI.Forms.Catalog\bin\Gizmox.WebGUI.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Gizmox.WebGUI.Common.Design, Version=2.0.5701.0, Culture=neutral, PublicKeyToken=ea5dfe57c8eb7edd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Core\Gizmox.WebGUI.Forms.Catalog\bin\Gizmox.WebGUI.Common.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Gizmox.WebGUI.Forms, Version=2.0.5701.0, Culture=neutral, PublicKeyToken=c508b41386c60f1d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Core\Gizmox.WebGUI.Forms.Catalog\bin\Gizmox.WebGUI.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Gizmox.WebGUI.Forms.Design, Version=2.0.5701.0, Culture=neutral, PublicKeyToken=dd2a1fd4d120c769, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Core\Gizmox.WebGUI.Forms.Catalog\bin\Gizmox.WebGUI.Forms.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Gizmox.WebGUI.Server, Version=2.0.5701.0, Culture=neutral, PublicKeyToken=3de6eb684226c24d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Core\Gizmox.WebGUI.Forms.Catalog\bin\Gizmox.WebGUI.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FCKeditor\editor\css\behaviors\disablehandles.htc" />
+    <Content Include="FCKeditor\editor\css\behaviors\hiddenfield.gif" />
+    <Content Include="FCKeditor\editor\css\behaviors\hiddenfield.htc" />
+    <Content Include="FCKeditor\editor\css\behaviors\showtableborders.htc" />
+    <Content Include="FCKeditor\editor\css\fck_editorarea.css" />
+    <Content Include="FCKeditor\editor\css\fck_internal.css" />
+    <Content Include="FCKeditor\editor\css\fck_showtableborders_gecko.css" />
+    <Content Include="FCKeditor\editor\css\images\fck_anchor.gif" />
+    <Content Include="FCKeditor\editor\css\images\fck_flashlogo.gif" />
+    <Content Include="FCKeditor\editor\css\images\fck_pagebreak.gif" />
+    <Content Include="FCKeditor\editor\dialog\common\fcknumericfield.htc" />
+    <Content Include="FCKeditor\editor\dialog\common\fck_dialog_common.css" />
+    <Content Include="FCKeditor\editor\dialog\common\fck_dialog_common.js" />
+    <Content Include="FCKeditor\editor\dialog\common\images\locked.gif" />
+    <Content Include="FCKeditor\editor\dialog\common\images\reset.gif" />
+    <Content Include="FCKeditor\editor\dialog\common\images\unlocked.gif" />
+    <Content Include="FCKeditor\editor\dialog\common\moz-bindings.xml" />
+    <Content Include="FCKeditor\editor\dialog\fck_about.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_about\lgpl.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_about\logo_fckeditor.gif" />
+    <Content Include="FCKeditor\editor\dialog\fck_about\logo_fredck.gif" />
+    <Content Include="FCKeditor\editor\dialog\fck_anchor.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_button.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_checkbox.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_colorselector.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_docprops.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_docprops\fck_document_preview.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_find.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_flash.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_flash\fck_flash.js" />
+    <Content Include="FCKeditor\editor\dialog\fck_flash\fck_flash_preview.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_form.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_hiddenfield.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_image.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_image\fck_image.js" />
+    <Content Include="FCKeditor\editor\dialog\fck_image\fck_image_preview.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_link.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_link\fck_link.js" />
+    <Content Include="FCKeditor\editor\dialog\fck_listprop.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_paste.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_radiobutton.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_replace.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_select.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_select\fck_select.js" />
+    <Content Include="FCKeditor\editor\dialog\fck_smiley.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_source.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_specialchar.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_spellerpages.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_spellerpages\spellerpages\blank.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_spellerpages\spellerpages\controls.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_spellerpages\spellerpages\controlWindow.js" />
+    <Content Include="FCKeditor\editor\dialog\fck_spellerpages\spellerpages\spellchecker.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_spellerpages\spellerpages\spellChecker.js" />
+    <Content Include="FCKeditor\editor\dialog\fck_spellerpages\spellerpages\spellerStyle.css" />
+    <Content Include="FCKeditor\editor\dialog\fck_spellerpages\spellerpages\wordWindow.js" />
+    <Content Include="FCKeditor\editor\dialog\fck_table.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_tablecell.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_template.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_template\images\template1.gif" />
+    <Content Include="FCKeditor\editor\dialog\fck_template\images\template2.gif" />
+    <Content Include="FCKeditor\editor\dialog\fck_template\images\template3.gif" />
+    <Content Include="FCKeditor\editor\dialog\fck_textarea.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_textfield.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_universalkey.html" />
+    <Content Include="FCKeditor\editor\dialog\fck_universalkey\00.gif" />
+    <Content Include="FCKeditor\editor\dialog\fck_universalkey\data.js" />
+    <Content Include="FCKeditor\editor\dialog\fck_universalkey\diacritic.js" />
+    <Content Include="FCKeditor\editor\dialog\fck_universalkey\dialogue.js" />
+    <Content Include="FCKeditor\editor\dialog\fck_universalkey\fck_universalkey.css" />
+    <Content Include="FCKeditor\editor\dialog\fck_universalkey\keyboard_layout.gif" />
+    <Content Include="FCKeditor\editor\dialog\fck_universalkey\multihexa.js" />
+    <Content Include="FCKeditor\editor\fckblank.html" />
+    <Content Include="FCKeditor\editor\fckdebug.html" />
+    <Content Include="FCKeditor\editor\fckdialog.html" />
+    <Content Include="FCKeditor\editor\fckeditor.html" />
+    <Content Include="FCKeditor\editor\fckeditor.original.html" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\browser.css" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\browser.html" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\connectors\aspx\connector.aspx" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\connectors\asp\basexml.asp" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\connectors\asp\class_upload.asp" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\connectors\asp\commands.asp" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\connectors\asp\config.asp" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\connectors\asp\connector.asp" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\connectors\asp\io.asp" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\connectors\asp\util.asp" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\connectors\test.html" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\frmactualfolder.html" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\frmcreatefolder.html" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\frmfolders.html" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\frmresourceslist.html" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\frmresourcetype.html" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\frmupload.html" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\ButtonArrow.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\Folder.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\Folder32.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\FolderOpened.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\FolderOpened32.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\FolderUp.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\ai.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\avi.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\bmp.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\cs.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\default.icon.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\dll.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\doc.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\exe.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\fla.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\gif.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\htm.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\html.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\jpg.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\js.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\mdb.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\mp3.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\pdf.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\ppt.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\rdp.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\swf.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\swt.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\txt.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\vsd.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\xls.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\xml.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\32\zip.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\ai.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\avi.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\bmp.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\cs.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\default.icon.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\dll.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\doc.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\exe.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\fla.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\gif.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\htm.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\html.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\jpg.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\js.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\mdb.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\mp3.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\pdf.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\ppt.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\rdp.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\swf.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\swt.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\txt.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\vsd.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\xls.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\xml.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\icons\zip.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\images\spacer.gif" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\js\common.js" />
+    <Content Include="FCKeditor\editor\filemanager\browser\default\js\fckxml.js" />
+    <Content Include="FCKeditor\editor\filemanager\upload\aspx\upload.aspx" />
+    <Content Include="FCKeditor\editor\filemanager\upload\asp\class_upload.asp" />
+    <Content Include="FCKeditor\editor\filemanager\upload\asp\config.asp" />
+    <Content Include="FCKeditor\editor\filemanager\upload\asp\io.asp" />
+    <Content Include="FCKeditor\editor\filemanager\upload\asp\upload.asp" />
+    <Content Include="FCKeditor\editor\filemanager\upload\test.html" />
+    <Content Include="FCKeditor\editor\images\anchor.gif" />
+    <Content Include="FCKeditor\editor\images\arrow_ltr.gif" />
+    <Content Include="FCKeditor\editor\images\arrow_rtl.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\angel_smile.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\angry_smile.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\broken_heart.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\cake.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\confused_smile.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\cry_smile.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\devil_smile.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\embaressed_smile.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\envelope.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\heart.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\kiss.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\lightbulb.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\omg_smile.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\regular_smile.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\sad_smile.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\shades_smile.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\teeth_smile.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\thumbs_down.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\thumbs_up.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\tounge_smile.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\whatchutalkingabout_smile.gif" />
+    <Content Include="FCKeditor\editor\images\smiley\msn\wink_smile.gif" />
+    <Content Include="FCKeditor\editor\images\spacer.gif" />
+    <Content Include="FCKeditor\editor\js\fckeditorcode_gecko.js" />
+    <Content Include="FCKeditor\editor\js\fckeditorcode_ie.js" />
+    <Content Include="FCKeditor\editor\lang\ar.js" />
+    <Content Include="FCKeditor\editor\lang\bg.js" />
+    <Content Include="FCKeditor\editor\lang\bn.js" />
+    <Content Include="FCKeditor\editor\lang\bs.js" />
+    <Content Include="FCKeditor\editor\lang\ca.js" />
+    <Content Include="FCKeditor\editor\lang\cs.js" />
+    <Content Include="FCKeditor\editor\lang\da.js" />
+    <Content Include="FCKeditor\editor\lang\de.js" />
+    <Content Include="FCKeditor\editor\lang\el.js" />
+    <Content Include="FCKeditor\editor\lang\en-au.js" />
+    <Content Include="FCKeditor\editor\lang\en-ca.js" />
+    <Content Include="FCKeditor\editor\lang\en-uk.js" />
+    <Content Include="FCKeditor\editor\lang\en.js" />
+    <Content Include="FCKeditor\editor\lang\eo.js" />
+    <Content Include="FCKeditor\editor\lang\es.js" />
+    <Content Include="FCKeditor\editor\lang\et.js" />
+    <Content Include="FCKeditor\editor\lang\eu.js" />
+    <Content Include="FCKeditor\editor\lang\fa.js" />
+    <Content Include="FCKeditor\editor\lang\fi.js" />
+    <Content Include="FCKeditor\editor\lang\fo.js" />
+    <Content Include="FCKeditor\editor\lang\fr.js" />
+    <Content Include="FCKeditor\editor\lang\gl.js" />
+    <Content Include="FCKeditor\editor\lang\he.js" />
+    <Content Include="FCKeditor\editor\lang\hi.js" />
+    <Content Include="FCKeditor\editor\lang\hr.js" />
+    <Content Include="FCKeditor\editor\lang\hu.js" />
+    <Content Include="FCKeditor\editor\lang\it.js" />
+    <Content Include="FCKeditor\editor\lang\ja.js" />
+    <Content Include="FCKeditor\editor\lang\km.js" />
+    <Content Include="FCKeditor\editor\lang\ko.js" />
+    <Content Include="FCKeditor\editor\lang\lt.js" />
+    <Content Include="FCKeditor\editor\lang\lv.js" />
+    <Content Include="FCKeditor\editor\lang\mn.js" />
+    <Content Include="FCKeditor\editor\lang\ms.js" />
+    <Content Include="FCKeditor\editor\lang\nb.js" />
+    <Content Include="FCKeditor\editor\lang\nl.js" />
+    <Content Include="FCKeditor\editor\lang\no.js" />
+    <Content Include="FCKeditor\editor\lang\pl.js" />
+    <Content Include="FCKeditor\editor\lang\pt-br.js" />
+    <Content Include="FCKeditor\editor\lang\pt.js" />
+    <Content Include="FCKeditor\editor\lang\ro.js" />
+    <Content Include="FCKeditor\editor\lang\ru.js" />
+    <Content Include="FCKeditor\editor\lang\sk.js" />
+    <Content Include="FCKeditor\editor\lang\sl.js" />
+    <Content Include="FCKeditor\editor\lang\sr-latn.js" />
+    <Content Include="FCKeditor\editor\lang\sr.js" />
+    <Content Include="FCKeditor\editor\lang\sv.js" />
+    <Content Include="FCKeditor\editor\lang\th.js" />
+    <Content Include="FCKeditor\editor\lang\tr.js" />
+    <Content Include="FCKeditor\editor\lang\uk.js" />
+    <Content Include="FCKeditor\editor\lang\vi.js" />
+    <Content Include="FCKeditor\editor\lang\zh-cn.js" />
+    <Content Include="FCKeditor\editor\lang\zh.js" />
+    <Content Include="FCKeditor\editor\lang\_getfontformat.html" />
+    <Content Include="FCKeditor\editor\lang\_translationstatus.txt" />
+    <Content Include="FCKeditor\editor\plugins\autogrow\fckplugin.js" />
+    <Content Include="FCKeditor\editor\plugins\placeholder\fckplugin.js" />
+    <Content Include="FCKeditor\editor\plugins\placeholder\fck_placeholder.html" />
+    <Content Include="FCKeditor\editor\plugins\placeholder\lang\de.js" />
+    <Content Include="FCKeditor\editor\plugins\placeholder\lang\en.js" />
+    <Content Include="FCKeditor\editor\plugins\placeholder\lang\fr.js" />
+    <Content Include="FCKeditor\editor\plugins\placeholder\lang\it.js" />
+    <Content Include="FCKeditor\editor\plugins\placeholder\lang\pl.js" />
+    <Content Include="FCKeditor\editor\plugins\placeholder\placeholder.gif" />
+    <Content Include="FCKeditor\editor\plugins\simplecommands\fckplugin.js" />
+    <Content Include="FCKeditor\editor\plugins\tablecommands\fckplugin.js" />
+    <Content Include="FCKeditor\editor\skins\default\fck_dialog.css" />
+    <Content Include="FCKeditor\editor\skins\default\fck_editor.css" />
+    <Content Include="FCKeditor\editor\skins\default\fck_strip.gif" />
+    <Content Include="FCKeditor\editor\skins\default\images\toolbar.arrowright.gif" />
+    <Content Include="FCKeditor\editor\skins\default\images\toolbar.buttonarrow.gif" />
+    <Content Include="FCKeditor\editor\skins\default\images\toolbar.collapse.gif" />
+    <Content Include="FCKeditor\editor\skins\default\images\toolbar.end.gif" />
+    <Content Include="FCKeditor\editor\skins\default\images\toolbar.expand.gif" />
+    <Content Include="FCKeditor\editor\skins\default\images\toolbar.separator.gif" />
+    <Content Include="FCKeditor\editor\skins\default\images\toolbar.start.gif" />
+    <Content Include="FCKeditor\editor\skins\office2003\fck_dialog.css" />
+    <Content Include="FCKeditor\editor\skins\office2003\fck_editor.css" />
+    <Content Include="FCKeditor\editor\skins\office2003\fck_strip.gif" />
+    <Content Include="FCKeditor\editor\skins\office2003\images\toolbar.arrowright.gif" />
+    <Content Include="FCKeditor\editor\skins\office2003\images\toolbar.bg.gif" />
+    <Content Include="FCKeditor\editor\skins\office2003\images\toolbar.buttonarrow.gif" />
+    <Content Include="FCKeditor\editor\skins\office2003\images\toolbar.collapse.gif" />
+    <Content Include="FCKeditor\editor\skins\office2003\images\toolbar.end.gif" />
+    <Content Include="FCKeditor\editor\skins\office2003\images\toolbar.expand.gif" />
+    <Content Include="FCKeditor\editor\skins\office2003\images\toolbar.separator.gif" />
+    <Content Include="FCKeditor\editor\skins\office2003\images\toolbar.start.gif" />
+    <Content Include="FCKeditor\editor\skins\silver\fck_dialog.css" />
+    <Content Include="FCKeditor\editor\skins\silver\fck_editor.css" />
+    <Content Include="FCKeditor\editor\skins\silver\fck_strip.gif" />
+    <Content Include="FCKeditor\editor\skins\silver\images\toolbar.arrowright.gif" />
+    <Content Include="FCKeditor\editor\skins\silver\images\toolbar.buttonarrow.gif" />
+    <Content Include="FCKeditor\editor\skins\silver\images\toolbar.buttonbg.gif" />
+    <Content Include="FCKeditor\editor\skins\silver\images\toolbar.collapse.gif" />
+    <Content Include="FCKeditor\editor\skins\silver\images\toolbar.end.gif" />
+    <Content Include="FCKeditor\editor\skins\silver\images\toolbar.expand.gif" />
+    <Content Include="FCKeditor\editor\skins\silver\images\toolbar.separator.gif" />
+    <Content Include="FCKeditor\editor\skins\silver\images\toolbar.start.gif" />
+    <Content Include="FCKeditor\editor\skins\_fckviewstrips.html" />
+    <Content Include="FCKeditor\editor\_source\classes\fckcontextmenu.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fckeditingarea.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fckevents.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fckicon.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fckiecleanup.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fckmenublock.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fckmenublockpanel.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fckmenuitem.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fckpanel.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fckplugin.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fckspecialcombo.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fckstyledef.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fckstyledef_gecko.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fckstyledef_ie.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fckstylesloader.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fcktoolbar.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fcktoolbarbreak_gecko.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fcktoolbarbreak_ie.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fcktoolbarbutton.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fcktoolbarbuttonui.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fcktoolbarfontformatcombo.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fcktoolbarfontscombo.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fcktoolbarfontsizecombo.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fcktoolbarpanelbutton.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fcktoolbarspecialcombo.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fcktoolbarstylecombo.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fckxml_gecko.js" />
+    <Content Include="FCKeditor\editor\_source\classes\fckxml_ie.js" />
+    <Content Include="FCKeditor\editor\_source\commandclasses\fckfitwindow.js" />
+    <Content Include="FCKeditor\editor\_source\commandclasses\fcknamedcommand.js" />
+    <Content Include="FCKeditor\editor\_source\commandclasses\fckpasteplaintextcommand.js" />
+    <Content Include="FCKeditor\editor\_source\commandclasses\fckpastewordcommand.js" />
+    <Content Include="FCKeditor\editor\_source\commandclasses\fckspellcheckcommand_gecko.js" />
+    <Content Include="FCKeditor\editor\_source\commandclasses\fckspellcheckcommand_ie.js" />
+    <Content Include="FCKeditor\editor\_source\commandclasses\fckstylecommand.js" />
+    <Content Include="FCKeditor\editor\_source\commandclasses\fcktablecommand.js" />
+    <Content Include="FCKeditor\editor\_source\commandclasses\fcktextcolorcommand.js" />
+    <Content Include="FCKeditor\editor\_source\commandclasses\fck_othercommands.js" />
+    <Content Include="FCKeditor\editor\_source\fckconstants.js" />
+    <Content Include="FCKeditor\editor\_source\fckeditorapi.js" />
+    <Content Include="FCKeditor\editor\_source\fckjscoreextensions.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fck.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fckbrowserinfo.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fckcodeformatter.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fckcommands.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fckconfig.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fckdebug.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fckdialog.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fckdialog_gecko.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fckdialog_ie.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fckdocumentprocessor.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fcklanguagemanager.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fckplugins.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fckregexlib.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fckselection.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fckselection_gecko.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fckselection_ie.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fcktablehandler.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fcktablehandler_gecko.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fcktablehandler_ie.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fcktoolbaritems.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fcktoolbarset.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fcktools.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fcktools_gecko.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fcktools_ie.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fckundo_gecko.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fckundo_ie.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fckurlparams.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fckxhtml.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fckxhtmlentities.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fckxhtml_gecko.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fckxhtml_ie.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fck_1.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fck_1_gecko.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fck_1_ie.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fck_2.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fck_2_gecko.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fck_2_ie.js" />
+    <Content Include="FCKeditor\editor\_source\internals\fck_contextmenu.js" />
+    <Content Include="FCKeditor\fckconfig.js" />
+    <Content Include="FCKeditor\fckeditor.asp" />
+    <Content Include="FCKeditor\fckeditor.js" />
+    <Content Include="FCKeditor\fckstyles.xml" />
+    <Content Include="FCKeditor\fcktemplates.xml" />
+    <Content Include="FCKeditor\htaccess.txt" />
+    <Content Include="FCKeditor\license.txt" />
+    <Content Include="FCKeditor\_documentation.html" />
+    <Content Include="FCKeditor\_samples\asp\sample01.asp" />
+    <Content Include="FCKeditor\_samples\asp\sample02.asp" />
+    <Content Include="FCKeditor\_samples\asp\sample03.asp" />
+    <Content Include="FCKeditor\_samples\asp\sample04.asp" />
+    <Content Include="FCKeditor\_samples\asp\sampleposteddata.asp" />
+    <Content Include="FCKeditor\_samples\default.html" />
+    <Content Include="FCKeditor\_samples\html\sample01.html" />
+    <Content Include="FCKeditor\_samples\html\sample02.html" />
+    <Content Include="FCKeditor\_samples\html\sample03.html" />
+    <Content Include="FCKeditor\_samples\html\sample04.html" />
+    <Content Include="FCKeditor\_samples\html\sample05.html" />
+    <Content Include="FCKeditor\_samples\html\sample06.config.js" />
+    <Content Include="FCKeditor\_samples\html\sample06.html" />
+    <Content Include="FCKeditor\_samples\html\sample07.html" />
+    <Content Include="FCKeditor\_samples\html\sample08.html" />
+    <Content Include="FCKeditor\_samples\html\sample09.html" />
+    <Content Include="FCKeditor\_samples\html\sample10.html" />
+    <Content Include="FCKeditor\_samples\html\sample11.html" />
+    <Content Include="FCKeditor\_samples\html\sample11_frame.html" />
+    <Content Include="FCKeditor\_samples\html\sampleposteddata.asp" />
+    <Content Include="FCKeditor\_samples\html\sampleposteddata.html" />
+    <Content Include="FCKeditor\_samples\sample.css" />
+    <Content Include="FCKeditor\_samples\sampleslist.html" />
+    <Content Include="FCKeditor\_samples\_plugins\findreplace\fckplugin.js" />
+    <Content Include="FCKeditor\_samples\_plugins\findreplace\find.gif" />
+    <Content Include="FCKeditor\_samples\_plugins\findreplace\find.html" />
+    <Content Include="FCKeditor\_samples\_plugins\findreplace\lang\en.js" />
+    <Content Include="FCKeditor\_samples\_plugins\findreplace\lang\fr.js" />
+    <Content Include="FCKeditor\_samples\_plugins\findreplace\lang\it.js" />
+    <Content Include="FCKeditor\_samples\_plugins\findreplace\replace.gif" />
+    <Content Include="FCKeditor\_samples\_plugins\findreplace\replace.html" />
+    <Content Include="FCKeditor\_samples\_plugins\samples\fckplugin.js" />
+    <Content Include="FCKeditor\_testcases\001.html" />
+    <Content Include="FCKeditor\_testcases\002.html" />
+    <Content Include="FCKeditor\_testcases\003.html" />
+    <Content Include="FCKeditor\_testcases\004.html" />
+    <Content Include="FCKeditor\_testcases\005.html" />
+    <Content Include="FCKeditor\_testcases\006.html" />
+    <Content Include="FCKeditor\_testcases\007.html" />
+    <Content Include="FCKeditor\_testcases\008.html" />
+    <Content Include="FCKeditor\_testcases\009.html" />
+    <Content Include="FCKeditor\_testcases\010.html" />
+    <Content Include="FCKeditor\_testcases\sampleposteddata.asp" />
+    <Content Include="FCKeditor\_testcases\testcases.css" />
+    <Content Include="FCKeditor\_whatsnew.html" />
+    <Content Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FCKeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.cfm" />
+    <None Include="FCKeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.php" />
+    <None Include="FCKeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.pl" />
+    <None Include="FCKeditor\editor\filemanager\browser\default\connectors\cfm\config.cfm" />
+    <None Include="FCKeditor\editor\filemanager\browser\default\connectors\cfm\connector.cfm" />
+    <None Include="FCKeditor\editor\filemanager\browser\default\connectors\lasso\config.lasso" />
+    <None Include="FCKeditor\editor\filemanager\browser\default\connectors\lasso\connector.lasso" />
+    <None Include="FCKeditor\editor\filemanager\browser\default\connectors\perl\basexml.pl" />
+    <None Include="FCKeditor\editor\filemanager\browser\default\connectors\perl\commands.pl" />
+    <None Include="FCKeditor\editor\filemanager\browser\default\connectors\perl\connector.cgi" />
+    <None Include="FCKeditor\editor\filemanager\browser\default\connectors\perl\io.pl" />
+    <None Include="FCKeditor\editor\filemanager\browser\default\connectors\perl\upload_fck.pl" />
+    <None Include="FCKeditor\editor\filemanager\browser\default\connectors\perl\util.pl" />
+    <None Include="FCKeditor\editor\filemanager\browser\default\connectors\php\basexml.php" />
+    <None Include="FCKeditor\editor\filemanager\browser\default\connectors\php\commands.php" />
+    <None Include="FCKeditor\editor\filemanager\browser\default\connectors\php\config.php" />
+    <None Include="FCKeditor\editor\filemanager\browser\default\connectors\php\connector.php" />
+    <None Include="FCKeditor\editor\filemanager\browser\default\connectors\php\io.php" />
+    <None Include="FCKeditor\editor\filemanager\browser\default\connectors\php\util.php" />
+    <None Include="FCKeditor\editor\filemanager\browser\default\connectors\py\connector.py" />
+    <None Include="FCKeditor\editor\filemanager\upload\cfm\config.cfm" />
+    <None Include="FCKeditor\editor\filemanager\upload\cfm\upload.cfm" />
+    <None Include="FCKeditor\editor\filemanager\upload\lasso\config.lasso" />
+    <None Include="FCKeditor\editor\filemanager\upload\lasso\upload.lasso" />
+    <None Include="FCKeditor\editor\filemanager\upload\php\config.php" />
+    <None Include="FCKeditor\editor\filemanager\upload\php\upload.php" />
+    <None Include="FCKeditor\editor\filemanager\upload\php\util.php" />
+    <None Include="FCKeditor\fckeditor.afp" />
+    <None Include="FCKeditor\fckeditor.cfc" />
+    <None Include="FCKeditor\fckeditor.cfm" />
+    <None Include="FCKeditor\fckeditor.lasso" />
+    <None Include="FCKeditor\fckeditor.php" />
+    <None Include="FCKeditor\fckeditor.pl" />
+    <None Include="FCKeditor\fckeditor.py" />
+    <None Include="FCKeditor\_samples\afp\fck.afpa" />
+    <None Include="FCKeditor\_samples\afp\fck.afpa.code" />
+    <None Include="FCKeditor\_samples\afp\sample01.afp" />
+    <None Include="FCKeditor\_samples\afp\sampleposteddata.afp" />
+    <None Include="FCKeditor\_samples\cfm\sample01.cfm" />
+    <None Include="FCKeditor\_samples\cfm\sample02_mx.cfm" />
+    <None Include="FCKeditor\_samples\lasso\sample01.lasso" />
+    <None Include="FCKeditor\_samples\lasso\sample02.lasso" />
+    <None Include="FCKeditor\_samples\lasso\sample03.lasso" />
+    <None Include="FCKeditor\_samples\lasso\sample04.lasso" />
+    <None Include="FCKeditor\_samples\lasso\sampleposteddata.lasso" />
+    <None Include="FCKeditor\_samples\perl\sample01.cgi" />
+    <None Include="FCKeditor\_samples\perl\sample02.cgi" />
+    <None Include="FCKeditor\_samples\perl\sample03.cgi" />
+    <None Include="FCKeditor\_samples\perl\sample04.cgi" />
+    <None Include="FCKeditor\_samples\perl\sampleposteddata.cgi" />
+    <None Include="FCKeditor\_samples\php\sample01.php" />
+    <None Include="FCKeditor\_samples\php\sample02.php" />
+    <None Include="FCKeditor\_samples\php\sample03.php" />
+    <None Include="FCKeditor\_samples\php\sample04.php" />
+    <None Include="FCKeditor\_samples\php\sampleposteddata.php" />
+    <None Include="FCKeditor\_samples\py\sample01.py" />
+    <None Include="FCKeditor\_samples\py\sampleposteddata.py" />
+    <None Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gizmox.WebGUI.FCKLibrary\Gizmox.WebGUI.FCKLibrary.csproj">
+      <Project>{1C674B65-F04A-4D22-B9F4-D59C35FB9A67}</Project>
+      <Name>Gizmox.WebGUI.FCKLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>16806</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

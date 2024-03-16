@@ -1,0 +1,10 @@
+<Item>
+  <Name>Braces</Name>
+  <Caption>Braces</Caption>
+  <Description>
+Editor.NET allows displaying matching braces helping to pick out some part of code.
+  </Description>
+  <Note>
+This demo shows ways of highlighting matching braces within edit control's content, improving code readability. 
+  </Note>
+</Item>

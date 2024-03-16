@@ -1,0 +1,10 @@
+<Item>
+  <Name>CodeSnippets</Name>
+  <Caption>Code Snippets</Caption>
+  <Description>
+The demo project shows ability to insert frequently used fragments of the code into the editor. Press "Ctrl + K + X" to see snippets.
+  </Description>
+  <Note>
+Code snippets are fragment of code intendend to be reused at a later time. Code snippets can be inserted into the editor by pressing Tab key after snippet shortcut or by executing code snippet popup window with Ctrl + K + X key sequence. If some fields are declared in the code snippets, editor allows to modify their values allowing to update field value inside whole snippet.
+  </Note>
+</Item>

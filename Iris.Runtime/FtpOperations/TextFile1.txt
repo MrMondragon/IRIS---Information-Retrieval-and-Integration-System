@@ -1,0 +1,1050 @@
+﻿Click here to Skip to main content
+ 	Home	
+10,602,353 members (34,552 online)      Sign in	 
+ 	
+
+ 
+Click here to Skip to main content
+homearticles
+Chapters and Sections>
+loading
+Search
+Latest Articles
+Latest Tips/Tricks
+Top Articles
+Beginner Articles
+Technical Blogs
+Posting/Update Guidelines
+Article Help Forum
+Article Competition
+ Submit an article or tip
+ Post your Blog
+quick answers
+ Ask a Question
+View Unanswered Questions
+View All Questions...
+C# questions
+ASP.NET questions
+VB.NET questions
+C#4.0 questions
+Javascript questions
+discussions
+All Message Boards...
+Application Lifecycle>
+Running a Business
+Sales / Marketing
+Collaboration / Beta Testing
+Work & Training Issues
+Design and Architecture
+ASP.NET
+JavaScript
+C / C++ / MFC>
+ATL / WTL / STL
+Managed C++/CLI
+Adobe Technologies
+C#
+Free Tools
+Objective-C
+Ruby On Rails
+Database
+Hardware & Devices>
+System Admin
+Hosting and Servers
+Java
+.NET Framework
+Android
+Mobile
+Sharepoint
+Silverlight / WPF
+Visual Basic
+Web Development
+Site Bugs / Suggestions
+features
+CP.TVCodeProject.TV
+Discuss CodeProject.TV
+Component & Service Catalog
+Competitions
+News
+The Insider Newsletter
+The Daily Build Newsletter
+Newsletter archive
+Surveys
+Product Showcase
+Research Library
+CodeProject Stuff
+community
+The Insider News
+The Lounge  
+The Weird & The Wonderful
+The Soapbox
+Press Releases
+Who's Who
+Most Valuable Professionals
+Company Listings
+Non-English Language >
+General Indian Topics
+General Chinese Topics
+help
+What is 'CodeProject'?
+General FAQ
+Ask a Question
+Bugs and Suggestions
+Article Help Forum
+Site Map
+Advertise with us
+Employment Opportunities
+About Us
+	Submit
+Articles » General Programming » Internet / Network » FTP
+ 
+Next Next
+Tip
+Browse Code
+Bugs / Suggestions
+Stats
+Revisions (4)
+Alternatives
+Comments (84)
+Share
+Simple C# FTP Class
+By metastruct, 27 Mar 2013
+ 
+	    4.81 (73 votes)
+Rate this:	
+vote 1vote 2vote 3vote 4vote 5
+Introduction
+I use FTP for a number of applications quite regularly, so I put together this class to make my life easier.  It allows you to quickly and easily perform a variety of FTP functions without hassle.  I hope sharing this will make your coding easier as well.  For the full code, check out my blog http://meta-struct.com/.  If this helps, please rate well!
+
+Using the code
+Using the code is simple, you'll need to be using System.IO and System.Net namespaces.  Add the class to your project, then just create a new instance of the ftp class, use the function of choice, and free the resource when you're done:
+
+ Collapse | Copy Code
+/* Create Object Instance */
+ftp ftpClient = new ftp(@"ftp://10.10.10.10/", "user", "password");
+
+/* Upload a File */
+ftpClient.upload("etc/test.txt", @"C:\Users\metastruct\Desktop\test.txt");
+
+/* Download a File */
+ftpClient.download("etc/test.txt", @"C:\Users\metastruct\Desktop\test.txt");
+
+/* Delete a File */
+ftpClient.delete("etc/test.txt");
+
+/* Rename a File */
+ftpClient.rename("etc/test.txt", "test2.txt");
+
+/* Create a New Directory */
+ftpClient.createDirectory("etc/test");
+
+/* Get the Date/Time a File was Created */
+string fileDateTime = ftpClient.getFileCreatedDateTime("etc/test.txt");
+Console.WriteLine(fileDateTime);
+
+/* Get the Size of a File */
+string fileSize = ftpClient.getFileSize("etc/test.txt");
+Console.WriteLine(fileSize);
+
+/* Get Contents of a Directory (Names Only) */
+string[] simpleDirectoryListing = ftpClient.directoryListDetailed("/etc");
+for (int i = 0; i < simpleDirectoryListing.Count(); i++) { Console.WriteLine(simpleDirectoryListing[i]); }
+
+/* Get Contents of a Directory with Detailed File/Directory Info */
+string[] detailDirectoryListing = ftpClient.directoryListDetailed("/etc");
+for (int i = 0; i < detailDirectoryListing.Count(); i++) { Console.WriteLine(detailDirectoryListing[i]); }
+/* Release Resources */
+ftpClient = null;
+Here is the code for the class with comments:
+
+ Collapse | Copy Code
+class ftp
+{
+    private string host = null;
+    private string user = null;
+    private string pass = null;
+    private FtpWebRequest ftpRequest = null;
+    private FtpWebResponse ftpResponse = null;
+    private Stream ftpStream = null;
+    private int bufferSize = 2048;
+        
+    /* Construct Object */
+    public ftp(string hostIP, string userName, string password) { host = hostIP; user = userName; pass = password; }
+
+    /* Download File */
+    public void download(string remoteFile, string localFile)
+    {
+        try
+        {
+            /* Create an FTP Request */
+            ftpRequest = (FtpWebRequest)FtpWebRequest.Create(host + "/" + remoteFile);
+            /* Log in to the FTP Server with the User Name and Password Provided */
+            ftpRequest.Credentials = new NetworkCredential(user, pass);
+            /* When in doubt, use these options */
+            ftpRequest.UseBinary = true;
+            ftpRequest.UsePassive = true;
+            ftpRequest.KeepAlive = true;
+            /* Specify the Type of FTP Request */
+            ftpRequest.Method = WebRequestMethods.Ftp.DownloadFile;
+            /* Establish Return Communication with the FTP Server */
+            ftpResponse = (FtpWebResponse)ftpRequest.GetResponse();
+            /* Get the FTP Server's Response Stream */
+            ftpStream = ftpResponse.GetResponseStream();
+            /* Open a File Stream to Write the Downloaded File */
+            FileStream localFileStream = new FileStream(localFile, FileMode.Create);
+            /* Buffer for the Downloaded Data */
+            byte[] byteBuffer = new byte[bufferSize];
+            int bytesRead = ftpStream.Read(byteBuffer, 0, bufferSize);
+            /* Download the File by Writing the Buffered Data Until the Transfer is Complete */
+            try
+            {
+                while (bytesRead > 0)
+                {
+                    localFileStream.Write(byteBuffer, 0, bytesRead);
+                    bytesRead = ftpStream.Read(byteBuffer, 0, bufferSize);
+                }
+            }
+            catch (Exception ex) { Console.WriteLine(ex.ToString()); }
+            /* Resource Cleanup */
+            localFileStream.Close();
+            ftpStream.Close();
+            ftpResponse.Close();
+            ftpRequest = null;
+        }
+        catch (Exception ex) { Console.WriteLine(ex.ToString()); }
+        return;
+    }
+
+    /* Upload File */
+    public void upload(string remoteFile, string localFile)
+    {
+        try
+        {
+            /* Create an FTP Request */
+            ftpRequest = (FtpWebRequest)FtpWebRequest.Create(host + "/" + remoteFile);
+            /* Log in to the FTP Server with the User Name and Password Provided */
+            ftpRequest.Credentials = new NetworkCredential(user, pass);
+            /* When in doubt, use these options */
+            ftpRequest.UseBinary = true;
+            ftpRequest.UsePassive = true;
+            ftpRequest.KeepAlive = true;
+            /* Specify the Type of FTP Request */
+            ftpRequest.Method = WebRequestMethods.Ftp.UploadFile;
+            /* Establish Return Communication with the FTP Server */
+            ftpStream = ftpRequest.GetRequestStream();
+            /* Open a File Stream to Read the File for Upload */
+            FileStream localFileStream = new FileStream(localFile, FileMode.Create);
+            /* Buffer for the Downloaded Data */
+            byte[] byteBuffer = new byte[bufferSize];
+            int bytesSent = localFileStream.Read(byteBuffer, 0, bufferSize);
+            /* Upload the File by Sending the Buffered Data Until the Transfer is Complete */
+            try
+            {
+                while (bytesSent != 0)
+                {
+                    ftpStream.Write(byteBuffer, 0, bytesSent);
+                    bytesSent = localFileStream.Read(byteBuffer, 0, bufferSize);
+                }
+            }
+            catch (Exception ex) { Console.WriteLine(ex.ToString()); }
+            /* Resource Cleanup */
+            localFileStream.Close();
+            ftpStream.Close();
+            ftpRequest = null;
+        }
+        catch (Exception ex) { Console.WriteLine(ex.ToString()); }
+        return;
+    }
+
+    /* Delete File */
+    public void delete(string deleteFile)
+    {
+        try
+        {
+            /* Create an FTP Request */
+            ftpRequest = (FtpWebRequest)WebRequest.Create(host + "/" + deleteFile);
+            /* Log in to the FTP Server with the User Name and Password Provided */
+            ftpRequest.Credentials = new NetworkCredential(user, pass);
+            /* When in doubt, use these options */
+            ftpRequest.UseBinary = true;
+            ftpRequest.UsePassive = true;
+            ftpRequest.KeepAlive = true;
+            /* Specify the Type of FTP Request */
+            ftpRequest.Method = WebRequestMethods.Ftp.DeleteFile;
+            /* Establish Return Communication with the FTP Server */
+            ftpResponse = (FtpWebResponse)ftpRequest.GetResponse();
+            /* Resource Cleanup */
+            ftpResponse.Close();
+            ftpRequest = null;
+        }
+        catch (Exception ex) { Console.WriteLine(ex.ToString()); }
+        return;
+    }
+
+    /* Rename File */
+    public void rename(string currentFileNameAndPath, string newFileName)
+    {
+        try
+        {
+            /* Create an FTP Request */
+            ftpRequest = (FtpWebRequest)WebRequest.Create(host + "/" + currentFileNameAndPath);
+            /* Log in to the FTP Server with the User Name and Password Provided */
+            ftpRequest.Credentials = new NetworkCredential(user, pass);
+            /* When in doubt, use these options */
+            ftpRequest.UseBinary = true;
+            ftpRequest.UsePassive = true;
+            ftpRequest.KeepAlive = true;
+            /* Specify the Type of FTP Request */
+            ftpRequest.Method = WebRequestMethods.Ftp.Rename;
+            /* Rename the File */
+            ftpRequest.RenameTo = newFileName;
+            /* Establish Return Communication with the FTP Server */
+            ftpResponse = (FtpWebResponse)ftpRequest.GetResponse();
+            /* Resource Cleanup */
+            ftpResponse.Close();
+            ftpRequest = null;
+        }
+        catch (Exception ex) { Console.WriteLine(ex.ToString()); }
+        return;
+    }
+
+    /* Create a New Directory on the FTP Server */
+    public void createDirectory(string newDirectory)
+    {
+        try
+        {
+            /* Create an FTP Request */
+            ftpRequest = (FtpWebRequest)WebRequest.Create(host + "/" + newDirectory);
+            /* Log in to the FTP Server with the User Name and Password Provided */
+            ftpRequest.Credentials = new NetworkCredential(user, pass);
+            /* When in doubt, use these options */
+            ftpRequest.UseBinary = true;
+            ftpRequest.UsePassive = true;
+            ftpRequest.KeepAlive = true;
+            /* Specify the Type of FTP Request */
+            ftpRequest.Method = WebRequestMethods.Ftp.MakeDirectory;
+            /* Establish Return Communication with the FTP Server */
+            ftpResponse = (FtpWebResponse)ftpRequest.GetResponse();
+            /* Resource Cleanup */
+            ftpResponse.Close();
+            ftpRequest = null;
+        }
+        catch (Exception ex) { Console.WriteLine(ex.ToString()); }
+        return;
+    }
+
+    /* Get the Date/Time a File was Created */
+    public string getFileCreatedDateTime(string fileName)
+    {
+        try
+        {
+            /* Create an FTP Request */
+            ftpRequest = (FtpWebRequest)FtpWebRequest.Create(host + "/" + fileName);
+            /* Log in to the FTP Server with the User Name and Password Provided */
+            ftpRequest.Credentials = new NetworkCredential(user, pass);
+            /* When in doubt, use these options */
+            ftpRequest.UseBinary = true;
+            ftpRequest.UsePassive = true;
+            ftpRequest.KeepAlive = true;
+            /* Specify the Type of FTP Request */
+            ftpRequest.Method = WebRequestMethods.Ftp.GetDateTimestamp;
+            /* Establish Return Communication with the FTP Server */
+            ftpResponse = (FtpWebResponse)ftpRequest.GetResponse();
+            /* Establish Return Communication with the FTP Server */
+            ftpStream = ftpResponse.GetResponseStream();
+            /* Get the FTP Server's Response Stream */
+            StreamReader ftpReader = new StreamReader(ftpStream);
+            /* Store the Raw Response */
+            string fileInfo = null;
+            /* Read the Full Response Stream */
+            try { fileInfo = ftpReader.ReadToEnd(); }
+            catch (Exception ex) { Console.WriteLine(ex.ToString()); }
+            /* Resource Cleanup */
+            ftpReader.Close();
+            ftpStream.Close();
+            ftpResponse.Close();
+            ftpRequest = null;
+            /* Return File Created Date Time */
+            return fileInfo;
+        }
+        catch (Exception ex) { Console.WriteLine(ex.ToString()); }
+        /* Return an Empty string Array if an Exception Occurs */
+        return "";
+    }
+
+    /* Get the Size of a File */
+    public string getFileSize(string fileName)
+    {
+        try
+        {
+            /* Create an FTP Request */
+            ftpRequest = (FtpWebRequest)FtpWebRequest.Create(host + "/" + fileName);
+            /* Log in to the FTP Server with the User Name and Password Provided */
+            ftpRequest.Credentials = new NetworkCredential(user, pass);
+            /* When in doubt, use these options */
+            ftpRequest.UseBinary = true;
+            ftpRequest.UsePassive = true;
+            ftpRequest.KeepAlive = true;
+            /* Specify the Type of FTP Request */
+            ftpRequest.Method = WebRequestMethods.Ftp.GetFileSize;
+            /* Establish Return Communication with the FTP Server */
+            ftpResponse = (FtpWebResponse)ftpRequest.GetResponse();
+            /* Establish Return Communication with the FTP Server */
+            ftpStream = ftpResponse.GetResponseStream();
+            /* Get the FTP Server's Response Stream */
+            StreamReader ftpReader = new StreamReader(ftpStream);
+            /* Store the Raw Response */
+            string fileInfo = null;
+            /* Read the Full Response Stream */
+            try { while (ftpReader.Peek() != -1) { fileInfo = ftpReader.ReadToEnd(); } }
+            catch (Exception ex) { Console.WriteLine(ex.ToString()); }
+            /* Resource Cleanup */
+            ftpReader.Close();
+            ftpStream.Close();
+            ftpResponse.Close();
+            ftpRequest = null;
+            /* Return File Size */
+            return fileInfo;
+        }
+        catch (Exception ex) { Console.WriteLine(ex.ToString()); }
+        /* Return an Empty string Array if an Exception Occurs */
+        return "";
+    }
+
+    /* List Directory Contents File/Folder Name Only */
+    public string[] directoryListSimple(string directory)
+    {
+        try
+        {
+            /* Create an FTP Request */
+            ftpRequest = (FtpWebRequest)FtpWebRequest.Create(host + "/" + directory);
+            /* Log in to the FTP Server with the User Name and Password Provided */
+            ftpRequest.Credentials = new NetworkCredential(user, pass);
+            /* When in doubt, use these options */
+            ftpRequest.UseBinary = true;
+            ftpRequest.UsePassive = true;
+            ftpRequest.KeepAlive = true;
+            /* Specify the Type of FTP Request */
+            ftpRequest.Method = WebRequestMethods.Ftp.ListDirectory;
+            /* Establish Return Communication with the FTP Server */
+            ftpResponse = (FtpWebResponse)ftpRequest.GetResponse();
+            /* Establish Return Communication with the FTP Server */
+            ftpStream = ftpResponse.GetResponseStream();
+            /* Get the FTP Server's Response Stream */
+            StreamReader ftpReader = new StreamReader(ftpStream);
+            /* Store the Raw Response */
+            string directoryRaw = null;
+            /* Read Each Line of the Response and Append a Pipe to Each Line for Easy Parsing */
+            try { while (ftpReader.Peek() != -1) { directoryRaw += ftpReader.ReadLine() + "|"; } }
+            catch (Exception ex) { Console.WriteLine(ex.ToString()); }
+            /* Resource Cleanup */
+            ftpReader.Close();
+            ftpStream.Close();
+            ftpResponse.Close();
+            ftpRequest = null;
+            /* Return the Directory Listing as a string Array by Parsing 'directoryRaw' with the Delimiter you Append (I use | in This Example) */
+            try { string[] directoryList = directoryRaw.Split("|".ToCharArray()); return directoryList; }
+            catch (Exception ex) { Console.WriteLine(ex.ToString()); }
+        }
+        catch (Exception ex) { Console.WriteLine(ex.ToString()); }
+        /* Return an Empty string Array if an Exception Occurs */
+        return new string[] { "" };
+    }
+
+    /* List Directory Contents in Detail (Name, Size, Created, etc.) */
+    public string[] directoryListDetailed(string directory)
+    {
+        try
+        {
+            /* Create an FTP Request */
+            ftpRequest = (FtpWebRequest)FtpWebRequest.Create(host + "/" + directory);
+            /* Log in to the FTP Server with the User Name and Password Provided */
+            ftpRequest.Credentials = new NetworkCredential(user, pass);
+            /* When in doubt, use these options */
+            ftpRequest.UseBinary = true;
+            ftpRequest.UsePassive = true;
+            ftpRequest.KeepAlive = true;
+            /* Specify the Type of FTP Request */
+            ftpRequest.Method = WebRequestMethods.Ftp.ListDirectoryDetails;
+            /* Establish Return Communication with the FTP Server */
+            ftpResponse = (FtpWebResponse)ftpRequest.GetResponse();
+            /* Establish Return Communication with the FTP Server */
+            ftpStream = ftpResponse.GetResponseStream();
+            /* Get the FTP Server's Response Stream */
+            StreamReader ftpReader = new StreamReader(ftpStream);
+            /* Store the Raw Response */
+            string directoryRaw = null;
+            /* Read Each Line of the Response and Append a Pipe to Each Line for Easy Parsing */
+            try { while (ftpReader.Peek() != -1) { directoryRaw += ftpReader.ReadLine() + "|"; } }
+            catch (Exception ex) { Console.WriteLine(ex.ToString()); }
+            /* Resource Cleanup */
+            ftpReader.Close();
+            ftpStream.Close();
+            ftpResponse.Close();
+            ftpRequest = null;
+            /* Return the Directory Listing as a string Array by Parsing 'directoryRaw' with the Delimiter you Append (I use | in This Example) */
+            try { string[] directoryList = directoryRaw.Split("|".ToCharArray()); return directoryList; }
+            catch (Exception ex) { Console.WriteLine(ex.ToString()); }
+        }
+        catch (Exception ex) { Console.WriteLine(ex.ToString()); }
+        /* Return an Empty string Array if an Exception Occurs */
+        return new string[] { "" };
+    }
+} 
+Points of Interest
+This assumes the need for "non-default" user name and password.  I use binary mode for transfers in particular because I've had issues in the past without this setting enabled.
+
+History
+Just a compilation of FTP functions packaged neatly, help me improve or show your support by rating and commenting!
+
+License
+This article, along with any associated source code and files, is licensed under The Code Project Open License (CPOL)
+
+
+About the Author
+metastruct
+Software Developer (Senior) 
+United States United States
+No Biography provided
+Article Top
+
+Comments and Discussions
+ 
+You must Sign In to use this message board.
+Search this forum  
+Profile popups    Spacing  Noise  Layout  Per page   
+First PrevNext
+
+Question
+The remote server returned an error: (500) Syntax error, command unrecognized
+member	Member 1626862	19-Apr-14 22:57 
+	
+when i run code for delete file via ftp 
+ 
+The remote server returned an error: (500) Syntax error, command unrecognized
+ 
+please i need solved this error
+Sign In·View Thread·Permalink	
+Answer
+Re: The remote server returned an error: (500) Syntax error, command unrecognized
+member	mboldex	23-Apr-14 3:39 
+	
+Are you using .Net framework 4.5? That might be the problem, because it seems it doesn't work for Windows with .net 4.5. Even if you target your application to framework 4.0, if you installed 4.5 in Windows it doesn't work anymore. At least, that is my problem.
+Sign In·View Thread·Permalink	
+Question
+file load notification
+member	Shehzaada Salim	9-Apr-14 0:02 
+	
+Your code looks great but I would like to know about how to get an email or a text message on my mobile phone when files get uplaoded on ftp through an automated process (batch file)
+Sign In·View Thread·Permalink	
+Question
+On Uploading (Windows 8) [modified]
+member	Munavvar Husain	7-Apr-14 21:41 
+	
+Windows 8
+ 
+On Uploading its give me this error..
+The remote server returned an error: (500) Syntax error, command unrecognized.
+Pleas give me solustion ASAP
+
+modified 8-Apr-14 6:56am.
+
+Sign In·View Thread·Permalink	
+Answer
+Re: On Uploading (Windows 8)
+member	mboldex	23-Apr-14 3:42 
+	
+After many tests, I realize the issue is with Windows .Net Framework 4.5.
+If you use this code with Windows .Net Framework 4.0 will work.
+ 
+PS: This is not the target framework from Visual Studio. I am talking about the Windows Framework.
+Nothing changes If you modify the target framework on the application, you are going to have the same error.
+ 
+I did not find any thread about that on the web.
+Sign In·View Thread·Permalink	1.00/5 (1 vote)
+Bug
+Zip file uploading, losing files into zip and uploaded the empty zip (0 byte)
+member	Federico Massano	2-Apr-14 0:04 
+	
+Hi when I try to upload a zip file the files into the zip disappear and the program upload the empty zip. How can i solve it ?
+Sign In·View Thread·Permalink	5.00/5 (1 vote)
+General
+Re: Zip file uploading, losing files into zip and uploaded the empty zip (0 byte)
+member	Member 10265225	5-Apr-14 0:04 
+	
+Hi, I had a same problem, but I uploaded every file as 0 byte. I changed function upload like this:
+ 
+FileStream localFileStream = new FileStream(localFile, FileMode.Create);
+replace FileMode.Create by FileMode.Open
+Sign In·View Thread·Permalink	
+Question
+The requested FTP command is not supported when using HTTP proxy.
+member	sudeep23	2-Mar-14 19:06 
+	
+It showing me an error , when i'm trying to upload a image
+The requested FTP command is not supported when using HTTP proxy.
+Sign In·View Thread·Permalink	
+Question
+Nice Article
+member	Siva Hyderabad	28-Feb-14 17:52 
+	
+Thumbs Up | :thumbsup: Java | [Coffee] 
+Sign In·View Thread·Permalink	
+General
+My vote of 5
+member	PepLamb	24-Feb-14 8:37 
+	
+Awesome! Smile | :) 
+Sign In·View Thread·Permalink	
+Question
+My vote of 1 (never vote 5 for bugs)
+member	vsirghii	18-Feb-14 10:40 
+	
+Maybe that's cool, maybe it looks nice-nice... What's the point if it's buggy. One could get into trouble using that code directly without debugging and testing. Author could update the code based on all replays.
+Sign In·View Thread·Permalink	
+General
+Re: My vote of 1 (never vote 5 for bugs)
+member	PIEBALDconsult	18-Feb-14 11:26 
+	
+What particular concerns do you have? Will you revise your vote if the author fixes what you concider to be bugs? Never vote 1 unless you expect to update your vote later.
+This space intentionally left blank.
+
+Sign In·View Thread·Permalink	
+General
+Re: My vote of 1 (never vote 5 for bugs)
+member	vsirghii	18-Feb-14 16:46 
+	
+Why not to upvote if everything is fixed...
+Sign In·View Thread·Permalink	
+General
+Re: My vote of 1 (never vote 5 for bugs)
+member	PIEBALDconsult	18-Feb-14 17:08 
+	
+Will you? And you haven't even specified what you think is wrong.
+This space intentionally left blank.
+
+Sign In·View Thread·Permalink	
+Answer
+Message Automatically Removed
+professional	Ravi.Kumar021	13-Feb-14 5:12 
+	
+Message Automatically Removed
+General
+PLEASE FIX THE BUGS
+member	Member 3816073	7-Feb-14 19:19 
+	
+Please fix the bugs. many people have provided the solutions, please update your code in the article
+ 
+1. upload file you forgot to change the file mode
+2. get file date/time modified - you're doing it wrong. 
+ 
++ any others i have missed?
+ 
+Also, why are you using all C comments? /* */
+and not using method descriptions (triple slash before method) ?? then you get intellitext popups, very nice
+Sign In·View Thread·Permalink	
+General
+My vote of 5
+member	Alan Balkany	10-Jan-14 5:22 
+	
+This was VERY helpful! I wish I could give you more than just five stars.
+Sign In·View Thread·Permalink	
+Question
+progress and parallel upload/download
+member	yoke	29-Nov-13 9:35 
+	
+hi,
+ 
+anyone knows to implement parallel upload and download?
+and then, get a progress bar reporting each file being uploaded or downloaded?
+ 
+I'm planning to use this class in a LISTVIEW and thinking about putting the progress bar in the subitem and embedded the progress bar for each file.
+ 
+tia.
+Sign In·View Thread·Permalink	
+Answer
+Re: progress and parallel upload/download
+member	Andrew Erwin	20-Dec-13 10:37 
+	
+You need to wrap each method in a TASK (System.Threading.Task) to run them parallel.
+Sign In·View Thread·Permalink	
+General
+Re: progress and parallel upload/download
+member	yoke	24-Dec-13 12:41 
+	
+thx Andrew, isn't TASK and ASYNC only work with .NET 4.5?
+or, will this work with older framework such as 3.5?
+Sign In·View Thread·Permalink	
+General
+My vote of 5
+member	PepLamb	26-Nov-13 8:48 
+	
+My vote of 5 thanks! Smile | :) 
+Sign In·View Thread·Permalink	
+Question
+Upload function changed to Filemode.Open
+member	Member 3156161	26-Nov-13 1:43 
+	
+Hello
+ 
+I changed the following in the: 
+public void upload(string remoteFile, string localFile)
+ 
+ 
+ ftpRequest.Method = WebRequestMethods.Ftp.UploadFile;
+                /* Establish Return Communication with the FTP Server */
+                ftpStream = ftpRequest.GetRequestStream();
+                /* Open a File Stream to Read the File for Upload */
+                FileStream localFileStream = new FileStream(localFile, FileMode.Open);
+                /* Buffer for the Downloaded Data */
+                byte[] byteBuffer = new byte[bufferSize];
+                int bytesSent = localFileStream.Read(byteBuffer, 0, bufferSize);
+                /* Upload the File by Sending the Buffered Data Until the Transfer is Complete */
+ 
+If it is Filemode.Create, it creates empty files and than sends them.
+Cheers
+Sign In·View Thread·Permalink	
+Question
+As i am new to C# coding ..!! I need your Help to read the the file Content which is located in a folder.
+member	sonusonyy	6-Nov-13 21:35 
+	
+Hi 
+ 
+I have a Ftp Server i can connect to it and read the file names Present in it but i am unbale to read the data it contains .
+ 
+Like I have A Folder named Sample
+In it it Contains Success.txt and Fail.xlsx file 
+Here i can read the File names as Success and Fail but i am unable to read the data that those files contains .
+ 
+Could any one help me 
+thanks in Advance .
+Sign In·View Thread·Permalink	
+Question
+good article
+member	yangyancheng	21-Oct-13 16:05 
+	
+thanks a lot
+Sign In·View Thread·Permalink	
+Question
+Thanks!!. + tiny bug
+member	mendi1122	6-Oct-13 17:40 
+	
+In upload method
+ 
+FileStream localFileStream = new FileStream(localFile, FileMode.Create);
+ 
+FileMode.Create   ===>> FileMode.Open
+
+Sign In·View Thread·Permalink	
+Answer
+Re: Thanks!!. + tiny bug
+member	Farzan Doroodgar	7-Oct-13 5:41 
+	
+Tiny but very important bug!! I just lost some of my files because of this bug!!
+However thanks for the code. Really helpful.
+Sign In·View Thread·Permalink	
+Question
+Nice
+member	JrPacheco	1-Oct-13 8:12 
+	
+Hey boy, thanks for this code, I am implemented in my applications!
+System Programmer .NET
+
+Sign In·View Thread·Permalink	
+General
+My vote of 5
+member	Member 10300852	26-Sep-13 20:15 
+	
+Its Superb Article
+Sign In·View Thread·Permalink	
+Question
+Show progress bar while upload
+member	Member 10278056	17-Sep-13 8:25 
+	
+Hello to all
+how can I display a progress bar during the upload?
+ 
+Thanks
+Sign In·View Thread·Permalink	
+Answer
+Re: Show progress bar while upload
+member	Alan Balkany	8-Jan-14 8:27 
+	
+Look at the BackgroundWorker class.
+Sign In·View Thread·Permalink	
+General
+My vote of 5
+member	Dmitry Kirsanov	13-Sep-13 1:44 
+	
+Although this class needs some refactoring, this is a perfect base to create your own FTP class, which was the purpose of the article.
+Sign In·View Thread·Permalink	
+Question
+Trying to upload multiple files at one time
+member	Member 10235765	27-Aug-13 7:04 
+	
+Does someone know how to upload multiple files at a time using this code base.
+Sign In·View Thread·Permalink	
+Answer
+Re: Trying to upload multiple files at one time
+member	Dmitry Kirsanov	13-Sep-13 1:52 
+	
+public void UploadMultipleFiles(string targetDirectory, string[] localFiles)
+        {
+            foreach (var localFile in localFiles)
+            {//NB: targetDirectory must NOT start with "/"
+                if (!File.Exists(localFile)) continue;
+                upload(string.Format("{0}/{1}", targetDirectory, Path.GetFileName(localFile)), localFile);
+            }
+        }
+
+Sign In·View Thread·Permalink	
+Question
+correction for upload function
+member	gorkemgercek	1-Aug-13 22:10 
+	
+The upload method both deletes content of local file and then uploads an empty file (for text file) to FTP server.
+the code line indicated below in not the wanted one and incorrect.
+FileStream localFileStream = new FileStream(localFile, FileMode.Create);
+it should be 
+FileStream localFileStream = File.OpenRead(localFile);
+
+Sign In·View Thread·Permalink	
+Question
+Warning Destructive BUG !
+member	baranils	24-Jul-13 2:40 
+	
+There is a destroy bug in the Upload method
+ 
+Instead of 
+FileStream localFileStream = new FileStream(localFile, FileMode.Create);
+ 
+We need
+ 
+FileStream localFileStream = new FileStream(localFile, FileMode.Open);
+Sign In·View Thread·Permalink	
+Answer
+Re: Warning Destructive BUG !
+member	Si.carter12345	19-Oct-13 0:07 
+	
+lol, just found this one myself Smile | :) 
+Sign In·View Thread·Permalink	
+Suggestion
+Nice, thanks
+member	maticic	16-Jul-13 3:40 
+	
+Instead of: 
+           (ftpReader.Peek() != -1) 
+ 
+I used:
+while (!ftpReader.EndOfStream)
+Sign In·View Thread·Permalink	
+Question
+Is there any FtpWebRequest class for Windows phone 6.5
+member	Ravi Pinjarkar	26-Jun-13 3:35 
+	
+Hi friend,
+ 
+I want to upload file to ftp server from widows phone 6.5, but i am not able to do this things.
+I tried with edtFTPnet.dll but it showing 
+ 
+"System.ComponentModel.Component' is defined in an assembly that is not referenced. You must add a reference to assembly 'System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'"
+but i didn't find this reference.
+ 
+If there any other way to upload file to ftp server from widows phone 6.5 please tell me.
+Sign In·View Thread·Permalink	
+Bug
+FileMode.Open for uploads
+member	Bruce Greene	21-Jun-13 14:52 
+	
+Please change your FileMode.Create to FileMode.Open for the source file in your Upload method. Otherwise, very nice!
+Sign In·View Thread·Permalink	
+General
+My vote of 5
+professional	Chameera Dedduwage	14-Jun-13 20:17 
+	
+Works easily.. Smile | :) 
+Sign In·View Thread·Permalink	
+General
+My vote of 5
+member	Fiwel	8-May-13 12:25 
+	
+Thank you. Saved me a lot of time
+Sign In·View Thread·Permalink	
+Question
+ListDetail
+member	azteca_04	17-Apr-13 11:36 
+	
+Hi,
+ 
+nice class, but when try to use it the simpleDirectoryListingonly returns one file out of the 44 that i have on the folder, im using the same code and i cannot get it to work, it works fine on the detailed one, any help??
+ 
+tks
+Sign In·View Thread·Permalink	
+General
+My vote of 5
+member	wsc0918	16-Apr-13 21:49 
+	
+Nice, but a little bug.
+When upload file, FileStream can't use mode File.Create. You should use File.Open.
+Sign In·View Thread·Permalink	
+Question
+Method getFileSize does not work for every case.
+member	Member 2144619	16-Apr-13 0:57 
+	
+Instead of streamReader, I applied following usage:
+ 
+               /* Specify the Type of FTP Request */
+               ftpRequest.Method = WebRequestMethods.Ftp.GetFileSize;
+               /* Establish Return Communication with the FTP Server */
+               ftpResponse = (FtpWebResponse)ftpRequest.GetResponse();
+               long remFileSize = -1;
+               try
+               {
+                   remFileSize = ftpResponse.ContentLength;
+               }
+               catch (Exception ex) {
+                   Console.WriteLine(ex.ToString());
+                   return -1;  /* Return a negative value if file not found */
+               }
+ 
+and it works.
+Sign In·View Thread·Permalink	
+Suggestion
+Re: Method getFileSize does not work for every case.
+member	Dmitry Kirsanov	13-Sep-13 1:41 
+	
+I would also suggest to use using directive. Like this:
+ 
+using (var ftpResponse = (FtpWebResponse) ftpRequest.GetResponse()) {
+                try
+                {
+                    remFileSize = ftpResponse.ContentLength;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.ToString());
+                    return -1;  /* Return a negative value if file not found */
+                }
+            }
+
+Sign In·View Thread·Permalink	
+Question
+How do I recursively create a directory?
+member	DanWiify	15-Apr-13 0:06 
+	
+How do I recursively create a directory? 
+ 
+I want to create a directory structure is there a way to do this or do I have to create each directory one by one?
+ 
+For instance I want to create the following data structure: etc/videos/music/jazz/coltrane
+ 
+If I use ftpClient.createDirectory("etc/videos/music/jazz/coltrane"); it does not work, results in:
+ 
+550 Directory not found.
+Sign In·View Thread·Permalink	
+Answer
+Re: How do I recursively create a directory?
+member	Dmitry Kirsanov	13-Sep-13 1:38 
+	
+Quite obviously, you have to use recursion.
+ 
+1. Split your directory into path parts using "/" char.
+2. Check all directories from the beginning: "Do we have /etc? Do we have /etc/videos?..."
+3. For each directory, if it doesn't exists, create it. Then check if it was in fact created.
+Sign In·View Thread·Permalink	
+Question
+Every function returns a string
+member	Ben Daniel	6-Apr-13 18:55 
+	
+Also it could be improved by parsing some of those strings and returning a more relevant data type. Like GetFileSize returning an integer and GetFileCreatedDateTime returning a DateTime.
+ 
+Thanks,
+Ben
+Sign In·View Thread·Permalink	
+General
+My vote of 3
+member	Ben Daniel	6-Apr-13 18:17 
+	
+Not bad, good documentation. I would have rated 5 stars if your code:
+1.	Didn’t contain unnecessary private fields
+2.	Used using statements in place of manual clean up
+3.	Didn’t catch the exceptions
+4.	Conformed to C# naming conventions, specifically TitleCase instead of camelCase for method names. This is C# not Java
+ 
+But keep up the good work.
+Sign In·View Thread·Permalink	
+Question
+A few quirks
+member	Ben Daniel	6-Apr-13 18:08 
+	
+Firstly let me say thanks for writing this. I plan to use your code in a simple script to automate grabbing new files from an FTP server for me. Also, though the code doesn't really need it, I praise you for your liberal use of comments, if only more coders (myself included) documented as well as this.
+ 
+I do have some constructive critism though.
+ 
+1. You could lose the private fields for ftpResponse & ftpStream and just declare them as local variables within using statements when you need them. The using statements will handle your cleanup for you so you don't need to call ftpResponse.Close(), ftpStream.Close(), ftpResponse = null, etc.
+ 
+2. It's currently catching exceptions and outputting them to the console. What if you wanted to use this class in a GUI/Web app? The better option would be to not catch the exceptions at all, just let the application deal with them, like most every other class in the .Net framework.
+ 
+Cheers
+ 
+Thanks,
+Ben
+Sign In·View Thread·Permalink	
+
+Last Visit: 31-Dec-99 18:00     Last Update: 12-May-14 11:14	Refresh	12 Next »
+General General    News News    Suggestion Suggestion    Question Question    Bug Bug    Answer Answer    Joke Joke    Rant Rant    Admin Admin   
+
+About Article
+Easy to use class for downloading, uploading, and other FTP commands.
+Type 	Tip/Trick
+Licence 	CPOL
+First Posted 	20 Aug 2012
+Views 	128,925
+Bookmarked 	81 times
+C#3.0VS2008Windows
+Visual-StudioDev, +
+   
+
+Top News
+The Secret Messages Inside Chinese URLs
+
+Get the Insider News free each morning.
+Related Videos
+
+
+Related Articles
+How to enum SQL Server instances in network
+String.Insert - insert a separator on given positions
+Random Color Generator
+Send Email using WCF Service
+A simple attribute to store licensing information and credits
+Blowfish Encryption Implementation in .Net
+Skype Status Changer
+Code Review Checklist and Guidelines for C# Developers
+Opening the Internet Browser Programmatically
+Following object inheritance
+SQL Server Database Backup by using Batch File (Updated Version)
+.Net Performance tip - 2
+10 SEO tips for your ASP.NET website
+XCrashReport : Exception Handling and Crash Reporting - Part 4
+Partial View in ASP.NET MVC 4
+How to overload a web method in ASP.NET webservice...?
+MVC4 Different Redirection Techniques (Razor)
+Don't use ALL CAPS in emails
+Opening the Internet Browser Programmatically
+Fixing jQuery non-US Date Validation for Chrome
+Call SSRS Reports by using C#
+Related Research
+
+In-The-Wild Testing: How to Ensure Your Apps Work in the Real World
+
+Ten Tips of Web App Testing
+
+Best Practices for Securing Your Private Keys and Code Signing Certificates
+
+Protecting Your Business Data: Five Do’s and Don’ts
+Permalink | Advertise | Privacy | Mobile 
+Web03 | 2.8.140510.1 | Last Updated 27 Mar 2013 Article Copyright 2012 by metastruct
+Everything else Copyright © CodeProject, 1999-2014 
+Terms of Use
+Layout: fixed | fluid
+

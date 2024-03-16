@@ -1,0 +1,10 @@
+<Item>
+  <Name>Exporting</Name>
+  <Caption>Exporting</Caption>
+  <Description>
+The demo shows how to import/export edit control's content to various formats. 
+  </Description>
+  <Note>
+Editor can export its content to a variety of file formats. Plain text, RTF, HTML and XML formats are currently supported. The last one allows saving/restoring complete state of the edit control.
+  </Note>
+</Item>

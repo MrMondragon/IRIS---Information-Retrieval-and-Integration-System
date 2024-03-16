@@ -1,0 +1,10 @@
+<Item>
+  <Name>UserMargin</Name>
+  <Caption>User Margin</Caption>
+  <Description>
+The demo show how user margin can be used.
+  </Description>
+  <Note>
+Editor.NET allows you to allocate some region to show your own data. In this region you can place any information related to certain line of the text.
+  </Note>
+</Item>

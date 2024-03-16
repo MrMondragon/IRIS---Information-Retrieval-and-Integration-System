@@ -1,0 +1,5 @@
+Carga: 68.339KB, 67.663 registros - Média de  1.01K por registro
+       Carga para a memória, incluindo validação: 41.5 segundos
+       Gravação para o banco: 21.78 segundos
+       
+

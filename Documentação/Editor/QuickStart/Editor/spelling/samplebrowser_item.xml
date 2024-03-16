@@ -1,0 +1,10 @@
+<Item>
+  <Name>Spelling</Name>
+  <Caption>Spelling</Caption>
+  <Description>
+The demo shows ability to visually highlight misspelled words in the edit control's content.
+  </Description>
+  <Note>
+Editor only provides a way to highlight misspelled words; actual spell checking should be done by external tool or component.
+  </Note>
+</Item>

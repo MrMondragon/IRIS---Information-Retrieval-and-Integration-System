@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Hermes.Model.DashBoard">
+    <Position X="2.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DashBoard.cs</FileName>
+      <HashCode>AgACAAAAAAAQAAABEAAAAQAAAAAAAAAAAAAAAAIAAgA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MainView" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Views" />
+    </ShowAsCollectionAssociation>
+    <AssociationLine Name="MainView" Type="Hermes.Model.BoardView" FixedToPoint="true">
+      <Path>
+        <Point X="4" Y="4.5" />
+        <Point X="5" Y="4.5" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Class Name="Hermes.Model.UserProfile">
+    <Position X="8.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>UserProfile.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAEAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="AllowedViews" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Hermes.Model.BoardView">
+    <Position X="5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>BoardView.cs</FileName>
+      <HashCode>AAQCAAAAAAAACAAAAAgAAAAAAAAAAAAAAgAAABAEAgA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="OrigView" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Items" />
+    </ShowAsCollectionAssociation>
+    <AssociationLine Name="Items" Type="Hermes.Model.ControlProperties" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.5" Y="4.918" />
+        <Point X="6.875" Y="4.918" />
+        <Point X="6.875" Y="5.997" />
+        <Point X="8.5" Y="5.997" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="OrigView" Type="Hermes.Model.BoardView" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.312" Y="5.238" />
+        <Point X="5.312" Y="5.498" />
+        <Point X="4.719" Y="5.498" />
+        <Point X="4.719" Y="4.957" />
+        <Point X="5" Y="4.957" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.265" Y="-0.763" />
+      </MemberNameLabel>
+    </AssociationLine>
+  </Class>
+  <Class Name="Hermes.Model.ControlProperties">
+    <Position X="8.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ControlProperties.cs</FileName>
+      <HashCode>BgKCIAQQACAAAAAAAAAQAAAQEAABABAAAQBgAAICYgA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="View" />
+      <Property Name="HyperLink" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="View" Type="Hermes.Model.BoardView" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.5" Y="6.281" />
+        <Point X="6.281" Y="6.281" />
+        <Point X="6.281" Y="5.238" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.297" Y="0.873" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="HyperLink" Type="Hermes.Model.BoardView">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.963" Y="1.372" />
+      </MemberNameLabel>
+    </AssociationLine>
+  </Class>
+  <Interface Name="Iris.Interfaces.IResultSet" Collapsed="true">
+    <Position X="8.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="Iris.Interfaces.IScalarVar" Collapsed="true">
+    <Position X="0.5" Y="17.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="Iris.Interfaces.IOperation" Collapsed="true">
+    <Position X="14" Y="17.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="Iris.Interfaces.IIrisRunnable" Collapsed="true">
+    <Position X="10.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="Iris.Interfaces.IStructure" Collapsed="true">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Enum Name="Hermes.Model.ItemType">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ItemType.cs</FileName>
+      <HashCode>AUAAIgAgEBAAgAAAAAAAAAAAAAAAAEAAAAAAAAAAAAI=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>

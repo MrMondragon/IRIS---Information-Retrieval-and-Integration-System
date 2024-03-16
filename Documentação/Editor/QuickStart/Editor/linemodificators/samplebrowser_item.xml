@@ -1,0 +1,10 @@
+<Item>
+  <Name>LineModificators</Name>
+  <Caption>Line Modificators</Caption>
+  <Description>
+The demo shows how to visually identify modified lines.
+  </Description>
+  <Note>
+Editor.NET allows visually tracking modified lines. When LineModificators are on they indicate lines that were changed since last saving. New changes are marked with Yellow color, changes that were done before last saving are marked with Lime color. Colors are customizable.
+  </Note>
+</Item>

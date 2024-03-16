@@ -1,0 +1,26 @@
+Editor.NET 1.47 
+21 Apr. 2007
+
+New version (service pack) of Editor.NET component library is available
+
+Here is what's new in version 1.47:
+
+New Features
+------------
+Syntax Parsers
+    + Automatic insertion of end-of-block in VBScript Parser 
+
+Bug fixes
+---------
+
+Editor
+    - Bug with color themes in global settings dialog
+    - Bug with global settings serialization.
+Code Completion
+    - Bug with parameter info tooltip.
+    - Bug with code snipptes in VB parser.
+    - Minor code completion issues
+Syntax Parsers
+    - Bug with indentation of If/Select Case statement in VB Parser.
+    - Bug with parsing CDATA sections in Xml parser.
+

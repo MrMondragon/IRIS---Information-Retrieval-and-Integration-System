@@ -1,0 +1,10 @@
+<Item>
+  <Name>LineHighlight</Name>
+  <Caption>Line Highlight</Caption>
+  <Description>
+The demo shows how to visually separate lines in the edit control, and highlight current line.
+  </Description>
+  <Note>
+It is possible to have lines of the editor to be separated by thin horizontal lines, and to have the current line highlighted with different background. This behavior is controlled by the LineSeparator property.
+  </Note>
+</Item>

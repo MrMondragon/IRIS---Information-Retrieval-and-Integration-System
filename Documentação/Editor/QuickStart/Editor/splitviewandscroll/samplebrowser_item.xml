@@ -1,0 +1,10 @@
+<Item>
+  <Name>SplitviewAndScroll</Name>
+  <Caption>Splitview and Scroll</Caption>
+  <Description>
+The demo shows ability to visually split edit control to provide different views of the same text. Editor.NET allows visually splitting editor vertically and horizontally.
+  </Description>
+  <Note>
+Dock must be set to DockStyle.Fill, otherwise this feature will not work. Splitters are displayed in the left-bottom corner for vertical splitting and in the right-top corner for horizontal splitting.
+  </Note>
+</Item>

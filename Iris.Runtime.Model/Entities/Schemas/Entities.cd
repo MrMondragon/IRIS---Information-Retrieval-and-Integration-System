@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Iris.Runtime.Model.Entities.Entity">
+    <Position X="7" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entities\Entity.cs</FileName>
+      <HashCode>AAAAAAAEAgJAAAAAAAAAAAEAAAAIAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.BaseObjects.Operation">
+    <Position X="6.5" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>BaseObjects\Operation.cs</FileName>
+      <HashCode>BQYBMgEEAwJgAASM5EgAiA1UEAUMBBAACEgiQEQwABA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="OnFailure" />
+      <Property Name="OnSuccess" />
+      <Property Name="EntityValue" />
+      <Property Name="IOperation.OnFailure" />
+      <Property Name="IOperation.OnSuccess" />
+      <Property Name="IOperation.Structure" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Inputs" />
+      <Property Name="Outputs" />
+      <Property Name="IOperation.Inputs" />
+      <Property Name="IOperation.Outputs" />
+    </ShowAsCollectionAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Inputs" Type="Iris.Runtime.Model.BaseObjects.Operation">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.411" Y="0.279" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Entities.ResultSet">
+    <Position X="7" Y="18.5" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>Entities\ResultSet.cs</FileName>
+      <HashCode>AAQAEMBICBACAS1ACAUDwQAEIBILDAgEQQEoBEhgoQA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.Entities.ScalarVar">
+    <Position X="4.5" Y="18.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Entities\ScalarVar.cs</FileName>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAIAgAAAAIgAAAgAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.TextSchema">
+    <Position X="14.5" Y="23.75" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>Entities\Schemas\TextSchema.cs</FileName>
+      <HashCode>gADIABAACQAAAAACBACIACSAAQAgBAAIgACAAAQAIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Runtime.Model.TextLine">
+    <Position X="18.75" Y="24.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Entities\Schemas\TextLine.cs</FileName>
+      <HashCode>AACIEAEAGZCBgADEBQCAQAAEAQAABgEBAAAAQQAAoEA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="schema" />
+      <Property Name="LineType" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Fields" />
+    </ShowAsCollectionAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.TextField">
+    <Position X="23.5" Y="24.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>Entities\Schemas\TextField.cs</FileName>
+      <HashCode>gAEEAgkgAAOCgAAlAIAAAAAgQAxAAiAMQACo4IABrCA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="line" />
+    </ShowAsAssociation>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.TextObject">
+    <Position X="21" Y="21.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entities\Schemas\TextObject.cs</FileName>
+      <HashCode>AQAAAAEAAAAgAAAAIAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="Iris.Runtime.Model.SchemaEntity">
+    <Position X="11.25" Y="18.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>Entities\SchemaEntity.cs</FileName>
+      <HashCode>AEABAAAAAAAAAAAAEAAAADAAAAAAAAAAEECAAABgIAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Iris.Runtime.Model.XMLSchema">
+    <Position X="10.5" Y="23.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entities\Schemas\XMLSchema.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAACAAAAAIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Iris.Interfaces.IEntity" Collapsed="true">
+    <Position X="11" Y="3.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="Iris.Interfaces.IOperation">
+    <Position X="11" Y="5.25" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="Iris.Interfaces.IStructure" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Enum Name="Iris.Runtime.Model.LineType">
+    <Position X="21.5" Y="24.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entities\Schemas\LineType.cs</FileName>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Iris.Runtime.Model.AlignType">
+    <Position X="26.25" Y="25.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Entities\Schemas\AlignType.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>

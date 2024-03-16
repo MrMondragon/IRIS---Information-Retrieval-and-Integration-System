@@ -1,0 +1,75 @@
+License Agreement
+
+Quantum Whale .NET component library
+
+Editor.NET (Commercial) 
+Outbar.NET (Commercial) 
+Scripter.NET (Freeware) 
+
+Copyright (c) 2004-2007 Quantum Whale All Rights Reserved 
+
+e-mail: support@qwhale.net 
+http://www.qwhale.net 
+
+
+
+License Agreement 
+You should carefully read the following terms and conditions before using the software. 
+By using this software you indicate that you accept the present license agreement. 
+
+Registered Version 
+One registered copy (developer license) of this software may either be used by a single 
+developer who uses the software personally on one or more computers, or installed on a 
+single workstation used nonsimultaneously by multiple developers, but not both. The 
+entire contents of source files is protected by U.S. and International Copyright Laws. 
+Unauthorized reproduction, reverse-engineering, and distribution of all or any portion 
+of the code contained in source files is strictly prohibited and may result in severe 
+civil and criminal penalties and will be prosecuted to the maximum extent possible 
+under the law. The source codes and all resulting intermediate files are confidential 
+and proprietary trade secrets of Quantum Whale LLC. The source code contained within 
+source and related files or any portion of its contents shall at no time be copied, 
+transerred, sold, distributed, or otherwise made available to other individuals without 
+a prior written permission. 
+
+Commercial Version 
+You may use Commercial version for 30 days (TRIAL period). After that period has ended, 
+to continue using this product you have to purchase the Registered version. 
+
+Freeware Version 
+You may freely use Freeware version for unlimited period of time.
+
+Distribution of Commercial/Freeware version 
+Provided that you verify that you are distributing the Commercial/Freeware Version you 
+are hereby licensed to make as many copies of the Commercial/Freeware version of the 
+software and the documentation as you wish; give exact copies of the original 
+Commercial/Freeware version to anyone; and distribute the Commercial/Freeware version of 
+the software and the documentation in its unmodified form via electronic means. There 
+is no charge for any of the above-mentioned actions. You are prohibited from charging,
+ or requesting donations, for any such copies, however made; and from distributing the 
+software and/or the documentation with other products (commercial or otherwise) without 
+a prior written permission. 
+
+Distribution of Registered version 
+The registered developer is licensed to distribute the product and all accompanying 
+.NET controls as part of an executable program only with the following conditions: 
+
+1) Executables containing the software must be written using a registered copy of the 
+software. 
+2) Executables must add primary and substantial functionality, and may not be merely a 
+set or subset of any of the libraries, code, Redistributables or other files of the 
+software. 
+3) Software may include certain files ("Redistributables") intended for distribution 
+with executables. These files may be included in the distribution WITHOUT any royalty 
+fees owed to Quantum Whale LLC. Please refer to product readme.txt or contact 
+Quantum Whale LLC for list of the Redistributables.
+
+DISCLAIMER 
+This software is provided on an "as is" basis without warranty of any kind, expressed 
+or implied, including but not limited to the implied warranties of merchantability and 
+fitness for a particular purpose. The person using the software bears all risk as to 
+the quality and performance of the software. The author will not be liable for any 
+special, incidental, consequential, indirect or similar damages due to loss of data or 
+any other reason, even if the author or an agent of the author as been advised of the 
+possibility of such damages. In no event shall the author's liability for any damages 
+ever exceed the price paid for the license to use the software, regardless of the form 
+of the claim.

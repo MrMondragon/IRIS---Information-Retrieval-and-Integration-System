@@ -1,0 +1,10 @@
+<Item>
+  <Name>Outlining</Name>
+  <Caption>Outlining</Caption>
+  <Description>
+The demo shows how to use automatic and manual outlining for text fragments within edit control's content.
+  </Description>
+  <Note>
+Editor.NET supports outlining, which is a text navigation feature that can make navigation of large structured texts more comfortable and effective. The essence of outlining lies in defining sections of the text as structural units and visually replacing them by some shorter representation, e.g. by ellipsis ("..."). During the text navigation the user can dynamically switch between the collapsed and complete representation of any particular section. Sections can be nested.
+  </Note>
+</Item>

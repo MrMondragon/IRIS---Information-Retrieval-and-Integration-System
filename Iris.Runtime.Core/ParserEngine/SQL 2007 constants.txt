@@ -1,0 +1,13 @@
+
+namespace Iris.Runtime.Core
+{
+    enum SymbolConstants : int
+    {
+    };
+
+    enum RuleConstants : int
+    {
+        
+    };
+
+}

@@ -1,0 +1,10 @@
+<Item>
+  <Name>ExternalAssemblies</Name>
+  <Caption>External Assemblies</Caption>
+  <Description>
+This demo shows how to use external assemblies in code completion.
+  </Description>
+  <Note>
+The NET parsers can register external assemblies, namespaces and types. This is an additional functionality for automatic code completion. This feature allows you to display and use your own assemlby members in the code completion list.
+  </Note>
+</Item>

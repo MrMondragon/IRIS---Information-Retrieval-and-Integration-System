@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternalAssemblies", "ExternalAssemblies.csproj", "{5966CFF8-CB45-44AA-8A50-DBD5189C84BB}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{5966CFF8-CB45-44AA-8A50-DBD5189C84BB}.Debug.ActiveCfg = Debug|.NET
+		{5966CFF8-CB45-44AA-8A50-DBD5189C84BB}.Debug.Build.0 = Debug|.NET
+		{5966CFF8-CB45-44AA-8A50-DBD5189C84BB}.Release.ActiveCfg = Release|.NET
+		{5966CFF8-CB45-44AA-8A50-DBD5189C84BB}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

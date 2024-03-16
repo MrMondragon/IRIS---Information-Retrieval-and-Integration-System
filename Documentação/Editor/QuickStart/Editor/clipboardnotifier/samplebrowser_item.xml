@@ -1,0 +1,10 @@
+<Item>
+  <Name>ClipboardNotifier</Name>
+  <Caption>Clipboard Notifier</Caption>
+  <Description>
+This demo project shows how to see clipboard content changed by other applications. 
+  </Description>
+  <Note>
+You can look after any changes within the clipboard, even those made by another process. This feature extends editor ability to interact with other applications.
+  </Note>
+</Item>

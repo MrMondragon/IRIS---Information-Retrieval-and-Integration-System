@@ -1,0 +1,10 @@
+<Item>
+  <Name>UndoRedo</Name>
+  <Caption>Undo\Redo</Caption>
+  <Description>
+The demo shows how to use undo/redo history.
+  </Description>
+  <Note>
+Editor.NET supports unlimited multilevel undo/redo. All information about the changes is stored in the undo list, allowing rolling back changes made to the text.
+  </Note>
+</Item>

@@ -1,0 +1,235 @@
+using System;
+using System.Drawing;
+using System.Collections;
+using System.ComponentModel;
+using System.Windows.Forms;
+using System.Data;
+using System.IO;
+using QWEditor;
+
+namespace SyntaxEditor
+{
+	/// <summary>
+	/// Summary description for Form1.
+	/// </summary>
+	public class frmSyntaxEditor : System.Windows.Forms.Form
+	{
+		private System.Windows.Forms.MainMenu mainMenu1;
+		private System.Windows.Forms.MenuItem miFile;
+		private System.Windows.Forms.MenuItem miNew;
+		private System.Windows.Forms.MenuItem miOpen;
+		private System.Windows.Forms.MenuItem miSave;
+		private System.Windows.Forms.MenuItem miSaveAs;
+		private System.Windows.Forms.MenuItem miClose;
+		private System.Windows.Forms.OpenFileDialog openFileDialog1;
+		private System.Windows.Forms.MenuItem miWindow;
+		private System.ComponentModel.IContainer components;
+		FileInfo[] SchemeFiles;
+		FileInfo[] TextFiles;
+		//private string[] mySchemes = {"c.xml","c#.xml","c++builder.xml","delphi.xml","html.xml","java.xml","java_script.xml","ms_dosbl.xml","unix_shell.xml","vis_basic.xml","xml.xml"};
+
+		public frmSyntaxEditor()
+		{
+			//
+			// Required for Windows Form Designer support
+			//
+			InitializeComponent();
+
+			//
+			// TODO: Add any constructor code after InitializeComponent call
+			//
+		}
+
+		/// <summary>
+		/// Clean up any resources being used.
+		/// </summary>
+		protected override void Dispose( bool disposing )
+		{
+			if( disposing )
+			{
+				if (components != null) 
+				{
+					components.Dispose();
+				}
+			}
+			base.Dispose( disposing );
+		}
+
+		#region Windows Form Designer generated code
+		/// <summary>
+		/// Required method for Designer support - do not modify
+		/// the contents of this method with the code editor.
+		/// </summary>
+		private void InitializeComponent()
+		{
+			this.mainMenu1 = new System.Windows.Forms.MainMenu();
+			this.miFile = new System.Windows.Forms.MenuItem();
+			this.miNew = new System.Windows.Forms.MenuItem();
+			this.miOpen = new System.Windows.Forms.MenuItem();
+			this.miSave = new System.Windows.Forms.MenuItem();
+			this.miSaveAs = new System.Windows.Forms.MenuItem();
+			this.miClose = new System.Windows.Forms.MenuItem();
+			this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+			this.miWindow = new System.Windows.Forms.MenuItem();
+			// 
+			// mainMenu1
+			// 
+			this.mainMenu1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+																					  this.miFile,
+																					  this.miWindow});
+			// 
+			// miFile
+			// 
+			this.miFile.Index = 0;
+			this.miFile.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+																				   this.miNew,
+																				   this.miOpen,
+																				   this.miSave,
+																				   this.miSaveAs,
+																				   this.miClose});
+			this.miFile.Text = "File";
+			// 
+			// miNew
+			// 
+			this.miNew.Index = 0;
+			this.miNew.Text = "New";
+			// 
+			// miOpen
+			// 
+			this.miOpen.Index = 1;
+			this.miOpen.Text = "Open";
+			this.miOpen.Click += new System.EventHandler(this.miOpen_Click);
+			// 
+			// miSave
+			// 
+			this.miSave.Index = 2;
+			this.miSave.Text = "Save";
+			this.miSave.Click += new System.EventHandler(this.miSave_Click);
+			// 
+			// miSaveAs
+			// 
+			this.miSaveAs.Index = 3;
+			this.miSaveAs.Text = "Save As";
+			this.miSaveAs.Click += new System.EventHandler(this.miSaveAs_Click);
+			// 
+			// miClose
+			// 
+			this.miClose.Index = 4;
+			this.miClose.Text = "Close";
+			this.miClose.Click += new System.EventHandler(this.miClose_Click);
+			// 
+			// miWindow
+			// 
+			this.miWindow.Index = 1;
+			this.miWindow.MdiList = true;
+			this.miWindow.Text = "&Window";
+			// 
+			// frmSyntaxEditor
+			// 
+			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+			this.ClientSize = new System.Drawing.Size(544, 329);
+			this.IsMdiContainer = true;
+			this.Menu = this.mainMenu1;
+			this.Name = "frmSyntaxEditor";
+			this.Text = "Syntax Editor";
+			this.Load += new System.EventHandler(this.frmSyntaxEditor_Load);
+
+		}
+		#endregion
+
+		/// <summary>
+		/// The main entry point for the application.
+		/// </summary>
+		[STAThread]
+		static void Main() 
+		{
+			Application.Run(new frmSyntaxEditor());
+		}
+
+		private void frmSyntaxEditor_Load(object sender, System.EventArgs e)
+		{
+			DirectoryInfo mySchemeInfo = new DirectoryInfo(@"..\..\Schemes");
+			DirectoryInfo myTextInfo = new DirectoryInfo(@"..\..\Text");
+			SchemeFiles = mySchemeInfo.GetFiles();
+			TextFiles = myTextInfo.GetFiles();
+			for(int i = 0; i < SchemeFiles.Length; i++)
+				miNew.MenuItems.Add(GetMenuText(i),new EventHandler(NewClick));// new MenuItem(SchemeFiles[i].ToString()
+		}
+
+		private void NewClick(object sender, System.EventArgs e)
+		{
+			EditContainer newMDIChild = new EditContainer();
+			newMDIChild.MdiParent = this;
+			Lexer myLexer = new Lexer();
+			myLexer.Scheme.LoadScheme(GetSchemeName((sender as MenuItem).Index));
+			newMDIChild.SyntaxEdit.Document.Lexer = myLexer;
+			newMDIChild.SyntaxEdit.Document.LoadFile(GetDefaultFile((sender as MenuItem).Index));
+			newMDIChild.Show();
+		}
+		private string GetSchemeName(int Index)
+		{
+			return @"..\..\Schemes\" + SchemeFiles[Index];
+		}
+		private string GetDefaultFile(int Index)
+		{
+			return @"..\..\Text\" + TextFiles[Index];
+		}
+		private string GetMenuText(int Index)
+		{
+			switch(Index)
+			{
+				case 0:
+					return "C# Language";
+				case 1:
+					return "C++ Builder Language";
+				case 2:
+					return "C Language";
+				case 3:
+					return "Delphi Language";
+				case 4:
+					return "HTML Language";
+				case 5:
+					return "Java Language";
+				case 6:
+					return "Java Script Language";
+				case 7:
+					return "MS Dos Batch Language";
+				case 8:
+					return "Unix Shell Language";
+				case 9:
+					return "Visual Basic Language";
+				case 10:
+					return "XML Language";
+				default:
+					return "";
+			}
+		}
+
+		private void miOpen_Click(object sender, System.EventArgs e)
+		{
+			if (openFileDialog1.ShowDialog() == DialogResult.OK)
+			{
+				QWEditor.DocumentWindow myEdit  = GetActiveSyntaxEdit();
+				myEdit.Document.LoadFile(openFileDialog1.FileName);
+				myEdit.Refresh();
+			}
+		}
+
+		private QWEditor.DocumentWindow GetActiveSyntaxEdit()
+		{
+			return (this.ActiveMdiChild as EditContainer).SyntaxEdit;
+		}
+		private void miSave_Click(object sender, System.EventArgs e)
+		{
+		}
+
+		private void miSaveAs_Click(object sender, System.EventArgs e)
+		{	
+		}
+
+		private void miClose_Click(object sender, System.EventArgs e)
+		{
+		}
+
+	}
+}

@@ -1,0 +1,10 @@
+<Item>
+  <Name>LineNumbers</Name>
+  <Caption>Line Numbers</Caption>
+  <Description>
+The demo shows how to customize appearance of line numbers.
+  </Description>
+  <Note>
+Editor.NET can display this information on the gutter surface, making navigation through editor's content easier.
+  </Note>
+</Item>

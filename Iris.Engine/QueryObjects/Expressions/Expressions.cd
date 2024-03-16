@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Iris.Engine.QueryObjects.Expressions.EngineExpression">
+    <Position X="7.5" Y="12.25" Width="1.5" />
+    <InheritanceLine Type="Iris.Engine.QueryObjects.Expressions.EnginePredicate" FixedToPoint="true">
+      <Path>
+        <Point X="6.5" Y="6.733" />
+        <Point X="6.5" Y="12.938" />
+        <Point X="7.5" Y="12.938" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\EngineExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.CompositeIdentifier">
+    <Position X="11.75" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAIAAAAAAAAAAAAAAAQAAAAQAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\CompositeIdentifier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.SearchList">
+    <Position X="3" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEIAAAAIAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\SearchList.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Predicate" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.BinarySearchList">
+    <Position X="3" Y="7.25" Width="1.5" />
+    <AssociationLine Name="SearchList" Type="Iris.Engine.QueryObjects.Expressions.SearchList" FixedFromPoint="true">
+      <Path>
+        <Point X="3.375" Y="7.25" />
+        <Point X="3.375" Y="6.877" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Operator" Type="Iris.Engine.QueryObjects.Expressions.LogicOperator" FixedToPoint="true">
+      <Path>
+        <Point X="3" Y="7.812" />
+        <Point X="2" Y="7.812" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="SecondPredicate" Type="Iris.Engine.QueryObjects.Expressions.EnginePredicate" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.5" Y="7.646" />
+        <Point X="6" Y="7.646" />
+        <Point X="6" Y="6.733" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAIgA=</HashCode>
+      <FileName>QueryObjects\Expressions\BinarySearchList.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SearchList" />
+      <Property Name="Operator" />
+      <Property Name="SecondPredicate" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.EnginePredicate">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\EnginePredicate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.EngineComparison" Collapsed="true">
+    <Position X="7.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\EngineComparison.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.NegateablePredicate" Collapsed="true">
+    <Position X="7.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\NegateablePredicate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.LikePredicate" Collapsed="true">
+    <Position X="9.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\LikePredicate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.BetweenPredicate" Collapsed="true">
+    <Position X="9.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\BetweenPredicate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.IsNullPredicate" Collapsed="true">
+    <Position X="9.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\IsNullPredicate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.InQueryPredicate" Collapsed="true">
+    <Position X="9.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\InQueryPredicate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.InListPredicate" Collapsed="true">
+    <Position X="9.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\InListPredicate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.ExistsPredicate" Collapsed="true">
+    <Position X="9.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\ExistsPredicate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.BinaryExpression" Collapsed="true">
+    <Position X="9.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\BinaryExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.UnaryExpression" Collapsed="true">
+    <Position X="9.25" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\UnaryExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.ValueExpression" Collapsed="true">
+    <Position X="9.25" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\ValueExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.Values.SearchListValue" Collapsed="true">
+    <Position X="10.75" Y="15.75" Width="1.5" />
+    <InheritanceLine Type="Iris.Engine.QueryObjects.Expressions.ValueExpression" FixedToPoint="true">
+      <Path>
+        <Point X="10" Y="15.691" />
+        <Point X="10" Y="16.125" />
+        <Point X="10.75" Y="16.125" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\Values\SearchListValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.Values.QueryValue" Collapsed="true">
+    <Position X="10.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\Values\QueryValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.Values.IntValue" Collapsed="true">
+    <Position X="10.75" Y="17.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\Values\IntValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.Values.RealValue" Collapsed="true">
+    <Position X="10.75" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\Values\RealValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.Values.StringValue" Collapsed="true">
+    <Position X="7.75" Y="15.75" Width="1.5" />
+    <InheritanceLine Type="Iris.Engine.QueryObjects.Expressions.ValueExpression" FixedToPoint="true">
+      <Path>
+        <Point X="10" Y="15.691" />
+        <Point X="10" Y="16.125" />
+        <Point X="9.25" Y="16.125" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\Values\StringValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.Values.NullValue" Collapsed="true">
+    <Position X="7.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\Values\NullValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.Values.DefaultValue" Collapsed="true">
+    <Position X="7.75" Y="17.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\Values\DefaultValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.Values.CaseValue" Collapsed="true">
+    <Position X="7.75" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\Values\CaseValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.Values.FunctionValue" Collapsed="true">
+    <Position X="7.75" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\Values\FunctionValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.Values.CastValue" Collapsed="true">
+    <Position X="10.75" Y="18.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\Values\CastValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.Values.ParameterValue" Collapsed="true">
+    <Position X="10.75" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\Values\ParameterValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.Values.XEvalValue" Collapsed="true">
+    <Position X="7.75" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\Values\XEvalValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.StatementPart" Collapsed="true">
+    <Position X="8.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\StatementPart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Iris.Engine.QueryObjects.Expressions.BaseExpression" Collapsed="true">
+    <Position X="4.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\BaseExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Iris.Engine.QueryObjects.Expressions.LogicOperator" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>QueryObjects\Expressions\LogicOperator.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,25 @@
+Tarefas:
+  ok- Testar Masker
+    ok- Incluir máscara extra para Upper bound
+    ok- Fazer as verificações necessárias
+
+  ok - Testar Batch WebService
+   ok - Serviço que recebe parâmetros simples
+   ok - Serviço que recebe parametros + 1 objeto
+   ok - Serviço que recebe parametros + 2 objetos
+    - Mudar o método para methodName
+
+  ok - Testar WS Simples + Var Ops
+    ok - WS que retorna uma tabela
+	ok - Var to RS
+	ok - RS to Var
+
+
+  - Operações de Log
+    - Log to Table
+      - Datetime, Msg, Operation, IsError
+    - Log to Text
+    - As duas dando saída para uma var boolean indicando se aconteceram erros
+    - As duas dando saída para uma var int com o count de erros
+
+	Pack it up
